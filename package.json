@@ -1,0 +1,68 @@
+{
+  "name": "scout-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Venture intelligence platform — transforms developer discourse into structured market opportunities via a 3-layer AI refinery pipeline",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardomjq/scout-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leonardomjq/scout-agent/issues"
+  },
+  "homepage": "https://github.com/leonardomjq/scout-agent#readme",
+  "keywords": [
+    "venture-intelligence",
+    "ai-pipeline",
+    "market-signals",
+    "nextjs",
+    "supabase",
+    "anthropic"
+  ],
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.76.0",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.97.0",
+    "@tailwindcss/postcss": "^4.2.0",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "framer-motion": "^12.34.2",
+    "next": "^16.1.6",
+    "p-limit": "^7.3.0",
+    "postcss": "^8.5.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "stripe": "^20.3.1",
+    "swr": "^2.4.0",
+    "tailwindcss": "^4.2.0",
+    "typescript": "^5.9.3",
+    "uuid": "^13.0.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/uuid": "^11.0.0",
+    "@vitejs/plugin-react": "^5.1.4",
+    "jsdom": "^28.1.0",
+    "vitest": "^4.0.18"
+  }
+}

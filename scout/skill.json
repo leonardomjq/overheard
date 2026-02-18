@@ -1,0 +1,66 @@
+{
+  "name": "scout-agent-capture",
+  "version": "1.0.0",
+  "description": "Autonomous Twitter/X discourse capture agent for ScoutAgent venture intelligence",
+  "schedule": "0 */4 * * *",
+  "browser": {
+    "type": "managed",
+    "headless": true,
+    "session": "pre-authenticated"
+  },
+  "actions": [
+    {
+      "type": "navigate",
+      "description": "Navigate to target feed",
+      "config": {
+        "url_source": "config.feeds[*].targets[*]",
+        "wait_for": "networkidle"
+      }
+    },
+    {
+      "type": "scroll",
+      "description": "Scroll to load tweets",
+      "config": {
+        "depth_px": 5000,
+        "pause_ms": 1500,
+        "max_duration_ms": 60000
+      }
+    },
+    {
+      "type": "extract",
+      "description": "Extract tweet data via accessibility tree",
+      "config": {
+        "selector": "article[data-testid='tweet']",
+        "max_items": 500,
+        "fields": {
+          "tweet_id": "data-tweet-id",
+          "author_handle": "[data-testid='User-Name'] a[role='link']",
+          "author_name": "[data-testid='User-Name'] span",
+          "content": "[data-testid='tweetText']",
+          "timestamp": "time[datetime]",
+          "likes": "[data-testid='like'] span",
+          "retweets": "[data-testid='retweet'] span",
+          "replies": "[data-testid='reply'] span"
+        }
+      }
+    },
+    {
+      "type": "webhook",
+      "description": "POST captured data to ingest endpoint",
+      "config": {
+        "url": "{{APP_URL}}/api/ingest",
+        "method": "POST",
+        "auth": {
+          "type": "hmac-sha256",
+          "secret_env": "INGEST_HMAC_SECRET"
+        },
+        "body_format": "RawCapture"
+      }
+    }
+  ],
+  "error_handling": {
+    "retry_count": 2,
+    "retry_delay_ms": 5000,
+    "on_failure": "log_and_continue"
+  }
+}
