@@ -9,7 +9,7 @@ export function UpgradeSuccessToast() {
   const { toast } = useToast();
 
   useEffect(() => {
-    if (searchParams.get("session_id")) {
+    if (searchParams.get("upgraded") === "true" && searchParams.get("session_id")) {
       toast("Welcome to Pro! Your upgrade is active.", "success");
       window.history.replaceState({}, "", window.location.pathname);
     }

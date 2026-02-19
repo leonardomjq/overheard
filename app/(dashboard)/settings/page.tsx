@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { getLoggedInUser, createSessionClient } from "@/lib/appwrite/server";
 import { DATABASE_ID, COLLECTIONS } from "@/lib/appwrite/collections";
 import { UpgradePrompt } from "@/components/upgrade-prompt";
-import { UpgradeSuccessToast } from "@/components/settings/upgrade-success-toast";
+
 import { Card } from "@/components/ui/card";
 import { Check, X } from "lucide-react";
 
@@ -56,12 +56,11 @@ export default async function SettingsPage() {
 
   return (
     <div className="max-w-2xl">
-      <UpgradeSuccessToast />
-      <h1 className="text-2xl font-bold mb-6">Settings</h1>
+      <h1 className="font-[family-name:var(--font-display)] text-2xl font-bold mb-6">Settings</h1>
 
       {/* Account */}
-      <Card padding="spacious" className="mb-6">
-        <h2 className="text-lg font-semibold mb-4">Account</h2>
+      <Card padding="spacious" className="mb-6 border-accent-green/30">
+        <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-4">Account</h2>
         <div className="flex items-center gap-4 mb-4">
           <div className="size-12 rounded-full bg-accent-green/20 text-accent-green flex items-center justify-center text-lg font-bold font-mono">
             {initial}
@@ -96,8 +95,8 @@ export default async function SettingsPage() {
       </Card>
 
       {/* Subscription */}
-      <Card padding="spacious" className="mb-6">
-        <h2 className="text-lg font-semibold mb-4">Subscription</h2>
+      <Card padding="spacious" className="mb-6 border-accent-green/30">
+        <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-4">Subscription</h2>
         {subscription ? (
           <div className="space-y-3 text-sm">
             <div className="flex justify-between">
@@ -126,8 +125,8 @@ export default async function SettingsPage() {
           </div>
         ) : (
           <div>
-            <p className="text-text-muted text-sm mb-4">
-              You&apos;re on the free tier. Upgrade to unlock full intelligence
+            <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm mb-4">
+              You&apos;re on the free tier. Upgrade to unlock full opportunity
               briefs.
             </p>
             <UpgradePrompt />
@@ -137,11 +136,11 @@ export default async function SettingsPage() {
 
       {/* Pro feature comparison — only shown for free users */}
       {tier === "free" && (
-        <Card padding="spacious">
-          <h2 className="text-lg font-semibold mb-1">
+        <Card padding="spacious" className="border-accent-green/30">
+          <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-1">
             What you get with Pro
           </h2>
-          <p className="text-text-muted text-sm mb-4">
+          <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm mb-4">
             Starting at $24/mo — cancel anytime
           </p>
           <ul className="space-y-2.5">

@@ -65,6 +65,7 @@ export async function GET(request: NextRequest) {
       data: gatedCards,
       cursor: nextCursor,
       has_more: hasMore,
+      tier,
     });
   } catch (err) {
     console.error("Alphas error:", err);

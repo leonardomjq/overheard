@@ -34,23 +34,23 @@ test.describe("Auth Pages", () => {
   test("login page renders form", async ({ page }) => {
     await page.goto("/login");
 
-    await expect(page.getByText("Sign in")).toBeVisible();
+    await expect(page.getByText("Welcome back")).toBeVisible();
     await expect(page.locator('input[type="email"]')).toBeVisible();
     await expect(page.locator('input[type="password"]')).toBeVisible();
     await expect(
       page.getByRole("button", { name: "Sign in" })
     ).toBeVisible();
-    await expect(page.getByRole("link", { name: "Sign up" })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Start free" })).toBeVisible();
   });
 
   test("signup page renders form", async ({ page }) => {
     await page.goto("/signup");
 
-    await expect(page.getByText("Create account")).toBeVisible();
+    await expect(page.getByText("Start discovering opportunities")).toBeVisible();
     await expect(page.locator('input[type="email"]')).toBeVisible();
     await expect(page.locator('input[type="password"]')).toBeVisible();
     await expect(
-      page.getByRole("button", { name: "Create account" })
+      page.getByRole("button", { name: "Start Free" })
     ).toBeVisible();
     await expect(page.getByRole("link", { name: "Sign in" })).toBeVisible();
   });

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Lock } from "lucide-react";
 import { MomentumBadge } from "./momentum-badge";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,6 +11,7 @@ import type { AlphaCard as AlphaCardType } from "@/types";
 
 interface AlphaCardProps {
   card: AlphaCardType;
+  isLocked?: boolean;
 }
 
 const categoryLabels: Record<string, string> = {
@@ -33,7 +35,7 @@ const statusColors: Record<string, string> = {
   archived: "text-border",
 };
 
-export function AlphaCard({ card }: AlphaCardProps) {
+export function AlphaCard({ card, isLocked }: AlphaCardProps) {
   return (
     <motion.div
       {...fadeInUp}
@@ -42,13 +44,13 @@ export function AlphaCard({ card }: AlphaCardProps) {
     >
       <Link href={`/alpha/${card.id}`}>
         <Card
-          variant="glass"
-          className="hover:border-accent-green/30 transition-colors cursor-pointer"
+          variant="default"
+          className="texture-paper border-accent-green/30 hover:border-accent-green/50 transition-colors cursor-pointer"
         >
           {/* Header */}
           <div className="flex items-start justify-between mb-3">
             <span
-              className={`text-xs font-mono uppercase tracking-wider ${categoryColors[card.category] ?? "text-text-muted"}`}
+              className={`text-[10px] font-mono uppercase tracking-widest ${categoryColors[card.category] ?? "text-text-muted"}`}
             >
               {categoryLabels[card.category] ?? card.category}
             </span>
@@ -59,7 +61,7 @@ export function AlphaCard({ card }: AlphaCardProps) {
           </div>
 
           {/* Title */}
-          <h3 className="text-lg font-semibold mb-2 leading-snug">
+          <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-2 leading-snug">
             {card.title}
           </h3>
 
@@ -74,7 +76,7 @@ export function AlphaCard({ card }: AlphaCardProps) {
 
           {/* Thesis (now free tier) */}
           {card.thesis && (
-            <p className="text-text-muted text-sm line-clamp-2 mb-3">
+            <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm line-clamp-2 mb-3">
               {card.thesis}
             </p>
           )}
@@ -82,12 +84,20 @@ export function AlphaCard({ card }: AlphaCardProps) {
           {/* Footer */}
           <div className="flex items-center justify-between text-xs text-text-muted">
             <span>{card.signal_count} signals</span>
-            <Badge
-              variant={card.status === "fresh" ? "success" : "default"}
-              shape="tag"
-            >
-              {card.status}
-            </Badge>
+            <div className="flex items-center gap-2">
+              {isLocked && (
+                <span className="inline-flex items-center gap-1 font-mono">
+                  <Lock className="size-3" />
+                  +6 Pro sections
+                </span>
+              )}
+              <Badge
+                variant={card.status === "fresh" ? "success" : "default"}
+                shape="tag"
+              >
+                {card.status}
+              </Badge>
+            </div>
           </div>
         </Card>
       </Link>

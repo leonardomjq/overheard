@@ -1,4 +1,6 @@
+import { redirect } from "next/navigation";
 import Link from "next/link";
+import { getLoggedInUser } from "@/lib/appwrite/server";
 import { IntelligenceBriefing } from "@/components/landing/intelligence-briefing";
 import { ProblemAgitation } from "@/components/landing/problem-agitation";
 import { AlphaCardsShowcase } from "@/components/landing/alpha-cards-showcase";
@@ -9,7 +11,9 @@ import { FinalCta } from "@/components/landing/final-cta";
 import { LandingFooter } from "@/components/landing/landing-footer";
 import { StickyCta } from "@/components/landing/sticky-cta";
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const user = await getLoggedInUser();
+  if (user) redirect("/feed");
   return (
     <div className="landing-page min-h-screen flex flex-col bg-surface overflow-x-hidden">
       {/* Header */}

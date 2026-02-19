@@ -16,7 +16,7 @@ const sizeClasses = {
 } as const;
 
 const baseClasses =
-  "rounded focus-visible:focus-ring inline-flex items-center justify-center gap-2";
+  "rounded focus-visible:focus-ring inline-flex items-center justify-center gap-2 font-mono";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {

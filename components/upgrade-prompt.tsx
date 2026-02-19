@@ -38,10 +38,10 @@ export function UpgradePrompt() {
         <Sparkles className="size-5" />
         <span>Pro</span>
       </div>
-      <h3 className="font-semibold mb-2">Unlock the Full Brief</h3>
-      <p className="text-text-muted text-sm mb-4">
-        Get complete strategy, risk analysis, competitive landscape, and full
-        evidence for every opportunity.
+      <h3 className="font-[family-name:var(--font-display)] font-semibold mb-2">Unlock the Full Brief</h3>
+      <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm mb-4">
+        See what to build, who you&apos;re up against, and how long the window
+        stays open.
       </p>
 
       {/* Billing toggle */}

@@ -15,14 +15,14 @@ export default function AlphaDetailError({
       <div className="bg-accent-red/10 border border-accent-red/30 rounded-full p-4 mb-4">
         <AlertTriangle className="size-8 text-accent-red" />
       </div>
-      <h2 className="text-xl font-semibold mb-2">Failed to load Alpha Card</h2>
-      <p className="text-text-muted text-sm mb-6 max-w-md">
-        We couldn&apos;t load this intelligence brief. It may have expired or
+      <h2 className="font-[family-name:var(--font-display)] text-xl font-semibold mb-2">Failed to load Alpha Card</h2>
+      <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm mb-6 max-w-md">
+        We couldn&apos;t load this opportunity brief. It may have expired or
         there was a server error.
       </p>
       <div className="flex items-center gap-3">
         <Button onClick={reset}>Try again</Button>
-        <ButtonLink href="/" variant="secondary">
+        <ButtonLink href="/feed" variant="secondary">
           Back to feed
         </ButtonLink>
       </div>

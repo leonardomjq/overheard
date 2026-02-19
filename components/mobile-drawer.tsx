@@ -2,14 +2,16 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { SidebarContent } from "./sidebar-content";
+import { Logo } from "@/components/logo";
 import { X } from "lucide-react";
 
 interface MobileDrawerProps {
   open: boolean;
   onClose: () => void;
+  tier?: string;
 }
 
-export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
+export function MobileDrawer({ open, onClose, tier }: MobileDrawerProps) {
   return (
     <AnimatePresence>
       {open && (
@@ -34,12 +36,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
             className="fixed inset-y-0 left-0 w-64 bg-surface border-r border-border z-modal flex flex-col lg:hidden"
           >
             <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-              <div className="flex items-center gap-2">
-                <span className="text-accent-green font-mono font-bold text-lg">
-                  Scout
-                </span>
-                <span className="text-text-muted font-mono text-lg">Agent</span>
-              </div>
+              <Logo size="md" />
               <button
                 onClick={onClose}
                 className="text-text-muted hover:text-text transition-colors"
@@ -48,7 +45,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
               </button>
             </div>
             <div className="py-4 flex-1 overflow-y-auto">
-              <SidebarContent onNavigate={onClose} />
+              <SidebarContent onNavigate={onClose} tier={tier} />
             </div>
           </motion.aside>
         </>

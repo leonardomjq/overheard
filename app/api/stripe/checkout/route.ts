@@ -22,6 +22,11 @@ export async function POST(request: NextRequest) {
     const customerId = await createOrGetCustomer(user.$id, user.email);
     const stripe = getStripe();
 
+    const returnTo = request.nextUrl.searchParams.get("returnTo");
+    // Validate returnTo starts with "/" to prevent open redirect
+    const safePath =
+      returnTo && returnTo.startsWith("/") ? returnTo : "/settings";
+
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: "subscription",
@@ -31,8 +36,8 @@ export async function POST(request: NextRequest) {
           quantity: 1,
         },
       ],
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/settings?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/settings`,
+      success_url: `${process.env.NEXT_PUBLIC_APP_URL}${safePath}?session_id={CHECKOUT_SESSION_ID}&upgraded=true`,
+      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}${safePath}`,
       metadata: {
         user_id: user.$id,
       },

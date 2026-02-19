@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Lock } from "lucide-react";
 
-type ProField =
+export type ProField =
   | "friction_detail"
   | "gap_analysis"
   | "timing_signal"
@@ -26,12 +26,13 @@ const teasers: Record<ProField, string> = {
 
 interface ProFieldTeaserProps {
   field: ProField;
+  onUnlock?: () => void;
 }
 
-export function ProFieldTeaser({ field }: ProFieldTeaserProps) {
+export function ProFieldTeaser({ field, onUnlock }: ProFieldTeaserProps) {
   return (
     <div className="rounded-lg bg-surface border border-border p-4">
-      <p className="text-text-muted text-sm mb-3">{teasers[field]}</p>
+      <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm mb-3">{teasers[field]}</p>
       <div className="blur-sm select-none pointer-events-none mb-3" aria-hidden>
         <div className="space-y-2">
           <div className="h-3 bg-surface-elevated rounded w-full" />
@@ -41,12 +42,21 @@ export function ProFieldTeaser({ field }: ProFieldTeaserProps) {
       </div>
       <div className="flex items-center gap-2 text-sm text-text-muted">
         <Lock className="size-3.5 shrink-0" />
-        <Link
-          href="/settings"
-          className="text-accent-green hover:underline underline-offset-2"
-        >
-          Unlock with Pro
-        </Link>
+        {onUnlock ? (
+          <button
+            onClick={onUnlock}
+            className="text-accent-green hover:underline underline-offset-2"
+          >
+            Unlock with Pro
+          </button>
+        ) : (
+          <Link
+            href="/settings"
+            className="text-accent-green hover:underline underline-offset-2"
+          >
+            Unlock with Pro
+          </Link>
+        )}
       </div>
     </div>
   );

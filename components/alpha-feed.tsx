@@ -3,9 +3,9 @@
 import useSWRInfinite from "swr/infinite";
 import { AlphaCard } from "./alpha-card";
 import { CardSkeleton } from "./card-skeleton";
-import type { AlphaCard as AlphaCardType, AlphaCategory, AlphaDirection } from "@/types";
+import type { AlphaCard as AlphaCardType, AlphaCategory, AlphaDirection, AlphaTier } from "@/types";
 import { useMemo, useState } from "react";
-import { Search, Zap, Clock, ArrowDownWideNarrow } from "lucide-react";
+import { Search, Zap, Clock, ArrowDownWideNarrow, Lock } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -13,6 +13,7 @@ interface AlphaResponse {
   data: AlphaCardType[];
   cursor: string | null;
   has_more: boolean;
+  tier?: AlphaTier;
 }
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
@@ -64,6 +65,8 @@ export function AlphaFeed() {
   const rawCards = data?.flatMap((page) => page.data) ?? [];
   const hasMore = data?.[data.length - 1]?.has_more ?? false;
   const isEmpty = data?.[0]?.data?.length === 0;
+  const tier = data?.[0]?.tier;
+  const isLocked = tier === "free";
 
   // Client-side search filter
   const filtered = useMemo(() => {
@@ -160,6 +163,17 @@ export function AlphaFeed() {
         </div>
       </div>
 
+      {/* Aggregate pro awareness banner (free users) */}
+      {isLocked && cards.length > 0 && (
+        <div className="flex items-center gap-2 mb-4 px-4 py-3 rounded-lg bg-surface border border-border text-sm text-text-muted">
+          <Lock className="size-3.5 shrink-0" />
+          <span>
+            You&apos;ve browsed {cards.length} opportunities. Pro unlocks full
+            strategy + risk analysis for every one.
+          </span>
+        </div>
+      )}
+
       {/* Error state */}
       {error && (
         <div className="text-accent-red text-sm bg-accent-red/10 border border-accent-red/30 rounded p-4">
@@ -173,21 +187,21 @@ export function AlphaFeed() {
           <div className="bg-accent-green/10 rounded-full p-4 mb-4">
             <Zap className="size-8 text-accent-green" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">
+          <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-2">
             Your feed is warming up
           </h3>
-          <p className="text-text-muted text-sm max-w-md mb-6">
-            ScoutAgent is scanning developer activity and detecting traction
+          <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm max-w-md mb-6">
+            ScoutAgent is scanning market conversations and detecting demand
             signals. Here&apos;s what to expect:
           </p>
           <ol className="text-left text-sm text-text-muted space-y-2 max-w-sm">
             <li className="flex items-start gap-2">
               <span className="text-accent-green font-mono font-bold">1.</span>
-              Anomalies detected across developer communities
+              Demand spikes detected across builder communities
             </li>
             <li className="flex items-start gap-2">
               <span className="text-accent-green font-mono font-bold">2.</span>
-              Alpha Cards generated with evidence-grounded intelligence
+              Alpha Cards generated with evidence-grounded opportunity briefs
             </li>
             <li className="flex items-start gap-2">
               <span className="text-accent-green font-mono font-bold">3.</span>
@@ -200,7 +214,7 @@ export function AlphaFeed() {
       {/* Card grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {cards.map((card) => (
-          <AlphaCard key={card.id} card={card} />
+          <AlphaCard key={card.id} card={card} isLocked={isLocked} />
         ))}
         {/* Skeleton loading for next page */}
         {isValidating &&
