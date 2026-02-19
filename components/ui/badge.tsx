@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { cn } from "@/lib/utils";
 
 const variantClasses = {
   default:
@@ -23,17 +23,21 @@ const baseClasses = "text-xs font-mono border inline-flex items-center gap-1";
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant?: keyof typeof variantClasses;
   shape?: keyof typeof shapeClasses;
+  ref?: React.Ref<HTMLSpanElement>;
 }
 
-export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
-  { variant = "default", shape = "tag", className = "", ...props },
+export function Badge({
+  variant = "default",
+  shape = "tag",
+  className,
   ref,
-) {
+  ...props
+}: BadgeProps) {
   return (
     <span
       ref={ref}
-      className={`${baseClasses} ${variantClasses[variant]} ${shapeClasses[shape]} ${className}`}
+      className={cn(baseClasses, variantClasses[variant], shapeClasses[shape], className)}
       {...props}
     />
   );
-});
+}

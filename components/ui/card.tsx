@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { cn } from "@/lib/utils";
 
 const variantClasses = {
   default: "bg-surface border border-border",
@@ -16,17 +16,21 @@ const baseClasses = "rounded-lg";
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: keyof typeof variantClasses;
   padding?: keyof typeof paddingClasses;
+  ref?: React.Ref<HTMLDivElement>;
 }
 
-export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
-  { variant = "default", padding = "default", className = "", ...props },
+export function Card({
+  variant = "default",
+  padding = "default",
+  className,
   ref,
-) {
+  ...props
+}: CardProps) {
   return (
     <div
       ref={ref}
-      className={`${baseClasses} ${variantClasses[variant]} ${paddingClasses[padding]} ${className}`}
+      className={cn(baseClasses, variantClasses[variant], paddingClasses[padding], className)}
       {...props}
     />
   );
-});
+}

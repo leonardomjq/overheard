@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { cn } from "@/lib/utils";
 
 const inputClasses =
   "w-full bg-bg border border-border rounded px-3 py-2 text-sm text-text placeholder:text-text-muted/60 focus:outline-none focus:border-accent-green/40 transition-colors";
@@ -6,12 +6,10 @@ const inputClasses =
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   icon?: React.ReactNode;
+  ref?: React.Ref<HTMLInputElement>;
 }
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-  { icon, className = "", ...props },
-  ref,
-) {
+export function Input({ icon, className, ref, ...props }: InputProps) {
   if (icon) {
     return (
       <div className="relative">
@@ -20,7 +18,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
         </div>
         <input
           ref={ref}
-          className={`${inputClasses} pl-10 ${className}`}
+          className={cn(inputClasses, "pl-10", className)}
           {...props}
         />
       </div>
@@ -30,8 +28,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   return (
     <input
       ref={ref}
-      className={`${inputClasses} ${className}`}
+      className={cn(inputClasses, className)}
       {...props}
     />
   );
-});
+}

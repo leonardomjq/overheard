@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { forwardRef } from "react";
+import { cn } from "@/lib/utils";
 
 const variantClasses = {
   primary:
@@ -22,22 +22,24 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: keyof typeof variantClasses;
   size?: keyof typeof sizeClasses;
+  ref?: React.Ref<HTMLButtonElement>;
 }
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  function Button(
-    { variant = "primary", size = "md", className = "", ...props },
-    ref,
-  ) {
-    return (
-      <button
-        ref={ref}
-        className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
-        {...props}
-      />
-    );
-  },
-);
+export function Button({
+  variant = "primary",
+  size = "md",
+  className,
+  ref,
+  ...props
+}: ButtonProps) {
+  return (
+    <button
+      ref={ref}
+      className={cn(baseClasses, variantClasses[variant], sizeClasses[size], className)}
+      {...props}
+    />
+  );
+}
 
 export interface ButtonLinkProps
   extends React.ComponentProps<typeof Link> {
@@ -48,12 +50,12 @@ export interface ButtonLinkProps
 export function ButtonLink({
   variant = "primary",
   size = "md",
-  className = "",
+  className,
   ...props
 }: ButtonLinkProps) {
   return (
     <Link
-      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
+      className={cn(baseClasses, variantClasses[variant], sizeClasses[size], className)}
       {...props}
     />
   );
