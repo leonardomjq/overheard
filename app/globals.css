@@ -4,6 +4,7 @@
   --color-bg: #0A0A0A;
   --color-surface: #111111;
   --color-surface-elevated: #1A1A1A;
+  --color-surface-glass: rgba(255, 255, 255, 0.03);
   --color-border: #222222;
   --color-text: #E0E0E0;
   --color-text-muted: #666666;
@@ -11,12 +12,42 @@
   --color-accent-red: #FF3366;
   --color-accent-amber: #FFB800;
   --color-accent-blue: #00AAFF;
-  --font-mono: "JetBrains Mono", "Fira Code", monospace;
-  --font-sans: "Inter Variable", "Inter", system-ui, sans-serif;
+
+  --radius-*: initial;
+  --radius-sm: 6px;
+  --radius-DEFAULT: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-*: initial;
+  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px -10px rgba(0, 255, 136, 0.15);
+
+  --z-index-*: initial;
+  --z-index-sticky: 30;
+  --z-index-overlay: 40;
+  --z-index-modal: 50;
+  --z-index-toast: 60;
+
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 400ms;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@utility focus-ring {
+  outline: 2px solid var(--color-accent-green);
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-sans);
 }

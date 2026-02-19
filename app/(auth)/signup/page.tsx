@@ -4,6 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export default function SignupPage() {
   const [email, setEmail] = useState("");
@@ -45,7 +48,7 @@ export default function SignupPage() {
           </Link>
         </div>
 
-        <div className="bg-surface border border-border rounded-xl p-8">
+        <Card padding="spacious" className="p-8">
           <h1 className="text-xl font-semibold mb-6">Create account</h1>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -53,25 +56,23 @@ export default function SignupPage() {
               <label className="block text-sm text-text-muted mb-1">
                 Email
               </label>
-              <input
+              <Input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full bg-bg border border-border rounded-lg px-3 py-2 text-text focus:outline-none focus:border-accent-green"
               />
             </div>
             <div>
               <label className="block text-sm text-text-muted mb-1">
                 Password
               </label>
-              <input
+              <Input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 minLength={8}
-                className="w-full bg-bg border border-border rounded-lg px-3 py-2 text-text focus:outline-none focus:border-accent-green"
               />
               <p className="text-xs text-text-muted mt-1">
                 Minimum 8 characters
@@ -82,13 +83,9 @@ export default function SignupPage() {
               <p className="text-accent-red text-sm">{error}</p>
             )}
 
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full bg-accent-green text-bg py-2 rounded-lg font-medium hover:opacity-90 transition-opacity disabled:opacity-50"
-            >
+            <Button type="submit" disabled={loading} className="w-full">
               {loading ? "Creating account..." : "Create account"}
-            </button>
+            </Button>
           </form>
 
           <p className="text-center text-text-muted text-sm mt-4">
@@ -97,7 +94,7 @@ export default function SignupPage() {
               Sign in
             </Link>
           </p>
-        </div>
+        </Card>
       </div>
     </div>
   );

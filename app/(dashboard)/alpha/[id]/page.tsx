@@ -2,9 +2,13 @@ import { createClient } from "@/lib/supabase/server";
 import { gateAlphaCard } from "@/lib/refinery/gate";
 import { MomentumBadge } from "@/components/momentum-badge";
 import { BlurGate } from "@/components/blur-gate";
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { CopyLinkButton } from "@/components/copy-link-button";
+import { InlineUpgradeHint } from "@/components/inline-upgrade-hint";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import type { AlphaCard, AlphaTier } from "@/types";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -48,12 +52,15 @@ export default async function AlphaDetailPage({ params }: Props) {
 
   return (
     <div className="max-w-3xl">
-      <Link
-        href="/"
-        className="text-text-muted text-sm hover:text-text mb-4 inline-block"
-      >
-        &larr; Back to feed
-      </Link>
+      <div className="flex items-center justify-between mb-4">
+        <Breadcrumbs
+          crumbs={[
+            { label: "Feed", href: "/" },
+            { label: card.title },
+          ]}
+        />
+        <CopyLinkButton />
+      </div>
 
       <div className="space-y-6">
         {/* Header */}
@@ -73,30 +80,27 @@ export default async function AlphaDetailPage({ params }: Props) {
         {/* Entities */}
         <div className="flex flex-wrap gap-2">
           {card.entities.map((entity) => (
-            <span
-              key={entity}
-              className="bg-surface-elevated text-text-muted text-sm px-3 py-1 rounded-lg font-mono"
-            >
+            <Badge key={entity} shape="tag" className="text-sm px-3 py-1">
               {entity}
-            </span>
+            </Badge>
           ))}
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4">
-          <div className="bg-surface border border-border rounded-lg p-4">
+          <Card padding="compact">
             <div className="text-text-muted text-xs mb-1">Signals</div>
             <div className="text-2xl font-bold font-mono">
               {card.signal_count}
             </div>
-          </div>
-          <div className="bg-surface border border-border rounded-lg p-4">
+          </Card>
+          <Card padding="compact">
             <div className="text-text-muted text-xs mb-1">Momentum</div>
             <div className="text-2xl font-bold font-mono">
               {Math.round(card.momentum_score)}
             </div>
-          </div>
-          <div className="bg-surface border border-border rounded-lg p-4">
+          </Card>
+          <Card padding="compact">
             <div className="text-text-muted text-xs mb-1">Expires</div>
             <div className="text-sm font-mono">
               {new Date(card.expires_at).toLocaleDateString("en-US", {
@@ -105,45 +109,48 @@ export default async function AlphaDetailPage({ params }: Props) {
                 hour: "2-digit",
               })}
             </div>
-          </div>
+          </Card>
         </div>
 
         {/* Pro content sections */}
         <div className="space-y-6">
           <section>
-            <h2 className="text-lg font-semibold mb-2">Thesis</h2>
+            <h2 className="text-lg font-semibold mb-3">Thesis</h2>
             <BlurGate isLocked={isLocked}>
               <p className="text-text-muted leading-relaxed">{card.thesis}</p>
             </BlurGate>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold mb-2">Strategy</h2>
-            <BlurGate isLocked={isLocked}>
+            <h2 className="text-lg font-semibold mb-3">Strategy</h2>
+            {isLocked ? (
+              <InlineUpgradeHint />
+            ) : (
               <p className="text-text-muted leading-relaxed">{card.strategy}</p>
-            </BlurGate>
+            )}
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold mb-2">Risk Factors</h2>
-            <BlurGate isLocked={isLocked}>
+            <h2 className="text-lg font-semibold mb-3">Risk Factors</h2>
+            {isLocked ? (
+              <InlineUpgradeHint />
+            ) : (
               <ul className="list-disc list-inside text-text-muted space-y-1">
                 {card.risk_factors?.map((risk, i) => (
                   <li key={i}>{risk}</li>
                 ))}
               </ul>
-            </BlurGate>
+            )}
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold mb-2">Evidence</h2>
-            <BlurGate isLocked={isLocked}>
+            <h2 className="text-lg font-semibold mb-3">Evidence</h2>
+            {isLocked ? (
+              <InlineUpgradeHint />
+            ) : (
               <div className="space-y-3">
                 {card.evidence?.map((ev) => (
-                  <div
-                    key={ev.tweet_id}
-                    className="bg-surface border border-border rounded-lg p-4"
-                  >
+                  <Card key={ev.tweet_id} padding="compact">
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-mono text-sm text-accent-green">
                         @{ev.author}
@@ -153,31 +160,35 @@ export default async function AlphaDetailPage({ params }: Props) {
                       </span>
                     </div>
                     <p className="text-text-muted text-sm">{ev.snippet}</p>
-                  </div>
+                  </Card>
                 ))}
               </div>
-            </BlurGate>
+            )}
           </section>
 
           {card.friction_detail !== null && (
             <section>
-              <h2 className="text-lg font-semibold mb-2">Friction Detail</h2>
-              <BlurGate isLocked={isLocked}>
+              <h2 className="text-lg font-semibold mb-3">Friction Detail</h2>
+              {isLocked ? (
+                <InlineUpgradeHint />
+              ) : (
                 <p className="text-text-muted leading-relaxed">
                   {card.friction_detail}
                 </p>
-              </BlurGate>
+              )}
             </section>
           )}
 
           {card.opportunity_window !== null && (
             <section>
-              <h2 className="text-lg font-semibold mb-2">Opportunity Window</h2>
-              <BlurGate isLocked={isLocked}>
+              <h2 className="text-lg font-semibold mb-3">Opportunity Window</h2>
+              {isLocked ? (
+                <InlineUpgradeHint />
+              ) : (
                 <p className="text-text-muted leading-relaxed">
                   {card.opportunity_window}
                 </p>
-              </BlurGate>
+              )}
             </section>
           )}
 
@@ -209,12 +220,14 @@ export default async function AlphaDetailPage({ params }: Props) {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {card.blueprint.name_ideas.map((name) => (
-                        <span
+                        <Badge
                           key={name}
-                          className="bg-accent-green/10 text-accent-green border border-accent-green/20 px-3 py-1 rounded-lg font-mono text-sm"
+                          variant="success"
+                          shape="tag"
+                          className="text-sm px-3 py-1"
                         >
                           {name}
-                        </span>
+                        </Badge>
                       ))}
                     </div>
                   </div>
@@ -226,14 +239,11 @@ export default async function AlphaDetailPage({ params }: Props) {
                     </h3>
                     <div className="space-y-4">
                       {card.blueprint.mvp_weeks.map((week) => (
-                        <div
-                          key={week.week}
-                          className="bg-surface border border-border rounded-lg p-4"
-                        >
+                        <Card key={week.week} padding="compact">
                           <div className="flex items-center gap-2 mb-2">
-                            <span className="bg-accent-green/20 text-accent-green text-xs font-mono px-2 py-0.5 rounded">
+                            <Badge variant="success" shape="tag">
                               Week {week.week}
-                            </span>
+                            </Badge>
                             <span className="font-semibold text-sm">
                               {week.goal}
                             </span>
@@ -249,7 +259,7 @@ export default async function AlphaDetailPage({ params }: Props) {
                               </li>
                             ))}
                           </ul>
-                        </div>
+                        </Card>
                       ))}
                     </div>
                   </div>
@@ -261,12 +271,13 @@ export default async function AlphaDetailPage({ params }: Props) {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {card.blueprint.tech_stack.map((tech) => (
-                        <span
+                        <Badge
                           key={tech}
-                          className="bg-surface-elevated text-text text-sm px-3 py-1 rounded-lg font-mono"
+                          shape="tag"
+                          className="text-sm px-3 py-1"
                         >
                           {tech}
-                        </span>
+                        </Badge>
                       ))}
                     </div>
                   </div>

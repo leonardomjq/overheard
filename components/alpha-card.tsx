@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { MomentumBadge } from "./momentum-badge";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { fadeInUp, DURATION } from "@/lib/motion";
 import type { AlphaCard as AlphaCardType } from "@/types";
 
 interface AlphaCardProps {
@@ -26,13 +29,15 @@ const categoryColors: Record<string, string> = {
 export function AlphaCard({ card }: AlphaCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      {...fadeInUp}
       whileHover={{ scale: 1.02, y: -2 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: DURATION.normal }}
     >
       <Link href={`/alpha/${card.id}`}>
-        <div className="bg-white/[0.03] backdrop-blur-xl border border-border rounded-xl p-5 hover:border-accent-green/30 transition-colors cursor-pointer">
+        <Card
+          variant="glass"
+          className="hover:border-accent-green/30 transition-colors cursor-pointer"
+        >
           {/* Header */}
           <div className="flex items-start justify-between mb-3">
             <span
@@ -54,12 +59,9 @@ export function AlphaCard({ card }: AlphaCardProps) {
           {/* Entities */}
           <div className="flex flex-wrap gap-1.5 mb-3">
             {card.entities.map((entity) => (
-              <span
-                key={entity}
-                className="bg-surface-elevated text-text-muted text-xs px-2 py-0.5 rounded font-mono"
-              >
+              <Badge key={entity} shape="tag">
                 {entity}
-              </span>
+              </Badge>
             ))}
           </div>
 
@@ -75,9 +77,9 @@ export function AlphaCard({ card }: AlphaCardProps) {
             <div className="flex items-center gap-2">
               <span>{card.signal_count} signals</span>
               {card.blueprint && (
-                <span className="text-accent-green border border-accent-green/20 bg-accent-green/5 px-1.5 py-0.5 rounded font-mono">
+                <Badge variant="success" shape="tag">
                   // build this
-                </span>
+                </Badge>
               )}
             </div>
             <span>
@@ -88,7 +90,7 @@ export function AlphaCard({ card }: AlphaCardProps) {
               })}
             </span>
           </div>
-        </div>
+        </Card>
       </Link>
     </motion.div>
   );

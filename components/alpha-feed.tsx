@@ -2,8 +2,12 @@
 
 import useSWRInfinite from "swr/infinite";
 import { AlphaCard } from "./alpha-card";
+import { CardSkeleton } from "./card-skeleton";
 import type { AlphaCard as AlphaCardType, AlphaCategory, AlphaDirection } from "@/types";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { Search, Zap, Clock, ArrowDownWideNarrow } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 interface AlphaResponse {
   data: AlphaCardType[];
@@ -28,9 +32,19 @@ const DIRECTIONS: Array<{ value: AlphaDirection | ""; label: string }> = [
   { value: "stable", label: "Stable" },
 ];
 
+type SortOption = "newest" | "momentum" | "expiring";
+
+const SORT_OPTIONS: Array<{ value: SortOption; label: string; Icon: typeof Zap }> = [
+  { value: "newest", label: "Newest", Icon: Clock },
+  { value: "momentum", label: "Highest Momentum", Icon: Zap },
+  { value: "expiring", label: "Expiring Soon", Icon: ArrowDownWideNarrow },
+];
+
 export function AlphaFeed() {
   const [category, setCategory] = useState<string>("");
   const [direction, setDirection] = useState<string>("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState<SortOption>("newest");
 
   const getKey = (pageIndex: number, previousPageData: AlphaResponse | null) => {
     if (previousPageData && !previousPageData.has_more) return null;
@@ -47,14 +61,51 @@ export function AlphaFeed() {
       revalidateFirstPage: false,
     });
 
-  const cards = data?.flatMap((page) => page.data) ?? [];
+  const rawCards = data?.flatMap((page) => page.data) ?? [];
   const hasMore = data?.[data.length - 1]?.has_more ?? false;
   const isEmpty = data?.[0]?.data?.length === 0;
 
+  // Client-side search filter
+  const filtered = useMemo(() => {
+    if (!searchQuery.trim()) return rawCards;
+    const q = searchQuery.toLowerCase();
+    return rawCards.filter(
+      (card) =>
+        card.title.toLowerCase().includes(q) ||
+        card.entities.some((e) => e.toLowerCase().includes(q))
+    );
+  }, [rawCards, searchQuery]);
+
+  // Client-side sort
+  const cards = useMemo(() => {
+    if (sortBy === "newest") return filtered;
+    const sorted = [...filtered];
+    if (sortBy === "momentum") {
+      sorted.sort((a, b) => b.momentum_score - a.momentum_score);
+    } else if (sortBy === "expiring") {
+      sorted.sort(
+        (a, b) =>
+          new Date(a.expires_at).getTime() - new Date(b.expires_at).getTime()
+      );
+    }
+    return sorted;
+  }, [filtered, sortBy]);
+
   return (
     <div>
-      {/* Filters */}
-      <div className="flex flex-wrap gap-4 mb-6">
+      {/* Search */}
+      <div className="mb-4">
+        <Input
+          icon={<Search className="size-4" />}
+          type="text"
+          placeholder="Search by title or entity..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
+
+      {/* Filters + Sort */}
+      <div className="flex flex-wrap items-start gap-4 mb-6">
         <div className="flex items-center gap-2">
           <span className="text-text-muted text-sm">Category:</span>
           <div className="flex gap-1">
@@ -62,7 +113,7 @@ export function AlphaFeed() {
               <button
                 key={cat.value}
                 onClick={() => setCategory(cat.value)}
-                className={`px-3 py-1 rounded-lg text-xs font-mono transition-colors ${
+                className={`px-3 py-1 rounded text-xs font-mono transition-colors ${
                   category === cat.value
                     ? "bg-accent-green/20 text-accent-green border border-accent-green/30"
                     : "bg-surface text-text-muted border border-border hover:border-accent-green/20"
@@ -80,7 +131,7 @@ export function AlphaFeed() {
               <button
                 key={dir.value}
                 onClick={() => setDirection(dir.value)}
-                className={`px-3 py-1 rounded-lg text-xs font-mono transition-colors ${
+                className={`px-3 py-1 rounded text-xs font-mono transition-colors ${
                   direction === dir.value
                     ? "bg-accent-green/20 text-accent-green border border-accent-green/30"
                     : "bg-surface text-text-muted border border-border hover:border-accent-green/20"
@@ -91,22 +142,61 @@ export function AlphaFeed() {
             ))}
           </div>
         </div>
+        <div className="flex items-center gap-2 ml-auto">
+          <span className="text-text-muted text-sm">Sort:</span>
+          <div className="flex gap-1">
+            {SORT_OPTIONS.map((opt) => (
+              <button
+                key={opt.value}
+                onClick={() => setSortBy(opt.value)}
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded text-xs font-mono transition-colors ${
+                  sortBy === opt.value
+                    ? "bg-accent-green/20 text-accent-green border border-accent-green/30"
+                    : "bg-surface text-text-muted border border-border hover:border-accent-green/20"
+                }`}
+              >
+                <opt.Icon className="size-3" />
+                {opt.label}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Error state */}
       {error && (
-        <div className="text-accent-red text-sm bg-accent-red/10 border border-accent-red/30 rounded-lg p-4">
+        <div className="text-accent-red text-sm bg-accent-red/10 border border-accent-red/30 rounded p-4">
           Failed to load alpha cards. Please try again.
         </div>
       )}
 
       {/* Empty state */}
       {isEmpty && !isValidating && (
-        <div className="text-center py-16 text-text-muted">
-          <p className="text-lg mb-2">No alpha cards yet</p>
-          <p className="text-sm">
-            New intelligence briefs are generated every pipeline cycle.
+        <div className="flex flex-col items-center py-20 text-center">
+          <div className="bg-accent-green/10 rounded-full p-4 mb-4">
+            <Zap className="size-8 text-accent-green" />
+          </div>
+          <h3 className="text-lg font-semibold mb-2">
+            Your feed is warming up
+          </h3>
+          <p className="text-text-muted text-sm max-w-md mb-6">
+            ScoutAgent is scanning developer activity and clustering traction
+            signals. Here&apos;s what to expect:
           </p>
+          <ol className="text-left text-sm text-text-muted space-y-2 max-w-sm">
+            <li className="flex items-start gap-2">
+              <span className="text-accent-green font-mono font-bold">1.</span>
+              Traction clusters detected across dev communities
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-accent-green font-mono font-bold">2.</span>
+              Alpha Cards generated with 72-hour time-to-live
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-accent-green font-mono font-bold">3.</span>
+              Pro unlocks full thesis, strategy, and blueprints
+            </li>
+          </ol>
         </div>
       )}
 
@@ -115,18 +205,22 @@ export function AlphaFeed() {
         {cards.map((card) => (
           <AlphaCard key={card.id} card={card} />
         ))}
+        {/* Skeleton loading for next page */}
+        {isValidating &&
+          cards.length > 0 &&
+          Array.from({ length: 3 }).map((_, i) => <CardSkeleton key={`sk-${i}`} />)}
       </div>
 
       {/* Load more */}
       {hasMore && (
         <div className="text-center mt-8">
-          <button
+          <Button
+            variant="secondary"
             onClick={() => setSize(size + 1)}
             disabled={isValidating}
-            className="bg-surface border border-border px-6 py-2 rounded-lg text-sm hover:border-accent-green/30 transition-colors disabled:opacity-50"
           >
             {isValidating ? "Loading..." : "Load more"}
-          </button>
+          </Button>
         </div>
       )}
     </div>
