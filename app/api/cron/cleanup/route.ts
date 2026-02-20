@@ -6,12 +6,18 @@ import { computeFreshness } from "@/lib/refinery/freshness";
 
 export async function POST(request: NextRequest) {
   try {
-    // Bearer token auth
+    // Auth: Accept either Bearer token or x-cron-secret header
     const authHeader = request.headers.get("authorization");
-    const token = authHeader?.replace("Bearer ", "");
-    const expectedToken = process.env.PIPELINE_BEARER_TOKEN;
+    const bearerToken = authHeader?.replace("Bearer ", "");
+    const cronSecret = request.headers.get("x-cron-secret");
 
-    if (!expectedToken || token !== expectedToken) {
+    const expectedBearer = process.env.PIPELINE_BEARER_TOKEN;
+    const expectedCron = process.env.CRON_SECRET;
+
+    const bearerOk = expectedBearer && bearerToken === expectedBearer;
+    const cronOk = expectedCron && cronSecret === expectedCron;
+
+    if (!bearerOk && !cronOk) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
