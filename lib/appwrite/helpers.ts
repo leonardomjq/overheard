@@ -2,6 +2,25 @@ import type { Models, Databases } from "node-appwrite";
 import { DATABASE_ID, COLLECTIONS } from "@/lib/appwrite/collections";
 import type { AlphaCard, AlphaTier } from "@/types";
 
+export function createDefaultProfile(): { tier: string; stripe_customer_id: null } {
+  return { tier: "free", stripe_customer_id: null };
+}
+
+export async function ensureUserProfile(databases: Databases, userId: string): Promise<void> {
+  try {
+    await databases.createDocument(
+      DATABASE_ID,
+      COLLECTIONS.USER_PROFILES,
+      userId,
+      createDefaultProfile()
+    );
+  } catch (err: unknown) {
+    const e = err as { code?: number };
+    if (e.code === 409) return; // Already exists (race condition) — safe to ignore
+    throw err;
+  }
+}
+
 export function toJsonString(obj: unknown): string {
   return JSON.stringify(obj);
 }
