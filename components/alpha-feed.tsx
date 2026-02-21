@@ -4,10 +4,10 @@ import useSWRInfinite from "swr/infinite";
 import { motion } from "framer-motion";
 import { AlphaCard } from "./alpha-card";
 import { CardSkeleton } from "./card-skeleton";
-import type { AlphaCard as AlphaCardType, AlphaCategory, AlphaDirection, AlphaTier } from "@/types";
+import type { AlphaCard as AlphaCardType, AlphaTier } from "@/types";
 import { useCallback, useMemo, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Search, Zap, Clock, ArrowDownWideNarrow, Lock, Twitter, Github, MessageSquare, RefreshCw, ArrowRight } from "lucide-react";
+import { Search, Zap, Clock, Lock, Twitter, Github, MessageSquare, RefreshCw, ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -28,36 +28,25 @@ interface AlphaResponse {
   tier?: AlphaTier;
 }
 
-const CATEGORIES: Array<{ value: AlphaCategory | ""; label: string }> = [
-  { value: "", label: "All" },
-  { value: "velocity_spike", label: "Velocity" },
-  { value: "sentiment_flip", label: "Sentiment" },
-  { value: "friction_cluster", label: "Friction" },
-  { value: "new_emergence", label: "Emerging" },
-];
-
-const DIRECTIONS: Array<{ value: AlphaDirection | ""; label: string }> = [
-  { value: "", label: "All" },
-  { value: "accelerating", label: "Accelerating" },
-  { value: "decelerating", label: "Decelerating" },
-  { value: "new", label: "New" },
-];
-
-type SortOption = "newest" | "strength" | "freshness";
+type SortOption = "newest" | "strength";
 
 const SORT_OPTIONS: Array<{ value: SortOption; label: string; Icon: typeof Zap }> = [
-  { value: "newest", label: "Newest", Icon: Clock },
-  { value: "strength", label: "Strongest Signal", Icon: Zap },
-  { value: "freshness", label: "Most Fresh", Icon: ArrowDownWideNarrow },
+  { value: "newest", label: "Latest", Icon: Clock },
+  { value: "strength", label: "Strongest", Icon: Zap },
 ];
+
+function formatNewest(createdAt: string): string {
+  const h = Math.floor((Date.now() - new Date(createdAt).getTime()) / 3_600_000);
+  if (h < 1) return "just now";
+  if (h === 1) return "1h ago";
+  return `${h}h ago`;
+}
 
 export function AlphaFeed() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
 
-  const category = searchParams.get("category") ?? "";
-  const direction = searchParams.get("direction") ?? "";
   const sortBy = (searchParams.get("sort") as SortOption) || "newest";
 
   const updateParam = useCallback(
@@ -73,16 +62,12 @@ export function AlphaFeed() {
     [searchParams, router]
   );
 
-  const setCategory = (v: string) => updateParam("category", v);
-  const setDirection = (v: string) => updateParam("direction", v);
   const setSortBy = (v: SortOption) => updateParam("sort", v === "newest" ? "" : v);
 
   const getKey = (pageIndex: number, previousPageData: AlphaResponse | null) => {
     if (previousPageData && !previousPageData.has_more) return null;
     const params = new URLSearchParams();
     params.set("limit", "20");
-    if (category) params.set("category", category);
-    if (direction) params.set("direction", direction);
     if (previousPageData?.cursor) params.set("cursor", previousPageData.cursor);
     return `/api/alphas?${params.toString()}`;
   };
@@ -99,6 +84,15 @@ export function AlphaFeed() {
   const isEmpty = data?.[0]?.data?.length === 0;
   const tier = data?.[0]?.tier;
   const isLocked = tier === "free";
+
+  const feedStats = useMemo(() => {
+    if (rawCards.length === 0) return null;
+    return {
+      count: rawCards.length,
+      totalSignals: rawCards.reduce((sum, c) => sum + c.signal_count, 0),
+      newestCreatedAt: rawCards[0].created_at,
+    };
+  }, [rawCards]);
 
   // Client-side search filter
   const filtered = useMemo(() => {
@@ -117,64 +111,42 @@ export function AlphaFeed() {
     const sorted = [...filtered];
     if (sortBy === "strength") {
       sorted.sort((a, b) => b.signal_strength - a.signal_strength);
-    } else if (sortBy === "freshness") {
-      sorted.sort((a, b) => b.freshness_score - a.freshness_score);
     }
     return sorted;
   }, [filtered, sortBy]);
 
   return (
     <div>
+      {/* Dynamic status line */}
+      {!data && !error && (
+        <div className="mb-5">
+          <p className="font-mono text-[10px] text-text-dim uppercase tracking-widest">
+            Scanning...
+          </p>
+        </div>
+      )}
+      {feedStats && (
+        <div className="mb-5">
+          <p className="font-mono text-[10px] text-text-dim uppercase tracking-widest">
+            {feedStats.count} opportunities &middot; {feedStats.totalSignals} signals &middot; latest {formatNewest(feedStats.newestCreatedAt)}
+          </p>
+        </div>
+      )}
+
       {/* Search */}
-      <div className="mb-4">
+      <div className="mb-5">
         <Input
           icon={<Search className="size-4" />}
           type="text"
-          placeholder="Search by title or entity..."
+          placeholder="Search opportunities..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
       </div>
 
-      {/* Filters + Sort */}
-      <div className="flex flex-wrap items-start gap-4 mb-6">
+      {/* Sort */}
+      <div className="flex items-center gap-2 mb-8">
         <div className="flex items-center gap-2">
-          <span className="text-text-muted text-sm">Category:</span>
-          <div className="flex gap-1">
-            {CATEGORIES.map((cat) => (
-              <button
-                key={cat.value}
-                onClick={() => setCategory(cat.value)}
-                className={`px-3 py-1 rounded text-xs font-mono transition-colors ${
-                  category === cat.value
-                    ? "bg-accent-green/20 text-accent-green border border-accent-green/30"
-                    : "bg-surface text-text-muted border border-border hover:border-accent-green/20"
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-text-muted text-sm">Direction:</span>
-          <div className="flex gap-1">
-            {DIRECTIONS.map((dir) => (
-              <button
-                key={dir.value}
-                onClick={() => setDirection(dir.value)}
-                className={`px-3 py-1 rounded text-xs font-mono transition-colors ${
-                  direction === dir.value
-                    ? "bg-accent-green/20 text-accent-green border border-accent-green/30"
-                    : "bg-surface text-text-muted border border-border hover:border-accent-green/20"
-                }`}
-              >
-                {dir.label}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="flex items-center gap-2 ml-auto">
           <span className="text-text-muted text-sm">Sort:</span>
           <div className="flex gap-1">
             {SORT_OPTIONS.map((opt) => (
@@ -195,19 +167,15 @@ export function AlphaFeed() {
         </div>
       </div>
 
-      {/* Aggregate pro awareness banner (free users) */}
-      {isLocked && cards.length > 0 && (
+      {/* Pro awareness banner (free users) */}
+      {isLocked && rawCards.length > 0 && (
         <div className="flex items-center gap-2 mb-4 px-4 py-3 rounded-lg bg-surface border border-border text-sm text-text-muted">
-          <Lock className="size-3.5 shrink-0" />
+          <Lock className="size-3.5 shrink-0 text-accent-green/60" />
           <span className="flex-1">
-            {cards.length >= 8
-              ? `You keep coming back. ${cards.length} opportunities browsed \u2014 unlock the strategy for all of them.`
-              : cards.length >= 4
-                ? `You\u2019ve browsed ${cards.length} opportunities without the full picture. Strategy, risks, and competitive intel are one click away.`
-                : `You\u2019ve browsed ${cards.length} opportunities. Pro unlocks full strategy + risk analysis for every one.`}
+            Each brief has a full strategy behind it — gap analysis, timing window, MVP scope, and who to sell to. That&apos;s the part you&apos;re missing.
           </span>
           <ButtonLink href="/settings" size="sm" className="shrink-0 gap-1.5">
-            Upgrade to Pro
+            Unlock Pro
             <ArrowRight className="size-3" />
           </ButtonLink>
         </div>
@@ -233,14 +201,14 @@ export function AlphaFeed() {
       {isEmpty && !isValidating && <OnboardingState />}
 
       {/* Card grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
         {cards.map((card) => (
           <AlphaCard key={card.id} card={card} isLocked={isLocked} />
         ))}
         {/* Skeleton loading for next page */}
         {isValidating &&
           cards.length > 0 &&
-          Array.from({ length: 3 }).map((_, i) => <CardSkeleton key={`sk-${i}`} />)}
+          Array.from({ length: 2 }).map((_, i) => <CardSkeleton key={`sk-${i}`} />)}
       </div>
 
       {/* Load more */}
@@ -282,6 +250,10 @@ const SAMPLE_CARDS: AlphaCardType[] = [
     evidence: null,
     competitive_landscape: null,
     opportunity_type: null,
+    mvp_scope: null,
+    monetization_angle: null,
+    target_buyer: null,
+    distribution_channels: null,
     cluster_id: "00000000-0000-0000-0000-000000000001",
   },
   {
@@ -304,6 +276,10 @@ const SAMPLE_CARDS: AlphaCardType[] = [
     evidence: null,
     competitive_landscape: null,
     opportunity_type: null,
+    mvp_scope: null,
+    monetization_angle: null,
+    target_buyer: null,
+    distribution_channels: null,
     cluster_id: "00000000-0000-0000-0000-000000000002",
   },
 ];
@@ -393,7 +369,7 @@ function OnboardingState() {
           <div className="h-px flex-1 bg-border" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
           {SAMPLE_CARDS.map((card) => (
             <motion.div
               key={card.id}
@@ -401,7 +377,8 @@ function OnboardingState() {
             >
               <Card
                 variant="default"
-                className="texture-paper border-accent-green/30 relative opacity-80"
+                padding="spacious"
+                className="texture-paper border-accent-green/30 relative opacity-80 h-full flex flex-col"
               >
                 {/* Sample badge */}
                 <Badge
@@ -413,7 +390,7 @@ function OnboardingState() {
                 </Badge>
 
                 {/* Header */}
-                <div className="flex items-start justify-between mb-3 pr-16">
+                <div className="flex items-start justify-between mb-4 pr-16">
                   <span
                     className={`text-[10px] font-mono uppercase tracking-widest ${categoryColors[card.category] ?? "text-text-muted"}`}
                   >
@@ -426,12 +403,12 @@ function OnboardingState() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-2 leading-snug">
+                <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold mb-3 leading-snug">
                   {card.title}
                 </h3>
 
                 {/* Entities */}
-                <div className="flex flex-wrap gap-1.5 mb-3">
+                <div className="flex flex-wrap gap-1.5 mb-4">
                   {card.entities.map((entity) => (
                     <Badge key={entity} shape="tag">
                       {entity}
@@ -440,7 +417,7 @@ function OnboardingState() {
                 </div>
 
                 {/* Thesis */}
-                <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm line-clamp-2 mb-3">
+                <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm line-clamp-2 leading-relaxed">
                   {card.thesis}
                 </p>
 
@@ -462,8 +439,11 @@ function OnboardingState() {
                   </div>
                 </div>
 
+                {/* Spacer */}
+                <div className="flex-1" />
+
                 {/* Footer */}
-                <div className="flex items-center justify-between text-xs text-text-muted mt-3">
+                <div className="flex items-center justify-between text-xs text-text-muted pt-3 mt-4 border-t border-text-dim/20">
                   <span>{card.signal_count} signals</span>
                   <Badge variant="success" shape="tag">
                     {card.status}
