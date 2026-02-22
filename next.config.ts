@@ -1,11 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    serverActions: {
-      bodySizeLimit: "2mb",
-    },
-  },
   async headers() {
     return [
       {
@@ -30,8 +25,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https:",
               "font-src 'self' https://fonts.gstatic.com",
-              "connect-src 'self' https://*.appwrite.cloud https://plausible.io https://api.stripe.com",
-              "frame-src https://js.stripe.com https://hooks.stripe.com",
+              "connect-src 'self' https://plausible.io",
               "frame-ancestors 'none'",
             ].join("; "),
           },

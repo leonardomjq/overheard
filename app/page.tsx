@@ -1,62 +1,45 @@
-import { redirect } from "next/navigation";
-import Link from "next/link";
-import { getLoggedInUser } from "@/lib/appwrite/server";
-import { IntelligenceBriefing } from "@/components/landing/intelligence-briefing";
-import { ProblemAgitation } from "@/components/landing/problem-agitation";
-import { AlphaCardsShowcase } from "@/components/landing/alpha-cards-showcase";
-import { PipelineScroll } from "@/components/landing/pipeline-scroll";
-import { SocialProof } from "@/components/landing/social-proof";
-import { Pricing } from "@/components/landing/pricing";
-import { FinalCta } from "@/components/landing/final-cta";
-import { LandingFooter } from "@/components/landing/landing-footer";
-import { StickyCta } from "@/components/landing/sticky-cta";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
+import { CardGrid } from "@/components/card-grid";
+import { getLatestData } from "@/lib/data";
 
-export default async function LandingPage() {
-  const user = await getLoggedInUser();
-  // getLoggedInUser() auto-cleans stale cookies when session is expired
-  if (user) redirect("/feed");
+export default function HomePage() {
+  const data = getLatestData();
+
+  if (!data) {
+    return (
+      <div className="min-h-screen flex flex-col">
+        <SiteHeader />
+        <main className="flex-1 flex items-center justify-center px-6">
+          <p className="text-text-muted font-mono text-sm">
+            No cards yet. Check back tomorrow.
+          </p>
+        </main>
+        <SiteFooter />
+      </div>
+    );
+  }
+
+  const uniqueSources = new Set(data.cards.flatMap((c) => c.sources));
 
   return (
-    <div className="landing-page min-h-screen flex flex-col bg-surface overflow-x-hidden">
-      {/* Header */}
-      <header className="sticky top-0 bg-surface/80 backdrop-blur-md z-sticky border-b border-text-dim/20 px-6 py-4 flex items-center justify-between">
-        <div className="font-mono text-xs uppercase tracking-widest text-text">
-          Scout<span className="text-text-dim">Agent</span>
+    <div className="min-h-screen flex flex-col">
+      <SiteHeader />
+      <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-12">
+        {/* Date header */}
+        <div className="mb-10">
+          <h1 className="font-[family-name:var(--font-display)] text-3xl font-bold mb-2">
+            Today&apos;s Opportunities
+          </h1>
+          <p className="text-text-muted text-sm font-mono">
+            {data.date} &middot; {data.cards.length} cards &middot;{" "}
+            {uniqueSources.size} sources
+          </p>
         </div>
-        <div className="flex items-center gap-6">
-          <a
-            href="#pricing"
-            className="font-mono text-xs text-text-muted hover:text-text transition-colors hidden sm:block"
-          >
-            Pricing
-          </a>
-          <Link
-            href="/login"
-            className="font-mono text-xs text-text-muted hover:text-text transition-colors"
-          >
-            Log in
-          </Link>
-          <Link
-            href="/signup"
-            className="font-mono text-xs font-medium bg-accent-green text-[#0A0A0A] px-4 py-1.5 rounded hover:opacity-90 transition-opacity"
-          >
-            Start Free
-          </Link>
-        </div>
-      </header>
 
-      {/* AIDA Funnel Sections */}
-      <IntelligenceBriefing />
-      <ProblemAgitation />
-      <AlphaCardsShowcase />
-      <PipelineScroll />
-      <SocialProof />
-      <Pricing />
-      <FinalCta />
-      <LandingFooter />
-
-      {/* Floating CTA */}
-      <StickyCta />
+        <CardGrid cards={data.cards} />
+      </main>
+      <SiteFooter />
     </div>
   );
 }

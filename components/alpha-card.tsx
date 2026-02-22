@@ -2,48 +2,31 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Lock } from "lucide-react";
-import { MomentumBadge } from "./momentum-badge";
-import { BookmarkButton } from "./bookmark-button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { fadeInUp, DURATION } from "@/lib/motion";
 import type { AlphaCard as AlphaCardType } from "@/types";
 
-function getHoursAgo(createdAt: string): number {
-  const created = new Date(createdAt).getTime();
-  return Math.floor((Date.now() - created) / (1000 * 60 * 60));
-}
-
 interface AlphaCardProps {
   card: AlphaCardType;
-  isLocked?: boolean;
 }
 
-const categoryLabels: Record<string, string> = {
-  velocity_spike: "Velocity Spike",
-  sentiment_flip: "Sentiment Flip",
-  friction_cluster: "Friction Cluster",
-  new_emergence: "New Emergence",
-};
-
 const categoryColors: Record<string, string> = {
-  velocity_spike: "text-accent-blue",
-  sentiment_flip: "text-accent-amber",
-  friction_cluster: "text-accent-red",
-  new_emergence: "text-accent-green",
+  "developer-tools": "text-accent-blue",
+  "ai-ml": "text-accent-amber",
+  saas: "text-accent-green",
+  infrastructure: "text-accent-red",
+  "business-model": "text-text-muted",
 };
 
-const statusColors: Record<string, string> = {
-  fresh: "text-accent-green",
-  warm: "text-accent-amber",
-  cold: "text-text-muted",
-  archived: "text-border",
+const sourceIcons: Record<string, string> = {
+  hackernews: "HN",
+  reddit: "R",
+  github: "GH",
+  producthunt: "PH",
 };
 
-export function AlphaCard({ card, isLocked }: AlphaCardProps) {
-  const hoursAgo = getHoursAgo(card.created_at);
-
+export function AlphaCard({ card }: AlphaCardProps) {
   return (
     <motion.div
       {...fadeInUp}
@@ -51,7 +34,7 @@ export function AlphaCard({ card, isLocked }: AlphaCardProps) {
       transition={{ duration: DURATION.normal }}
       className="h-full"
     >
-      <Link href={`/alpha/${card.id}`} className="h-full">
+      <Link href={`/card/${card.id}`} className="h-full">
         <Card
           variant="default"
           padding="spacious"
@@ -62,12 +45,14 @@ export function AlphaCard({ card, isLocked }: AlphaCardProps) {
             <span
               className={`text-[10px] font-mono uppercase tracking-widest ${categoryColors[card.category] ?? "text-text-muted"}`}
             >
-              {categoryLabels[card.category] ?? card.category}
+              {card.category.replace("-", " ")}
             </span>
-            <MomentumBadge
-              score={card.signal_strength}
-              direction={card.direction}
-            />
+            <Badge
+              variant={card.signal_strength >= 7 ? "success" : "default"}
+              shape="pill"
+            >
+              {card.signal_strength}/10
+            </Badge>
           </div>
 
           {/* Title */}
@@ -75,45 +60,26 @@ export function AlphaCard({ card, isLocked }: AlphaCardProps) {
             {card.title}
           </h3>
 
-          {/* Entities */}
-          <div className="flex flex-wrap gap-1.5 mb-4">
-            {card.entities.map((entity) => (
-              <Badge key={entity} shape="tag">
-                {entity}
-              </Badge>
-            ))}
-          </div>
-
-          {/* Thesis (now free tier) */}
-          {card.thesis && (
-            <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm line-clamp-2 leading-relaxed">
-              {card.thesis}
-            </p>
-          )}
+          {/* Thesis */}
+          <p className="font-[family-name:var(--font-serif)] text-text-muted text-sm line-clamp-2 leading-relaxed">
+            {card.thesis}
+          </p>
 
           {/* Spacer */}
           <div className="flex-1" />
 
           {/* Footer */}
           <div className="flex items-center justify-between text-xs text-text-muted pt-3 mt-4 border-t border-text-dim/20">
-            <div className="flex items-center gap-2">
-              <span className="font-mono text-text-dim">{hoursAgo}h ago</span>
-              <span>{card.signal_count} signals</span>
-              <BookmarkButton cardId={card.id} />
-            </div>
-            <div className="flex items-center gap-2">
-              {isLocked && (
-                <span className="inline-flex items-center gap-1 font-mono">
-                  <Lock className="size-3" />
-                  +10 Pro sections
+            <span className="font-mono">{card.signal_count} signals</span>
+            <div className="flex items-center gap-1.5">
+              {card.sources.map((s) => (
+                <span
+                  key={s}
+                  className="font-mono text-[10px] text-text-dim bg-surface-elevated px-1.5 py-0.5 rounded"
+                >
+                  {sourceIcons[s] ?? s}
                 </span>
-              )}
-              <Badge
-                variant={card.status === "fresh" ? "success" : "default"}
-                shape="tag"
-              >
-                {card.status}
-              </Badge>
+              ))}
             </div>
           </div>
         </Card>

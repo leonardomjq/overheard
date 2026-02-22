@@ -1,3 +1,6 @@
+# raw signals (temp file, regenerated daily)
+data/signals-raw.json
+
 # dependencies
 /node_modules
 /.pnp
@@ -42,6 +45,12 @@ next-env.d.ts
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# local dev notes
+/memory/
+
+# experiment data (one-off, not part of the product)
+scripts/experiment-data.json
 
 # Claude Code
 .claude/

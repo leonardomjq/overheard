@@ -21,7 +21,7 @@ export function Logo({ size = "sm", href, className }: LogoProps) {
         className
       )}
     >
-      Scout<span className="text-text-dim">Agent</span>
+      Scout<span className="text-text-dim">Daily</span>
     </span>
   );
 

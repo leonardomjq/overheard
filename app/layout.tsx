@@ -29,30 +29,30 @@ const ibmPlexSerif = IBM_Plex_Serif({
   variable: "--font-serif",
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://scoutagent.app";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://scout-daily.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "ScoutAgent — Know What to Build Next",
-    template: "%s | ScoutAgent",
+    default: "Scout Daily — Free Opportunity Briefs for Builders",
+    template: "%s | Scout Daily",
   },
   description:
-    "Your AI venture analyst. ScoutAgent scans thousands of conversations to spot demand spikes, market gaps, and emerging opportunities — then delivers actionable business briefs before markets get crowded.",
+    "Daily AI-generated opportunity briefs from HN, Reddit, GitHub, and Product Hunt. Free, open-source market signals for founders and builders.",
   openGraph: {
-    title: "ScoutAgent — Know What to Build Next",
+    title: "Scout Daily — Free Opportunity Briefs for Builders",
     description:
-      "AI-powered opportunity briefs delivered in 72 hours. Spot demand spikes, market gaps, and emerging opportunities before markets get crowded.",
+      "Daily AI-generated opportunity briefs synthesized from thousands of conversations across HN, Reddit, GitHub, and Product Hunt.",
     url: BASE_URL,
-    siteName: "ScoutAgent",
+    siteName: "Scout Daily",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ScoutAgent — Know What to Build Next",
+    title: "Scout Daily — Free Opportunity Briefs for Builders",
     description:
-      "AI-powered opportunity briefs delivered in 72 hours. Spot demand spikes, market gaps, and emerging opportunities before markets get crowded.",
+      "Daily AI-generated opportunity briefs synthesized from thousands of conversations across HN, Reddit, GitHub, and Product Hunt.",
   },
   robots: {
     index: true,

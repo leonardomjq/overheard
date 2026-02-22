@@ -1,8 +1,8 @@
 {
-  "name": "scout-agent",
-  "version": "1.0.0",
+  "name": "scout-daily",
+  "version": "2.0.0",
   "private": true,
-  "description": "Venture intelligence platform — monitors what developers are building and shipping, spots where traction is clustering, and delivers actionable opportunity briefs",
+  "description": "Daily AI-generated opportunity briefs from HN, Reddit, GitHub, and Product Hunt",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,12 +13,11 @@
   },
   "homepage": "https://github.com/leonardomjq/scout-agent#readme",
   "keywords": [
-    "venture-intelligence",
-    "ai-pipeline",
     "market-signals",
+    "opportunity-briefs",
+    "alpha-cards",
     "nextjs",
-    "appwrite",
-    "anthropic"
+    "gemini"
   ],
   "engines": {
     "node": ">=22",
@@ -28,44 +27,34 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "test": "vitest run",
-    "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "test:e2e": "playwright test"
+    "fetch": "tsx scripts/fetch-signals.ts",
+    "generate": "tsx scripts/generate-cards.ts",
+    "daily": "tsx scripts/daily.ts"
   },
   "packageManager": "pnpm@10.28.0",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.76.0",
+    "@google/generative-ai": "^0.24.0",
     "@tailwindcss/postcss": "^4.2.0",
     "@types/node": "^25.2.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@upstash/ratelimit": "^2.0.8",
-    "@upstash/redis": "^1.36.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.34.2",
     "lucide-react": "^0.574.0",
     "next": "^16.1.6",
-    "node-appwrite": "^16.0.0",
-    "p-limit": "^7.3.0",
     "postcss": "^8.5.6",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "stripe": "^20.3.1",
-    "swr": "^2.4.0",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.0",
     "typescript": "^5.9.3",
-    "uuid": "^13.0.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.2",
-    "@types/uuid": "^11.0.0",
     "@vitejs/plugin-react": "^5.1.4",
     "jsdom": "^28.1.0",
+    "tsx": "^4.19.0",
     "vitest": "^4.0.18"
   }
 }
