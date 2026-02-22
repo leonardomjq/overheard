@@ -1,6 +1,6 @@
-# ScoutAgent Design System
+# Scout Daily Design System
 
-Dark, warm, sophisticated. Teal-green signal accents. Intelligence briefing aesthetic.
+Dark, warm, minimal. Teal-green accents. Content-first reading experience.
 
 ---
 
@@ -19,7 +19,7 @@ All colors are CSS custom properties defined in `app/globals.css` via `@theme`.
 | `text-muted` | `#8A9EA0` | Secondary text (blue-gray) |
 | `text-dim` | `#525252` | Labels, dividers, timestamps |
 | `accent-green` | `#00E5B3` | Primary accent — signals, CTAs, success |
-| `accent-orange` | `#FF6B35` | Urgency, deadlines, scarcity |
+| `accent-orange` | `#FF6B35` | Secondary accent, emphasis |
 | `accent-red` | `#FF3366` | Errors, danger, negative signals |
 | `accent-amber` | `#FFB800` | Warnings, caution |
 | `accent-blue` | `#00AAFF` | Info, links, neutral highlights |
@@ -81,7 +81,7 @@ Consistent padding/gap patterns:
 |-------|-------|-------|
 | `shadow-subtle` | `0 1px 2px rgba(0,0,0,0.4)` | Slight depth |
 | `shadow-elevated` | `0 4px 12px rgba(0,0,0,0.5)` | Floating elements |
-| `shadow-glow` | `0 0 30px -10px rgba(0,229,179,0.15)` | Accent glow (Pro cards, CTAs) |
+| `shadow-glow` | `0 0 30px -10px rgba(0,229,179,0.15)` | Accent glow (emphasis, hover states) |
 
 Custom glow: `shadow-[0_0_40px_-10px_rgba(0,229,179,0.15)]` for larger glow radius.
 
@@ -97,7 +97,7 @@ Utility classes for subtle background patterns:
 | `texture-paper` | Horizontal scan lines (0.02 opacity) |
 | `texture-noise` | Fractal noise grain (0.04 opacity) |
 
-Apply to cards and sections for the intelligence-briefing feel. `texture-paper` is most common on landing cards.
+Apply to cards and sections for subtle depth. `texture-paper` is most common on content cards.
 
 ---
 
@@ -181,18 +181,6 @@ All components in `components/ui/`. Use `cn()` from `@/lib/utils` for class merg
   </p>
   {/* Content */}
 </section>
-```
-
-### Tier gating (blur gate)
-```tsx
-<div className="relative border-t border-text-dim/20">
-  <div className="blur-sm select-none pointer-events-none" aria-hidden>
-    {/* Pro content skeleton */}
-  </div>
-  <div className="absolute inset-0 flex items-center justify-center">
-    {/* Lock + upgrade CTA */}
-  </div>
-</div>
 ```
 
 ### Responsive breakpoints
