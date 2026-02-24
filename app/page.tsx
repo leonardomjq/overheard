@@ -3,6 +3,8 @@ import { SiteFooter } from "@/components/site-footer";
 import { CardGrid } from "@/components/card-grid";
 import { Sidebar } from "@/components/sidebar";
 import { DateNav } from "@/components/date-nav";
+import { JsonLd } from "@/components/json-ld";
+import { buildCollectionPageSchema } from "@/lib/json-ld";
 import { getLatestData } from "@/lib/data";
 
 export default function HomePage() {
@@ -24,6 +26,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <JsonLd data={buildCollectionPageSchema(data.date, data.cards)} />
       <SiteHeader date={data.date} />
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-8">
         {/* Hero */}
@@ -41,7 +44,7 @@ export default function HomePage() {
             <DateNav date={data.date} />
           </div>
           <div className="lg:sticky lg:top-14 lg:self-start">
-            <Sidebar date={data.date} cards={data.cards} isLatest />
+            <Sidebar date={data.date} isLatest />
           </div>
         </div>
       </main>

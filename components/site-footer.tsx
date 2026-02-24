@@ -14,12 +14,42 @@ export function SiteFooter() {
               AI-generated briefs &middot; Not financial advice
             </span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap">
             <a
               href="/about"
               className="hover:text-text transition-colors"
             >
-              Methodology
+              About
+            </a>
+            <a
+              href="/faq"
+              className="hover:text-text transition-colors"
+            >
+              FAQ
+            </a>
+            <a
+              href="/glossary"
+              className="hover:text-text transition-colors"
+            >
+              Glossary
+            </a>
+            <a
+              href="/archive"
+              className="hover:text-text transition-colors"
+            >
+              Archive
+            </a>
+            <a
+              href="/privacy"
+              className="hover:text-text transition-colors"
+            >
+              Privacy
+            </a>
+            <a
+              href="/terms"
+              className="hover:text-text transition-colors"
+            >
+              Terms
             </a>
             <a
               href="https://github.com/leonardomjq/scout-agent"

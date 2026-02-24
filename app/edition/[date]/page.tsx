@@ -5,7 +5,10 @@ import { SiteFooter } from "@/components/site-footer";
 import { CardGrid } from "@/components/card-grid";
 import { Sidebar } from "@/components/sidebar";
 import { DateNav } from "@/components/date-nav";
+import { JsonLd } from "@/components/json-ld";
+import { buildCollectionPageSchema } from "@/lib/json-ld";
 import { getAllDates, getDailyData } from "@/lib/data";
+import { getCategoryLabel } from "@/lib/categories";
 
 interface Props {
   params: Promise<{ date: string }>;
@@ -27,9 +30,19 @@ function formatDate(dateStr: string): string {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { date } = await params;
+  const data = getDailyData(date);
+  const cardCount = data?.cards.length ?? 0;
+  const topCategories = data
+    ? [...new Set(data.cards.map((c) => c.category))].slice(0, 3).map(getCategoryLabel).join(", ")
+    : "";
+  const description = cardCount > 0
+    ? `${cardCount} opportunity briefs from ${formatDate(date)} covering ${topCategories}.`
+    : `Opportunity briefs from ${formatDate(date)}.`;
+
   return {
     title: `Edition — ${formatDate(date)}`,
-    description: `Opportunity briefs from ${formatDate(date)}.`,
+    description,
+    alternates: { canonical: `/edition/${date}` },
   };
 }
 
@@ -43,6 +56,7 @@ export default async function EditionPage({ params }: Props) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <JsonLd data={buildCollectionPageSchema(date, data.cards)} />
       <SiteHeader date={date} />
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-8">
         <div className="mb-8">
@@ -58,7 +72,7 @@ export default async function EditionPage({ params }: Props) {
             <DateNav date={date} />
           </div>
           <div className="lg:sticky lg:top-14 lg:self-start">
-            <Sidebar date={date} cards={data.cards} isLatest={isLatest} />
+            <Sidebar date={date} isLatest={isLatest} />
           </div>
         </div>
       </main>

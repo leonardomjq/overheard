@@ -18,17 +18,17 @@ export function AlphaCard({ card }: AlphaCardProps) {
   const uniqueSources = new Set(card.sources);
 
   return (
-    <article className="bg-surface border border-border p-5 rounded-lg transition-colors hover:border-border-strong">
-      {/* Category */}
+    <article className="relative bg-surface border border-border p-5 rounded-lg transition-colors hover:border-border-strong">
+      {/* Category — sits above the stretched link */}
       <Link
         href={`/category/${card.category}`}
-        className="text-[10px] font-mono uppercase tracking-widest text-text-dim mb-3 block hover:text-accent transition-colors"
+        className="relative z-10 text-[10px] font-mono uppercase tracking-widest text-text-dim mb-3 block hover:text-accent transition-colors"
       >
         {card.category.replace(/-/g, " ")}
       </Link>
 
-      {/* Title — scan layer */}
-      <Link href={`/card/${card.id}`} className="block">
+      {/* Title — stretched link covers entire card */}
+      <Link href={`/card/${card.id}`} className="block after:absolute after:inset-0">
         <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold leading-snug mb-2">
           {card.title}
         </h3>
@@ -64,12 +64,9 @@ export function AlphaCard({ card }: AlphaCardProps) {
       </div>
 
       {/* Footer */}
-      <Link
-        href={`/card/${card.id}`}
-        className="text-[10px] font-mono text-text-dim pt-3 mt-3 border-t border-border block hover:text-text-muted transition-colors"
-      >
+      <div className="text-[10px] font-mono text-text-dim pt-3 mt-3 border-t border-border">
         {card.evidence.length} evidence &middot; {uniqueSources.size} sources
-      </Link>
+      </div>
     </article>
   );
 }

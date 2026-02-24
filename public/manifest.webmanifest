@@ -1,0 +1,21 @@
+{
+  "name": "Scout Daily",
+  "short_name": "Scout Daily",
+  "description": "Daily AI-generated opportunity briefs from HN, Reddit, GitHub, and Product Hunt.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#7b8ab8",
+  "background_color": "#1a1a1f",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

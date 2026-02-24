@@ -1,63 +1,52 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — ScoutAgent",
+  title: "Privacy Policy",
+  alternates: { canonical: "/privacy" },
 };
 
 const sections = [
   {
     label: "01",
-    title: "Information We Collect",
+    title: "Information Scout Daily Collects",
     content:
-      "We collect your email address and password (hashed) when you create an account. We also collect usage data such as pages visited and features used to improve the service. We do not collect information beyond what's necessary to provide ScoutAgent.",
+      "Scout Daily collects only your email address, and only if you voluntarily sign up to receive daily briefs. No accounts, passwords, or personal profiles are created. No information is collected from visitors who browse the site without signing up.",
   },
   {
     label: "02",
-    title: "How We Use Your Data",
+    title: "How Email Addresses Are Used",
     content:
-      "Your account information is used to authenticate you and manage your subscription. Usage data helps us improve the product and understand which features provide the most value. We never sell your personal data to third parties.",
+      "Email addresses are used solely to send daily opportunity briefs. Scout Daily does not sell, share, or rent email addresses to third parties. You can unsubscribe at any time.",
   },
   {
     label: "03",
-    title: "Data Processing (AI)",
+    title: "Data Processing and AI",
     content:
-      "ScoutAgent uses AI models (Anthropic Claude) to analyze publicly available conversations from platforms like Twitter/X, GitHub, Hacker News, and Reddit. This analysis generates Alpha Cards — opportunity briefs based on market signals. Your personal data is not used to train AI models.",
+      "Scout Daily uses Google Gemini Flash to generate opportunity briefs from publicly available conversations on Hacker News, Reddit, GitHub, and Product Hunt. No personal data is sent to AI models. The AI processes only public discussion content to identify trends and opportunities.",
   },
   {
     label: "04",
-    title: "Payment Processing (Stripe)",
+    title: "Analytics",
     content:
-      "All payment processing is handled by Stripe. We never store your credit card details on our servers. Stripe's privacy policy governs how your payment information is handled. We store only your Stripe customer ID and subscription status.",
+      "Scout Daily uses Plausible Analytics, a privacy-friendly, cookie-free analytics service. No personal data is collected, no cookies are set, and all data is aggregated. Plausible is compliant with GDPR, CCPA, and PECR.",
   },
   {
     label: "05",
-    title: "Cookies & Sessions",
+    title: "Data Storage",
     content:
-      "We use a single session cookie (scout_session) to keep you logged in. We do not use tracking cookies, advertising cookies, or third-party analytics cookies. Our analytics solution (if any) is privacy-friendly and cookieless.",
+      "Opportunity briefs (Alpha Cards) are stored as JSON files in a public GitHub repository. Subscriber email addresses are stored in a private file on the server and are not committed to the public repository.",
   },
   {
     label: "06",
-    title: "Data Retention",
+    title: "Your Rights",
     content:
-      "Alpha Cards have a 72-hour primary detection window and follow a freshness lifecycle: fresh (under 12 hours), warm (12-48 hours), cold (48 hours to 7 days), then archived. Archived cards are periodically cleaned up. Your account data is retained as long as your account is active.",
+      "You can request deletion of your email address at any time by contacting the email below. Since Scout Daily does not collect any other personal data, there is nothing else to delete, export, or correct.",
   },
   {
     label: "07",
-    title: "Your Rights (GDPR)",
-    content:
-      "You have the right to: access your personal data, correct inaccurate data, request deletion of your data, export your data in a portable format, and object to data processing. To exercise these rights, contact us at the email below.",
-  },
-  {
-    label: "08",
-    title: "Account Deletion",
-    content:
-      "You can request account deletion at any time by contacting us. Upon deletion, we remove your account data, subscription records, and any associated profile information. Some anonymized usage data may be retained for service improvement.",
-  },
-  {
-    label: "09",
     title: "Contact",
     content:
-      "For privacy-related questions or to exercise your data rights, contact us at privacy@scoutagent.com.",
+      "For privacy-related questions or to request email deletion, contact leonardo@scoutdaily.com.",
   },
 ];
 

@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { JsonLd } from "@/components/json-ld";
+import { buildAboutPageSchema } from "@/lib/json-ld";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "About",
   description: "How Scout Daily works — data sources, methodology, and who built it.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col">
+      <JsonLd data={buildAboutPageSchema()} />
       <SiteHeader />
       <main className="flex-1 max-w-3xl mx-auto w-full px-6 py-8">
         <h1 className="font-[family-name:var(--font-display)] text-3xl font-bold mb-10">
@@ -18,6 +23,25 @@ export default function AboutPage() {
         </h1>
 
         <div className="space-y-8">
+          {/* Key Facts — entity-dense, extractable */}
+          <section className="bg-surface-inset rounded-lg p-5">
+            <h2 className="font-mono text-xs uppercase tracking-widest text-text-dim mb-3">
+              Key Facts
+            </h2>
+            <dl className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+              <dt className="text-text-muted">Data sources</dt>
+              <dd className="text-text">Hacker News, Reddit, GitHub, Product Hunt</dd>
+              <dt className="text-text-muted">Updated</dt>
+              <dd className="text-text">Daily at 8 AM UTC</dd>
+              <dt className="text-text-muted">AI model</dt>
+              <dd className="text-text">Google Gemini Flash</dd>
+              <dt className="text-text-muted">Cost</dt>
+              <dd className="text-text">Free, open source (MIT)</dd>
+              <dt className="text-text-muted">Created by</dt>
+              <dd className="text-text">Leonardo Jaques</dd>
+            </dl>
+          </section>
+
           <section>
             <h2 className="font-mono text-xs uppercase tracking-widest text-text-muted mb-3">
               What this is
@@ -124,6 +148,32 @@ export default function AboutPage() {
               .
             </p>
           </section>
+          {/* Cross-links */}
+          <div className="pt-4 border-t border-border">
+            <h2 className="font-mono text-xs uppercase tracking-widest text-text-dim mb-4">
+              More
+            </h2>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/faq"
+                className="text-sm text-text-muted hover:text-accent transition-colors underline underline-offset-2"
+              >
+                Frequently asked questions
+              </Link>
+              <Link
+                href="/glossary"
+                className="text-sm text-text-muted hover:text-accent transition-colors underline underline-offset-2"
+              >
+                Glossary of terms
+              </Link>
+              <Link
+                href="/archive"
+                className="text-sm text-text-muted hover:text-accent transition-colors underline underline-offset-2"
+              >
+                Browse all editions
+              </Link>
+            </div>
+          </div>
         </div>
       </main>
       <SiteFooter />

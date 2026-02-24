@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter, JetBrains_Mono, Space_Grotesk, IBM_Plex_Serif } from "next/font/google";
 import { ToastProvider } from "@/components/toast";
+import { JsonLd } from "@/components/json-ld";
+import { buildWebSiteSchema, buildOrganizationSchema } from "@/lib/json-ld";
 import "./globals.css";
 
 const inter = Inter({
@@ -58,6 +60,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/manifest.webmanifest",
+  alternates: { canonical: "/" },
 };
 
 export default function RootLayout({
@@ -71,6 +82,14 @@ export default function RootLayout({
       className={`dark ${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} ${ibmPlexSerif.variable}`}
     >
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Scout Daily RSS Feed"
+          href="/feed.xml"
+        />
+        <JsonLd data={buildWebSiteSchema()} />
+        <JsonLd data={buildOrganizationSchema()} />
         {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
           <Script
             defer

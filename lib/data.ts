@@ -55,3 +55,26 @@ export function getAdjacentDates(date: string): { prev: string | null; next: str
 export function getAllCards(): AlphaCard[] {
   return getAllDates().flatMap((date) => getDailyData(date)?.cards ?? []);
 }
+
+/** Get all unique category slugs across all cards */
+export function getAllCategories(): string[] {
+  const categories = new Set<string>();
+  for (const card of getAllCards()) {
+    categories.add(card.category);
+  }
+  return Array.from(categories).sort();
+}
+
+/** Get all cards for a given category slug */
+export function getCardsByCategory(slug: string): AlphaCard[] {
+  return getAllCards().filter((card) => card.category === slug);
+}
+
+/** Get related cards in the same category, excluding the current card */
+export function getRelatedCards(cardId: string, limit = 3): AlphaCard[] {
+  const card = getCardById(cardId);
+  if (!card) return [];
+  return getCardsByCategory(card.category)
+    .filter((c) => c.id !== cardId)
+    .slice(0, limit);
+}

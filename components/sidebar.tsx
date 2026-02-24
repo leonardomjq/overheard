@@ -1,12 +1,10 @@
 import { Github, Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
-import type { AlphaCard } from "@/types";
 import { NextEditionCountdown } from "@/components/next-edition-countdown";
 import { EmailSignup } from "@/components/email-signup";
 
 interface SidebarProps {
   date: string;
-  cards: AlphaCard[];
   isLatest?: boolean;
 }
 
@@ -27,15 +25,7 @@ function formatDate(dateStr: string): string {
   });
 }
 
-export function Sidebar({ date, cards, isLatest = true }: SidebarProps) {
-  // Compute source evidence counts
-  const sourceCounts: Record<string, number> = {};
-  for (const card of cards) {
-    for (const ev of card.evidence) {
-      sourceCounts[ev.source] = (sourceCounts[ev.source] ?? 0) + 1;
-    }
-  }
-
+export function Sidebar({ date, isLatest = true }: SidebarProps) {
   return (
     <aside className="space-y-5">
       {/* Date */}
@@ -63,22 +53,14 @@ export function Sidebar({ date, cards, isLatest = true }: SidebarProps) {
           Sources
         </span>
         <div className="space-y-1.5">
-          {Object.entries(sourceConfig).map(([key, { label, icon, color }]) => {
-            const count = sourceCounts[key] ?? 0;
-            return (
-              <div key={key} className="flex items-center justify-between text-sm">
-                <div className="flex items-center gap-2">
+          {Object.entries(sourceConfig).map(([key, { label, icon, color }]) => (
+              <div key={key} className="flex items-center gap-2 text-sm">
                   <span className={cn("font-mono text-xs font-bold w-5", color)}>
                     {icon}
                   </span>
                   <span className="text-text-muted">{label}</span>
-                </div>
-                <span className="font-mono text-xs text-text-dim">
-                  {count}
-                </span>
               </div>
-            );
-          })}
+            ))}
         </div>
       </div>
 
@@ -95,7 +77,13 @@ export function Sidebar({ date, cards, isLatest = true }: SidebarProps) {
       <div className="h-px bg-border" />
 
       {/* Links */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 flex-wrap">
+        <a
+          href="/archive"
+          className="font-mono text-xs text-text-muted hover:text-text transition-colors"
+        >
+          Archive
+        </a>
         <a
           href="/about"
           className="font-mono text-xs text-text-muted hover:text-text transition-colors"

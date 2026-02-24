@@ -3,35 +3,38 @@
 import { useState, useEffect } from "react";
 import { Clock } from "lucide-react";
 
-function getMinutesUntilNext8AM(): number {
+function getSecondsUntilNext8AM(): number {
   const now = new Date();
   const utcH = now.getUTCHours();
   const utcM = now.getUTCMinutes();
-  const minutesSinceMidnight = utcH * 60 + utcM;
-  const target = 8 * 60; // 8 AM UTC in minutes
-  const diff = target - minutesSinceMidnight;
-  return diff > 0 ? diff : diff + 24 * 60;
+  const utcS = now.getUTCSeconds();
+  const secondsSinceMidnight = utcH * 3600 + utcM * 60 + utcS;
+  const target = 8 * 3600; // 8 AM UTC in seconds
+  const diff = target - secondsSinceMidnight;
+  return diff > 0 ? diff : diff + 24 * 3600;
 }
 
-function formatCountdown(totalMinutes: number): string {
-  if (totalMinutes <= 15) return "Arriving...";
-  const h = Math.floor(totalMinutes / 60);
-  const m = totalMinutes % 60;
-  return h > 0 ? `${h}h ${m}m` : `${m}m`;
+function formatCountdown(totalSeconds: number): string {
+  if (totalSeconds <= 15 * 60) return "Arriving...";
+  const h = Math.floor(totalSeconds / 3600);
+  const m = Math.floor((totalSeconds % 3600) / 60);
+  const s = totalSeconds % 60;
+  if (h > 0) return `${h}h ${m}m ${s}s`;
+  return `${m}m ${s}s`;
 }
 
 export function NextEditionCountdown() {
-  const [minutes, setMinutes] = useState<number | null>(null);
+  const [seconds, setSeconds] = useState<number | null>(null);
 
   useEffect(() => {
-    setMinutes(getMinutesUntilNext8AM());
+    setSeconds(getSecondsUntilNext8AM());
     const interval = setInterval(() => {
-      setMinutes(getMinutesUntilNext8AM());
-    }, 60_000);
+      setSeconds(getSecondsUntilNext8AM());
+    }, 1_000);
     return () => clearInterval(interval);
   }, []);
 
-  if (minutes === null) return null;
+  if (seconds === null) return null;
 
   return (
     <div className="flex items-center justify-between text-sm">
@@ -40,7 +43,7 @@ export function NextEditionCountdown() {
         <span>Next edition</span>
       </div>
       <span className="font-mono text-xs text-accent-muted">
-        {formatCountdown(minutes)}
+        {formatCountdown(seconds)}
       </span>
     </div>
   );

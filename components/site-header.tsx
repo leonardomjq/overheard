@@ -19,6 +19,12 @@ export function SiteHeader({ date }: SiteHeaderProps) {
         </div>
         <nav className="flex items-center gap-6">
           <Link
+            href="/archive"
+            className="font-mono text-xs text-text-muted hover:text-text transition-colors"
+          >
+            Archive
+          </Link>
+          <Link
             href="/about"
             className="font-mono text-xs text-text-muted hover:text-text transition-colors"
           >
