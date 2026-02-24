@@ -1,47 +1,50 @@
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
 import { NextResponse } from "next/server";
+import { SubscribeInputSchema } from "@/schemas/card";
+import { getSubscriber, setSubscriber, checkRateLimit } from "@/lib/kv";
 
-const SUBSCRIBERS_PATH = join(process.cwd(), "data", "subscribers.json");
-
-interface Subscriber {
-  email: string;
-  subscribed_at: string;
-}
-
-function readSubscribers(): Subscriber[] {
-  if (!existsSync(SUBSCRIBERS_PATH)) return [];
-  const raw = readFileSync(SUBSCRIBERS_PATH, "utf-8");
-  return JSON.parse(raw) as Subscriber[];
-}
-
-function writeSubscribers(subscribers: Subscriber[]): void {
-  writeFileSync(SUBSCRIBERS_PATH, JSON.stringify(subscribers, null, 2), "utf-8");
-}
-
-const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_BODY_SIZE = 1024; // 1 KB
 
 export async function POST(request: Request) {
   try {
-    const body = (await request.json()) as { email?: string };
-    const email = body.email?.trim().toLowerCase();
+    // Body size check
+    const contentLength = request.headers.get("content-length");
+    if (contentLength && parseInt(contentLength, 10) > MAX_BODY_SIZE) {
+      return NextResponse.json(
+        { ok: false, error: "Request too large." },
+        { status: 413 },
+      );
+    }
 
-    if (!email || !EMAIL_REGEX.test(email)) {
+    // Rate limiting by IP
+    const forwarded = request.headers.get("x-forwarded-for");
+    const ip = forwarded?.split(",")[0].trim() ?? "unknown";
+    const allowed = await checkRateLimit(ip);
+    if (!allowed) {
+      return NextResponse.json(
+        { ok: false, error: "Too many requests. Try again in a minute." },
+        { status: 429, headers: { "Retry-After": "60" } },
+      );
+    }
+
+    // Parse and validate
+    const body: unknown = await request.json();
+    const result = SubscribeInputSchema.safeParse(body);
+    if (!result.success) {
       return NextResponse.json(
         { ok: false, error: "Invalid email address." },
         { status: 400 },
       );
     }
 
-    const subscribers = readSubscribers();
+    const email = result.data.email.trim().toLowerCase();
 
-    if (subscribers.some((s) => s.email === email)) {
+    // Dedup check
+    const existing = await getSubscriber(email);
+    if (existing) {
       return NextResponse.json({ ok: true });
     }
 
-    subscribers.push({ email, subscribed_at: new Date().toISOString() });
-    writeSubscribers(subscribers);
-
+    await setSubscriber(email);
     return NextResponse.json({ ok: true });
   } catch {
     return NextResponse.json(

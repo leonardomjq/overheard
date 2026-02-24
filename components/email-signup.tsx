@@ -12,6 +12,14 @@ export function EmailSignup() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    setEmail(e.target.value);
+    if (status === "error") {
+      setStatus("idle");
+      setErrorMsg("");
+    }
+  }
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email.trim()) return;
@@ -27,6 +35,9 @@ export function EmailSignup() {
       });
 
       if (!res.ok) {
+        if (res.status === 429) {
+          throw new Error("Too many requests. Try again in a minute.");
+        }
         const data = (await res.json()) as { error?: string };
         throw new Error(data.error ?? "Something went wrong.");
       }
@@ -43,7 +54,7 @@ export function EmailSignup() {
     return (
       <div className="flex items-center gap-2 text-sm text-accent-muted">
         <Check className="size-3.5" />
-        <span className="font-mono text-xs">Done. Check back at 8 AM UTC.</span>
+        <span className="font-mono text-xs">You&apos;re in! Briefs land at 8 AM UTC.</span>
       </div>
     );
   }
@@ -55,7 +66,7 @@ export function EmailSignup() {
         placeholder="you@example.com"
         icon={<Mail className="size-3.5" />}
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleChange}
         required
         className="text-xs"
       />

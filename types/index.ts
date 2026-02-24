@@ -23,3 +23,7 @@ export interface DailyData {
   generated_at: string;
   cards: AlphaCard[];
 }
+
+export type SubscribeInput = {
+  email: string;
+};

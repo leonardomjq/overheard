@@ -35,7 +35,8 @@ Static site with a daily cron pipeline. No database, no auth, no payments. One A
 - `components/` — Page components (`alpha-card.tsx`, `card-detail.tsx`, `card-grid.tsx`, `sidebar.tsx`, `date-nav.tsx`, `next-edition-countdown.tsx`, `email-signup.tsx`, `site-header.tsx`, `site-footer.tsx`)
 - `components/ui/` — Design system primitives (Button, Card, Badge, Input)
 - `app/` — Next.js App Router pages (home, edition/[date], card detail, about, legal)
-- `app/api/subscribe/` — Email capture endpoint (POST, stores to `data/subscribers.json`)
+- `lib/kv.ts` — Vercel KV client with in-memory fallback (`getSubscriber`, `setSubscriber`, `checkRateLimit`)
+- `app/api/subscribe/` — Email capture endpoint (POST, Vercel KV storage, IP rate limiting)
 
 ## Daily Pipeline
 
@@ -131,6 +132,8 @@ Copy `.env.example` to `.env.local`. Variables:
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `GEMINI_API_KEY` | Yes | Google AI Studio API key for card generation |
+| `KV_REST_API_URL` | Prod | Vercel KV REST endpoint (auto-injected by Vercel) |
+| `KV_REST_API_TOKEN` | Prod | Vercel KV auth token (auto-injected by Vercel) |
 | `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | No | Plausible Analytics domain |
 | `NEXT_PUBLIC_APP_URL` | No | Site URL (defaults to Vercel URL) |
 
@@ -148,6 +151,6 @@ Copy `.env.example` to `.env.local`. Variables:
 - **Product Hunt Atom feed HTML entities:** Content contains encoded HTML (`&amp;`, `&lt;`, etc.) that must be decoded before stripping tags.
 - **Gemini free tier rate limit:** 10 requests per minute (Gemini 2.5 Flash). The generate script uses 5-second delays between card generation calls.
 - **Data files are committed to the repo.** The `data/` directory contains both `signals-raw.json` (transient, overwritten each run) and `YYYY-MM-DD.json` (permanent daily snapshots).
-- **`data/subscribers.json` is gitignored.** Unlike card data, subscriber emails are private and must not be committed.
-- **The `/api/subscribe` route is the only server-side endpoint.** Everything else is statically generated. This route writes to `data/subscribers.json` on the server filesystem.
+- **Subscribers are stored in Vercel KV**, not the filesystem. The `lib/kv.ts` module falls back to an in-memory `Map` when `KV_REST_API_URL` is missing (local dev). Data stored in KV persists across deploys; the in-memory fallback resets on restart.
+- **The `/api/subscribe` route is the only server-side endpoint.** Everything else is statically generated. This route uses Vercel KV for storage and IP-based rate limiting (3 req/min).
 - **Card count is dynamic.** The pipeline publishes 1-12 cards per day depending on signal quality. Clusters are scored by `totalEngagement × sourceDiversityMultiplier` (cross-platform signals rank higher). Do NOT hardcode card count assumptions in UI or copy.

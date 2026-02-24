@@ -25,3 +25,7 @@ export const DailyDataSchema = z.object({
   generated_at: z.string(),
   cards: z.array(AlphaCardSchema),
 });
+
+export const SubscribeInputSchema = z.object({
+  email: z.string().email().max(254),
+});
