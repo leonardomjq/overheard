@@ -208,39 +208,43 @@ async function fetchReddit(): Promise<RedditSignal[]> {
   const signals: RedditSignal[] = [];
 
   for (const sub of SUBREDDITS) {
-    log(`Fetching r/${sub}...`);
-    const url = `https://www.reddit.com/r/${sub}/hot.json?limit=25`;
-    const res = await fetchWithRetry(url, {
-      headers: { "User-Agent": REDDIT_UA },
-    });
-    const data = (await res.json()) as RedditListing;
-
-    for (const post of data.data.children) {
-      const { id, title, selftext, ups, num_comments, created_utc, subreddit, stickied } =
-        post.data;
-
-      // Skip stickied mod posts
-      if (stickied) continue;
-      if (ups < 2) continue;
-
-      const body = selftext ? selftext.slice(0, 2000) : "";
-      const content = body ? `${title}: ${body}` : title;
-
-      if (isNoise(content)) continue;
-
-      signals.push({
-        source_type: "reddit",
-        subreddit,
-        post_id: id,
-        content,
-        timestamp: new Date(created_utc * 1000).toISOString(),
-        upvotes: ups,
-        url: `https://reddit.com/r/${subreddit}/comments/${id}/`,
-        comment_count: num_comments,
+    try {
+      log(`Fetching r/${sub}...`);
+      const url = `https://www.reddit.com/r/${sub}/hot.json?limit=25`;
+      const res = await fetchWithRetry(url, {
+        headers: { "User-Agent": REDDIT_UA },
       });
-    }
+      const data = (await res.json()) as RedditListing;
 
-    log(`  → ${signals.length} kept so far`);
+      for (const post of data.data.children) {
+        const { id, title, selftext, ups, num_comments, created_utc, subreddit, stickied } =
+          post.data;
+
+        // Skip stickied mod posts
+        if (stickied) continue;
+        if (ups < 2) continue;
+
+        const body = selftext ? selftext.slice(0, 2000) : "";
+        const content = body ? `${title}: ${body}` : title;
+
+        if (isNoise(content)) continue;
+
+        signals.push({
+          source_type: "reddit",
+          subreddit,
+          post_id: id,
+          content,
+          timestamp: new Date(created_utc * 1000).toISOString(),
+          upvotes: ups,
+          url: `https://reddit.com/r/${subreddit}/comments/${id}/`,
+          comment_count: num_comments,
+        });
+      }
+
+      log(`  → ${signals.length} kept so far`);
+    } catch (err) {
+      log(`  ⚠ r/${sub} failed: ${err instanceof Error ? err.message : err} — skipping`);
+    }
 
     // 1s delay between Reddit requests to be polite
     await sleep(1000);
@@ -389,17 +393,43 @@ async function fetchProductHunt(): Promise<ProductHuntSignal[]> {
 async function main() {
   log("Starting free-source fetch experiment...\n");
 
-  const hnSignals = await fetchHN();
-  log(`\nHN total: ${hnSignals.length} signals\n`);
+  let hnSignals: HNSignal[] = [];
+  try {
+    hnSignals = await fetchHN();
+    log(`\nHN total: ${hnSignals.length} signals\n`);
+  } catch (err) {
+    log(`\n⚠ HN fetch failed: ${err instanceof Error ? err.message : err} — continuing\n`);
+  }
 
-  const redditSignals = await fetchReddit();
-  log(`\nReddit total: ${redditSignals.length} signals\n`);
+  let redditSignals: RedditSignal[] = [];
+  try {
+    redditSignals = await fetchReddit();
+    log(`\nReddit total: ${redditSignals.length} signals\n`);
+  } catch (err) {
+    log(`\n⚠ Reddit fetch failed: ${err instanceof Error ? err.message : err} — continuing\n`);
+  }
 
-  const githubSignals = await fetchGitHub();
-  log(`\nGitHub total: ${githubSignals.length} signals\n`);
+  let githubSignals: GitHubSignal[] = [];
+  try {
+    githubSignals = await fetchGitHub();
+    log(`\nGitHub total: ${githubSignals.length} signals\n`);
+  } catch (err) {
+    log(`\n⚠ GitHub fetch failed: ${err instanceof Error ? err.message : err} — continuing\n`);
+  }
 
-  const phSignals = await fetchProductHunt();
-  log(`\nProduct Hunt total: ${phSignals.length} signals\n`);
+  let phSignals: ProductHuntSignal[] = [];
+  try {
+    phSignals = await fetchProductHunt();
+    log(`\nProduct Hunt total: ${phSignals.length} signals\n`);
+  } catch (err) {
+    log(`\n⚠ Product Hunt fetch failed: ${err instanceof Error ? err.message : err} — continuing\n`);
+  }
+
+  const allSignals = [...hnSignals, ...redditSignals, ...githubSignals, ...phSignals];
+
+  if (allSignals.length === 0) {
+    throw new Error("All sources failed — no signals fetched");
+  }
 
   const output: ExperimentData = {
     fetched_at: new Date().toISOString(),
@@ -419,7 +449,7 @@ async function main() {
         count: phSignals.length,
       },
     },
-    signals: [...hnSignals, ...redditSignals, ...githubSignals, ...phSignals],
+    signals: allSignals,
   };
 
   const outPath = resolve(process.cwd(), "data", "signals-raw.json");
