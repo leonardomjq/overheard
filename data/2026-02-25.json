@@ -1,0 +1,90 @@
+{
+  "date": "2026-02-25",
+  "generated_at": "2026-02-25T23:56:46.942Z",
+  "cards": [
+    {
+      "id": "2026-02-25-your-ai-agents-are-going-rogue-here-s-how-to-tame-them-and-b",
+      "date": "2026-02-25",
+      "title": "Your AI Agents Are Going Rogue – Here's How to Tame Them (and Build the Next Must-Have Tool)",
+      "category": "ai-tools",
+      "thesis": "As AI agents gain the ability to take real-world actions like processing refunds or writing to databases, developers are realizing that basic prompt instructions aren't enough to control them. There's a growing need for a reliable 'control layer' – essentially, a safety net or set of rules – that prevents AI agents from making costly mistakes or ignoring critical boundaries, especially when they're handling sensitive operations.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "People are asking, 'How are you controlling AI agents that take real actions?' because instructions like 'never do X' don't hold up when the AI's context is long or users push it hard.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47149701",
+          "engagement": 23
+        },
+        {
+          "text": "One builder mentioned they already 'built a control layer for this' with different methods for structured data, highlighting that this is a current, active problem for those deploying AI agents.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47132766",
+          "engagement": 23
+        },
+        {
+          "text": "The feeling is that AI isn't killing software-as-a-service (SaaS), but it's killing single-purpose SaaS – meaning simple AI wrappers won't cut it, but complex, integrated solutions that solve real workflow problems will thrive.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47144923",
+          "engagement": 18
+        },
+        {
+          "text": "New features like Claude's 'Remote Control' indicate AI models are getting more capable of interacting directly with code and systems, making the need for robust control even more urgent.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47150156",
+          "engagement": 8
+        }
+      ],
+      "opportunity": "Everyone building AI agents that do real stuff (like processing refunds or writing to a database) is stressing about them going rogue because 'never do X' prompts don't stick. The first person to ship a simple, open-source API gateway (a piece of software that sits in front of your AI agent and checks its actions) that acts as a smart 'stop button' for these agents — letting builders set strict, code-based rules *before* any action happens — will own the trust layer for the next wave of AI products. You could build a minimal version this weekend that just checks a JSON payload against a schema or requires a human 'approve' click for sensitive actions.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 110
+    },
+    {
+      "id": "2026-02-25-your-ai-agent-just-wrote-bad-code-here-s-how-to-catch-it-and",
+      "date": "2026-02-25",
+      "title": "Your AI Agent Just Wrote Bad Code? Here's How to Catch It (and Profit)",
+      "category": "ai-tools",
+      "thesis": "AI agents are getting crazy good at doing complex stuff, like writing code or planning events, even navigating entire websites like humans. But people are openly expressing concern about whether these agents are safe or reliable, especially when they're making real-world changes. There's a massive need for tools that let us keep these powerful agents in check and ensure they're doing exactly what we want, not going rogue.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The 'Claude Code Remote Control' post (743 engagement) shows that AI is gaining the ability to directly control and modify code.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47148454",
+          "engagement": 743
+        },
+        {
+          "text": "TeamOut (85 engagement) launched an 'AI agent for planning company retreats' that handles tasks 'from start to finish entirely through conversation,' showing agents are tackling complex, multi-step real-world services.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47155597",
+          "engagement": 85
+        },
+        {
+          "text": "A team building browser agents realized 'existing benchmarks in this space didn’t capture the primary failure modes we were seeing in production,' leading them to build PA Bench (12 engagement) to evaluate models on 'multi-step workflows,' highlighting reliability issues for agents interacting with web interfaces.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47151842",
+          "engagement": 12
+        },
+        {
+          "text": "There's an active discussion asking, 'Have top AI research institutions just given up on the idea of safety?' (156 engagement), reflecting broad anxieties about the responsible development of AI.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47151598",
+          "engagement": 156
+        },
+        {
+          "text": "One team reported their 'Computer Using agent just solved CAPTCHA up to Level 6' (16 engagement), demonstrating increasing capability for agents to navigate and interact with real-world web environments autonomously.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47159302",
+          "engagement": 16
+        }
+      ],
+      "opportunity": "AI agents are now capable enough to take over real-world tasks, even writing code and navigating complex websites, but everyone's terrified of them going off the rails. The real goldmine isn't building *more* agents, it's building a simple 'control panel' that lets non-technical users review, approve, or easily redirect an agent's actions step-by-step, especially for things like modifying code or making bookings. Think of it like a visual debugger for agents that lets you pause, inspect, and correct their decisions before they commit to anything, giving users peace of mind and full control.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 16
+    }
+  ]
+}
