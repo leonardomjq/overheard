@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Clock } from "lucide-react";
 
 function getSecondsUntilNext8AM(): number {
@@ -14,6 +14,14 @@ function getSecondsUntilNext8AM(): number {
   return diff > 0 ? diff : diff + 24 * 3600;
 }
 
+/** Minutes past 8 AM UTC right now (negative if before 8 AM). */
+function minutesPast8AM(): number {
+  const now = new Date();
+  const utcH = now.getUTCHours();
+  const utcM = now.getUTCMinutes();
+  return (utcH - 8) * 60 + utcM;
+}
+
 function formatCountdown(totalSeconds: number): string {
   if (totalSeconds <= 15 * 60) return "Arriving...";
   const h = Math.floor(totalSeconds / 3600);
@@ -25,11 +33,21 @@ function formatCountdown(totalSeconds: number): string {
 
 export function NextEditionCountdown() {
   const [seconds, setSeconds] = useState<number | null>(null);
+  const [refreshing, setRefreshing] = useState(false);
+  const reloadedRef = useRef(false);
 
   useEffect(() => {
     setSeconds(getSecondsUntilNext8AM());
     const interval = setInterval(() => {
       setSeconds(getSecondsUntilNext8AM());
+
+      // Auto-reload once 12-30 min after 8 AM UTC (pipeline + deploy buffer)
+      const past = minutesPast8AM();
+      if (past >= 12 && past <= 30 && !reloadedRef.current) {
+        reloadedRef.current = true;
+        setRefreshing(true);
+        window.location.reload();
+      }
     }, 1_000);
     return () => clearInterval(interval);
   }, []);
@@ -43,7 +61,7 @@ export function NextEditionCountdown() {
         <span>Next edition</span>
       </div>
       <span className="font-mono text-xs text-accent-muted">
-        {formatCountdown(seconds)}
+        {refreshing ? "Refreshing..." : formatCountdown(seconds)}
       </span>
     </div>
   );

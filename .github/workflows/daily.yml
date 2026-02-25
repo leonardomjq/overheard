@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 8 * * *" # 8 AM UTC daily
   workflow_dispatch: # manual trigger
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
 
 concurrency:
   group: daily-cards
@@ -27,12 +31,25 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      - name: Check if today's data exists
+        id: check
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          if [ -f "data/${DATE}.json" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Data for ${DATE} already exists, skipping"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Run daily pipeline
+        if: steps.check.outputs.skip == 'false'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: pnpm daily
 
       - name: Commit and push new cards
+        if: steps.check.outputs.skip == 'false'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
