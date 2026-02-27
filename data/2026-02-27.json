@@ -1,0 +1,99 @@
+{
+  "date": "2026-02-27",
+  "generated_at": "2026-02-27T08:44:13.032Z",
+  "cards": [
+    {
+      "id": "2026-02-27-stop-building-new-ai-apps-start-fixing-the-software-people-a",
+      "date": "2026-02-27",
+      "title": "Stop Building New AI Apps. Start Fixing the Software People Already Hate.",
+      "category": "automation",
+      "thesis": "Forget building brand new AI products; the real opportunity is using AI to make existing, clunky enterprise software actually bearable. People are fed up with tedious workflows in tools like Jira, and AI agents (software that can interact with web interfaces just like a human, clicking buttons and typing) are now capable enough to automate these frustrating multi-step processes.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "One builder shared: 'I don't need AI to build me a new app. I need it to make Jira bearable.' They used a Claude Chrome extension to build a Jira sidebar showing dependency graphs, which Jira normally buries across multiple clicks and page loads.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47172119",
+          "engagement": 26
+        },
+        {
+          "text": "A project called Coasty.ai announced their 'Computer Using agent' (AI that controls a desktop environment) just solved CAPTCHAs up to Level 6, hitting 82% on a benchmark for agents operating in real desktop environments, meaning it can handle browser popups and cookie banners.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47170174",
+          "engagement": 17
+        },
+        {
+          "text": "Orbis, an 'AI Co-Founder,' is building an 'AI-native workspace' where AI 'lives inside it' and 'knows everything' about your tasks, docs, and emails, rather than being a separate chatbot you switch to.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47169518",
+          "engagement": 12
+        },
+        {
+          "text": "People are asking 'What's it like working in big tech recently with all the AI tools?' and if they've noticed a 'faster pace of development,' indicating a desire for AI to improve existing work processes.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47163885",
+          "engagement": 27
+        }
+      ],
+      "opportunity": "Everyone's talking about building new AI apps, but the real gold rush is fixing the software people already hate using. Imagine an AI that can actually click buttons and fill forms for you inside Jira or Salesforce, automating those 10-step workflows that drive everyone nuts. Pick one annoying, multi-step workflow in a widely used enterprise tool, build a browser extension or local agent that uses a 'computer-using agent' (an AI that interacts with UIs like a human) to automate it, and you've got a product people will pay for instantly.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 126
+    },
+    {
+      "id": "2026-02-27-peeking-behind-the-ai-coder-what-claude-code-really-builds",
+      "date": "2026-02-27",
+      "title": "Peeking Behind the AI Coder: What Claude Code *Really* Builds",
+      "category": "ai-tools",
+      "thesis": "Builders are intensely curious about how Claude Code, a popular AI coding assistant, actually approaches and solves coding challenges. There's a strong desire in online communities to understand its 'choices' and see real-world examples of it building complex software from scratch, not just simple snippets.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "People are highly engaged in discussions about understanding how Claude Code makes its decisions when writing code, indicating a deep interest in its internal logic and output quality.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47169757",
+          "engagement": 554
+        },
+        {
+          "text": "One builder successfully used Claude Code to write a 'clear room' (meaning, from scratch without existing code) Z80 and Spectrum emulator, demonstrating its capability for complex, intricate coding projects.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47149829",
+          "engagement": 6
+        }
+      ],
+      "opportunity": "People are obsessing over how Claude Code decides what to build, but there's no easy way to actually *compare* its choices against other AI coders or even human best practices for specific tasks. You could build a small service that takes a coding problem, runs it through Claude and maybe one other AI, then automatically highlights the key differences in their output and suggests which approach is better for certain goals (like speed or simplicity). The first person to ship a simple web app that visualizes these AI coding 'decision trees' for common problems will own the 'how do I get the best AI code' market.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    },
+    {
+      "id": "2026-02-27-yc-w24-is-hiring-spotting-early-b2b-needs-before-anyone-else",
+      "date": "2026-02-27",
+      "title": "YC W24 is Hiring: Spotting Early B2B Needs Before Anyone Else",
+      "category": "automation",
+      "thesis": "New YC companies from the Winter 2024 batch are starting to hire for key roles, signaling a shift from pure ideation to execution and deployment. While these early hiring posts often fly under the radar with low engagement, they represent valuable, un-hyped indicators of immediate operational needs for these growing startups.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Trellis AI (YC W24) is hiring a deployment lead to help accelerate medication access.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47154246",
+          "engagement": 0
+        },
+        {
+          "text": "Event Horizon Labs (YC W24) is hiring for various roles.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47150403",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Everyone's seeing these YC hiring posts, but they're low-engagement and scattered. If you could build a dead-simple tool that scrapes YC W24 company sites and their job boards, then flags common themes or specific tech stacks being hired for, you'd be giving founders a secret weapon to predict what early-stage B2B needs are emerging. You could ship a basic version this weekend using a headless browser and a keyword search.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
