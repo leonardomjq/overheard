@@ -1,0 +1,51 @@
+{
+  "date": "2026-03-11",
+  "generated_at": "2026-03-11T08:46:36.603Z",
+  "cards": [
+    {
+      "id": "2026-03-11-your-ai-is-spitting-goblins-time-to-build-a-why-did-you-say-",
+      "date": "2026-03-11",
+      "title": "Your AI is Spitting Goblins? Time to Build a 'Why Did You Say That?' Debugger",
+      "category": "ai-tools",
+      "thesis": "While big tech is pouring billions into advanced AI agents and making AI run super fast on local devices like Apple Silicon, everyday builders are getting totally fed up with how unpredictable and weird current AI models can be. People are seeing 'goblins' in their GPT-5.4 outputs and are even abandoning services like Claude because they're unreliable. There's a massive need for simple tools that help builders understand *why* an AI says what it says and gives them control to fix its 'personality' for their apps.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Meta is acquiring Moltbook, showing a major move into AI agent social networks.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47323900",
+          "engagement": 808
+        },
+        {
+          "text": "Yann LeCun is raising $1 billion to build AI that understands the physical world, indicating huge investment in advanced AI capabilities.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47320600",
+          "engagement": 820
+        },
+        {
+          "text": "RunAnywhere (YC W26) launched a fast AI inference engine for Apple Silicon, beating others on speed for things like LLMs and speech, making it easier to run AI models on your own computer.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47326101",
+          "engagement": 336
+        },
+        {
+          "text": "People are asking 'How are people doing AI evals these days?' showing a clear struggle to measure and compare AI models for their specific uses.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47318797",
+          "engagement": 31
+        },
+        {
+          "text": "Users are reporting GPT-5.4 is 'obsessed with Goblins,' using the word multiple times in short conversations, highlighting weird, unpredictable model behavior.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47324296",
+          "engagement": 22
+        }
+      ],
+      "opportunity": "Everyone's laughing about GPT-5.4's 'goblin' obsession, but it highlights a serious problem: AI models are still super weird and unpredictable, making builders drop services like Claude in frustration. With tools like RunAnywhere making it easier to run AI locally on your own Apple Silicon (meaning you have more direct control over the AI program), there's a huge opening for a 'why did it say that?' AI debugger. You could build a simple plug-in or app that watches what a local AI model outputs, flags 'weird' or repetitive patterns, and helps a builder immediately tweak the prompt or settings to 'fix' the AI's behavior, essentially giving them a 'personality tuner' for their AI assistant.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 123
+    }
+  ]
+}
