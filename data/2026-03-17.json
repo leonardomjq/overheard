@@ -1,0 +1,150 @@
+{
+  "date": "2026-03-17",
+  "generated_at": "2026-03-17T08:57:34.232Z",
+  "cards": [
+    {
+      "id": "2026-03-17-ai-s-dirty-little-secret-your-code-is-fast-but-is-it-safe",
+      "date": "2026-03-17",
+      "title": "AI's Dirty Little Secret: Your Code is Fast, But Is It Safe?",
+      "category": "ai-tools",
+      "thesis": "AI coding agents are making development ridiculously fast, but they're also accidentally sneaking in security vulnerabilities (like bad software components or code snippets) that can lead to major headaches like cryptominers on your servers. While the industry is pushing for 'trustworthy coding,' there's a huge gap in practical tools that help builders vet what their AI assistants are generating, *before* it becomes a problem.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "AI coding agents accidentally introduced vulnerable dependencies (software components that your code relies on), leading to a cryptominer running on a web service.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47404796",
+          "engagement": 20
+        },
+        {
+          "text": "Leanstral, an open-source agent, is focused on 'trustworthy coding' and formal proof engineering, highlighting a strong desire for reliable AI-assisted development.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47402640",
+          "engagement": 603
+        },
+        {
+          "text": "A developer asks 'Why do the majority of vibecoded projects fail?' hinting at the challenges of quickly built projects, potentially with AI assistance, lacking robustness or security.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47388478",
+          "engagement": 6
+        },
+        {
+          "text": "A 10-year experienced software engineer asks what's next with LLMs (large language models) coming in fast, showing anxiety about the changing industry and the need for new skills or tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47405685",
+          "engagement": 6
+        }
+      ],
+      "opportunity": "Everyone's hyped about AI coding agents making dev super fast, but they're also accidentally introducing security risks, like cryptominers sneaking into projects. People are craving 'trustworthy coding,' but the actual tools for builders are missing. Instead of just fixing bugs *after* they happen, make a 'pre-flight check' plug-in for AI coding assistants (like Cursor or Replit) that scans suggested code and dependencies (the external libraries/packages your code uses) for known vulnerabilities *before* they're even written. You could hook into existing vulnerability databases and ship an initial version that catches the most common issues in a weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 127
+    },
+    {
+      "id": "2026-03-17-the-ai-code-divide-is-ai-killing-or-saving-developer-passion",
+      "date": "2026-03-17",
+      "title": "The AI Code Divide: Is AI Killing or Saving Developer Passion?",
+      "category": "ai-tools",
+      "thesis": "AI is fundamentally reshaping the developer experience, creating a major divide: some find tools like Claude Code reignite their passion and boost productivity, while others feel it's killing the joy of building. This tension highlights a critical need for tools that help builders effectively leverage AI without losing the human element or shipping unreliable code.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "A highly engaged discussion (980 comments) asks professional coders what's actually working and what isn't with AI tools, cutting through the usual 'AI is useless' vs 'we're all cooked' noise. This shows a deep hunger for practical insights into AI's real-world impact.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47388646",
+          "engagement": 980
+        },
+        {
+          "text": "One developer shared a strong emotional response, stating that AI (specifically Claude Code) 'killed a passion' for coding, contrasting with others who found their passion 're-ignited.' This highlights the polarizing emotional impact of AI on the craft.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47386813",
+          "engagement": 412
+        },
+        {
+          "text": "Another popular 'Ask HN' thread (354 comments) questions how AI is changing Computer Science major programs, with people worried about curriculum relevance and the future job market for new grads. This points to a broader anxiety about AI's long-term career implications.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47397190",
+          "engagement": 354
+        },
+        {
+          "text": "There are concerns about 'Tons of new LLM bot accounts' posting low-quality, generic comments, suggesting that AI-generated content isn't always helpful and can even dilute online discussions.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47390579",
+          "engagement": 31
+        }
+      ],
+      "opportunity": "Everyone's hyped about AI coding assistants like Cursor and v0, but the silent anxiety is always about the quality and security of the code they generate. Instead of building another AI code generator, think about an 'AI code guardian' – a simple plug-in for your favorite IDE that automatically checks AI-generated code snippets for common bugs, security vulnerabilities, or even just bad practices. You could start by hooking into popular open-source code analysis tools and offer a 'trust score' or actionable fixes, making it super easy for builders to ship AI-assisted projects with confidence.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    },
+    {
+      "id": "2026-03-17-your-ai-codebase-is-a-mess-the-unseen-opportunity-in-scaling",
+      "date": "2026-03-17",
+      "title": "Your AI Codebase is a Mess: The Unseen Opportunity in Scaling Teams with AI",
+      "category": "ai-tools",
+      "thesis": "Developers are leaning so heavily on AI coding assistants that they're skipping deeper learning, creating a potential knowledge gap. This reliance on AI, coupled with the instability of AI models (which can change or disappear), makes it incredibly hard for teams to maintain consistency and onboard new people as they grow, because there's no shared understanding or 'source of truth' for the code being generated.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "AI tools are making me lose interest in CS fundamentals: With powerful AI coding assistants, I sometimes feel less motivated to study deep computer science topics... AI can generate solutions quickly, which makes the effort of learning the fundamentals feel less urgent.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47401901",
+          "engagement": 175
+        },
+        {
+          "text": "What breaks first when your team grows from 10 to 50 people?: Decisions that everyone used to know about are getting lost. New hires take forever to ramp up. Different teams are building on different assumptions.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47394291",
+          "engagement": 23
+        },
+        {
+          "text": "Did GitHub remove Opus and Sonnet from their Copilot Pro subscription?: Just opened Visual Studio today and no longer have Opus or Sonnet, only Haiku, GPT and Grok. Anybody else missing these?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47386284",
+          "engagement": 19
+        },
+        {
+          "text": "People are talking about managing 'language model teams' like complex distributed systems (computer networks where different parts work together on different machines). This hints at the underlying complexity and need for coordination when building with AI.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47396841",
+          "engagement": 130
+        }
+      ],
+      "opportunity": "Everyone's relying on AI coding assistants, but when teams grow, that AI-generated code quickly becomes inconsistent, and new hires struggle to understand the 'why' behind decisions. Instead of just letting AI generate code, build a simple plug-in for popular IDEs (like VS Code) that learns your team's existing codebase and style guides, then acts as a 'smart editor' that suggests tweaks or alternative patterns to AI-generated code to ensure it always aligns with your team's specific best practices. The first person to ship a tool that enforces team consistency *on top of* AI code generation will own the market for frustrated engineering leaders trying to scale their AI-powered teams.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    },
+    {
+      "id": "2026-03-17-automated-alpha-the-easy-button-for-polymarket-trading-bots",
+      "date": "2026-03-17",
+      "title": "Automated Alpha: The Easy Button for Polymarket Trading Bots",
+      "category": "making-money",
+      "thesis": "People are actively building automated trading bots for Polymarket, a platform where you can bet on future events (like 'Will X happen by Y date?'). Specifically, 'arbitrage bots' are popular, which means they're designed to find and profit from tiny price differences across various markets on the platform. This shows there's real interest in using code to get an edge in prediction markets.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "A public project for a 'polymarket trading bot' has gained significant attention, showing people are building automated systems to trade on prediction markets.",
+          "source": "github",
+          "url": "https://github.com/infraform/polymarket-trading-bot",
+          "engagement": 175
+        },
+        {
+          "text": "Another highly engaged project, 'polymarket arbitrage bot,' focuses specifically on automating the detection and exploitation of small price discrepancies on Polymarket.",
+          "source": "github",
+          "url": "https://github.com/infraform/polymarket-arbitrage-trading-bot",
+          "engagement": 173
+        }
+      ],
+      "opportunity": "Everyone's trying to build their own Polymarket arbitrage bots to snag quick wins, but managing the infrastructure, keeping them running 24/7, and adapting to market changes is a headache for most. You could launch a simple 'bot farm' service that lets non-technical users deploy and monitor these open-source strategies (or even premium ones you curate) without touching a line of code, taking a small performance fee. The timing is perfect because the open-source bots exist, but the 'easy button' for running them doesn't.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
