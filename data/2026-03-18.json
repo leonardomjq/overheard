@@ -1,0 +1,84 @@
+{
+  "date": "2026-03-18",
+  "generated_at": "2026-03-18T08:54:50.704Z",
+  "cards": [
+    {
+      "id": "2026-03-18-your-ai-agents-are-breaking-again-here-s-how-you-cash-in",
+      "date": "2026-03-18",
+      "title": "Your AI Agents Are Breaking (Again): Here's How You Cash In",
+      "category": "ai-tools",
+      "thesis": "AI tools are becoming super critical for 'vibe coding' (building software quickly with AI assistance), but their constant outages and unpredictable behavior are driving builders crazy. On top of that, autonomous AI agents (programs that act on their own) pose real risks, like 'deleting production databases.' This creates a massive, immediate need for tools that make AI reliable and safe, letting developers ship without constant fear.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Claude Is Having an Outage. This is rapidly becoming the new xkcd slacking off meme.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47416736",
+          "engagement": 61
+        },
+        {
+          "text": "I spoke with a recruiter a few weeks ago and was somewhat surprised that a requirement for the position was experience building software with LLMs. Has this become the new norm in tech hiring?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47417335",
+          "engagement": 73
+        },
+        {
+          "text": "I built MoltGuard - runtime guardrails that block dangerous tool calls BEFORE execution. Currently at 16K+ downloads protecting AI agents from doing dumb things like deleting production databases or leaking credentials.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47420493",
+          "engagement": 10
+        },
+        {
+          "text": "It feels like Claude goes down almost daily now. (Also seeing 500s when trying to use Claude Code - no official update on the status page).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47415350",
+          "engagement": 29
+        },
+        {
+          "text": "Just opened Visual Studio today and no longer have Opus or Sonnet, only Haiku, GPT and Grok for Copilot Pro.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47401618",
+          "engagement": 20
+        }
+      ],
+      "opportunity": "With 'vibe coding' becoming the norm and AI agents gaining autonomy, the biggest pain point is reliability and safety. Everyone's hitting daily outages with tools like Claude, and fears about agents 'doing dumb things' are real. The move isn't just about switching providers; it's about building an intelligent, lightweight wrapper that sits between a developer's code and *any* AI model, offering smart retries across multiple providers (Claude, GPT, Grok) and, crucially, adding a 'runtime guardrail' (a safety check that stops bad stuff before it happens) that blocks dangerous actions *before* they execute. Ship a plug-and-play SDK (a set of tools for building software) that promises unbreakable AI workflows and safe agent execution, and you'll capture the market of builders who want to ship fast without the constant fear of AI failure.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 134
+    },
+    {
+      "id": "2026-03-18-unleash-ai-agents-instant-secure-code-execution-is-the-next-",
+      "date": "2026-03-18",
+      "title": "Unleash AI Agents: Instant, Secure Code Execution is the Next Frontier",
+      "category": "ai-tools",
+      "thesis": "Developers are cracking the code on running isolated program snippets incredibly fast and securely. This means you can now execute untrusted code (like scripts from an AI agent or user-submitted functions) almost instantly, without the usual security risks or slow startup times that come with traditional virtual machines.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "Someone built a system that launches isolated code sandboxes in sub-milliseconds by starting a virtual machine once, loading common tools like Python, then snapshotting its memory. Subsequent executions just create new virtual machines that share the snapshot's memory, only copying parts when they change, making them incredibly fast.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47412569",
+          "engagement": 184
+        },
+        {
+          "text": "A new tool called Edge.js lets you run Node.js applications inside a secure WebAssembly sandbox. This makes it safe and portable to run untrusted Node.js code.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47416081",
+          "engagement": 174
+        },
+        {
+          "text": "A discussion on Hacker News about the state of computer science education shows a strong interest (391 engagements) in how the industry is evolving, hinting at a need for new tools and approaches for emerging developers.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47420388",
+          "engagement": 391
+        }
+      ],
+      "opportunity": "AI agents are constantly needing to run little code snippets (think Python scripts or API calls) to actually do stuff, but it's a huge headache to make it fast, secure, and isolated. With these new sub-millisecond sandboxes, you could build a super simple API that acts as an 'AI agent code executor' – agents just send code, and it runs instantly and safely in its own little box. Ship a dead-simple wrapper around these new performance breakthroughs, focused purely on letting agents execute *any* code without bogging down or risking security, and target agent builders who are currently cobbling together slow, insecure workarounds.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    }
+  ]
+}
