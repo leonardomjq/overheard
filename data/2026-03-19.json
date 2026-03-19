@@ -1,0 +1,51 @@
+{
+  "date": "2026-03-19",
+  "generated_at": "2026-03-19T08:46:34.701Z",
+  "cards": [
+    {
+      "id": "2026-03-19-your-ai-agent-just-cost-a-startup-128k-the-unseen-risk-of-vi",
+      "date": "2026-03-19",
+      "title": "Your AI Agent Just Cost a Startup $128K: The Unseen Risk of Vibe Coding",
+      "category": "ai-tools",
+      "thesis": "While LLMs are becoming a 'mandatory job requirement' for 'vibe coding' and 'agentic development,' their inherent unreliability (frequent outages, hallucinations) and critical security flaws are creating massive problems. Specifically, leaked API keys for AI services can lead to eye-watering bills, with one company getting charged $128,000, and major LLM providers like Claude are experiencing daily outages, impacting builders who rely on them.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Many people are using LLMs as their primary source of truth, blindly trusting whatever they say, even when a simple search would provide a reputable answer. This highlights a widespread issue with AI reliability.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47431237",
+          "engagement": 243
+        },
+        {
+          "text": "A company was billed $128,000 from one leaked GCP (Google Cloud Platform) API key, with Google denying their adjustment request. Other incidents include a 3-person startup charged $82,314 and a student $55,444 for leaked keys, showing the severe financial risk.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47428650",
+          "engagement": 8
+        },
+        {
+          "text": "Users are reporting that Claude, a major AI model, 'goes down almost daily now' with frequent 500 errors and outages, impacting developers who depend on it for 'agentic development'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47431671",
+          "engagement": 66
+        },
+        {
+          "text": "Someone built 'MoltGuard,' a runtime guardrail that blocks dangerous AI agent tool calls *before* execution, and it already has over 16,000 downloads, indicating a strong demand for preventing AI agents from 'doing dumb things' like deleting production databases or leaking credentials.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47433702",
+          "engagement": 12
+        },
+        {
+          "text": "A recruiter mentioned that experience building software with LLMs ('vibe coding') is becoming a new mandatory job requirement, signaling the growing adoption and importance of AI in development workflows.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47428391",
+          "engagement": 96
+        }
+      ],
+      "opportunity": "AI agents are becoming a core part of 'vibe coding,' but a single leaked API key can cost a startup $128K, with cloud providers often denying bill adjustments. While some are building general guardrails, nobody's owned the 'AI agent cost protector' niche — an easy-to-install service or library that specifically monitors and throttles API usage *before* it spirals out of control. You could launch an MVP this weekend that lets builders set hard spending limits on their agent's API keys and sends instant alerts for unusual activity, giving them peace of mind and preventing financial disasters without needing complex security setups.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 124
+    }
+  ]
+}
