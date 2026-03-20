@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-20",
+  "generated_at": "2026-03-20T08:44:06.430Z",
+  "cards": [
+    {
+      "id": "2026-03-20-offline-ai-is-the-new-black-build-apps-that-ditch-the-cloud-",
+      "date": "2026-03-20",
+      "title": "Offline AI is the New Black: Build Apps That Ditch the Cloud and Win Users",
+      "category": "ai-tools",
+      "thesis": "Forget always-online AI; new tiny AI models are making it possible to run powerful features directly on your device, no internet or cloud subscription needed. This means apps can be faster, more private, and work anywhere, solving a huge pain point for users who are fed up with unreliable cloud services and endless monthly fees.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Show HN: Three new Kitten TTS models – smallest less than 25MB: Kitten TTS is an open-source series of tiny and expressive text-to-speech models for on-device applications (meaning they run directly on your phone or computer, not in the cloud).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47438723",
+          "engagement": 573
+        },
+        {
+          "text": "Ask HN: Solo Senior Developers, Where do we find you?: I have created an application that is in an untapped field. It is an amazing tool, completely offline, no cloud, no accounts, no subscription. No one wants that crap! All the mobile apps built for us construction professionals are terrible I have tried them all.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47442690",
+          "engagement": 46
+        },
+        {
+          "text": "Ask HN: How do you deal with people who trust LLMs?: A lot of people use AI chatbots as their source of objective truth and just blindly trust whatever it says, even though these models can hallucinate (make up facts).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47441546",
+          "engagement": 338
+        },
+        {
+          "text": "Ask HN: Is Claude down Again?: Getting 'overloaded_error' errors for the last 15 minutes. Is anyone else having the same issue? (referring to a major cloud AI service being unavailable).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47440430",
+          "engagement": 16
+        }
+      ],
+      "opportunity": "Everyone's complaining about cloud AI outages and forced subscriptions, while new \"tiny\" AI models (small enough to run right on your phone) are dropping. A construction pro is literally begging for a no-cloud, no-subscription app that works offline. The move is to grab one of these new tiny AI models, figure out a niche where people hate paying monthly or losing internet access (think field service, travel, education), and build a local-first app that delivers AI smarts without the cloud baggage.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
