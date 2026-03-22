@@ -1,0 +1,84 @@
+{
+  "date": "2026-03-22",
+  "generated_at": "2026-03-22T08:38:35.730Z",
+  "cards": [
+    {
+      "id": "2026-03-22-your-ai-agents-are-smart-but-they-keep-forgetting-the-missin",
+      "date": "2026-03-22",
+      "title": "Your AI Agents Are Smart, But They Keep Forgetting: The Missing 'Memory' Layer That Makes Them Truly Useful",
+      "category": "ai-tools",
+      "thesis": "Builders are seeing huge productivity gains with AI agents, but these agents are still 'dumb' in a critical way: they don't learn from their own experiences. They keep forgetting how specific tools work or which workflows were successful, forcing developers to constantly re-guide them. This gap between raw AI power and practical, reliable application is a major headache for engineers, who are either confused about how to use AI effectively or are building custom solutions to patch these memory issues.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Many engineers are confused about how much, or if they should even use AI for anything, feeling like they're in a 'new world where I'm struggling to find identity and what my values actually are.' They value craftsmanship but also getting things done.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47471601",
+          "engagement": 6
+        },
+        {
+          "text": "The core idea is that AI agents may be missing a reusable 'operational memory' layer for things they learn by actually doing tasks over time—like tool quirks discovered during execution or workflow patterns that repeatedly work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47459048",
+          "engagement": 4
+        },
+        {
+          "text": "While default tools for AI models like Claude Code are fine for single tasks, they 'break fast' once you're running a multi-agent system. Problems include no cross-repo exploration and difficulty with complex permissions, showing a need to replace or enhance these basic tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47453473",
+          "engagement": 3
+        },
+        {
+          "text": "People are building 'agentic CLIs' (command-line interfaces that use AI agents to automate tasks), indicating a strong interest in making agents practical for everyday development.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47463415",
+          "engagement": 3
+        },
+        {
+          "text": "One user claims 'I am still 3 times more productive than last year!' thanks to AI agents, sometimes watching TV for 40 minutes without checking on agents, highlighting the potential for massive efficiency gains if agents work reliably.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47474827",
+          "engagement": 5
+        }
+      ],
+      "opportunity": "Everyone's shipping basic AI agent interfaces right now, but the real edge isn't just more agents—it's agents that *learn* from their mistakes and successes. People are hitting a wall because agents lack 'operational memory,' meaning they forget how tools behaved or what workflows worked best after one task. You could build a plug-in or wrapper for popular agent frameworks that captures this 'learned experience'—like a smart log of tool usage and successful patterns—and makes it retrievable for future tasks, turning a generic agent into a truly experienced, reliable coworker. Get a simple version out this weekend by hooking into an agent's tool calls and storing outcomes in a basic database for retrieval.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 114
+    },
+    {
+      "id": "2026-03-22-stop-the-spying-the-untapped-market-for-trustworthy-software",
+      "date": "2026-03-22",
+      "title": "Stop the Spying: The Untapped Market for Trustworthy Software Reports",
+      "category": "apps",
+      "thesis": "People are losing trust in essential software, especially when major companies like H&R Block are caught installing hidden backdoors (a secret way to access your computer without permission). This distrust is amplified by 'AI-powered' claims that often lack transparency, leaving users confused about what applications are truly doing with their personal data. There's a huge, immediate need for clear, simple explanations about software privacy and security that everyday users can understand.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Users are freaking out because H&R Block tax software installed a root certificate authority (a kind of master key for internet traffic) and its private key on their local machines, allowing the company to potentially snoop on all secure web traffic.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47469949",
+          "engagement": 135
+        },
+        {
+          "text": "People are experiencing 'AI fatigue,' feeling tired of vague 'AI-powered' or 'AI-enhanced' marketing buzzwords, regardless of the actual utility, and want more meaningful interactions with the technology.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47457162",
+          "engagement": 11
+        },
+        {
+          "text": "Developers are looking for specific strategies, like creating detailed plans with sections for analysis, specifications, and testing, to ensure AI models and agents produce reliable and maintainable software.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47460411",
+          "engagement": 15
+        }
+      ],
+      "opportunity": "People are freaking out because H&R Block installed a secret backdoor, and 'AI-powered' labels just make everyone more suspicious about what apps are really doing with their data. Nobody's built a simple, public 'privacy report card' that explains, in plain language, what software permissions actually mean and flags known trust issues. You could launch a site this weekend where users submit apps, and you create easy-to-read 'nutrition labels' for their privacy and security, pulling info from app stores and public security reports, and even using an LLM (large language model, like ChatGPT) to simplify dense technical terms. First to simplify this owns the market for anxious users who just want to know if their tax software isn't spying on them.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 10
+    }
+  ]
+}
