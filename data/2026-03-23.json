@@ -1,0 +1,156 @@
+{
+  "date": "2026-03-23",
+  "generated_at": "2026-03-23T09:00:53.300Z",
+  "cards": [
+    {
+      "id": "2026-03-23-your-ai-agents-are-stuck-the-missing-tools-nobody-s-building",
+      "date": "2026-03-23",
+      "title": "Your AI Agents Are Stuck: The Missing Tools Nobody's Building",
+      "category": "ai-tools",
+      "thesis": "AI agents (software programs designed to act autonomously) are hitting a major wall when they try to work on complex, real-world projects. The basic tools they come with struggle to let them explore multiple codebases or handle permissions across different parts of a project, limiting their ability to truly 'think' and build like a human.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "The default tools that come with AI coding assistants like Claude Code are okay for simple, single-task agents, but they completely break down when you try to run multiple agents together on a bigger project. For instance, agents can't easily look at code in another project or manage permissions across different parts of a system.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47476821",
+          "engagement": 8
+        },
+        {
+          "text": "Every AI is trained on one-on-one chats, which means they just agree with you. Real intelligence comes from having to think and decide when faced with disagreement, like an AI in a room with 30 people debating. No one seems to be training AI this way yet.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47483215",
+          "engagement": 8
+        },
+        {
+          "text": "There's a critical gap in the progress of AI agents, and it boils down to needing 'quick progress' – a generic answer, but it means we don't have objective solutions for making them take a giant leap yet.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47466682",
+          "engagement": 4
+        },
+        {
+          "text": "People are finding that standard documentation files for agents (like AGENTS.md) are useless for enforcing how agents should work; it's better to use automated tools to manage these processes.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47485899",
+          "engagement": 4
+        }
+      ],
+      "opportunity": "Every builder trying to make AI agents do anything complex is complaining that their agents can't 'see' or navigate code across different projects, or even manage permissions properly. If you built a simple 'code explorer' plugin that an AI agent could use – think of it as a smart map for codebases – you'd solve a huge bottleneck. You could start by making a small tool that lets an agent securely request and read files from different GitHub repos, acting as its 'eyes' and 'hands' for multi-project work.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 111
+    },
+    {
+      "id": "2026-03-23-ai-is-boosting-devs-but-unreliable-platforms-are-eating-your",
+      "date": "2026-03-23",
+      "title": "AI is Boosting Devs, But Unreliable Platforms Are Eating Your Gains",
+      "category": "saas",
+      "thesis": "Builders are seeing huge productivity spikes from AI (like for boilerplate code and refactoring), making them ship faster than ever. But this speed is clashing with the unpredictable, often opaque nature of critical platforms and services, where issues like account terminations or hidden charges can wipe out progress and revenue. The market needs tools that bring transparency and control back to these black-box systems.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "People are finding 'gigantic' productivity gains with AI for boilerplate code, libraries, build-tools, and refactoring, which is 'totally different from experiencing it' compared to just reading about the hype.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47479627",
+          "engagement": 255
+        },
+        {
+          "text": "A small software company had their Apple developer account terminated due to a 'rogue employee,' shutting down an app that was a 'vital economic engine' for their local community.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47479115",
+          "engagement": 163
+        },
+        {
+          "text": "One user warned about a 'crazy MS 365 dark pattern' where an upgrade 'silently' moved them to 25 licenses, resulting in a surprise $1,035 charge.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47475859",
+          "engagement": 27
+        },
+        {
+          "text": "Builders are actively sharing 'favorite lines' in their AI agent prompt files (like 'CRITICAL: Always make detailed plan...') to ensure software built with LLMs is actually maintainable and reliable.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47474827",
+          "engagement": 22
+        }
+      ],
+      "opportunity": "Everyone's celebrating massive AI productivity gains, but also getting blindsided by platform issues like Apple shutting down accounts or Microsoft silently hiking prices. Nobody's built a simple tool that acts like an AI-powered co-pilot for your critical SaaS accounts, watching dashboards and emails for unexpected changes or billing surprises. Connect to common services (Stripe, Apple Dev, AWS, MS365) and use an LLM to flag anything outside the norm – you'll own the 'peace of mind' market for busy builders.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 9
+    },
+    {
+      "id": "2026-03-23-offline-first-apps-are-broken-on-ios-your-chance-to-own-loca",
+      "date": "2026-03-23",
+      "title": "Offline-First Apps are Broken on iOS: Your Chance to Own Local Data Sync",
+      "category": "apps",
+      "thesis": "Everyone is trying to build apps that keep user data private and off central servers, like the buzz around GrapheneOS shows. But if you want your app to talk directly between phones without internet (peer-to-peer), especially on iPhones, it's a total mess because Apple's tools are old and unreliable. This creates a huge opening for someone to build a simple way for apps to sync data locally and privately, unlocking a wave of new secure and offline-first products.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "GrapheneOS will remain usable by anyone without requiring personal information. (This shows a strong demand for privacy-focused mobile experiences where data isn't tied to personal identity or central servers.)",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47482217",
+          "engagement": 505
+        },
+        {
+          "text": "I'm building an app that syncs between phones over Bluetooth when there's no cell service. Android has Nearby Connections API which handles discovery and transport nicely. iOS has Multipeer Connectivity but it's flaky and Apple hasn't updated it in years. CoreBluetooth works but discovery is slow and you're limited to advertising 28 bytes. Has anyone found a reliable cross-platform approach to BLE (Bluetooth Low Energy)? (This directly highlights a major technical roadblock for building offline, peer-to-peer apps, especially on iOS.)",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47481736",
+          "engagement": 11
+        },
+        {
+          "text": "People are asking 'How are you securing LLM code agents?' (LLM code agents are AI programs that can write and run code. This concern about securing them points to a need for more controlled, potentially local-first environments where data doesn't leave devices easily.)",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47466552",
+          "engagement": 7
+        },
+        {
+          "text": "An 11-year-old trained a custom large language model (LLM — a type of AI that understands and generates human language) for $1, getting 50 downloads. (This shows how accessible and cheap it's becoming to build powerful AI models, suggesting a future where more processing happens locally on devices.)",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47480445",
+          "engagement": 4
+        }
+      ],
+      "opportunity": "Everyone's trying to build local-first apps that don't rely on central servers, especially with all the privacy talk around GrapheneOS, but iOS makes it a nightmare to get devices talking directly via Bluetooth. You could build a super simple SDK (that's a toolkit for developers) that handles reliable peer-to-peer discovery and data syncing cross-platform, letting app builders ship privacy-focused, offline-first features in a weekend, without having to fight Apple's flaky APIs. The first person to make this dead simple for tools like Replit or Cursor will own a massive piece of the future of private, local-first computing.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    },
+    {
+      "id": "2026-03-23-your-laptop-just-became-an-ai-supercomputer-build-local-ai-a",
+      "date": "2026-03-23",
+      "title": "Your Laptop Just Became an AI Supercomputer: Build Local AI Agents That Ship Fast & Cheap",
+      "category": "ai-tools",
+      "thesis": "Massive, powerful AI models (the kind usually run in expensive cloud data centers) can now run directly on consumer laptops, thanks to new advancements. At the same time, major AI players like Anthropic and OpenAI are standardizing how AI agents (automated tools that perform tasks) learn and use 'skills' (like mini-programs or functions). This means builders can create sophisticated AI agents that run privately and cheaply on their own hardware, bypassing the high costs of cloud AI.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "A new technique called Flash-MoE makes it possible to run a massive, 397-billion parameter AI model (which is usually reserved for powerful servers) directly on a laptop.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47476422",
+          "engagement": 465
+        },
+        {
+          "text": "The way AI agents acquire and use specific abilities, called 'skills,' is rapidly standardizing. Major platforms like Anthropic and OpenAI are now officially supporting and even providing tools for creating these skills, which often consist of a simple folder with documentation and scripts.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47475832",
+          "engagement": 12
+        },
+        {
+          "text": "There's an active discussion about the high cost of using AI coding tools at work, with one industry leader suggesting engineers might spend as much as $250k a year on 'tokens' (the units of computation you pay for when using cloud AI).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47484203",
+          "engagement": 8
+        }
+      ],
+      "opportunity": "Everyone's complaining about the insane costs of cloud AI, but powerful models are now running on laptops while standardized 'skills' for AI agents are emerging. Skip the cloud entirely and build an offline desktop app that lets people easily create, test, and share a library of these 'skills' for their own local AI agents, giving them powerful, private automation without the recurring token fees. You could even ship it with a starter pack of common skills for things like data processing or web scraping, all running locally.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 4
+    }
+  ]
+}
