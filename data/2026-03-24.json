@@ -1,0 +1,78 @@
+{
+  "date": "2026-03-24",
+  "generated_at": "2026-03-24T08:56:46.961Z",
+  "cards": [
+    {
+      "id": "2026-03-24-your-ai-agent-is-blind-the-untapped-market-for-self-learning",
+      "date": "2026-03-24",
+      "title": "Your AI Agent is Blind: The Untapped Market for Self-Learning 'Skills'",
+      "category": "ai-tools",
+      "thesis": "AI agents are getting insanely powerful, even running on your phone, making developers way more productive. But right now, these agents are kinda dumb when it comes to learning from their mistakes or verifying if their code actually works. The big opportunity is building the missing piece that lets agents 'see' their output, learn from failures (their 'gotchas'), and automatically turn that into reusable 'skills' that make them truly autonomous.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "The iPhone 17 Pro was demonstrated running a massive 400B LLM, showing that powerful AI is moving from the cloud to local devices.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47490070",
+          "engagement": 870
+        },
+        {
+          "text": "People are already trying to build a 'Stack Overflow for AI coding agents' (Cq), where agents can propose and query for 'knowledge units' based on 'gotchas' they run into.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47495344",
+          "engagement": 184
+        },
+        {
+          "text": "One builder created 'ProofShot' because AI agents can write UI code but can't see what it looks like or if it's broken in a browser. It lets agents record videos, screenshots, and logs to verify their work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47491466",
+          "engagement": 22
+        },
+        {
+          "text": "Developers are experiencing 'gigantic' productivity gains with AI, especially for boilerplate and refactoring, leading to a feeling of 'infinite possibilities' (like Karpathy's 'AI psychosis').",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47499672",
+          "engagement": 299
+        },
+        {
+          "text": "The concept of 'skills' is quietly becoming the standard unit of knowledge for AI agents, with major players like Anthropic and OpenAI adopting a converging format (a folder with a SKILL.md and scripts).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47479115",
+          "engagement": 21
+        }
+      ],
+      "opportunity": "Agents are shipping code faster than ever, even on phones, but they're still blind to their own failures. With 'skills' emerging as the standard for agent knowledge, there's a huge opportunity to build the feedback loop that turns an agent's 'gotchas'—like a broken UI or a failed API call—into an automatically generated, verifiable 'skill' that other agents can learn from. The first person to ship a plug-in or service that lets agents auto-learn and document their failures, then share these 'skills,' will own the market for truly autonomous, self-improving agents.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 131
+    },
+    {
+      "id": "2026-03-24-claude-s-secret-sauce-turning-personal-ai-coding-hacks-into-",
+      "date": "2026-03-24",
+      "title": "Claude's Secret Sauce: Turning Personal AI Coding Hacks into a Product",
+      "category": "ai-tools",
+      "thesis": "Builders are actively discovering and sharing specific 'cheat sheets' and workflows to make AI tools, especially Claude, incredibly effective for coding tasks. This isn't just about using AI; it's about optimizing how you talk to it (your 'prompts') to get the best code, faster, like having a super-smart coding assistant.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "There's a strong interest in a 'Claude Code Cheat Sheet,' indicating people want structured guidance and quick references for using Claude effectively in coding.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47495527",
+          "engagement": 482
+        },
+        {
+          "text": "People are sharing detailed accounts of 'How I'm Productive with Claude Code,' showing a clear demand for practical, workflow-oriented advice on leveraging AI for developer productivity.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47494890",
+          "engagement": 312
+        }
+      ],
+      "opportunity": "Everyone's figuring out the exact prompts and workflows that make Claude an insane coding partner, but these 'cheat sheets' and productivity hacks are all stuck in private notes or long forum threads. Someone needs to build a super simple browser extension or a web app where developers can quickly save, share, and *one-click apply* these proven Claude code prompts for common tasks like 'explain this error' or 'refactor this function,' turning scattered wisdom into a plug-and-play toolkit.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
