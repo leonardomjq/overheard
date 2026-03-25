@@ -1,0 +1,98 @@
+{
+  "date": "2026-03-25",
+  "generated_at": "2026-03-25T08:55:40.045Z",
+  "cards": [
+    {
+      "id": "2026-03-25-your-private-ai-just-got-eyes-building-agents-that-see-your-",
+      "date": "2026-03-25",
+      "title": "Your Private AI Just Got Eyes: Building Agents That See Your World, Locally",
+      "category": "ai-tools",
+      "thesis": "AI is no longer just about text or images; new breakthroughs mean AI can now directly 'understand' raw video, without needing to convert it into words first (like transcribing or describing frames). This powerful new capability, combined with a growing demand for AI that runs privately on your own devices (instead of sending all your data to big cloud servers), opens up a massive opportunity. People are also getting fed up with existing cloud AIs like Claude that need constant supervision and often 'cheat' on tasks, making local, specialized, and reliable AI much more appealing.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Gemini Embedding 2 can project raw video directly into a 768-dimensional vector space alongside text. No transcription, no frame captioning, no intermediate text. A query like \"green car cutting me off\" is directly comparable to a 30-second video clip at the vector level.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47507150",
+          "engagement": 406
+        },
+        {
+          "text": "I built Cortex because I got tired of AI memory solutions that send your most personal data to someone else's server. Cortex is a 4-tier memory engine (episodic → semantic → procedural) that runs 100% on your device. Pure Rust, 3.8MB, 62µs ingest. LoCoMo benchmark: 73.7% overall, beating Mem0 (66.9%) on all 4 categories.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47510953",
+          "engagement": 5
+        },
+        {
+          "text": "I'm a big fan of on-device AI inference for a million reasons, especially its potential to significantly reduce or even potentially eliminate the need for massive AI data center projects... Llamacpp now supports unified system RAM offloading on Linux.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47490967",
+          "engagement": 5
+        },
+        {
+          "text": "I've been using Claude intensively for the past 3.5 months, during the last couple of weeks, I am getting seriously frustrated and even slightly angry because of the constant supervision I have to do, and how it seems to always try to cheat out of doing the hard task, or skip gathering context for itself.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47510993",
+          "engagement": 5
+        },
+        {
+          "text": "I built an MCP to handle all my wearables data, and it was super helpful, but the types of questions that agent could answer without access to write its own programs was limited.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47505445",
+          "engagement": 5
+        }
+      ],
+      "opportunity": "Gemini just dropped native video embedding, letting AI understand raw video directly, no text needed. Combine that with local-first AI like Cortex, and you can build personal AI agents that truly get *your* life from *your* videos without privacy nightmares. The moment is ripe to ship a 'personal video memory' agent for dashcams or phone videos that can intelligently summarize, search, or even trigger actions based on what it *sees*, all processed on-device.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-03-25-ai-s-security-blind-spot-your-ai-tools-are-getting-hacked-an",
+      "date": "2026-03-25",
+      "title": "AI's Security Blind Spot: Your AI Tools Are Getting Hacked (and What to Build About It)",
+      "category": "ai-tools",
+      "thesis": "Builders are rushing to offload coding and tasks to AI, with some even experiencing 'perpetual AI psychosis' from the endless possibilities. However, the foundational tools connecting these projects to AI models are proving vulnerable to sophisticated attacks, creating a massive security and trust gap. This means that while everyone is dreaming of AI-powered workflows, the very plumbing they rely on is becoming a liability.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The popular AI tool 'Litellm' had compromised versions (1.82.7 and 1.82.8) deployed to PyPI, causing issues like a 'forkbomb' (a program that creates many copies of itself, crashing the system) on users' laptops due to malicious code hidden inside.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47508246",
+          "engagement": 1069
+        },
+        {
+          "text": "OpenAI is shutting down its Sora AI video app, indicating rapid shifts in the generative AI video space, while Gemini's new capability to natively embed raw video directly into a searchable format (without needing text descriptions) is emerging, showing a pivot towards AI understanding video content directly.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47501426",
+          "engagement": 1181
+        },
+        {
+          "text": "One developer noted how LLMs learn from existing code but don't inherently understand how programmers *work* (e.g., guessing commands with a colon prefix, like ':help', because that's how they saw terminals formatted), highlighting a gap in AI understanding developer workflows.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47506713",
+          "engagement": 50
+        },
+        {
+          "text": "People are asking 'How do you offload all coding to AI?' and discussing a 'perpetual AI psychosis' where the infinite possibilities of AI lead to trying everything, but also a struggle to fully integrate AI into productive workflows, especially for existing projects.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47503617",
+          "engagement": 15
+        },
+        {
+          "text": "The original creator of Video.js, a widely used open-source video player, had to 'reboot' the project after private equity fired its maintainers, showing the fragility and importance of ongoing maintenance for critical open-source infrastructure.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47509571",
+          "engagement": 458
+        }
+      ],
+      "opportunity": "Everyone's trying to offload their coding to AI, but the tools they're using to connect to models (like Litellm) are getting hacked, putting entire projects at risk. You could build a super simple 'AI sandbox' – a secure layer (an intermediary service that handles requests) that isolates each project's AI API calls and secrets, making it dead simple to swap models and track costs without worrying about supply chain attacks. Ship a basic version that just proxies and logs, and you've got a killer offering for builders terrified of the next compromise.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 26
+    }
+  ]
+}
