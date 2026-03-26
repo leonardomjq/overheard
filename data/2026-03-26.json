@@ -1,0 +1,117 @@
+{
+  "date": "2026-03-26",
+  "generated_at": "2026-03-26T09:00:50.160Z",
+  "cards": [
+    {
+      "id": "2026-03-26-ai-assistants-are-forgetting-everything-here-s-how-to-give-t",
+      "date": "2026-03-26",
+      "title": "AI Assistants Are Forgetting Everything – Here's How to Give Them a Super Memory (That Stays Private)",
+      "category": "ai-tools",
+      "thesis": "Developers are getting seriously frustrated when their AI coding assistants constantly lose context during complex tasks, leading to emotional burnout. But new tech is emerging that allows AI to process and remember information locally (keeping it on your device, not in the cloud), including visually, opening the door for agents that truly understand and retain what you're working on without privacy concerns.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Can you *feel* when your agent has just compressed or lost context? Can you tell by how it bulls...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47523330",
+          "engagement": 20
+        },
+        {
+          "text": "Ask HN: Do you feel less happy when coding with agent?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47510953",
+          "engagement": 17
+        },
+        {
+          "text": "Cortex – Local-first AI memory engine, beats Mem0 on LoCoMo, encrypted, free: I got tired of AI memory solutions that send your most personal data to someone else's server. Cortex runs 100% on your device.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47516319",
+          "engagement": 5
+        },
+        {
+          "text": "Gemini Embedding 2 can project raw video directly into a 768-dimensional vector space (a way for AI to understand and compare visual data like text) alongside text. No transcription, no frame captioning, no intermediate text. I used this to build a CLI that indexes hours of footage into ChromaDB, then searches it with natural language.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47511075",
+          "engagement": 527
+        },
+        {
+          "text": "Llamacpp now supports unified system RAM offloading on Linux: I'm a big fan of on-device AI inference for a million reasons, especially its potential to significantly reduce or even potentially eliminate the need for massive AI data center projects...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47511770",
+          "engagement": 5
+        }
+      ],
+      "opportunity": "Everyone's building AI agents that forget your last conversation or struggle with visual context, and it's making developers \"less happy.\" With new tools like Gemini's native video embedding and local-first memory engines like Cortex, you can build a desktop app that gives coding assistants actual visual memory—recording and indexing screen activity, video calls, or even webcam feeds locally. The first person to ship a reliable, private visual memory layer for popular coding assistants (like Cursor or Replit's agent features) will own the \"never forget\" market for frustrated builders.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 103
+    },
+    {
+      "id": "2026-03-26-your-web-scraper-just-broke-ai-can-fix-it-for-real-this-time",
+      "date": "2026-03-26",
+      "title": "Your Web Scraper Just Broke? AI Can Fix It (For Real This Time)",
+      "category": "automation",
+      "thesis": "Traditional web scraping is a nightmare because websites constantly change, forcing builders to rewrite code. While using AI (large language models) seems like an obvious fix, simply throwing raw website data at them often makes things more painful due to messy HTML. Builders desperately need a reliable way to get structured data without constant maintenance, and current tools aren't quite cutting it.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "We've been building data pipelines that scrape websites and extract structured data for a while now. If you've done this, you know the drill: you write CSS selectors, the site changes its layout, everything breaks at 2am, and you spend your morning rewriting parsers. LLMs (large language models, a type of AI) seemed like the obvious fix — just throw the HTML at GPT and ask for JSON. Except in practice, it's more painful than that: Raw HTML is full of navigation elements and other junk.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47521150",
+          "engagement": 58
+        },
+        {
+          "text": "I’m tired of this AI hype. Every time I open Hacker News, everyone is talking about AI. Why does this bother me? Am I alone? I’ve spent years learning to code, building stuff, reading docs, debugging, scraping through Stack Overflow, etc.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47518281",
+          "engagement": 43
+        },
+        {
+          "text": "I currently have a Claude Pro monthly subscription ($20) which I use for coding. It's been useful but I'm fatigued from optimising my work around its session limits.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47517606",
+          "engagement": 32
+        },
+        {
+          "text": "I’ve seen a lot of comments and posts where people have stated they ‘literally’ never write a line of code anymore and was curious as to what people mean when they state this. I just find it quite hard to understand how it can be productive to offload all coding, especially on brownfield projects (existing projects with legacy code).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47526486",
+          "engagement": 24
+        }
+      ],
+      "opportunity": "The 'Robust LLM Extractor' post nails it: everyone who scrapes data hates how often their code breaks, but just dumping raw website code into an AI (like GPT) doesn't magically fix it. Nobody's really owned the problem of building a bulletproof, 'set-it-and-forget-it' API (a way for software to talk to each other) that takes any messy webpage and spits out clean, structured data every single time. Ship a productized service that does exactly this, using smart pre-processing and AI, and you'll capture all the builders tired of late-night scraper fixes.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 26
+    },
+    {
+      "id": "2026-03-26-ai-coding-agents-are-pumping-out-trash-code-can-you-fix-thei",
+      "date": "2026-03-26",
+      "title": "AI Coding Agents Are Pumping Out Trash Code – Can You Fix Their Quality Problem?",
+      "category": "ai-tools",
+      "thesis": "AI coding agents like Claude are generating a ton of code, but a shocking 90% of it ends up in GitHub repositories that practically no one uses, suggesting low quality or utility. Builders are trying to manage multiple AI sessions (like different conversations with an AI to get code) to get work done, highlighting a major pain point beyond just generating code: getting *good* code and managing its quality.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "A massive 90% of the code generated by AI models like Claude is being pushed to GitHub repositories that have fewer than 2 stars, indicating that most of this AI-generated code isn't being widely adopted or found useful by others.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47521157",
+          "engagement": 437
+        },
+        {
+          "text": "One builder created Optio, a tool to manage and 'orchestrate' multiple AI coding sessions (like having several AI assistants working on different parts of a project) because they were constantly jumping between different Claude conversations trying to manage multiple lines of work and code changes.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47520220",
+          "engagement": 78
+        }
+      ],
+      "opportunity": "Everyone's jumping between AI coding sessions because the initial output is often not quite right, leading to a huge amount of low-quality code. Instead of just orchestrating agents, build a 'quality filter' layer that sits between the AI and the developer's code editor or repo, offering instant suggestions to improve or correct AI-generated code based on common patterns or project-specific guidelines. The first person to ship a simple browser extension or local agent that cleans up AI output *before* it even gets committed will own the market of frustrated developers trying to make AI coding actually useful.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
