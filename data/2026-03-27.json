@@ -1,0 +1,171 @@
+{
+  "date": "2026-03-27",
+  "generated_at": "2026-03-27T08:58:06.535Z",
+  "cards": [
+    {
+      "id": "2026-03-27-the-agent-gold-rush-don-t-build-the-pickaxe-build-the-niche-",
+      "date": "2026-03-27",
+      "title": "The Agent Gold Rush: Don't Build the Pickaxe, Build the Niche Skill for Teams",
+      "category": "ai-tools",
+      "thesis": "AI agents are blowing up, with builders creating the core infrastructure (the underlying systems that let agents run) and platforms to manage them. But the real buzz and opportunity is shifting towards highly specific 'skills' that let these agents tackle real-world business problems for non-technical teams, acting like tiny, automated employees.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Orloj – agent infrastructure as code: open-source orchestration runtime for multi-agent AI systems. You define agents, tools, policies, and workflows in declarative YAML manifests, and Orloj handles scheduling, execution, governance, and reliability.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47523330",
+          "engagement": 31
+        },
+        {
+          "text": "Agent Skill Harbor – a GitHub-native skill platform for teams: What still feels missing is the middle layer: how teams and organizations share AI agent skills, track provenance, and keep them safe to use.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47526813",
+          "engagement": 18
+        },
+        {
+          "text": "operator23 lets non-technical operators describe a workflow in plain English and run it across their tool stack, hubspot, apollo, monday, google drive and others. no builder, no if-then config, just a description and a review step before anything runs.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47521443",
+          "engagement": 18
+        },
+        {
+          "text": "wewrite: AI Skill for Claude Code — Hot topic crawling → Topic selection → Writing → SEO → Visual AI → Layout → WeChat Draft Box (describing a full content creation workflow)",
+          "source": "github",
+          "url": "https://github.com/magnum6actual/flipoff",
+          "engagement": 372
+        },
+        {
+          "text": "advertising-skills: Advertising Skills for Open Claw, Claude Code & AI agents. Direct response, paid ads, funnels, and copy systems.",
+          "source": "github",
+          "url": "https://github.com/jxnxts/mcp-brasil",
+          "engagement": 337
+        }
+      ],
+      "opportunity": "Everyone's either building the core AI agent platforms or general-purpose agents, but the real untapped market is in highly specific, 'micro-SaaS' agent skills that solve painful, multi-step business problems for teams. Pick a common, repetitive workflow (like 'generating social media posts from a blog draft' or 'onboarding new sales leads across HubSpot and Slack'), build an agent skill that handles it in plain English, and make it super easy for a whole team to share and customize without writing any code. The first person to nail team-friendly, plain-English 'skill stores' for specific business functions will own this niche.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 86
+    },
+    {
+      "id": "2026-03-27-ai-agents-are-exploding-but-builders-want-control-the-rise-o",
+      "date": "2026-03-27",
+      "title": "AI Agents Are Exploding, But Builders Want Control: The Rise of Local-First AI Dev Tools",
+      "category": "ai-tools",
+      "thesis": "Builders are massively into AI agents that can automate development tasks, from coding to data extraction, often running them on cheap servers or orchestrating them for complex workflows. But as these powerful AI tools become more common, there's a growing tension: developers want the benefits of AI without sacrificing control over their data or relying solely on complex, cloud-based services. They're looking for simpler, more private ways to integrate AI into their existing, often local-first, development workflows.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Someone built and showcased an AI agent running on a $7/month VPS (Virtual Private Server – a cheap, private computer in the cloud) using IRC (a classic chat protocol) for communication, which got 299 engagements. This highlights a strong interest in custom, low-cost, and potentially more private AI deployments.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47534848",
+          "engagement": 299
+        },
+        {
+          "text": "A new tool called 'Optio' was shown, which orchestrates AI coding agents in Kubernetes (a system for managing software containers) to take a project ticket all the way to a pull request. This indicates high demand for automating entire development cycles with AI, garnering 131 engagements.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47531696",
+          "engagement": 131
+        },
+        {
+          "text": "A 'plain-text cognitive architecture for Claude Code' was shared, showing interest in how AI agents 'think' and operate, with 189 engagements. This suggests builders are actively exploring the underlying structure of AI agents.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47515656",
+          "engagement": 189
+        },
+        {
+          "text": "A 'robust LLM extractor for websites' in TypeScript was built to solve the pain of traditional web scraping breaking when site layouts change. This tool uses AI to reliably pull structured data, showing a practical application for LLMs in developer workflows, receiving 113 engagements.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47536365",
+          "engagement": 113
+        },
+        {
+          "text": "A builder asked how to contribute to open-source software without their code being used as training data for AI companies. This highlights a clear concern among developers about data privacy and ownership when interacting with AI tools (6 engagements).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47519419",
+          "engagement": 6
+        }
+      ],
+      "opportunity": "Developers are going all-in on AI agents for coding and automation, but they're also getting fed up with the privacy headaches and complexity of big cloud AI services, often preferring simple, local solutions like storing all their project notes in Git. There's a massive, unfilled gap for 'local-first' AI utilities that can bring smarts to these existing, private developer workflows. Whoever ships a dead-simple tool that lets teams query, summarize, or generate insights from their internal Git-based documentation (like `investor_meeting.md` or `user_feedback.md`) using local or self-hosted LLMs, without ever sending sensitive data to a third party, will own the market of builders craving AI superpowers with maximum privacy and control. You could build a prototype this weekend that indexes markdown files and connects to a local LLM like Ollama to answer questions about them.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 22
+    },
+    {
+      "id": "2026-03-27-your-ai-agents-are-getting-hacked-why-security-is-the-next-g",
+      "date": "2026-03-27",
+      "title": "Your AI Agents Are Getting Hacked: Why Security is the Next Gold Rush for Builders",
+      "category": "ai-tools",
+      "thesis": "AI agents are exploding in popularity, with builders deploying them on everything from powerful servers to tiny $7/month virtual machines. But a major malware attack on LiteLLM (a popular tool for connecting to different AI models) just exposed a huge security flaw, showing that these agents are vulnerable to supply chain attacks (when bad code gets sneaked into software you use). This means builders are shipping products on shaky ground, making agent reliability and security a critical, unsolved problem that needs immediate attention.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "My minute-by-minute response to the LiteLLM malware attack: Related: Tell HN: Litellm 1.82.7 and 1.82.8 on PyPI are compromised",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47531967",
+          "engagement": 499
+        },
+        {
+          "text": "Tell HN: Litellm 1.82.7 and 1.82.8 on PyPI are compromised",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47536761",
+          "engagement": 483
+        },
+        {
+          "text": "Show HN: I put an AI agent on a $7/month VPS with IRC as its transport layer. The public one (nullclaw) is a 678 KB Zig binary using ~1 MB RAM...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47534283",
+          "engagement": 299
+        },
+        {
+          "text": "Tell HN: Slow Down: The number of supply chain attacks and the blast radius as a result of these is ever increasing. The big culprits are languages that are not just languages but whole eco-systems, where stuff that should be 'batteries included' ends up in a massive stack of libraries and modules that nobody can be bothered to review.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47533283",
+          "engagement": 20
+        },
+        {
+          "text": "Ask HN: Has Claude Code quality level degraded lately? Last week or so, I have been noticing Claude Code has been significantly challenged in keeping its stuff together.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47535626",
+          "engagement": 11
+        }
+      ],
+      "opportunity": "The recent LiteLLM malware attack exposed a huge security hole in the AI agent ecosystem, just as more builders are confidently deploying agents on lean setups like a $7/month VPS. Instead of generic monitoring, imagine a lightweight 'agent bodyguard' service that specifically flags weird network activity or unauthorized dependency changes for other agents. You could build a small, self-contained agent that acts as a watchdog, giving early warnings to builders worried about their deployed AI tools going rogue and owning the emerging agent-security niche.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 26
+    },
+    {
+      "id": "2026-03-27-rip-mac-pro-the-untapped-market-for-repairable-upgradeable-w",
+      "date": "2026-03-27",
+      "title": "RIP Mac Pro: The Untapped Market for Repairable, Upgradeable Workstations (Or Keeping Old Macs Alive)",
+      "category": "trends",
+      "thesis": "Apple's decision to discontinue the Mac Pro signals the end of user-upgradable and repairable Macs, leaving a significant gap for power users, creators, and developers who need flexible, long-lasting hardware. This creates a fresh opportunity to serve a frustrated audience looking for alternatives or ways to maximize their existing 'legacy' machines.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Apple discontinues the Mac Pro.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47535708",
+          "engagement": 597
+        },
+        {
+          "text": "Apple Discontinues Mac Pro: ...no plans for future hardware. RIP. Serviceable, repairable, upgradable Macs are officially a thing of the past.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47537052",
+          "engagement": 55
+        }
+      ],
+      "opportunity": "Everyone's bummed that Apple killed off the last truly upgradable Mac, leaving power users stuck with expensive, sealed boxes. There's a huge wave of frustrated creators and developers now looking for alternatives to keep their workflows flexible and affordable. You could build a killer community and curated marketplace around open-source PC builds that perfectly mimic the Mac Pro's power and upgradeability, or even just be the go-to guide for sourcing parts and repair instructions for the last generation of upgradable Apple machines.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
