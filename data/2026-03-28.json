@@ -1,0 +1,96 @@
+{
+  "date": "2026-03-28",
+  "generated_at": "2026-03-28T08:42:20.362Z",
+  "cards": [
+    {
+      "id": "2026-03-28-ai-agents-are-exploding-the-missing-piece-for-builders-is-se",
+      "date": "2026-03-28",
+      "title": "AI Agents are Exploding: The Missing Piece for Builders is Secure Teamwork",
+      "category": "ai-tools",
+      "thesis": "AI agents are the hottest new thing to build, with creators deploying them everywhere from super-cheap servers to custom, user-friendly interfaces. But as more people create specialized agents for different jobs, the real challenge isn't just making a cool agent; it's getting these agents to reliably talk to each other and work together, especially for teams, without needing a full-time infrastructure expert.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "The message is clear: 'Go hard on agents, not on your filesystem,' meaning focus your energy on building AI agents as the core of your projects.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47550282",
+          "engagement": 472
+        },
+        {
+          "text": "One builder shared how they put 'an AI agent on a $7/month VPS with IRC as its transport layer,' demonstrating that people are deploying agents on low-cost setups and using creative, simple ways for them to communicate.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47536761",
+          "engagement": 418
+        },
+        {
+          "text": "Another project, 'Open-Source Animal Crossing–Style UI for Claude Code Agents,' highlighted features like 'iMessage channel support (agents can text people and you can text agents),' showing a demand for user-friendly ways to interact with and manage agents across different communication platforms.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47534283",
+          "engagement": 82
+        },
+        {
+          "text": "A 'GitHub-native skill platform for teams' called Agent Skill Harbor points out that 'what still feels missing is the middle layer: how teams and organizations share AI agent skills, track provenance, and keep them safe to use,' indicating a need for better team-oriented agent management and sharing.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47549160",
+          "engagement": 18
+        },
+        {
+          "text": "Projects like 'Relay – The open-source Claude Cowork for OpenClaw' and 'Open Source 'Conductor + Ghostty'' (where 'multiple agents run') also suggest a growing focus on agents collaborating and being managed in groups.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47529306",
+          "engagement": 34
+        }
+      ],
+      "opportunity": "Everyone's rushing to build cool AI agents, but the real headache starts when you need multiple agents (maybe from different teams or even different models) to talk to each other reliably and securely without a DevOps degree. Imagine a 'Slack for AI agents' – a simple, managed service that provides secure, low-latency communication channels for agents to share context and coordinate tasks. The first person to ship a plug-and-play solution for effortless agent-to-agent communication and collaboration will own the next wave of agent-driven products, and you could probably prototype the core messaging layer in a weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 14
+    },
+    {
+      "id": "2026-03-28-your-code-their-ai-the-privacy-trap-devs-are-freaking-out-ab",
+      "date": "2026-03-28",
+      "title": "Your Code, Their AI: The Privacy Trap Devs Are Freaking Out About",
+      "category": "ai-tools",
+      "thesis": "Developers are seriously stressed because AI tools, like GitHub Copilot, are hoovering up their private code for training unless they actively opt-out, creating a massive privacy headache. Plus, the AI assistants they *do* use, like Claude Code, are constantly overloaded or hitting usage limits, making it hard to actually get work done and creating FOMO (fear of missing out) if they're not always coding with AI.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "GitHub is automatically opting users into training its AI models on private repositories unless they manually opt out by April 24, causing widespread concern among developers.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47543167",
+          "engagement": 955
+        },
+        {
+          "text": "A software package from Telnyx on PyPI (a big library for Python code) was compromised, showing how vulnerable the supply chain for developers can be and raising security concerns.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47540388",
+          "engagement": 199
+        },
+        {
+          "text": "Users are hitting 'overloaded_error' messages and experiencing significantly faster consumption of their usage limits with Claude's AI coding assistant, making it unreliable for consistent work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47548243",
+          "engagement": 9
+        },
+        {
+          "text": "Developers are feeling intense pressure to constantly use AI coding tools like Claude Code Max to maximize their subscription and avoid falling behind, leading to burnout and 'Fear of Missing Code'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47550564",
+          "engagement": 9
+        },
+        {
+          "text": "GitHub is making two-factor authentication (an extra security step beyond just a password) mandatory for all code contributors, highlighting a push for stronger security measures across the platform.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47541097",
+          "engagement": 46
+        }
+      ],
+      "opportunity": "Everyone's scrambling to opt out of GitHub training on their private repos, and cloud AI coding assistants like Claude are constantly overloaded, forcing devs to feel FOMO and hit limits. There's a huge gap for a *local-first AI coding assistant* that seamlessly integrates multiple open-source models (like the 'rses' tool hints at) and manages context *privately* on the user's machine. You could build a slick UI around an existing local LLM runner (like Ollama or LM Studio) with smart context syncing across different developer tools, letting devs code with powerful AI without sending their sensitive IP to the cloud, and crucially, without hitting rate limits. Ship it as a one-time purchase Mac app for people already paying for DashPane-like utilities.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 38
+    }
+  ]
+}
