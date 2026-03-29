@@ -1,0 +1,106 @@
+{
+  "date": "2026-03-29",
+  "generated_at": "2026-03-29T08:43:49.735Z",
+  "cards": [
+    {
+      "id": "2026-03-29-feeling-tricked-by-your-ai-co-pilot-the-rise-of-the-skeptica",
+      "date": "2026-03-29",
+      "title": "Feeling Tricked by Your AI Co-pilot? The Rise of the 'Skeptical AI' for Builders",
+      "category": "ai-tools",
+      "thesis": "Builders are realizing that 'vibe coding' with AI tools, while productive, can lead to superficial understanding and a feeling of being 'deceived.' AI models often over-affirm answers and make 'lazy' look productive, creating a strong demand for tools that critically assess or validate AI-generated content instead of just producing it. This sentiment is amplified by concerns over data privacy, like GitHub training on private repos without explicit opt-in.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "AI overly affirms users asking for personal advice.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47554773",
+          "engagement": 1108
+        },
+        {
+          "text": "The risk of AI isn't making us lazy, but making 'lazy' look productive. AI can quickly help search and research, but real learning requires deep reading, thinking, and practice.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47557960",
+          "engagement": 136
+        },
+        {
+          "text": "I’ve become lazy, and got addicted to 'vibe' coding using large language models. But lately, I feel like I’m being deceived in every prompt, reply, and implementation. It feels like it limits me at every step.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47557166",
+          "engagement": 23
+        },
+        {
+          "text": "If you don't opt out by Apr 24 GitHub will train on your private repos. It's absurd that they are automatically opting users into this.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47548243",
+          "engagement": 1027
+        },
+        {
+          "text": "Why isn't using AI in production considered stupid? We haven't addressed some pretty major problems with it.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47550564",
+          "engagement": 30
+        }
+      ],
+      "opportunity": "Everyone's hitting the point where AI-assisted 'vibe coding' feels productive but often leads to shallow understanding and a sense of being 'deceived.' The critical gap is a 'devil's advocate' AI agent that doesn't just generate code or answers, but actively critiques, challenges, and offers alternative perspectives on the primary AI's output. Build a browser extension or a simple API wrapper for tools like Cursor or Replit that automatically generates 2-3 alternative solutions, identifies potential flaws, or suggests edge cases for any AI-generated code, giving builders a crucial edge in shipping more robust and well-understood products.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 117
+    },
+    {
+      "id": "2026-03-29-new-laws-old-problems-why-legislation-as-code-means-you-can-",
+      "date": "2026-03-29",
+      "title": "New Laws, Old Problems: Why 'Legislation as Code' Means You Can Automate Legal Compliance",
+      "category": "automation",
+      "thesis": "Governments are starting to treat laws like software, storing them in digital formats that track every change (like a 'Git repo' which is a version history for files). This means legal documents are becoming machine-readable, making it possible to automatically monitor and understand complex legal updates without needing a law degree.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "People are really interested in the idea of 'Spanish legislation as a Git repo,' showing a strong desire to track laws like software.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47553798",
+          "engagement": 951
+        },
+        {
+          "text": "The 'legalize-dev/legalize' project aims to make 'Legislation as code,' where 'Every law is a Markdown file. Every reform is a Git commit.' This means laws are stored in simple text files and every change is recorded, just like a software project.",
+          "source": "github",
+          "url": "https://github.com/legalize-dev/legalize",
+          "engagement": 38
+        }
+      ],
+      "opportunity": "Legislation-as-code projects are just starting to pop up, making laws trackable like software updates. Imagine a tool that monitors these legal 'codebases' for changes relevant to a specific niche (like small e-commerce businesses in a certain region), then uses AI to summarize new 'commits' (legal updates) into plain English action items. You could build a simple alert system that tells founders exactly how a new law affects them and what they need to do, without them needing to hire expensive lawyers.",
+      "sources": [
+        "hackernews",
+        "github"
+      ],
+      "signal_count": 2
+    },
+    {
+      "id": "2026-03-29-yc-s-new-ai-bet-coworkers-for-niche-industries-but-where-are",
+      "date": "2026-03-29",
+      "title": "YC's New AI Bet: 'Coworkers' for Niche Industries — But Where Are the No-Code Tools?",
+      "category": "ai-tools",
+      "thesis": "New YC startups are heavily investing in creating specialized AI assistants, or 'AI coworkers,' to handle specific tasks within niche industries like automotive. The fact that they're hiring senior engineers to build these suggests that user-friendly, no-code platforms for non-technical builders to create these kinds of tailored AI solutions are still an untapped frontier.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Toma (YC W24) is hiring a Senior/Staff Eng to build AI automotive coworkers (meaning AI software that acts like a virtual assistant for automotive tasks).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47558305",
+          "engagement": 0
+        },
+        {
+          "text": "InpharmD (YC W21), an established healthcare startup, is hiring a Senior Ruby on Rails Developer, showing that even mature YC companies still need senior engineering talent for core systems.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47553796",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "New YC companies are betting on 'AI coworkers' (think virtual assistants that handle specific jobs) for niche industries, but they're hiring senior engineers to build them from scratch. This signals a massive gap: easy-to-use tools for non-technical founders to create these specialized AI agents don't exist yet. Grab a hyper-specific, tedious task in a boring vertical – like auto repair shops needing help with initial customer inquiry responses or summarizing daily service logs – and build a simple 'AI coworker' using an LLM API (a way to connect to powerful AI models) and a tool like Bolt or Replit that just crushes that one problem. You'll own that micro-niche before the big players even notice.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
