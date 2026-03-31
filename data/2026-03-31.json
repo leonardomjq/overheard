@@ -1,0 +1,85 @@
+{
+  "date": "2026-03-31",
+  "generated_at": "2026-03-31T09:03:57.337Z",
+  "cards": [
+    {
+      "id": "2026-03-31-cash-in-on-prediction-markets-people-are-copying-top-traders",
+      "date": "2026-03-31",
+      "title": "Cash In On Prediction Markets: People Are Copying Top Traders, But It's Still Too Hard",
+      "category": "making-money",
+      "thesis": "People are obsessed with making money on Polymarket (a platform where you bet on the outcome of future events, like 'Will AI replace programmers by 2030?'). The hot new thing is 'copy trading' — automatically mirroring the bets of successful traders. Right now, most people are trying to build their own complex bots to do this, leaving a massive gap for anyone who can simplify it.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "A GitHub project focused on a 'Polymarket Trading Bot' for copy trading has garnered 483 engagements, showing strong interest in automated betting.",
+          "source": "github",
+          "url": "https://github.com/Neron888/Polymarket-copy-trading-bot",
+          "engagement": 483
+        },
+        {
+          "text": "Another 'Polymarket-copy-trading-bot' project on GitHub has 109 engagements, indicating multiple builders are tackling this problem with code.",
+          "source": "github",
+          "url": "https://github.com/HyperIiquid/Polymarket-copy-trading-bot",
+          "engagement": 109
+        },
+        {
+          "text": "A third project, 'polymarket-copy-trading', with 89 engagements, reinforces the trend of developers creating tools to automatically replicate trades on Polymarket.",
+          "source": "github",
+          "url": "https://github.com/TauricResearchs/polymarket-copy-trading",
+          "engagement": 89
+        }
+      ],
+      "opportunity": "Everyone's trying to build their own copy-trading bot for Polymarket, but the real money is in making it dead simple for *anyone* to find and follow winning traders. Imagine a 'social' layer where you can see top-performing wallets on Polymarket, subscribe to their trades with a single click, and automate your bets without touching a line of code. You could launch a basic version this weekend by scraping public Polymarket data and offering a simple 'follow' button that connects to a basic trading API (an 'API' is just how two computer programs talk to each other).",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 3
+    },
+    {
+      "id": "2026-03-31-ai-agents-are-addictive-but-their-uis-are-still-hot-garbage-",
+      "date": "2026-03-31",
+      "title": "AI Agents Are Addictive, But Their UIs Are Still Hot Garbage. Fix That.",
+      "category": "ai-tools",
+      "thesis": "Builders are getting seriously hooked on using AI agents for coding and creative tasks, describing the process as 'dopaminergic' and like opening a 'lootbox.' However, the actual tools are often clunky and frustrating, with users complaining about flickering terminals, messy formatting, and difficulty running multiple sessions in parallel, which breaks the flow of this powerful new way to build.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "It's becoming an extremely dopaminergic work loop where I define roughly the scope of my task and meticulously explore and divide the problem space into smaller chunks, then iterating over them with the agent. Rinse and repeat. Each execution prompt after a long planning session feels like opening a lootbox...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47580910",
+          "engagement": 44
+        },
+        {
+          "text": "I’d love to hear where you’ve run into the limits of current coding models, whether it’s based on lines of code, systems integration, databases, etc.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47565502",
+          "engagement": 72
+        },
+        {
+          "text": "I’ve been trying to make sense of how people really use tools like Claude Code... My terminal would constantly flicker, formatting was messy, and a single session could drag my whole machine down.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47573224",
+          "engagement": 26
+        },
+        {
+          "text": "I turned a sketch into a 3D-print pegboard for my kid with an AI agent: ...took a photo of it, pasted it into Codex, and gave it just two dimensions...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47581097",
+          "engagement": 47
+        },
+        {
+          "text": "Unify: Hire AI colleagues you onboard just like real people",
+          "source": "producthunt",
+          "url": "https://www.producthunt.com/products/unify-5",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Everyone's loving the 'lootbox' feeling of coding with AI agents, but the actual tools are still super janky with flickering terminals and messy output when you try to run multiple things. Someone needs to build a slick, stable UI layer that acts like a mission control for these agents, letting you run parallel coding tasks without the headache. You could whip up a prototype by wrapping an existing agent API in a clean web UI, focusing purely on making the dev workflow feel polished and reliable. This is hot right now because the agent tech is good enough to be addictive, but the user experience is lagging.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 13
+    }
+  ]
+}
