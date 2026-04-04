@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-04",
+  "generated_at": "2026-04-04T08:43:55.544Z",
+  "cards": [
+    {
+      "id": "2026-04-04-your-ai-coding-assistant-just-got-pricier-riskier-what-to-bu",
+      "date": "2026-04-04",
+      "title": "Your AI Coding Assistant Just Got Pricier & Riskier: What to Build Now",
+      "category": "ai-tools",
+      "thesis": "Anthropic, a major AI company, just changed its rules: using third-party tools (called 'harnesses') that connect to its AI models like Claude Code will now cost extra, even if you have a subscription. This sudden policy shift, combined with a recent severe security flaw (a 'privilege escalation vulnerability' means hackers could gain control of your system) found in one of these popular third-party tools called OpenClaw, means builders are suddenly facing unexpected costs and major security concerns when using AI for coding.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Anthropic sent an email stating that 'Starting April 4 at 12pm PT / 8pm BST, you’ll no longer be able to use your Claude subscription limits for third-party harnesses including OpenClaw. You can still use them with your Claude account, but they will require extra usage, a pay-as-you-go option billed separately from your subscription.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47631118",
+          "engagement": 1154
+        },
+        {
+          "text": "A 'privilege escalation vulnerability' (a flaw that lets attackers gain higher access to your computer) was found in OpenClaw, leading users to believe 'if you’re running OpenClaw, you probably got hacked.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47628326",
+          "engagement": 541
+        },
+        {
+          "text": "Developers are already using tools like Cursor and Claude Code in their daily setups, with one user mapping their IDE usage from Cursor to 'Claude Code (& VSCode or Cursor for manual edits).'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47628608",
+          "engagement": 38
+        },
+        {
+          "text": "Anthropic is offering a 'one-time credit for extra usage' and options to 'pre-purchase bundles of extra usage at up to 30% off,' suggesting they anticipate a need for managing these new costs.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47635033",
+          "engagement": 13
+        }
+      ],
+      "opportunity": "Everyone's scrambling because Anthropic just made third-party AI coding tools more expensive and one popular tool, OpenClaw, was just found to have a huge security flaw. Builders using AI for coding (like with Cursor or Claude Code) desperately need a way to manage their new 'extra usage' costs and ensure their tools are secure. You could build a simple dashboard or browser extension that connects to a user's AI accounts, tracks their real-time usage against their subscription, and flags potential cost overruns or known vulnerabilities in the tools they're using. Ship a basic version this weekend—the demand for cost clarity and trust in AI dev tools is exploding right now.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 122
+    },
+    {
+      "id": "2026-04-04-fake-crypto-tools-are-blowing-up-here-s-how-builders-can-tur",
+      "date": "2026-04-04",
+      "title": "Fake Crypto Tools Are Blowing Up: Here's How Builders Can Turn Deception into Dollars",
+      "category": "making-money",
+      "thesis": "Tools that allow users to simulate sending cryptocurrency (like Bitcoin or Ethereum) without actually transferring any real money are gaining significant traction on platforms like GitHub. These 'fake crypto sender' applications are often used for deceptive purposes, but their popularity signals a strong underlying demand for easy-to-use crypto transaction simulators.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "A GitHub project titled 'USDT-Generator' with 65 engagements describes itself as a 'flash btc / eth / usdt / ltc sender 🔥 fake crypto sender 🔥 flash usdt flash btc sender flash bitcoin sender fake bitcoin sender fake ethereum sender flash crypto flash crypto flash btc eth usdt ltc fake crypto sender fake crypto sender fake crypto sender btc sender'.",
+          "source": "github",
+          "url": "https://github.com/crucianwill-bit/USDT-Generator",
+          "engagement": 65
+        },
+        {
+          "text": "Another highly engaged GitHub repository, 'Flash-USDT-Sender-Trc20', mirrors the exact same description, explicitly calling out 'fake crypto sender' and listing various cryptocurrencies like Bitcoin, Ethereum, and USDT, with 64 engagements.",
+          "source": "github",
+          "url": "https://github.com/crucianwill-bit/Flash-USDT-Sender-Trc20",
+          "engagement": 64
+        }
+      ],
+      "opportunity": "These 'fake crypto' tools are blowing up because people want to *see* crypto transactions happen without real risk, even if it's for bad reasons. Instead of building a scam, think about a hyper-realistic, no-code crypto transaction simulator designed for educational content creators or dApp developers wanting to demo products without exposing real funds. You could build a basic version this weekend, letting users generate shareable 'transaction receipts' that look totally real but cost nothing and are clearly marked as simulations.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 2
+    },
+    {
+      "id": "2026-04-04-deep-tech-is-still-thriving-yc-startups-double-down-on-core-",
+      "date": "2026-04-04",
+      "title": "Deep Tech is Still Thriving: YC Startups Double Down on Core Infrastructure and Robotics",
+      "category": "trends",
+      "thesis": "Even with all the buzz around AI, well-funded startups are actively investing in fundamental, complex technologies like robotics (building physical machines that do tasks) and advanced databases (systems for organizing and storing massive amounts of information). This shows that core engineering challenges are still a major focus for companies building the foundational tech of tomorrow.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Charge Robotics (YC S21) is hiring software and hardware engineers, indicating a focus on building both the code and physical components of robotic systems.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47632460",
+          "engagement": 0
+        },
+        {
+          "text": "ParadeDB (YC S23) is seeking database internal engineers specializing in Rust, showing investment in developing the core engine of high-performance data storage systems.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47620857",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Everyone's talking about AI apps, but these YC companies are putting serious cash into foundational tech like robotics and core databases – areas where typical vibe coders won't compete directly. The real opening for you isn't to build another robot, but to create the *unsexy, hyper-specific tools* these deep tech companies will need for their non-technical operations as they scale. Think a simple internal dashboard for Charge Robotics' field engineers to track robot maintenance, or a no-code portal for ParadeDB's sales team to demo custom database configurations; these companies are focused on hard tech, leaving simpler, adjacent problems wide open for rapid builders.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
