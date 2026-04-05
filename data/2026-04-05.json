@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-05",
+  "generated_at": "2026-04-05T08:48:11.185Z",
+  "cards": [
+    {
+      "id": "2026-04-05-claude-s-sudden-rate-limit-changes-just-broke-dev-workflows-",
+      "date": "2026-04-05",
+      "title": "Claude's Sudden Rate Limit Changes Just Broke Dev Workflows: Time to Build Smart AI Alternatives",
+      "category": "ai-tools",
+      "thesis": "Developers who rely on powerful AI models for building are getting slammed by unexpected service changes and strict rate limits from providers like Anthropic, making their existing workflows unreliable and expensive. This sudden disruption means there's a huge demand for flexible, cost-effective ways to access AI compute (the specialized computer chips that power AI models) without getting locked into a single vendor or hitting arbitrary usage caps.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Anthropic is no longer allowing Claude Code subscriptions to be used with third-party tools like OpenClaw. Starting April 4, you'll need to pay extra for that usage.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47640728",
+          "engagement": 1843
+        },
+        {
+          "text": "Developers are asking, 'What are you moving on to now that Claude Code is so rate limited?' One user reported paying $200 a month but hitting their weekly limit in 3 days, then 20% of the weekly limit in just 2 hours, despite no change in their workflow.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47639779",
+          "engagement": 25
+        },
+        {
+          "text": "sllm, a new service, lets developers split a powerful GPU node, offering 'unlimited tokens' for models like DeepSeek V3 (which normally costs $14k/month for 8 H100 GPUs) for as little as $5/month, addressing the high cost and limited access to AI compute.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47639303",
+          "engagement": 232
+        },
+        {
+          "text": "Anthropic confirmed they are limiting the use of third-party 'harnesses' (tools that integrate with their AI models) with existing Claude subscriptions, forcing users to enable 'extra usage' which will be billed separately.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47642601",
+          "engagement": 22
+        }
+      ],
+      "opportunity": "With Claude suddenly cutting off third-party tools and throttling usage, thousands of builders are desperately searching for reliable AI access. Instead of just raw GPUs, the killer move is an 'AI model router' – an API (a way for different software to talk to each other) that automatically finds and uses the cheapest, most available AI model for a given task, like code generation or content writing. You could build an OpenAI-compatible API that lets people plug in their existing tools (think Cursor or Replit) and seamlessly switch between models like DeepSeek or Mistral, effectively becoming the anti-rate-limit safeguard for frustrated developers.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 118
+    },
+    {
+      "id": "2026-04-05-your-database-just-halved-its-speed-the-idea-file-play-for-f",
+      "date": "2026-04-05",
+      "title": "Your Database Just Halved Its Speed: The 'Idea File' Play for Fixing Core Tech Breakdowns",
+      "category": "ai-tools",
+      "thesis": "An AWS engineer just reported that PostgreSQL (a popular database where apps store their data) had its performance cut in half by a new Linux operating system update, creating a huge headache for many applications. At the same time, AI guru Andrej Karpathy shared an 'idea file' concept for an LLM Wiki, highlighting how valuable a curated knowledge base is for complex, evolving tech. There's a massive opportunity to use AI to create focused, actionable 'idea files' or diagnostic tools that help builders quickly fix critical, emerging tech issues like this database slowdown.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "An AWS engineer reported that a major database, PostgreSQL, saw its performance (speed) cut in half due to a new version of the Linux operating system (Linux 7.0), and a fix might not be easy.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47644864",
+          "engagement": 338
+        },
+        {
+          "text": "Andrej Karpathy (a leading AI researcher) shared an 'LLM Wiki' as an example of an 'idea file' – a curated collection of thoughts and solutions for a complex domain like Large Language Models (LLMs).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47640875",
+          "engagement": 222
+        }
+      ],
+      "opportunity": "When core tools like PostgreSQL suddenly perform half as fast due to a new Linux update, developers need immediate, actionable fixes, not just technical forum threads. Karpathy's 'idea file' for LLMs proves the hunger for curated knowledge in complex domains. Someone should build a 'fix-it agent' that specifically monitors kernel mailing lists for critical performance regressions in popular databases like PostgreSQL, then uses an LLM to instantly translate those obscure threads into a clear, step-by-step diagnostic and solution guide. Ship that, and you've got a constant stream of paying developers desperate for a quick save.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    },
+    {
+      "id": "2026-04-05-shrink-your-ai-own-your-data-the-browser-first-ai-wave",
+      "date": "2026-04-05",
+      "title": "Shrink Your AI, Own Your Data: The Browser-First AI Wave",
+      "category": "ai-tools",
+      "thesis": "AI models are usually massive and need powerful servers, but a new tool lets you shrink these complex AI models (making them much smaller) and run them directly inside a web browser. This means you can create apps that are super fast and keep your data private, because the AI processing happens right on your device instead of sending everything to a remote server.",
+      "signal_strength": 6,
+      "evidence": [
+        {
+          "text": "A new project, TurboQuant-WASM, demonstrates how to run Google's method for making AI models smaller and more efficient (called vector quantization) directly in a web browser using WebAssembly.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47639567",
+          "engagement": 158
+        },
+        {
+          "text": "The high engagement (158 points) on Hacker News for TurboQuant-WASM indicates significant interest in the ability to run advanced AI models client-side, making them faster and more private by keeping processing local.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47639567",
+          "engagement": 158
+        }
+      ],
+      "opportunity": "Everyone's talking about AI agents, but they're all cloud-based, expensive, and raise privacy concerns by sending your data to remote servers. The real opening is building a hyper-private AI agent that lives *only* in a user's browser or as a local desktop app. With tools like TurboQuant-WASM making models small enough to run locally, you could ship a browser extension that offers powerful summarization, content generation, or coding assistance, all without ever touching a server or an API key, creating a totally new kind of trusted, offline-first AI experience.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
