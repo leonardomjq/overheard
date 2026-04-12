@@ -1,0 +1,73 @@
+{
+  "date": "2026-04-12",
+  "generated_at": "2026-04-12T08:53:32.041Z",
+  "cards": [
+    {
+      "id": "2026-04-12-why-everyone-s-making-bank-turning-messy-public-data-into-si",
+      "date": "2026-04-12",
+      "title": "Why Everyone's Making Bank Turning Messy Public Data into Simple Websites",
+      "category": "making-money",
+      "thesis": "Forget complex AI models or massive infrastructure. The real buzz right now is around founders who are turning messy, publicly available information into simple, searchable websites. They're using super lean tech stacks (basic tools for getting data and showing it online) to scrape data, organize it, and present it in a way people actually want to use, proving you can get huge traction and even profit without a huge investment.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The 'Pardonned.com' project, a searchable database of US Pardons, got 666 engagements because it made it easy to verify claims and look up pardons. It was built using a simple tech stack: Playwright (for getting data from websites), SQLite (a local database), and Astro (to build a static website from the data).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47727960",
+          "engagement": 666
+        },
+        {
+          "text": "One founder shared they are running multiple companies that each make $10,000 per month in recurring revenue, all powered by a tech stack that costs only $20 per month.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47736555",
+          "engagement": 204
+        },
+        {
+          "text": "There's a sentiment that founders are getting worse at building businesses because they focus too much on polishing pitch decks for investors, rather than actually building the product. The best businesses are often built first, not just presented.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47732402",
+          "engagement": 16
+        },
+        {
+          "text": "A product called 'Audos 2.0' claims you can 'Run 10 AI businesses at once,' highlighting a trend towards automating and scaling small, focused businesses, often with AI-assisted processes.",
+          "source": "producthunt",
+          "url": "https://www.producthunt.com/products/socap",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Everyone's talking about AI, but the biggest immediate wins are still in making simple, structured data products. There's a massive untapped market for taking messy, public information – like local government permits, specific historical archives, or regulatory filings – and turning it into a super-searchable, dead-simple website. Tools like Playwright for scraping and SQLite for local databases mean you can launch these data products in a weekend for almost no cost, just like Pardonned.com did with US pardons, and immediately grab tons of attention by solving a real frustration for people trying to find specific facts.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 11
+    },
+    {
+      "id": "2026-04-12-your-ai-agent-blueprint-why-books-signal-a-gap-for-builders",
+      "date": "2026-04-12",
+      "title": "Your AI Agent Blueprint: Why 'Books' Signal a Gap for Builders",
+      "category": "ai-tools",
+      "thesis": "Someone is literally writing 'books' (comprehensive guides) on how to build AI agents and related systems. This shows that while there are tons of AI tools out there, what's missing are clear, actionable blueprints or templates that show builders how to actually combine these tools into working products, not just theoretical concepts.",
+      "signal_strength": 4,
+      "evidence": [
+        {
+          "text": "A 'Hermes Agent Book' is being created, which is a detailed guide for building AI agents, signaling a strong demand for comprehensive, step-by-step instructions beyond just individual tool documentation.",
+          "source": "github",
+          "url": "https://github.com/ZhangHanDong/hermes-book",
+          "engagement": 42
+        },
+        {
+          "text": "Another 'book' called 'Pi mono Book' from the same author further suggests a broader need for structured knowledge on building cohesive, integrated AI systems (where 'mono' implies a single, unified system or approach).",
+          "source": "github",
+          "url": "https://github.com/ZhangHanDong/pi-book",
+          "engagement": 27
+        }
+      ],
+      "opportunity": "The fact that builders are resorting to writing 'books' for AI agents means the current tools and tutorials are too fragmented. Instead of just another guide, imagine a 'Starter Kit' or a 'Recipe Box' for AI agents: pre-built, customizable templates for common agent types (e.g., a research agent, a customer service agent) that you can deploy with minimal setup. The first person to productize these 'books' into actual, runnable templates will capture a massive wave of builders tired of piecing things together from scratch.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
