@@ -1,0 +1,73 @@
+{
+  "date": "2026-04-14",
+  "generated_at": "2026-04-14T09:22:26.899Z",
+  "cards": [
+    {
+      "id": "2026-04-14-ai-s-unreliable-brain-why-builders-need-a-backup-plan",
+      "date": "2026-04-14",
+      "title": "AI's Unreliable Brain: Why Builders Need a Backup Plan",
+      "category": "ai-tools",
+      "thesis": "Builders are increasingly relying on AI models for critical tasks like system design and coding, but the services that power these models are notoriously unstable, suffering frequent outages and performance dips. This unreliability stalls development workflows and frustrates users, creating a huge unmet need for tools that ensure continuous AI access.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "People are actively asking for the 'best AI model for system design nowadays,' using tools like Claude Opus 4.6 for backend architectures, tradeoff analysis, and documentation.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47753689",
+          "engagement": 10
+        },
+        {
+          "text": "A critical AI service, Claude Code OAuth, was down for over 12 hours, with users reporting it was 'impossible to paste' code and questioning why it wasn't an 'emergency' or on the status page.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47739684",
+          "engagement": 7
+        },
+        {
+          "text": "Developers are asking 'What makes it so hard to keep LLMs online?' noting that 'every few days one of the big AI services is down, degraded, or just slow,' and wondering if serving AI is 'fundamentally different about serving AI vs. a normal web app'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47751690",
+          "engagement": 10
+        },
+        {
+          "text": "There's massive interest in developer tooling for complex platforms, evidenced by a CLI for Cloudflare garnering 402 engagements, highlighting the demand for robust control over underlying services.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47761785",
+          "engagement": 402
+        }
+      ],
+      "opportunity": "Everyone's trying to use AI for serious stuff like system design and coding, but these services keep randomly going down or having weird errors. There's a massive gap for a simple tool that acts as a 'smart router' for your AI calls (API requests that ask an AI model to do something), automatically retrying with a different model or provider if one fails. The first person to ship a plug-in or micro-service that offers real-time status and quick, automated fallbacks for developer-focused AI APIs owns the 'don't let AI downtime kill my sprint' market.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 16
+    },
+    {
+      "id": "2026-04-14-cs2-gamers-are-tweaking-mods-can-you-help-them-share-their-s",
+      "date": "2026-04-14",
+      "title": "CS2 Gamers Are Tweaking Mods – Can You Help Them Share Their Secrets?",
+      "category": "apps",
+      "thesis": "Players of Counter-Strike 2 (CS2) are getting super into customizing their game experience using \"mod menus\" (special in-game tools that let them change how the game looks or plays). Because fine-tuning these settings can be tricky, people are building utilities to help them adjust things in real-time, showing there's a real need for better ways to personalize gameplay.",
+      "signal_strength": 3,
+      "evidence": [
+        {
+          "text": "An 'Advanced Cs2-Mod-Menu enhancement utility with real-time parameter adjustment and visual overlay' is gaining traction, showing players want to easily change game settings and see the effects instantly.",
+          "source": "github",
+          "url": "https://github.com/jake-moore-io99z1/cs2-mod-menu-optimizer",
+          "engagement": 24
+        },
+        {
+          "text": "Another similar project, an 'Advanced Cs2-Mod-Menu enhancement utility with real-time parameter adjustment and visual overlay,' highlights a shared need among players for tools to optimize their game modifications.",
+          "source": "github",
+          "url": "https://github.com/sergeysantos-x1996p8/cs2-mod-menu-assistant",
+          "engagement": 17
+        }
+      ],
+      "opportunity": "Gamers are clearly spending a ton of time dialing in their Counter-Strike 2 mod menus for that perfect visual or performance edge, judging by the new 'optimizer' tools popping up. Instead of building another tweaking utility, you could create a simple platform for players to upload, share, and discover pre-made, optimized configurations or visual presets, complete with screenshots or videos. This lets players skip the grind and jump straight to a killer setup, and you could even offer premium curated packs.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
