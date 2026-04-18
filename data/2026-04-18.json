@@ -1,0 +1,51 @@
+{
+  "date": "2026-04-18",
+  "generated_at": "2026-04-18T08:54:43.489Z",
+  "cards": [
+    {
+      "id": "2026-04-18-ai-fatigue-is-real-builders-are-drowning-in-bad-ai-output-an",
+      "date": "2026-04-18",
+      "title": "AI Fatigue is Real: Builders are Drowning in Bad AI Output and Context Switching",
+      "category": "ai-tools",
+      "thesis": "Builders are increasingly frustrated with the quality and workflow of current AI tools, like Claude Code, leading to 'exhaustion,' 'subtle bugs,' and a fear of becoming 'lazier.' While AI promises speed, the reality for many solo founders and vibe coders is a struggle with context switching and output that's 'horrible at writing,' forcing them to question if building a solo business with AI is even possible.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Many developers using AI as a daily driver, like with Claude Code, feel 'exhausted by all the context switching from managing 2-3 agents at a time,' noting that letting agents run wild leads to 'subtle bugs that compound.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47806725",
+          "engagement": 58
+        },
+        {
+          "text": "One user found that Opus 4.7, especially when used in Claude Code, was 'horrible at writing,' describing its output as 'sloppy, unprecise, very empty sentences,' a stark contrast to previous versions.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47807809",
+          "engagement": 38
+        },
+        {
+          "text": "People are getting 'depressed day by day about what is coming' with AI, worrying that companies won't 'tolerate careful work when others can deliver same with 10% less quality but 60% faster,' leading to an internal fight about their own efforts.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47812341",
+          "engagement": 31
+        },
+        {
+          "text": "A common sentiment among engineers is that 'building a solo business is impossible,' as they 'fell into the \"build, and they will come\" trap' and can't find traction, despite trying to build, calibrate, and engage with customers.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47811283",
+          "engagement": 98
+        },
+        {
+          "text": "Some users have noticed 'AI tools have made me lazier,' replacing deep thinking and reasoning with conversations with AI, leading to concerns about not exercising their 'deep thinking muscles much.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47792026",
+          "engagement": 22
+        }
+      ],
+      "opportunity": "Everyone's trying to make AI *generate more*, but builders using tools like Claude Code are getting burned by *quality* and *workflow* issues that lead to 'subtle bugs' and 'exhaustion.' The opportunity isn't more generative AI, but a lightweight 'AI workflow co-pilot' that acts like a smart project manager or 'AI peer reviewer,' automatically catching 'sloppy' output or offering context-aware suggestions to reduce 'context switching' across different AI agents. Ship it as a plugin for popular dev environments like Cursor or Replit, and you'll own the market of 'depressed' but ambitious builders struggling with AI fatigue.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 125
+    }
+  ]
+}
