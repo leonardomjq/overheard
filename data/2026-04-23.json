@@ -1,0 +1,51 @@
+{
+  "date": "2026-04-23",
+  "generated_at": "2026-04-23T09:47:03.819Z",
+  "cards": [
+    {
+      "id": "2026-04-23-your-ai-coding-co-pilot-is-breaking-why-builders-need-a-trus",
+      "date": "2026-04-23",
+      "title": "Your AI Coding Co-Pilot is Breaking: Why Builders Need a Trust Layer NOW",
+      "category": "ai-tools",
+      "thesis": "AI coding models are getting incredibly powerful, with new smaller models like Qwen3.6-27B and GLM-5.1 hitting 'flagship-level' performance. But the experience of using major players like Claude Opus is falling apart, frustrating developers with regressions, confusing usage policies, and rising security concerns, creating a huge demand for reliable, transparent, and secure tooling.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The new Qwen3.6-27B model offers 'Flagship-Level Coding' in a smaller 27-billion parameter model, showing how powerful more efficient AI models are becoming.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47863217",
+          "engagement": 1235
+        },
+        {
+          "text": "Many users are 'without words' over the 'biggest quality regression' they've seen with Claude Opus 4.7, making them question paying for expensive plans and switching to alternatives like Codex.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47858903",
+          "engagement": 16
+        },
+        {
+          "text": "Developers are confused and frustrated by Anthropic's policies, asking 'What's the deal with OpenClaw, 3rd party harnesses, extra billing, etc?' and fearing account bans for using external tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47865692",
+          "engagement": 5
+        },
+        {
+          "text": "There's deep concern about 'Why AI Software Vulnerability Exploitation is going be bad,' highlighting that AI could dramatically speed up the creation and application of software vulnerabilities, making security a critical issue.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47858591",
+          "engagement": 16
+        },
+        {
+          "text": "People are actively looking for 'Claude Code Alternative' options that are cheaper and more reliable, mentioning OpenCode with Mimo V2 pro as a 'pretty good' alternative.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47860669",
+          "engagement": 16
+        }
+      ],
+      "opportunity": "Everyone's scrambling because their favorite AI coding models, like Claude Opus, are breaking or getting too expensive, and they're worried about getting banned or shipping insecure code. Instead of building another AI agent, create a 'control panel' for AI coding that lets builders easily swap between different models (like GPT-5.5, Qwen3.6-27B, or GLM-5.1) when one flakes out, clearly tracks their actual usage and costs, and even flags risky patterns like `curl | sudo bash` in generated code before it runs. You could ship a working version of this in a weekend by connecting to various model APIs and building a simple dashboard, becoming the trusted hub for AI-assisted development.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
