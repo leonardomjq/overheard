@@ -1,0 +1,146 @@
+{
+  "date": "2026-04-27",
+  "generated_at": "2026-04-27T10:20:57.574Z",
+  "cards": [
+    {
+      "id": "2026-04-27-ai-s-getting-nerfed-limited-build-the-private-ai-coach-every",
+      "date": "2026-04-27",
+      "title": "AI's Getting Nerfed & Limited? Build the Private AI Coach Everyone Actually Wants",
+      "category": "ai-tools",
+      "thesis": "AI tools are everywhere for businesses, but there's a surprising gap in fun, practical, and private AI apps for everyday people. Many builders are frustrated with current AI models getting 'nerfed' (meaning they perform worse over time) or hitting 'weekly limits' on their usage, pushing them towards wanting more control over their personal AI experiences.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Users are feeling that AI models like Claude Opus 4.7 are 'less smart than Opus 4.6 was previously!' suggesting a perceived decline in quality.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47914350",
+          "engagement": 11
+        },
+        {
+          "text": "People are frustrated with 'weekly limits' from AI products, calling it 'incompatible with a subscription' when access is cut off for part of the time you've paid for.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47909713",
+          "engagement": 18
+        },
+        {
+          "text": "There's a desire for 'a local alternative to proprietary third-party AI-based research assistants' to turn documents into 'reusable' information, highlighting a need for more control and privacy.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47901379",
+          "engagement": 9
+        },
+        {
+          "text": "Many are 'surprised to see that there are barely any consumer apps' built on ChatGPT and Claude, despite many business and productivity apps existing.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47906051",
+          "engagement": 7
+        },
+        {
+          "text": "A new hiring platform 'tracks what the user is doing on the board in real time, and uses an LLM to evaluate their process' in a real CAD (computer-aided design) tool, showing AI's capability to observe and evaluate complex actions.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47904716",
+          "engagement": 7
+        }
+      ],
+      "opportunity": "Everyone's complaining about AI models like Claude getting 'nerfed' (meaning they perform worse) and hitting annoying 'weekly limits,' but nobody's really building consumer apps that give you more control or help you actually *do* stuff with AI, not just read its output. The real move is a privacy-first AI coach that helps you *act* or *learn a new skill* by observing your process (like the CAD tool example, maybe via screen recording) and giving actionable, private feedback. First person to ship a simple, privacy-focused AI assistant that helps people *act and learn* from their own data, instead of just generating generic text, will own the frustrated-consumer market.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-04-27-crypto-trading-bots-are-blowing-up-how-to-turn-open-source-c",
+      "date": "2026-04-27",
+      "title": "Crypto Trading Bots Are Blowing Up: How to Turn Open-Source Code Into Easy Money",
+      "category": "making-money",
+      "thesis": "Builders are flocking to GitHub to share and build automated trading bots for specific, often newer, decentralized crypto platforms like Hyperliquid and Polymarket. These bots automatically execute trades (buying and selling crypto) based on pre-set rules or strategies, like finding price differences between markets (arbitrage) or mimicking successful traders (copy trading), all aimed at making a profit without constant human oversight.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "A trading bot for Hyperliquid, a decentralized exchange, has garnered significant interest, showing a clear demand for automated strategies on these platforms.",
+          "source": "github",
+          "url": "https://github.com/PolyPulse-Analytics/hyperliquid-trading-bot",
+          "engagement": 220
+        },
+        {
+          "text": "Another project focuses on an arbitrage bot for Polymarket, a prediction market, highlighting the specific strategy of profiting from small price discrepancies.",
+          "source": "github",
+          "url": "https://github.com/SignalBot-Labs/aster-bot",
+          "engagement": 163
+        },
+        {
+          "text": "The popularity of a 'copy trading bot' for Polymarket indicates that people want to automatically replicate the trades of successful users or other bots.",
+          "source": "github",
+          "url": "https://github.com/alefinvest/polymarket-arbitrage-bot",
+          "engagement": 162
+        },
+        {
+          "text": "A perp trading bot for AsterDEX also shows strong engagement, confirming the trend across multiple decentralized exchanges and trading styles.",
+          "source": "github",
+          "url": "https://github.com/alefinvest/polymarket-copy-bot",
+          "engagement": 220
+        }
+      ],
+      "opportunity": "Everyone's building these trading bots, but deploying and managing them is still a huge pain for non-coders. The move is to create a dead-simple web interface where users can pick an open-source bot strategy (like arbitrage or copy trading), connect their wallet, and deploy it onto platforms like Hyperliquid or Polymarket with just a few clicks, abstracting away all the technical setup. Think of it as a 'Shopify for crypto bots' – you could charge a monthly subscription or a small performance fee.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 4
+    },
+    {
+      "id": "2026-04-27-your-startup-is-leaking-why-data-privacy-is-your-next-big-op",
+      "date": "2026-04-27",
+      "title": "Your Startup is Leaking: Why Data Privacy is Your Next Big Opportunity",
+      "category": "saas",
+      "thesis": "Builders are shipping fast, often using public frontends and integrating third-party APIs. This speed, however, frequently leads to sensitive data like user emails or API keys being accidentally hardcoded into publicly accessible code, causing massive privacy breaches. While sophisticated 'secret managers' exist for large enterprises, there's a huge gap for simple, automated tools that help everyday builders prevent these basic, yet critical, mistakes.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Medvi, a telehealth pharmacy, hardcoded 999 patient email addresses along with their enrollment status directly into their public website code, meaning anyone visiting the site could see this sensitive data before even logging in.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47911013",
+          "engagement": 30
+        },
+        {
+          "text": "A new tool called 'Kloak' was showcased, which is designed as a 'secret manager' that prevents applications running on complex systems (like Kubernetes, a tool for managing software) from directly accessing sensitive information like passwords or API keys.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47902888",
+          "engagement": 113
+        }
+      ],
+      "opportunity": "Everyone's shipping fast, but incidents like Medvi's (where 999 patient emails were publicly exposed in website code) show how easily sensitive data leaks. Tools like Kloak are for big tech, but smaller builders using Replit or Vercel are just as vulnerable to accidentally leaving API keys or user data in their public frontend code. Ship a simple scanner that checks live websites or build pipelines for common data leaks (like email patterns, API key formats) before they go live. You could make it a 'pre-deployment privacy check' service, charging a few bucks a month for peace of mind.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 6
+    },
+    {
+      "id": "2026-04-27-stop-the-ai-firefighting-builders-are-desperate-for-structur",
+      "date": "2026-04-27",
+      "title": "Stop the AI Firefighting: Builders Are Desperate for Structured Code",
+      "category": "ai-tools",
+      "thesis": "Developers are increasingly using AI to write code quickly, but this speed often comes at the cost of messy, hard-to-maintain projects, leading to constant 'firefighting' (fixing urgent bugs and dealing with technical debt) instead of building new features. There's a growing need for ways to incorporate 'Clean Architecture' (a method for organizing code to make it easier to manage and change) directly into AI-driven workflows, so builders can ship fast and build solid, lasting products.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "People are asking if 'Clean Architecture' (a way to structure your code so it’s easy to maintain and change) is the right foundation for their AI projects, showing a clear interest in building robust AI applications.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47913561",
+          "engagement": 95
+        },
+        {
+          "text": "Developers are frustrated with constantly 'firefighting' (fixing urgent bugs in messy code) instead of writing 'solid code.' They want to create high-quality, maintainable systems, especially as AI changes how software is built, highlighting the pain points of rapid, unstructured development.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47910597",
+          "engagement": 27
+        }
+      ],
+      "opportunity": "You know how AI tools let you ship super fast, but then you're often left with a messy codebase that's a nightmare to maintain? It seems like everyone's looking for ways to build 'solid code' with AI, but nobody's made a simple plugin for tools like Cursor or Replit that acts as an 'architectural co-pilot,' automatically guiding you to organize your AI-generated code into a clean, future-proof structure. The builder who first ships a smart structural guide directly into these popular AI coding environments will quickly become the go-to for founders tired of AI speed leading to maintenance headaches.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
