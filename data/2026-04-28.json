@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-28",
+  "generated_at": "2026-04-28T10:16:12.522Z",
+  "cards": [
+    {
+      "id": "2026-04-28-copilot-s-new-billing-is-driving-devs-wild-time-for-your-loc",
+      "date": "2026-04-28",
+      "title": "Copilot's New Billing is Driving Devs Wild: Time for Your Local AI Coding Agent",
+      "category": "ai-tools",
+      "thesis": "GitHub Copilot is ditching predictable annual plans for usage-based billing, especially for its new 'agentic' features (AI systems that can handle complex, multi-step coding tasks). This shift is making costs opaque and unpredictable for developers, who are now actively seeking alternatives. There's a clear opening for new tools that offer the power of AI agents with transparent, flat-rate pricing.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "GitHub Copilot is moving to usage-based billing and retiring annual plans... Agentic usage is becoming the default, and it brings significantly higher compute.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47921248",
+          "engagement": 8
+        },
+        {
+          "text": "Ask HN: Alternatives to GitHub Copilot?... I just got an email from GitHub that they're increasing the cost for GitHub Copilot and they're making it extremely opaque and unpredictable to see how much it will cost in the future. This is the final nail in the coffin. I'm out.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47923437",
+          "engagement": 5
+        },
+        {
+          "text": "Ask HN: What does your agentic software dark factory look like? (People are discussing how they're building automated systems that do complex software development tasks without much human intervention).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47924285",
+          "engagement": 11
+        },
+        {
+          "text": "Ask HN: Anyone want to collaborate on a local-first AI-based research assistant (interest in AI tools that run on your own computer, not in the cloud).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47913720",
+          "engagement": 11
+        }
+      ],
+      "opportunity": "Everyone's ditching GitHub Copilot because its new usage-based billing for 'agentic' features (AI that handles complex coding jobs) is a black box. This is your moment to build a local-first coding agent that handles those multi-step tasks, like 'refactor this file' or 'generate tests,' but runs entirely on a developer's machine with predictable, flat-fee pricing. Start by wrapping a local LLM like Ollama in a VSCode extension for a few common agentic prompts, and you'll own the 'no surprise bill' developer market.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 100
+    }
+  ]
+}
