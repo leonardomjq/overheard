@@ -1,0 +1,39 @@
+{
+  "date": "2026-04-30",
+  "generated_at": "2026-04-30T10:09:25.285Z",
+  "cards": [
+    {
+      "id": "2026-04-30-founding-roles-at-yc-startups-signal-a-new-tooling-gap-for-g",
+      "date": "2026-04-30",
+      "title": "Founding Roles at YC Startups Signal a New Tooling Gap for Growth & Customer Success",
+      "category": "saas",
+      "thesis": "YC-backed startups from the Winter 2023 batch are now hiring founding roles in growth and customer success. This signals a shift from pure product development to aggressive user acquisition (getting new users) and retention (keeping existing users happy), creating a demand for lean, integrated tools that help these small, fast-moving teams hit their scaling targets.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Gooseworks, a YC W23 company, is hiring a Founding Growth Engineer, indicating a strong focus on scaling their user base.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47955226",
+          "engagement": 0
+        },
+        {
+          "text": "Stardex is seeking a Founding Customer Success Lead, showing a priority on retaining customers and ensuring they get value from the product.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47947125",
+          "engagement": 0
+        },
+        {
+          "text": "Infisical, another YC W23 company, is hiring Full Stack Software Engineers, a general sign of a growing startup expanding its product development and operations.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=47937203",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "When YC-backed companies like Gooseworks and Infisical are a year out and hiring for founding growth and customer success roles, it means they're desperate to scale users and keep them happy, but lack the resources for complex enterprise tools. Look at what these early teams struggle with daily – maybe it's automating onboarding feedback or a micro-tool for proactive customer engagement – and ship a simple, plug-and-play solution this weekend. The first person to offer a lightweight tool that solves a specific pain point for these fast-moving teams will own that market.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
