@@ -1,0 +1,96 @@
+{
+  "date": "2026-05-07",
+  "generated_at": "2026-05-07T10:27:17.859Z",
+  "cards": [
+    {
+      "id": "2026-05-07-ai-agents-are-killing-the-vibe-of-coding-here-s-how-to-fix-i",
+      "date": "2026-05-07",
+      "title": "AI Agents Are Killing the 'Vibe' of Coding – Here's How to Fix It",
+      "category": "ai-tools",
+      "thesis": "AI agents are rapidly integrating into coding and data tasks, with major players like Airbyte launching tools to feed them more context (data). However, there's a strong sentiment that this 'agentic engineering' is making coding feel less creative and intuitive ('vibe coding'). Despite efforts to benchmark and improve agents, they still struggle with complex, nuanced problems, leaving a gap for human-centric input.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The feeling of 'vibe coding' (intuitive, creative coding) and 'agentic engineering' (AI agents doing the coding) are getting uncomfortably close.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48037128",
+          "engagement": 1275
+        },
+        {
+          "text": "Airbyte, a company specializing in data connectors, is launching 'Airbyte Agents' to provide AI agents with a unified data layer from multiple sources, aiming to give them better context.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48023496",
+          "engagement": 183
+        },
+        {
+          "text": "A new benchmark from the SWE-bench team designed to test AI agents' ability to solve software engineering tasks remains 0% solved, indicating agents still can't handle complex, real-world coding problems.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48038019",
+          "engagement": 26
+        },
+        {
+          "text": "People are actively building tools like 'Agent-skills-eval' to test whether new skills actually improve what AI agents produce.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48021420",
+          "engagement": 23
+        },
+        {
+          "text": "A new 'embeddable cross-platform AI agent library' called Adam was launched, showing the push to integrate AI agents everywhere.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48041316",
+          "engagement": 33
+        }
+      ],
+      "opportunity": "Everyone's trying to give AI agents more data, but the massive engagement around 'vibe coding' getting lost tells you the real pain point is a lack of human nuance and style. Now's the time to build a 'Vibe Guide' for AI agents: a simple tool where builders define their specific coding style, preferred patterns, or even explicit 'don't do this' rules, beyond just data. Ship a web UI where you can paste code snippets, set preferences, and it generates a custom configuration or prompt an agent can use to actually match a human's 'vibe' when coding.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 17
+    },
+    {
+      "id": "2026-05-07-devs-are-drowning-in-ai-code-the-untapped-opportunity-in-qua",
+      "date": "2026-05-07",
+      "title": "Devs Are Drowning in AI Code: The Untapped Opportunity in Quality & Craftsmanship",
+      "category": "ai-tools",
+      "thesis": "Developers are feeling overwhelmed and disenfranchised by the rapid adoption of AI in coding, with many expressing sadness and a sense of losing the joy of building. While AI makes code generation incredibly fast, it's creating new pain points around code review and maintaining quality, leading developers to question their career paths. This shift highlights a huge need for tools that empower human developers to ensure high-quality output and reclaim a sense of craftsmanship in the AI-driven workflow.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Many developers feel they don't have a choice but to use AI if they want to keep their jobs, but it makes them feel empty and lose the pride in creating things with code.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48036190",
+          "engagement": 53
+        },
+        {
+          "text": "The speed of AI code generation is causing a problem where reviewing code takes significantly longer than creating it, making the review process much more painful.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48026211",
+          "engagement": 12
+        },
+        {
+          "text": "AI has made programming accessible to many more people who've never coded, allowing them to produce entire apps with tools like Claude.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48030736",
+          "engagement": 42
+        },
+        {
+          "text": "People are actively looking for manual tasks they do at least 5 times a week, where no good tool exists, and they'd pay $10-20/month for automation.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48033457",
+          "engagement": 9
+        },
+        {
+          "text": "One developer is pushing the limits, trying to build a complex Tower Defense game using 'just Codex' (an AI coding assistant), with no manual coding at all, by setting up detailed instruction files.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48038079",
+          "engagement": 18
+        }
+      ],
+      "opportunity": "Everyone's complaining that reviewing AI-generated code is a huge bottleneck and makes them feel like glorified proofreaders, eroding the joy of coding. Instead of just flagging errors, build an 'AI code mentor' that integrates into pull requests and suggests *aspirational improvements* like alternative patterns, stylistic refinements, or deeper architectural considerations based on customizable 'best practices.' You could ship a basic version this weekend by hooking into GitHub's API and using an LLM to analyze diffs, giving developers a way to feel like they're still elevating the code, not just fixing AI's mistakes.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
