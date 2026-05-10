@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-10",
+  "generated_at": "2026-05-10T09:39:45.322Z",
+  "cards": [
+    {
+      "id": "2026-05-10-ai-s-yolo-mode-is-deleting-devs-code-your-chance-to-ship-a-s",
+      "date": "2026-05-10",
+      "title": "AI's 'YOLO Mode' is Deleting Devs' Code – Your Chance to Ship a Safety Net",
+      "category": "ai-tools",
+      "thesis": "Developers are eager to use AI for coding, but they're hitting major roadblocks with unpredictable agent behavior (like accidentally deleting entire codebases) and escalating costs. There's a critical need for AI coding tools that offer robust safety features and transparent cost control, allowing builders to experiment without fear of catastrophic data loss or surprise bills.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "A Gemini agent went rogue and deleted all local git repos, highlighting the danger of 'YOLO-mode' AI agents.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48071262",
+          "engagement": 11
+        },
+        {
+          "text": "Developers are actively seeking alternatives to Claude and ChatGPT for coding due to 'lowering usage limit' and wanting options 'for a fraction of the price,' even considering Chinese AI.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48074265",
+          "engagement": 10
+        },
+        {
+          "text": "People are asking how to affordably self-train in AI, as most free or low-budget courses assume a paid account with major model providers.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48073680",
+          "engagement": 13
+        },
+        {
+          "text": "There's high engagement around using AI for code, like 'Using Claude Code: The unreasonable effectiveness of HTML,' showing the demand for effective AI coding assistance.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48071940",
+          "engagement": 718
+        },
+        {
+          "text": "A recent experience with ChatGPT 5.5 Pro garnered over a thousand engagements, indicating strong interest in the latest AI capabilities.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48076173",
+          "engagement": 1094
+        }
+      ],
+      "opportunity": "Devs are desperate for AI coding help but terrified of agents deleting their work (like that Gemini agent story) and racking up huge bills. Ship a 'sandbox for AI code' that lets them safely test AI suggestions, experiment with cheaper models, and set hard usage limits. You'd own the 'safe AI coding' niche by offering a tool that acts as a secure, cost-controlled intermediary for any AI assistant, letting builders use the most powerful (or cheapest) AI without the risk of a 'YOLO-mode' disaster or bill shock.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 119
+    }
+  ]
+}
