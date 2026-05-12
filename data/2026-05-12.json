@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T10:33:41.253Z",
+  "cards": [
+    {
+      "id": "2026-05-12-ai-s-writing-code-but-who-s-securing-it-the-new-gold-rush-in",
+      "date": "2026-05-12",
+      "title": "AI's Writing Code, But Who's Securing It? The New Gold Rush in AI Code Safety",
+      "category": "ai-tools",
+      "thesis": "As AI-first development becomes mandatory, with bots writing and reviewing code, a massive trust gap is emerging. High-profile supply chain attacks are proving traditional security isn't enough, and even hackers are now using AI to find flaws, meaning builders desperately need simple tools to verify the safety of AI-generated code and its components before it causes a nightmare.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "The TanStack NPM supply-chain was compromised, showing how dangerous it is when the fundamental building blocks of software are tampered with. This incident had over 1200 engagements.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48100706",
+          "engagement": 1212
+        },
+        {
+          "text": "Google reported that criminal hackers are now using AI to find major software flaws, escalating the security challenge to a new level.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48094641",
+          "engagement": 328
+        },
+        {
+          "text": "A developer in a top F500 company noted they were explicitly told not to write any code by hand; instead, Claude (an AI model) usage is mandatory, with all code reviews being agent-driven.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48084086",
+          "engagement": 27
+        },
+        {
+          "text": "Developers are asking how to pick the right AI model for a task, indicating a struggle with AI reliability and understanding its limitations.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48087073",
+          "engagement": 17
+        }
+      ],
+      "opportunity": "Everyone's getting pushed into 'AI-first' coding workflows where bots write and review code, but the massive TanStack supply-chain hack shows how vulnerable even trusted tools can be – and Google says hackers are *using AI* to find flaws. There's a huge opportunity for a simple 'AI code safety check' that gives human developers peace of mind by quickly scanning what AI generates for common security problems or risky ingredients (like bad open-source packages). You could make a killing by being the trusted guardian for vibe coders who want to ship fast with AI but don't want to accidentally ship a security nightmare; imagine a little browser extension or a Replit plugin that, after your AI spits out some code, gives you a green light or flags potential issues in plain English, explaining *why* it's risky and suggesting a fix.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 14
+    },
+    {
+      "id": "2026-05-12-escape-the-ai-support-loop-your-fast-lane-to-a-real-human",
+      "date": "2026-05-12",
+      "title": "Escape the AI Support Loop: Your Fast Lane to a Real Human",
+      "category": "apps",
+      "thesis": "AI-powered customer support is rapidly becoming the default, but it's often a nightmare, trapping users in 'useless loops' where they have to 'beg' to speak to a real person. This widespread frustration creates a massive opportunity for simple tools that prioritize getting users to actual human support faster, without needing to build better AI yourself.",
+      "signal_strength": 5,
+      "evidence": [
+        {
+          "text": "Whenever I try to contact customer support, I'm met with an AI agent that traps me in a useless loop for minutes until I start begging it to connect me to a real person.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48085384",
+          "engagement": 43
+        },
+        {
+          "text": "People are asking if low-quality AI customer support will become the new normal, and if companies will start losing customers because of it.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48085993",
+          "engagement": 43
+        },
+        {
+          "text": "A high volume of builders are actively sharing what they are working on and seeking new ideas, indicating a strong appetite for solutions to common problems.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48087925",
+          "engagement": 1264
+        }
+      ],
+      "opportunity": "Everyone's complaining about getting stuck in AI customer support loops, but nobody's making a dead-simple tool that just cuts through the noise to connect you directly to a human. You could ship a browser extension or a mobile app this weekend that crowdsources or intelligently deduces the 'human bypass' for major companies, turning frustration into a paid shortcut for millions. The market is ripe as more companies deploy these frustrating bots.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 3
+    },
+    {
+      "id": "2026-05-12-cash-in-on-prediction-markets-the-bot-army-is-here",
+      "date": "2026-05-12",
+      "title": "Cash In on Prediction Markets: The Bot Army is Here",
+      "category": "making-money",
+      "thesis": "People are actively building and sharing automated trading bots to profit from 'prediction markets' (websites where you bet on future events, like elections or stock prices). The goal is 'arbitrage' (making money by finding slight price differences for the same event across different markets, like Polymarket and Kalshi), buying low in one place and selling high in another, all automatically.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "A GitHub project focused on an arbitrage bot for Polymarket and Kalshi shows significant interest, with 211 engagements.",
+          "source": "github",
+          "url": "https://github.com/Longbridges/polymarket-kalshi-arbitrage-bot",
+          "engagement": 211
+        },
+        {
+          "text": "Another TypeScript-based arbitrage bot for Polymarket and Kalshi, designed to exploit price differences in prediction markets, garnered 210 engagements.",
+          "source": "github",
+          "url": "https://github.com/sanzoI-tech/polymarket-kalshi-arbitrage-bot",
+          "engagement": 210
+        },
+        {
+          "text": "A third project building a trading bot for Polymarket and Kalshi, specifically for arbitrage, has 123 engagements, indicating a clear trend.",
+          "source": "github",
+          "url": "https://github.com/Drakkar-Softwares/polymarket-kalshi-arbitrage-bot",
+          "engagement": 123
+        }
+      ],
+      "opportunity": "Everyone's busy building *their own* arbitrage bot for Polymarket and Kalshi, but what's glaringly missing is a dead-simple, no-code dashboard where anyone can easily deploy, monitor, and manage these bots without touching a line of code. You could launch a basic MVP this weekend by creating a web UI that wraps one of these open-source bots, letting users set parameters and track profits, and selling it as a subscription service for the non-technical crowd wanting a slice of this automated trading pie.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
