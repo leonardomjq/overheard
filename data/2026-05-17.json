@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-17",
+  "generated_at": "2026-05-17T09:48:49.124Z",
+  "cards": [
+    {
+      "id": "2026-05-17-ai-agents-still-can-t-follow-instructions-here-s-how-to-fix-",
+      "date": "2026-05-17",
+      "title": "AI Agents Still Can't Follow Instructions? Here's How to Fix Their 'ADHD'",
+      "category": "ai-tools",
+      "thesis": "Despite the hype around AI agents, builders are hitting a wall: these tools often don't reliably follow instructions, even when those rules are clearly laid out in files like `CLAUDE.md` or `AGENTS.md`. This gap between detailed guidance and actual agent behavior is causing frustration and making people question the real-world value of current AI tools.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "I believe there are entire companies right now under AI psychosis, meaning they're overhyping what AI can actually do.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48153379",
+          "engagement": 3115
+        },
+        {
+          "text": "For people using coding agents regularly: do you still invest time in user-level and repo-level instruction files like CLAUDE.md, AGENTS.md, etc.? It's not a surprise that you don't expect the rules there to be followed even with less than 100 lines of changes.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48165211",
+          "engagement": 12
+        },
+        {
+          "text": "Tell me if you're still spending the effort of trying claude.md, and...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48166147",
+          "engagement": 12
+        },
+        {
+          "text": "What LLM models are you using and why? I've found myself using GPT-5.5 more than Opus 4.7 for work; which, has been a pretty big reversal. Previously, I was using Opus 4.6 for everything.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48151373",
+          "engagement": 7
+        },
+        {
+          "text": "Share concrete examples of benefits from AI usage: What did AI make possible? Time reduction? Entirely new capabilities? Genuinely looking for true positives here.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48160604",
+          "engagement": 9
+        }
+      ],
+      "opportunity": "Everyone's spending hours writing detailed `AGENTS.md` files for their AI coding tools like Cursor or Replit, but they're still saying 'you don't expect the rules there to be followed.' There's a huge gap for a simple tool that acts like a 'linter' (a program that flags potential errors or stylistic issues in code) for agent instructions. Imagine a web app that takes your `AGENTS.md` and a task, then simulates or highlights ambiguous instructions, giving builders confidence their AI will actually do what they want before they even run it.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-05-17-feeling-trapped-by-big-tech-builders-are-looking-for-an-esca",
+      "date": "2026-05-17",
+      "title": "Feeling Trapped by Big Tech? Builders Are Looking for an Escape Hatch.",
+      "category": "saas",
+      "thesis": "Builders and businesses are increasingly frustrated with large, automated tech platforms that feel 'corporatized' and lack human support. From sudden account bans to opaque rule changes, the fun of creating is being replaced by a sense of powerlessness against systems that offer little recourse or transparency (a way to see how decisions are made). This widespread sentiment points to a desire for tools that restore agency and control.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Many feel computers stopped being fun because they've become 'corporatized' and a vehicle for 'mindless entertainment,' with everything either too complex to build or already existing.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48164173",
+          "engagement": 130
+        },
+        {
+          "text": "A business owner spending considerable money on Meta ads was automatically banned by an automated system, stating there 'has to be a proper customer service channel' for appeals.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48151496",
+          "engagement": 15
+        },
+        {
+          "text": "One builder mentioned they 'don't care for coding new stuff' and wouldn't 'vibe-code it' (build something just for the fun of it) because it's either too complex or already exists, suggesting a lack of joy in current creation methods.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48151051",
+          "engagement": 130
+        }
+      ],
+      "opportunity": "Everyone's feeling powerless against big platforms that ban accounts or change rules without warning, taking the 'fun' out of building. Instead of just complaining, build a 'personal platform advocate' — a service that automatically drafts human-sounding appeals for unfair bans or payment holds on platforms like Meta or Stripe, and even helps escalate them. You'd be giving back agency to small businesses and creators, and you could launch a beta focusing on just one platform's common frustrations in a weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
