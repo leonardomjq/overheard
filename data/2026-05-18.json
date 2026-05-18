@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-18",
+  "generated_at": "2026-05-18T11:46:00.622Z",
+  "cards": [
+    {
+      "id": "2026-05-18-your-ai-agent-is-expensive-dumb-the-hidden-goldmine-in-makin",
+      "date": "2026-05-18",
+      "title": "Your AI Agent is Expensive & Dumb: The Hidden Goldmine in Making it Understand Your Codebase",
+      "category": "ai-tools",
+      "thesis": "AI agents are a game-changer for writing code, but they're still incredibly inefficient and costly when trying to understand large, complex projects. Developers are frustrated because agents either waste tons of money by 're-reading' entire codebases over and over, or they rely on outdated instructions, leading to a less 'fun' and productive building experience. The big opportunity is in making these agents smarter and cheaper by giving them a real-time, evolving understanding of a codebase's intent.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "When agents can't find something directly, they fall back to basic text search, reading full files or launching subagents. This uses a lot of tokens (the 'currency' of AI models), and often still misses the relevant code. Our new tool, Semble, uses 98% fewer tokens for code search.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48169874",
+          "engagement": 472
+        },
+        {
+          "text": "Do you still spend time maintaining user-level and repo-level instruction files like CLAUDE.md or AGENTS.md? It's not a surprise that you don't expect the rules there to be followed even with less than 100 lines of changes.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48164173",
+          "engagement": 19
+        },
+        {
+          "text": "My impression is that computers have been on one side 'corporatized,' and on the other became a vehicle for mindless entertainment. I don't care for coding new stuff. Everything I may need either already exists or is too complex to do on my own (and no, I won't vibe-code it, what's the fun in that?).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48165211",
+          "engagement": 156
+        },
+        {
+          "text": "I'm wondering what LLM models you're using and why? I've found myself using GPT-5.5 more than Opus 4.7 for work; which, has been a pretty big reversal.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48160604",
+          "engagement": 19
+        },
+        {
+          "text": "Could free/low cost LLMs be a momentary thing? Say they (OpenAI, etc.) don’t find a way to reduce the cost of running these LLMs. Will we shift towards slower/worse LLMs running locally? Or maybe enterprise ones only used by large corporations for specific tasks?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48166147",
+          "engagement": 12
+        }
+      ],
+      "opportunity": "Everyone's chasing hyper-efficient code search for AI agents (like Semble, which got 472 engagements!), but the bigger headache is that agents still miss the *intent* of a codebase and struggle with keeping up-to-date. Imagine a tool that acts like an AI-powered 'codebase memory' – it constantly learns and updates its understanding of your project, so other tools like Cursor or Replit agents don't have to keep re-reading the entire thing or rely on stale `CLAUDE.md` files. You could ship a simple version this weekend by hooking into GitHub webhooks, using an LLM to generate semantic summaries of code changes, and exposing an API so any agent can ask 'what does this part *do* now?'.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 10
+    }
+  ]
+}
