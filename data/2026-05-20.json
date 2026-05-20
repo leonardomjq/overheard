@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-20",
+  "generated_at": "2026-05-20T10:52:16.101Z",
+  "cards": [
+    {
+      "id": "2026-05-20-ai-agents-are-exploding-but-nobody-can-debug-them-here-s-how",
+      "date": "2026-05-20",
+      "title": "AI Agents Are Exploding, But Nobody Can Debug Them — Here's How To Fix It",
+      "category": "ai-tools",
+      "thesis": "AI is taking over everything from Google search to writing code, and big players like Google and Anthropic are doubling down. But as AI agents (systems that act on their own) become more common, builders are hitting a wall: these agents are unreliable and impossible to understand when they mess up. The market is screaming for tools that make AI agents dependable and transparent, not just powerful.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "A new open-source project called Forge dramatically improved an 8B AI model's performance from 53% to 99% on multi-step tasks where the AI acts on its own, just by adding simple 'guardrails' (rules to keep the AI on track). This shows reliability is a huge unsolved problem that can be fixed.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48194352",
+          "engagement": 681
+        },
+        {
+          "text": "Google is integrating its Gemini AI directly into its search box, and Andrej Karpathy (a top AI researcher) just joined Anthropic, signaling that major tech shifts are happening in AI right now.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48196570",
+          "engagement": 1306
+        },
+        {
+          "text": "One builder asked on Hacker News, 'How do we enforce engineers to understand the code they are shipping?' when everyone is using AI for writing code and creating pull requests, highlighting a growing concern about human oversight and understanding of AI-generated work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48197370",
+          "engagement": 25
+        },
+        {
+          "text": "There's a noticeable sentiment that AI discussions are dominating online tech communities, with some users asking for 'Alternatives to HN for 'tech outside of AI' discussion?', indicating a pervasive focus on AI, but also a desire for clarity amidst the hype.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48192383",
+          "engagement": 40
+        }
+      ],
+      "opportunity": "Everyone's pushing AI agents to automate everything, from coding to customer service, but when they go off the rails, it's a black box. The Forge project proves simple guardrails can make AI agents super reliable, but nobody's built the equivalent of a 'flight recorder' or 'GPS for AI agents' that lets you easily see *why* an agent made a decision or *where* it got stuck. You could build a simple visual debugger/explainer for AI agent workflows – a tool that lets you define plain-language rules (like 'always verify X before Y') and then gives you a step-by-step breakdown of how your AI agent followed (or failed to follow) those rules. This would give non-technical founders the control and understanding they need to trust and scale their AI products, and you could hook into existing open-source agent frameworks right now.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 135
+    }
+  ]
+}
