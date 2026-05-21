@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-21",
+  "generated_at": "2026-05-21T11:29:12.072Z",
+  "cards": [
+    {
+      "id": "2026-05-21-your-app-s-cloud-host-just-banned-a-major-customer-time-to-b",
+      "date": "2026-05-21",
+      "title": "Your App's Cloud Host Just Banned a Major Customer: Time to Build Your 'Dead Man's Switch'",
+      "category": "saas",
+      "thesis": "Builders are realizing that relying on a single cloud provider, even a giant like Google, can put their entire business at risk after a high-profile incident where Google unexpectedly banned a popular platform, Railway. This creates a huge demand for tools that help developers protect themselves from sudden outages or account suspensions, essentially providing a backup plan for their deployed applications.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Ask HN: Shouldn't Google need to give a public statement about Railway incident? Everytime I read something like this, I get nervous about the cloud providers and Google. Since this is a relatively high profile customer standards, shouldn't they explain what caused them to suspend the account ?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48212493",
+          "engagement": 260
+        },
+        {
+          "text": "Tell HN: Google banned Railway's account. Everything down: Everything down including railway.com - this is a bad outage. :(",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48207660",
+          "engagement": 46
+        },
+        {
+          "text": "GitHub confirms breach of 3,800 repos via malicious VSCode extension.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48214017",
+          "engagement": 1248
+        },
+        {
+          "text": "Ask HN: Have I Become a Luddite? I just watched the Google I/O keynote. I feel visceral disgust. Where is this taking our social fabric, our values, our skills? I feel like the remaining tr",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48210226",
+          "engagement": 21
+        },
+        {
+          "text": "Ask HN: Suggest Google Antigravity Alternative: I have been using Google Antigravity ide with pro plan. But after recent update of Google Antigravity ide it removed gemini 3 and current models quota gets exhaust quickly. Need advice for alternative. Can't spend much and don't have budget for claude or other expensive models.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48210590",
+          "engagement": 13
+        }
+      ],
+      "opportunity": "Everyone's freaking out about Google banning Railway's account, taking everything down and showing how fragile cloud reliance can be. Builders are terrified of losing their apps overnight. You could build a small service that acts as a 'dead man's switch' for your app, automatically backing up your data and config from platforms like Railway or Vercel to S3 or another provider every 24 hours. Ship it as a simple plug-in or a 'deploy with one click' button.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 123
+    },
+    {
+      "id": "2026-05-21-google-s-ai-search-is-a-mess-ads-manipulation-and-your-chanc",
+      "date": "2026-05-21",
+      "title": "Google's AI Search is a Mess: Ads, Manipulation, and Your Chance to Clean Up",
+      "category": "ai-tools",
+      "thesis": "Google's new AI search experience is already a battleground. People are trying to manipulate its answers (like old-school SEO, but for AI), and Google is making it even messier by inserting ads directly into its AI responses. This means users are about to get a less trustworthy and more commercial experience from a tool that's supposed to be helpful.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "People are actively trying to game Google's new AI search, similar to how they've optimized for traditional search results, and Google is trying to stop them.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48205782",
+          "engagement": 518
+        },
+        {
+          "text": "Google officially announced that advertisements will now be included directly within the AI-generated answers in their search results.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48220105",
+          "engagement": 205
+        }
+      ],
+      "opportunity": "Everyone's about to get real annoyed with Google's AI answers mixing in ads and sneaky manipulation attempts. Jump on that frustration by creating a super-focused AI assistant for a specific topic – think unbiased product comparisons or fact-checked news summaries – that guarantees no ads and clearly flags potential spin, giving people the clean info they actually want.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    },
+    {
+      "id": "2026-05-21-apple-s-custom-video-wallpapers-just-got-open-sourced-your-n",
+      "date": "2026-05-21",
+      "title": "Apple's Custom Video Wallpapers Just Got Open-Sourced: Your Non-AI Opportunity to Own Desktop Personalization",
+      "category": "creator-tools",
+      "thesis": "The developer who reverse-engineered Apple's hidden video wallpaper format for macOS just open-sourced their work, making it easy for anyone to create custom dynamic backgrounds. While the original creator couldn't compete with existing polished apps, this new open-source foundation unlocks a fresh wave of non-AI customization tools for builders.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Show HN: I reverse engineered Apple's video wallpapers: Ever since Apple introduced their video wallpapers I wanted to be able to put custom videos there. I decided to reverse engineer and see what I can do... So I'm open-sourcing it.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48215979",
+          "engagement": 379
+        },
+        {
+          "text": "WallpaperExtensionKit.framework is what powers macOS wallpapers.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48219918",
+          "engagement": 379
+        },
+        {
+          "text": "I'm not the first to opine that recently there seems to be an effect on HN whereby the AI hypetrain has essentially drowned out discussions of anything other than stories either directly or indirectly related to AI...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48202486",
+          "engagement": 78
+        }
+      ],
+      "opportunity": "The creator of the open-sourced macOS video wallpaper tech gave up on selling a direct app because of 'polished' competitors, but that just opened the door for a killer *service*. Ship a dead-simple web tool that takes any video, uses the new open-source library to convert it into Apple's custom format, and offers premium features like filters or direct device syncing. This taps into huge demand for non-AI personalization and you could launch it this weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
