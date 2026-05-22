@@ -1,0 +1,130 @@
+{
+  "date": "2026-05-22",
+  "generated_at": "2026-05-22T10:53:09.101Z",
+  "cards": [
+    {
+      "id": "2026-05-22-google-antigravity-s-bait-and-switch-leaves-devs-desperate-f",
+      "date": "2026-05-22",
+      "title": "Google Antigravity's Bait-and-Switch Leaves Devs Desperate for Smarter AI Coding Tools",
+      "category": "ai-tools",
+      "thesis": "Developers are heavily reliant on AI coding tools (like Google Antigravity, an integrated development environment or IDE) but are getting burned by major providers suddenly limiting access to powerful models and making quotas disappear fast. This has left a huge gap for builder-focused tools that help manage AI model costs and performance, especially for those who can't afford expensive alternatives like Claude Opus.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Google's Antigravity bait and switch.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48222529",
+          "engagement": 1005
+        },
+        {
+          "text": "Users are asking for Google Antigravity alternatives because after a recent update, it removed access to Gemini 3 and current model quotas get exhausted quickly. They can't afford expensive models like Claude.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48208281",
+          "engagement": 19
+        },
+        {
+          "text": "Developers are struggling with AI and work; coding agents initially felt like a great tool, but after Opus 4.5, it seemed like something changed, leading to more review time.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48225837",
+          "engagement": 12
+        },
+        {
+          "text": "LLMs consistently overestimate how long tasks will take, but when using AI agents within Claude/GPT, implementation often only takes a day or two.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48222290",
+          "engagement": 13
+        },
+        {
+          "text": "Comparing Claude models, Opus 4.7 is preferred for all tasks, but users hit 90% of their model use quickly, forcing them to use less capable (and painful) models like Sonnet 4.6 for simple tasks.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48212228",
+          "engagement": 8
+        }
+      ],
+      "opportunity": "Everyone's scrambling after Google Antigravity pulled back its best AI models, leaving devs stuck with limited quotas and expensive alternatives. You could build a 'smart agent manager' that acts like a traffic cop for coding tasks, automatically sending simple requests to cheap models and reserving powerful ones for truly hard problems. Ship a Replit plugin that helps devs manage their model spend and performance across different AI providers, so they never hit a surprise quota wall again.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-05-22-ai-s-spamming-your-feed-build-the-human-filter",
+      "date": "2026-05-22",
+      "title": "AI's Spamming Your Feed? Build the Human Filter.",
+      "category": "ai-tools",
+      "thesis": "The internet is getting flooded with AI-generated text, from unhelpful walls of text in conversations to outright malware in developer forums. People are increasingly frustrated by the lack of genuine human interaction and trustworthy information, creating a significant demand for tools that can filter out this digital noise.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "People are 'throwing AI-generated walls of text into conversations,' making it hard to find real information.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48219992",
+          "engagement": 989
+        },
+        {
+          "text": "I'm tired of AI-generated answers: I found GitHub repositories that were spreading malware. I asked AI what I should do, but it gave me nothing useful. Then, when I posted the question on GitHub, someone replied with the *exact same AI text*, and then another person did the same after the first comment was deleted.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48230104",
+          "engagement": 148
+        },
+        {
+          "text": "Gemini 3.5 Flash is 'breaking in stupid ways,' like consistently giving wrong answers (e.g., 7 instead of 10) when given specific instructions. This shows AI models can be unreliable and generate bad responses.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48207785",
+          "engagement": 9
+        },
+        {
+          "text": "An 'Ask HN' post directly questions if people 'enjoy reading any type of AI written text,' indicating a general dissatisfaction with AI-generated content.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48226107",
+          "engagement": 15
+        }
+      ],
+      "opportunity": "Everyone's complaining about AI-generated junk cluttering up conversations and even leading to malware in developer forums. Right now, there's a huge need for a simple browser extension or a platform integration that acts like a 'human filter' — flagging or even hiding responses that scream AI. You could start by focusing on specific platforms like GitHub discussions or a popular forum, identifying common AI patterns, and giving people a way to instantly filter out the noise and find actual human help.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 9
+    },
+    {
+      "id": "2026-05-22-ai-agents-decentralized-apps-the-escape-hatch-from-cloud-loc",
+      "date": "2026-05-22",
+      "title": "AI Agents + Decentralized Apps: The Escape Hatch from Cloud Lock-in",
+      "category": "ai-tools",
+      "thesis": "AI agents are letting non-engineers build and ship products at incredible speed, but there's a growing unease about relying solely on big cloud providers after incidents like the recent Railway outage. This creates a huge opening for tools that empower non-technical builders to create more resilient, independent applications by leveraging decentralized networks (like peer-to-peer systems where computers connect directly, rather than through a central server).",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Freenet, a peer-to-peer platform for decentralized apps, has been redesigned, and users are already building their own applications on it, including games and chat apps.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48223362",
+          "engagement": 470
+        },
+        {
+          "text": "Runtime (YC P26) is building infrastructure to let entire teams, including non-engineers, ship products using AI coding agents like Claude Code and Codex without needing engineers to constantly assist.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48225040",
+          "engagement": 112
+        },
+        {
+          "text": "The founder of Runtime personally shipped four full-stack products in just three months by using coding agents, showing how much faster development can be.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48225852",
+          "engagement": 112
+        },
+        {
+          "text": "There's significant concern among builders about cloud providers like Google suspending accounts, as happened to Railway, making people 'nervous about the cloud providers and Google'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48219340",
+          "engagement": 277
+        }
+      ],
+      "opportunity": "AI agents are letting non-engineers ship products at lightning speed, but relying on centralized cloud providers is becoming a huge headache (look at the Railway incident). Now's the time to bridge the gap: an AI agent that takes a non-technical user's idea and automatically deploys a simple app onto a decentralized network like Freenet/Hyphanet. This gives builders freedom from cloud lock-in, and you could start by building a simple web interface that uses an LLM (a powerful AI language model) to generate and push basic static sites or chat apps to Freenet.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    }
+  ]
+}
