@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-25",
+  "generated_at": "2026-05-25T11:54:23.902Z",
+  "cards": [
+    {
+      "id": "2026-05-25-the-real-money-in-ai-agents-isn-t-building-them-it-s-hosting",
+      "date": "2026-05-25",
+      "title": "The Real Money in AI Agents Isn't Building Them – It's Hosting Them (Cheaply)",
+      "category": "ai-tools",
+      "thesis": "Everyone's talking about AI agents (like smart coding assistants or personal content filters), but the big challenge is making them cheap, controllable, and easy to deploy for specific, niche tasks. Builders are realizing there's a huge opportunity in providing the simple infrastructure (the underlying tech) that lets anyone run their own personalized AI agent without needing to be an expert.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "DeepSeek makes the V4 Pro price discount permanent, which saw '828 engagement' and '384 comments' on a related discussion. This shows a significant trend toward more affordable and powerful AI models for coding, making running agents more economically viable.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48256953",
+          "engagement": 828
+        },
+        {
+          "text": "One builder shared, 'We were building infra for OpenClaw... this thing grew to 300k ARR and even got a YC interview.' This directly shows a successful business built on *hosting* niche AI agents (like OpenClaw, which creates custom Hacker News feeds).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48253386",
+          "engagement": 6
+        },
+        {
+          "text": "A user reported that 'Claude Code now allows Anthropic to perform remote system prompt injection via the network,' highlighting concerns about control and customization of proprietary AI agents. (System prompt injection means the AI creator can change the underlying instructions that guide the AI's behavior without your explicit consent).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48259288",
+          "engagement": 17
+        },
+        {
+          "text": "A user described their use of OpenClaw: 'I'm using OpenClaw and a handful of prompts to generate a set of custom HN comment pages for myself each day.' This demonstrates a clear use case for highly personalized AI agents.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48253062",
+          "engagement": 18
+        }
+      ],
+      "opportunity": "Everyone's trying to build general AI agents, but the real money is in making *niche, personalized* agents easy to run and manage, especially for specific information streams. Think a 'Replit for personal AI assistants' where people can spin up their own OpenClaw-like agents for custom news feeds or coding help, without touching servers. The DeepSeek price cuts and emerging tools like Hermes mean the infrastructure is finally cheap enough to make this a viable, high-margin SaaS for individual builders.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 112
+    }
+  ]
+}
