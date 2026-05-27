@@ -1,0 +1,121 @@
+{
+  "date": "2026-05-27",
+  "generated_at": "2026-05-27T11:40:21.617Z",
+  "cards": [
+    {
+      "id": "2026-05-27-skilled-devs-are-crushing-it-on-the-job-but-crashing-in-inte",
+      "date": "2026-05-27",
+      "title": "Skilled Devs Are Crushing It On The Job, But Crashing In Interviews",
+      "category": "saas",
+      "thesis": "Many capable developers are bombing job interviews, even after years of experience, because the skills needed to pass technical interviews are often different from the skills used in actual day-to-day coding. This creates a huge disconnect where talented people are overlooked, leading to frustration and missed opportunities in a competitive job market.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "The worst job interview I ever had",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48285344",
+          "engagement": 658
+        },
+        {
+          "text": "I’m working as a developer for 8 years, and I changed companies a couple times, and it was just luck every time, I ruined 90% of tech interviews, but in regular work I can do a lot of things... but in interviews I’m an absolute loser.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48269051",
+          "engagement": 35
+        },
+        {
+          "text": "Anecdotally, tech layoffs due to 'AI productivity gains' seemed to target senior/older (i.e., expensive) devs and junior/recent-grad devs, increasing competition for remaining roles.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48270275",
+          "engagement": 8
+        }
+      ],
+      "opportunity": "Everyone's practicing abstract coding challenges, but the real pain is how actual dev experience doesn't translate to interview success. Imagine a tool that lets experienced devs 'show, not tell' their real-world problem-solving skills in simulated, project-based scenarios, instead of just solving abstract puzzles. You could build a platform that focuses on realistic, multi-file codebases where users can explain their thought process, which is way closer to actual work than whiteboard coding, giving competent but interview-averse developers a genuine edge in a tough job market.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 108
+    },
+    {
+      "id": "2026-05-27-your-ai-agents-are-stuck-in-the-cloud-time-to-teach-them-to-",
+      "date": "2026-05-27",
+      "title": "Your AI Agents are Stuck in the Cloud: Time to Teach Them to Click Buttons",
+      "category": "automation",
+      "thesis": "AI agents are becoming essential tools, even 'daily drivers' for tasks like coding, but they're mostly confined to digital environments. While companies are emerging to help *other AI companies* integrate these agents with traditional desktop software (like making them click buttons or type into old apps), there's a clear demand for simpler, more accessible ways for everyday builders and small businesses to automate their existing computer tasks with AI, especially given security concerns around these agents.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Minicor (YC P26) just launched, helping AI companies quickly build scalable desktop automations (RPA) for systems that don't have an API. They specifically mention 'triggering mouse clicks and key strokes'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48279453",
+          "engagement": 148
+        },
+        {
+          "text": "People are already using AI like Claude Code as a 'Daily Driver' for their work, indicating widespread adoption and reliance on AI for productivity.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48280729",
+          "engagement": 156
+        },
+        {
+          "text": "A critical vulnerability (CVE-2026-48710) affecting millions of AI agents was reported, highlighting that these agents are being widely deployed and have real-world security implications.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48289950",
+          "engagement": 94
+        },
+        {
+          "text": "An 'Ask HN' thread questioned what people do while their 'coding agent is working,' implying that agents are already performing tasks autonomously and freeing up human time.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48277107",
+          "engagement": 11
+        },
+        {
+          "text": "There's a discussion about 'The Rise of the AI Script Kiddie,' suggesting that AI will make it easier for less technical people to automate and build things, potentially without deep understanding.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48289624",
+          "engagement": 7
+        }
+      ],
+      "opportunity": "Everyone's talking about AI agents, but they're mostly stuck in the cloud. While big AI companies are building complex tools to get agents to control desktop apps, there's a massive opening for someone to build a super user-friendly, visual dashboard where non-technical people can quickly define simple desktop automations for their AI agent (like 'click this button, then type this into that field') and then monitor exactly what the agent is doing, live. Think a 'lazygit-style' interface for desktop RPA, making AI automation accessible and transparent for anyone who wants their AI to interact with their existing software, not just APIs.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 16
+    },
+    {
+      "id": "2026-05-27-yc-startups-are-hiring-like-crazy-here-s-how-to-build-tools-",
+      "date": "2026-05-27",
+      "title": "YC Startups are Hiring Like Crazy — Here's How to Build Tools for Their New AI Devs",
+      "category": "ai-tools",
+      "thesis": "Y Combinator companies, including those focused on AI like Weave, are in a rapid growth phase, actively recruiting engineers across various specialties. This indicates a significant influx of capital and a strong push to develop and scale their core products, creating a demand for tools that streamline their operations.",
+      "signal_strength": 2,
+      "evidence": [
+        {
+          "text": "Sage Care (YC S24) is actively hiring software engineers, showing a push to expand their product development.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48282478",
+          "engagement": 0
+        },
+        {
+          "text": "Weave (YC W25) is specifically looking for ML (Machine Learning), AI (Artificial Intelligence), product, and design engineers, highlighting a strong focus on AI development.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48269937",
+          "engagement": 0
+        },
+        {
+          "text": "RentFlow (YC S24) is hiring, indicating general growth and team expansion across YC's latest batches.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48269041",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Fast-growing YC startups are bringing on new engineering talent, especially for AI, and they need to get them productive *yesterday*. Instead of building full-stack apps, think about a hyper-focused 'developer experience' tool: a Replit template that auto-provisions a secure dev environment for specific AI tasks (like fine-tuning a Llama model) or a v0 component library for common internal AI dashboards, giving new hires a massive head start.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
