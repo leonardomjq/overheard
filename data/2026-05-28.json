@@ -1,0 +1,78 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "2026-05-28T11:40:10.575Z",
+  "cards": [
+    {
+      "id": "2026-05-28-the-ai-slop-backlash-why-authenticity-consistency-are-your-n",
+      "date": "2026-05-28",
+      "title": "The 'AI Slop' Backlash: Why Authenticity & Consistency Are Your New Superpowers",
+      "category": "ai-tools",
+      "thesis": "As AI-generated content floods the internet, people are getting fed up with generic, low-quality 'AI slop' that feels inauthentic. Major platforms like YouTube are stepping in to label AI-generated videos, and users are actively demanding transparency and higher quality from AI tools, especially for creative tasks where consistency is key.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "YouTube is moving to automatically label AI-generated videos, a clear sign that major platforms are recognizing the need to distinguish human from AI content.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48299753",
+          "engagement": 1518
+        },
+        {
+          "text": "People are asking, 'Do they know we can tell it's AI slop?' expressing frustration when entrepreneurs use 'blatant' AI-copied content from tools like Grok or ChatGPT in their communications.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48292856",
+          "engagement": 17
+        },
+        {
+          "text": "There's a growing sentiment that 'submission titles should indicate entirely-AI-generated content' on sites like Hacker News, because readers don't want to read 'long-form that could have (possibly) been a high-quality Twitter post.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48303252",
+          "engagement": 10
+        },
+        {
+          "text": "One user is looking for a generative model that can 'design characters' and then 'make a consistent comic with them,' noting that current models 'are not consistent at all' and 'don't store' character designs.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48301850",
+          "engagement": 6
+        },
+        {
+          "text": "A discussion on 'The Rise of the AI Script Kiddie' highlights concerns that AI might lead to developers creating large codebases they don't understand, implying a drop in quality and expertise.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48296731",
+          "engagement": 7
+        }
+      ],
+      "opportunity": "Everyone's complaining about AI content feeling generic or inconsistent, but creators are still trying to use AI for complex visual storytelling like comics. There's a clear gap for a simple tool that lets you 'lock in' a specific visual style or character design from an initial AI output and then apply it consistently across *all* subsequent generations within a project. You could build a visual editor on top of existing image generation APIs (like Midjourney or DALL-E) that helps small creators ensure brand consistency or character continuity, turning AI 'slop' into polished, professional-grade assets.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 114
+    },
+    {
+      "id": "2026-05-28-google-s-ai-search-push-is-sparking-a-gold-rush-for-unfilter",
+      "date": "2026-05-28",
+      "title": "Google's AI Search Push is Sparking a Gold Rush for Unfiltered Trend Data",
+      "category": "trends",
+      "thesis": "Google is aggressively integrating AI into its search results, which is making some users look for alternatives. This shift, combined with the immense value of knowing what people will search for next, creates a unique opportunity for builders to provide insights into emerging trends outside the mainstream.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "DuckDuckGo search saw 28% more visits after Google announced people love its AI search mode, indicating a user desire for alternative search experiences.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48296649",
+          "engagement": 1329
+        },
+        {
+          "text": "A Google employee was charged with a $1M insider trading bet on a specific search term on Polymarket, highlighting the massive financial value tied to knowing future search trends.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48302822",
+          "engagement": 321
+        }
+      ],
+      "opportunity": "Google pushing AI search is making people jump to alternatives like DuckDuckGo, showing a clear hunger for unbiased, non-AI-filtered info. If you built a simple tool that scrapes emerging search queries from these alternative engines or even niche forums, you could give founders and content creators a massive head start on spotting what people *really* want, long before Google's AI bakes it into the mainstream.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
