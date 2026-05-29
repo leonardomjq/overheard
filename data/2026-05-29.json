@@ -1,0 +1,124 @@
+{
+  "date": "2026-05-29",
+  "generated_at": "2026-05-29T11:32:10.368Z",
+  "cards": [
+    {
+      "id": "2026-05-29-your-ai-agent-is-broken-build-it-a-brain-that-doesn-t-halluc",
+      "date": "2026-05-29",
+      "title": "Your AI Agent is Broken? Build It a Brain That Doesn't Hallucinate.",
+      "category": "ai-tools",
+      "thesis": "Despite the hype, even top-tier AI models like Claude Opus 4.8 are failing basic tasks, acting 'like we're back to the GPT-2 era' and struggling with simple file access or generating accurate code. This unreliability, especially for AI agents (which are programs that use AI to perform tasks), is the number one issue for builders, creating a massive opportunity for tools that provide verifiable, real-time context and prevent AI hallucinations.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "In my first hour with Claude Opus 4.8, it's like we're back to the GPT-2 era. It can't even read a file anymore, randomly using 'sed' with no explanation in hallucinated file paths.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48311647",
+          "engagement": 5
+        },
+        {
+          "text": "The accuracy is the #1 issue for data agents. Agents are great at generating valid SQL, but it’s not always accurate.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48316636",
+          "engagement": 94
+        },
+        {
+          "text": "We're open-sourcing Ktx, an executable context layer that makes agents reliable on your data stack. We built it after seeing the problems with building production-grade data agents.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48305743",
+          "engagement": 94
+        },
+        {
+          "text": "We just opensourced a project called Orbit, which can RL post train (a method for further training an AI model after its initial training) trillion-scale LLMs like DeepSeek V4-pro on a single node.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48309915",
+          "engagement": 10
+        }
+      ],
+      "opportunity": "Everyone's complaining that powerful AI models like Claude Opus 4.8 are 'broken' and 'can't even read a file anymore,' making AI agents unreliable. Instead of trying to build a better core AI, there's a massive, immediate need for tools that act as a 'smart assistant' *for the AI itself*, managing its working memory and preventing hallucinations. Imagine a simple plug-in or service for developer tools (like Cursor or Replit) that verifies file paths or fetches the absolute latest API documentation *before* the AI sees it, ensuring it works with accurate context and doesn't invent non-existent files or outdated methods. The first person to ship a reliable 'context manager' that plugs into existing dev environments will own the market for frustrated AI users, and you could probably build a basic version this weekend by hooking into public APIs and using a simple validation layer.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 95
+    },
+    {
+      "id": "2026-05-29-ai-slop-overload-the-rise-of-the-human-touch-in-an-ai-genera",
+      "date": "2026-05-29",
+      "title": "AI Slop Overload: The Rise of the Human Touch in an AI-Generated World",
+      "category": "ai-tools",
+      "thesis": "The flood of AI tools has created a new problem: a tsunami of generic, low-quality content and code, dubbed 'AI slop,' leading to widespread fatigue and a desire for authenticity. While many are labeling themselves 'AI Engineers' just for using AI tools, the real opportunity is for builders who can make AI-assisted work feel genuinely human and unique, cutting through the noise.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "One builder shared how they made a million-dollar product from their dorm room, highlighting the drive for entrepreneurial success.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48314951",
+          "engagement": 508
+        },
+        {
+          "text": "People are confused about what an 'AI Engineer' even means, noting that many are just building apps and backends using AI tools like Claude, not working on models themselves.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48315206",
+          "engagement": 41
+        },
+        {
+          "text": "There's a direct complaint asking, 'Do they know we can tell it's AI slop?' referring to entrepreneurs sending out obviously AI-generated communications.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48312716",
+          "engagement": 24
+        },
+        {
+          "text": "Many feel 'burned out on AI' and want to step back from the intense industry rat race, indicating a fatigue with the current AI landscape.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48312377",
+          "engagement": 24
+        },
+        {
+          "text": "A strong sentiment emerged that submission titles should clearly indicate if content is 'entirely-AI-generated,' showing a desire to filter out low-quality AI content.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48292665",
+          "engagement": 26
+        }
+      ],
+      "opportunity": "Everyone's complaining about 'AI slop' and burnout from generic AI content, but nobody's really owning the space of tools that help *human* creators make AI-assisted work that actually feels unique and authentic. A massive wave is coming for anything that helps people apply AI to their creative process in a way that *enhances* their unique voice, rather than diluting it. Imagine a 'human-touch' layer for AI-generated text or code — a quick browser extension or API (a way for different software to talk to each other) that takes AI output and automatically tweaks it to match a specific human's past writing style or coding patterns, making it indistinguishable from something they'd written themselves. You could start by training it on your own GitHub repos or blog posts, and then offer it to others.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 31
+    },
+    {
+      "id": "2026-05-29-automated-trading-bots-are-blowing-up-on-polymarket-your-cha",
+      "date": "2026-05-29",
+      "title": "Automated Trading Bots Are Blowing Up on Polymarket: Your Chance to Productize Profit",
+      "category": "making-money",
+      "thesis": "Builders are intensely focused on creating automated trading bots for Polymarket, a platform where people bet on future events (like 'will it rain tomorrow?'). These bots are designed to make money by automatically placing trades based on data, especially for specific categories like weather predictions. The goal is to set it and forget it, generating profit without constant manual input.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "A Polymarket auto-trading bot aiming for profitability has garnered significant attention, indicating strong interest in automated strategies.",
+          "source": "github",
+          "url": "https://github.com/ShadowSpread/polymarket-auto-trading",
+          "engagement": 238
+        },
+        {
+          "text": "Another project explicitly focuses on a Polymarket bot for weather predictions, showing a niche but active area of development for automated trading.",
+          "source": "github",
+          "url": "https://github.com/Signal-Trade-Core/weather-prediction-bot",
+          "engagement": 128
+        },
+        {
+          "text": "Further reinforcing the trend, a separate 'Polymarket weather betting bot' also shows high engagement, highlighting the specific appeal of using weather data for automated trading on the platform.",
+          "source": "github",
+          "url": "https://github.com/hydra-node/polymarket-weather-bot",
+          "engagement": 106
+        }
+      ],
+      "opportunity": "There's a ton of open-source code for Polymarket trading bots, especially around weather predictions, but it's all built for engineers. The real opportunity isn't another bot, it's a 'no-code' wrapper: a simple web interface where anyone can connect their Polymarket account, select from a menu of pre-built, community-tested bot strategies (like 'weather arbitrage'), and deploy them with a few clicks. This makes the power of these profitable bots accessible to everyone, and you could charge a monthly subscription or a small cut of their bot's profits.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
