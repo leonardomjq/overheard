@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-03",
+  "generated_at": "2026-06-03T12:43:17.249Z",
+  "cards": [
+    {
+      "id": "2026-06-03-devs-are-ditching-ai-the-hidden-opportunity-in-fixing-broken",
+      "date": "2026-06-03",
+      "title": "Devs Are Ditching AI: The Hidden Opportunity in Fixing Broken Code, Not Just Generating It",
+      "category": "ai-tools",
+      "thesis": "While major players like Microsoft are launching powerful new AI coding models, a significant number of developers are actually quitting AI assistants because these tools break their workflow and generate unreliable code. This creates a massive opening for builders who can make AI-generated code trustworthy and integrated, rather than just faster or more voluminous.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Microsoft just launched seven new MAI models, including MAI-Code-1-Flash, showing huge investment in AI for coding.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48374466",
+          "engagement": 712
+        },
+        {
+          "text": "One developer declared 'I'm Done Using AI' for coding, saying it caused 'lost ability to maintain any kind of flow state,' led to 'thrashing on architectural changes,' and created 'tests that get manipulated into passing.' They found it useful only as a 'research search engine'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48377761",
+          "engagement": 39
+        },
+        {
+          "text": "Another user noted 'The AI tool discovery problem,' where 'building AI products seems to be getting easier, while getting discovered is getting harder,' and users 'search for solutions, not tools.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48357725",
+          "engagement": 15
+        },
+        {
+          "text": "A builder mentioned that 'AI agents like to create maaaaasive files when building,' and they started building a tool to 'mitigate' this issue, highlighting the problem of AI-generated bloat or inefficiency.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48357724",
+          "engagement": 6
+        }
+      ],
+      "opportunity": "Devs are complaining AI breaks their 'flow state' and makes them 'thrash on architectural changes' because it often generates bad or misleading code, especially tests. Instead of another AI code generator, build a 'quality guardian' plugin for VS Code or Cursor that specifically *validates* AI-generated code. It could automatically check for common anti-patterns, flag potential architectural debt, or even generate a second set of independent tests to confirm the AI's output, letting developers trust AI without losing their focus.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 119
+    },
+    {
+      "id": "2026-06-03-your-next-app-idea-might-be-handwritten-why-remarkable-s-cod",
+      "date": "2026-06-03",
+      "title": "Your Next App Idea Might Be Handwritten: Why reMarkable's Code Editor is a Hidden Signal",
+      "category": "apps",
+      "thesis": "People are getting excited about writing code by hand on devices like the reMarkable 2 (a tablet designed for note-taking and reading that feels like paper). This 'Show HN' project, Edsger, lets developers use a REPL (a 'Read-Eval-Print Loop' – basically an interactive coding tool) for Clojure (a programming language) directly on their reMarkable, tapping into a desire for distraction-free, tactile interaction even for technical tasks.",
+      "signal_strength": 6,
+      "evidence": [
+        {
+          "text": "The 'Show HN' project 'Edsger' lets users run a Clojure REPL (an interactive programming environment) directly on the reMarkable 2, allowing for a handwritten coding experience.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48374552",
+          "engagement": 122
+        },
+        {
+          "text": "The project is about 'a handwritten Clojure REPL for the reMarkable 2,' indicating a niche but engaged interest in combining traditional pen-and-paper feel with digital development tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48374552",
+          "engagement": 122
+        }
+      ],
+      "opportunity": "Everyone's hyped on AI for code, but this 'handwritten code' project on reMarkable shows a strong craving for tactile, focused creation, not just for coding but for any structured thinking. Imagine a tool where you hand-sketch UI flows or mind maps on your reMarkable, and an AI instantly turns those into actual Figma wireframes, Markdown outlines, or Trello tasks. The first person to bridge that tactile, distraction-free planning with structured digital outputs for non-coders owns a goldmine, and you could probably prototype the AI part this weekend with a few API calls.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
