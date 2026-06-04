@@ -1,0 +1,73 @@
+{
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T11:16:59.259Z",
+  "cards": [
+    {
+      "id": "2026-06-04-ai-agent-costs-are-exploding-build-the-smart-memory-companie",
+      "date": "2026-06-04",
+      "title": "AI Agent Costs Are Exploding: Build the 'Smart Memory' Companies Desperately Need",
+      "category": "ai-tools",
+      "thesis": "Companies are already hitting hard limits on how much they're willing to spend on AI tools, with some like Uber capping usage at $1,500/month for employees. This means there's a huge demand for AI agents (automated programs that act on your behalf) that are not only effective but also cost-efficient. Builders are actively seeking ways to make these agents smarter and cheaper by giving them precise, relevant information and running them locally to cut down on expensive cloud API calls (which are requests to powerful AI models hosted by companies like OpenAI).",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48383056",
+          "engagement": 1122
+        },
+        {
+          "text": "Hyper (YC P26) launched a 'company brain' to power agentic development, plugging into company information to make AI agents and automations better and save time.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48387270",
+          "engagement": 132
+        },
+        {
+          "text": "A builder replaced their AI agent's 'flat fact store' (simple list of information) with a 'graph database' (a system that connects related pieces of information, making it smarter) to run a local-model-first AI agent framework through Ollama, emphasizing 'No cloud, no API costs.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48396004",
+          "engagement": 14
+        },
+        {
+          "text": "A user reported receiving an irrelevant, AI-generated spam email after posting in a 'Who wants to be hired?' thread, indicating that current AI agents often lack proper context and produce low-quality output.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48387095",
+          "engagement": 1225
+        }
+      ],
+      "opportunity": "Everyone's trying to make AI agents smarter, but the biggest bottleneck is getting them the *right* context without costing a fortune or making them hallucinate (making up information). A super-easy-to-use 'smart memory' layer for agents that pulls specific, structured company data (like a mini company brain) and feeds it to open-source local models (to cut API costs) would be massive. You could build a simple version that integrates with common tools like Slack or Notion and a local LLM runner like Ollama this weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 124
+    },
+    {
+      "id": "2026-06-04-google-s-new-ai-sees-reads-why-local-multimodal-ai-is-your-n",
+      "date": "2026-06-04",
+      "title": "Google's New AI Sees & Reads: Why Local Multimodal AI Is Your Next Side Project",
+      "category": "ai-tools",
+      "thesis": "Google just dropped Gemma 4 12B, a new AI model that can understand both text and images at the same time (that's 'multimodal'). The cool part? It's designed to run directly on your own computer, not just in the cloud, making it way cheaper and faster for many projects. This opens up a ton of possibilities for building smart apps without huge server costs.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "Google released Gemma 4 12B, an AI model that unifies different types of information like text and images without needing complex separate components.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48385906",
+          "engagement": 1192
+        },
+        {
+          "text": "Gemma 4 12B lets you run AI that understands both text and images directly on your own computer.",
+          "source": "producthunt",
+          "url": "https://www.producthunt.com/products/gemma-4-12b",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Everyone's talking about how Gemma 4 12B lets you run powerful AI that understands both text and images directly on your machine, but nobody's really leveraging its local-first aspect for *privacy-sensitive* applications. Imagine a desktop app that helps users organize personal photos or categorize documents based on their content and text, all without sending anything to the cloud. You could build a tool this weekend that takes screenshots or local files and offers smart suggestions, making local AI genuinely useful for everyday privacy-conscious tasks.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
