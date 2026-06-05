@@ -1,0 +1,111 @@
+{
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T11:30:33.228Z",
+  "cards": [
+    {
+      "id": "2026-06-05-your-ai-coding-assistant-just-got-hacked-the-new-supply-chai",
+      "date": "2026-06-05",
+      "title": "Your AI Coding Assistant Just Got Hacked: The New Supply Chain Risk",
+      "category": "ai-tools",
+      "thesis": "Developers are heavily relying on AI coding tools like Cursor, Claude, and Gemini to ship products, but this convenience comes with a critical new security blind spot. A recent supply chain attack (where malicious code is secretly inserted into trusted software) on GitHub organizations leveraged these very AI tool integrations to inject harmful, obfuscated scripts, showing that our AI-powered dev environments are becoming prime targets for attackers.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Our organization's GitHub just got massively compromised by a supply-chain attack. The attack vectors included 'Claude hooks,' 'Gemini hooks,' 'Cursor setup,' and 'VScode tasks.' It added `node .github/setup.js`, an obfuscated file, and spread by adding mimic'd skip-ci commits to open pull requests.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48405718",
+          "engagement": 9
+        },
+        {
+          "text": "I've been a long-time user of Claude Code and it's been my pair programmer across many projects. I can even tell when the model switches just by its coding output, showing how deeply integrated it is into my workflow.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48390573",
+          "engagement": 5
+        },
+        {
+          "text": "My 'Oh Shit' moment with GenAI was realizing that using LLMs for coding was a huge step up from basic code completion and a welcome farewell to Stack Overflow.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48403770",
+          "engagement": 10
+        }
+      ],
+      "opportunity": "People are getting massively compromised by supply chain attacks through AI dev tools like Cursor and Claude hooks, which inject obfuscated scripts into GitHub workflows. Nobody's built a simple scanner that hooks into GitHub Actions (automated tasks in GitHub) or pull requests to automatically flag suspicious `setup.js` files or unexpected changes related to these AI tools. Ship a lightweight GitHub app that alerts teams to these specific attack vectors, and you'll own the immediate, urgent need for AI dev tool security.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-06-05-your-ai-agent-hates-the-web-here-s-how-to-fix-it-and-get-pai",
+      "date": "2026-06-05",
+      "title": "Your AI Agent Hates the Web. Here's How to Fix It (and Get Paid).",
+      "category": "ai-tools",
+      "thesis": "People are manually creating AI-friendly versions of websites (like `/llm.txt` files) because large language models (LLMs), which are the core intelligence behind many AI tools, struggle to get clean, direct information from the typical marketing-heavy web. This signals a huge need for better ways to feed structured data to AI agents, which are programs designed to act autonomously, often using AI, without getting confused by irrelevant content.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "One person shared that they're 'really tired... of parsing the standard marketing heavy web' and now manually adds '/llm.txt' to most websites because they 'find the content for LLMs strait to the point and clear.' They wish browsers would render this markdown content better.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48406640",
+          "engagement": 26
+        },
+        {
+          "text": "A builder replaced their AI agent's simple 'flat fact store' with a 'graph database' (a way to store data that shows how different pieces of information are connected, making it easier for AI to understand relationships), making it more efficient and run on less memory. This shows the importance of how AI agents consume and manage information.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48397731",
+          "engagement": 15
+        },
+        {
+          "text": "One founder with a $1M ARR (Annual Recurring Revenue) startup saw it 'killed overnight' because Google suspended their account after an API key (a secret code that allows software to communicate with a service) was misused, leading to unexpected charges on Google's AI services. This highlights the risk and complexity of building with external AI services.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48403614",
+          "engagement": 16
+        },
+        {
+          "text": "Another builder spent thousands creating an AI image and video generation site, Voloshow, but after a month, it 'hasn’t attracted a single user,' indicating that simply building another AI content generator might not be enough in a saturated market.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48390168",
+          "engagement": 34
+        }
+      ],
+      "opportunity": "Everyone's complaining that current AI agents get confused by noisy web data, and people are already hacking around it by looking for simplified `/llm.txt` versions of sites. This is your cue: build a browser extension or a simple API (a way for software to talk to other software) that automatically extracts and cleans web content into a `/llm.txt`-like format, optimized specifically for AI agents. Ship a tool that lets builders point their AI agents at any URL and get back pristine, structured data, and you'll own the frustrated-developer market who just want their AI to stop hallucinating junk from marketing pages.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 11
+    },
+    {
+      "id": "2026-06-05-tired-of-web-spam-the-ai-friendly-web-is-actually-for-humans",
+      "date": "2026-06-05",
+      "title": "Tired of Web Spam? The AI-Friendly Web is Actually For Humans.",
+      "category": "apps",
+      "thesis": "People are fed up with marketing-heavy websites and are actively seeking out simplified, machine-readable content like `/llm.txt` (a plain text version of a page meant for AI). This trend shows a clear demand for straightforward information that's actually better for humans too, but current web browsers don't make it easy to read.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "I found myself manually adding `/llm.txt` to most websites I visit because I find the content for LLMs straight to the point and clear. The only annoyance is web browsers like chrome do not render the markdown.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48410589",
+          "engagement": 26
+        },
+        {
+          "text": "I'm pretty tired of seeing AI-related content everywhere... I miss the times when there was a lot of technical content that took time and mental energy to understand.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48397634",
+          "engagement": 51
+        },
+        {
+          "text": "I got really tired, as a human, of parsing the standard marketing heavy web we have today.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48398358",
+          "engagement": 26
+        }
+      ],
+      "opportunity": "Everyone's manually adding `/llm.txt` to URLs just to get straight-to-the-point info, but browsers make it look like garbage. Imagine a browser extension that auto-detects these, renders them beautifully, and even suggests `llm.txt` versions of pages you're on. You could build the core of that in a weekend, owning the 'clean web' niche before the big browsers even notice.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
