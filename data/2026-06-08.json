@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T12:35:09.350Z",
+  "cards": [
+    {
+      "id": "2026-06-08-don-t-just-generate-code-ai-powered-tools-that-teach-you-to-",
+      "date": "2026-06-08",
+      "title": "Don't Just Generate Code: AI-Powered Tools That Teach You To Build It",
+      "category": "ai-tools",
+      "thesis": "Builders are using AI like Claude Code and Cursor to ship products faster, but they're realizing that just getting answers isn't enough; they need to actually learn and understand the underlying tech. There's a growing demand for AI tools that don't just do the work for you, but actively teach you how to master new domains and internalize complex code, giving you more control and less reliance on black-box solutions.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Lathe is an experiment in using LLMs to teach me something new, instead of doing the work for me. It generates hands-on, source-backed tutorials for any technical topic you want to learn, where you actually type the code yourself.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48433756",
+          "engagement": 398
+        },
+        {
+          "text": "There's a concern that LLM companies might capture all the value from this technology, making people wonder if society is allowing this to happen.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48443135",
+          "engagement": 45
+        },
+        {
+          "text": "When an experienced developer starts a new project, they're asking what the 'state of the art' AI setup is for building a web app with a backend.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48436669",
+          "engagement": 7
+        },
+        {
+          "text": "Proliferate (a YC startup) is hiring to build an open-source version of Codex (an AI model that generates code), indicating a desire for transparent and community-driven AI coding tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48439240",
+          "engagement": 0
+        },
+        {
+          "text": "Helium browser emphasizes minimalism, privacy, zero data collection (telemetry), and no AI features, showing a user demand for tools that prioritize control and privacy.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48432117",
+          "engagement": 14
+        }
+      ],
+      "opportunity": "Founders are constantly adopting new tech stacks and integrating complex libraries, often with AI's help, but then they're left figuring out the 'how' and 'why.' What's missing is a tool that takes any AI-generated code or a new library a builder wants to use, and automatically transforms it into an interactive, hands-on learning module right within their development environment. This means builders could quickly onboard to new technologies suggested by AI, truly understand the code they're shipping, and build a deeper skillset instead of just copy-pasting answers.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 131
+    }
+  ]
+}
