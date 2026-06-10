@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T11:39:53.629Z",
+  "cards": [
+    {
+      "id": "2026-06-10-your-ai-apps-are-leaking-data-how-to-build-the-privacy-shiel",
+      "date": "2026-06-10",
+      "title": "Your AI Apps Are Leaking Data: How to Build the Privacy Shield Everyone Needs Now",
+      "category": "ai-tools",
+      "thesis": "The latest powerful AI models, like Anthropic's Claude Fable 5 and Mythos 5, now demand 30 days of data retention, even if you're using them through AWS Bedrock. This means your sensitive application data leaves Amazon's secure environment and sits on Anthropic's servers, creating a huge privacy and security headache for builders who need to keep their user or proprietary data locked down.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48463808",
+          "engagement": 167
+        },
+        {
+          "text": "Claude Fable 5: System Card [pdf]",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48467896",
+          "engagement": 4083
+        },
+        {
+          "text": "If Claude Fable stops helping you, you'll never know.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48466277",
+          "engagement": 1272
+        }
+      ],
+      "opportunity": "Anthropic just dropped a major policy change: using their cutting-edge Fable 5 and Mythos 5 models means your app's data gets saved for 30 days and leaves AWS's secure zone. This is a nightmare for founders building with sensitive user info. The move is to create a simple 'privacy proxy' — basically, a smart filter that sits between your app and Anthropic's API (the way your app talks to their AI), automatically redacting or encrypting sensitive data before it ever touches their servers. You could build a basic version this weekend and solve a huge, immediate problem for tons of builders.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 17
+    }
+  ]
+}
