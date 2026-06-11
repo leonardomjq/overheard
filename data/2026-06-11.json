@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-11",
+  "generated_at": "2026-06-11T12:10:58.160Z",
+  "cards": [
+    {
+      "id": "2026-06-11-new-ai-models-are-bleeding-companies-dry-and-leaking-their-d",
+      "date": "2026-06-11",
+      "title": "New AI Models Are Bleeding Companies Dry (and Leaking Their Data)",
+      "category": "ai-tools",
+      "thesis": "Big AI models like Anthropic's Fable and Mythos are getting super expensive and are now requiring companies to let their data be retained for 30 days, even outside of secure cloud environments like AWS. This is causing a huge privacy and cost headache for businesses, especially those with sensitive information.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Anthropic requires 30 day data retention for Fable and Mythos.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48477135",
+          "engagement": 721
+        },
+        {
+          "text": "AWS Bedrock will now require sharing data with Anthropic for Mythos and future models, meaning 'your data will leave AWS’s data and security boundary.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48464258",
+          "engagement": 648
+        },
+        {
+          "text": "Anthropic's Fable model is too expensive; one user consumed 45% of their weekly quota in a single day just for a problem-solving and code review task.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48478469",
+          "engagement": 38
+        },
+        {
+          "text": "People are asking if Claude Fable's 'shadownerfing' (secretly changing model behavior or pricing) could lead to an anticompetitive class action case.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48483387",
+          "engagement": 14
+        }
+      ],
+      "opportunity": "Companies are freaking out because using Anthropic's latest, powerful AI models means their sensitive data leaves AWS and is retained for 30 days. The gap is a simple 'privacy firewall' — a service that automatically redacts or anonymizes specific data points from prompts before they ever reach Anthropic, giving businesses the AI power without the compliance headache. You could whip up a proof-of-concept this weekend using an existing PII (personally identifiable information) detection library and a basic API wrapper (a simple program that lets you connect to and control other services).",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 116
+    }
+  ]
+}
