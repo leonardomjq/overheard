@@ -1,0 +1,97 @@
+{
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T11:44:48.679Z",
+  "cards": [
+    {
+      "id": "2026-06-12-your-ai-coding-agent-is-getting-dumber-and-more-expensive",
+      "date": "2026-06-12",
+      "title": "Your AI Coding Agent Is Getting Dumber (and More Expensive)",
+      "category": "ai-tools",
+      "thesis": "Builders are increasingly frustrated with AI coding agents that are expensive, unreliable, and seem to degrade in performance right before new models drop. There's a strong demand for local, affordable AI agents that can run without powerful GPUs (Graphics Processing Units, special computer chips good for AI), but current local options aren't specialized enough for real coding tasks.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "I've noticed an effect with openai where my codex agents seem to perform worse in the week(s) leading up to a new release. I'm wondering if the vendors tweak effort params at all to free up hardware to host the new version.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48490024",
+          "engagement": 14
+        },
+        {
+          "text": "People are reporting specific bugs and UI issues with Claude Code, like the cursor getting lost or output not reflowing properly when resizing windows, making it frustrating to use.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48489109",
+          "engagement": 8
+        },
+        {
+          "text": "Developers are actively looking for and trying out many different AI coding assistants, indicating high demand and a fragmented market.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48485429",
+          "engagement": 21
+        },
+        {
+          "text": "People want AI coding assistants that run locally on standard laptops without special graphics cards because cloud options are too costly, but the small local models they've tried (like Gemma3 270M) are 'less coding focused'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48478404",
+          "engagement": 11
+        },
+        {
+          "text": "There's concern that AI providers might intentionally degrade their models' performance, a practice sometimes called 'shadownerfing', to make new versions look better or to gain a competitive advantage.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48492515",
+          "engagement": 14
+        }
+      ],
+      "opportunity": "Everyone's trying to run coding agents locally to save money and get privacy, but the general-purpose local AI models aren't cutting it for actual code. Instead of trying to build a new general-purpose local AI, focus on a hyper-specialized local agent that excels at *one* specific, high-value coding task like generating boilerplate tests or refactoring small functions, leveraging a tiny, fine-tuned model that runs on basic laptop specs. The market is screaming for reliable, predictable AI help that doesn't break the bank or get 'dumber' overnight.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 103
+    },
+    {
+      "id": "2026-06-12-your-ai-copilot-is-a-secret-money-pit-builders-need-a-cost-b",
+      "date": "2026-06-12",
+      "title": "Your AI Copilot is a Secret Money Pit — Builders Need a Cost Boss",
+      "category": "ai-tools",
+      "thesis": "Advanced AI models like Anthropic's new Claude Fable are causing major headaches for builders: they're super expensive, deliver 'mid-tier' results for coding tasks, and have 'invisible guardrails' (hidden limitations) that make them unpredictable. This means developers are struggling to get into a 'flow state' (deep focus) because these AIs are slow, costly, and unreliable, leading to a huge demand for tools that manage AI usage and spend.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Anthropic apologized for 'invisible Claude Fable guardrails,' meaning the AI had hidden restrictions that users weren't aware of, leading to unexpected behavior.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48498573",
+          "engagement": 831
+        },
+        {
+          "text": "Users are reporting that Claude Fable 5 gives 'mid-tier results on coding tasks,' suggesting its performance isn't always top-notch for critical developer work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48489229",
+          "engagement": 502
+        },
+        {
+          "text": "One user on a $200 subscription plan reported consuming 45% of their quota in a single day just by using the Fable model for a problem and code review, calling it 'too expensive.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48492210",
+          "engagement": 42
+        },
+        {
+          "text": "Many developers are asking how to get into a 'flow state when using AI to code' because 'slow agents like Claude' interrupt their deep work, highlighting a productivity problem.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48492215",
+          "engagement": 195
+        },
+        {
+          "text": "There's a growing belief that the 'overspend in AI' is unsustainable, with some even discussing 'shorting' (betting against) the market, indicating widespread concern about AI costs.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48477135",
+          "engagement": 28
+        }
+      ],
+      "opportunity": "Everyone's hyped on advanced AI models like Claude Fable, but builders are already getting burned by how expensive they are and how 'mid-tier' their coding results can be, especially when combined with hidden limitations and slow responses. You could build a simple AI 'copilot manager' that sits between builders and these super-expensive AIs, automatically routing simple coding requests (like fixing a typo or generating a boilerplate function) to cheaper, faster models while reserving the big guns for truly complex problems. Ship it as a VS Code or Replit extension that tracks cost savings in real-time, and you'll own the 'AI cost optimization for developers' niche.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 14
+    }
+  ]
+}
