@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-14",
+  "generated_at": "2026-06-14T10:49:46.430Z",
+  "cards": [
+    {
+      "id": "2026-06-14-big-ai-models-are-getting-regulated-here-s-how-to-profit-wit",
+      "date": "2026-06-14",
+      "title": "Big AI Models Are Getting Regulated. Here's How to Profit with the New Global Challengers.",
+      "category": "ai-tools",
+      "thesis": "Major AI models are facing government crackdowns and increased regulation, creating uncertainty and potential restrictions for developers. Simultaneously, a new wave of powerful, low-cost AI models, particularly from China, is emerging, offering a viable alternative for builders looking to ship products fast and make money without the regulatory headaches of the big players.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48519092",
+          "engagement": 1205
+        },
+        {
+          "text": "GLM 5.2 Is Out, marking the release of a new generation of models.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48518684",
+          "engagement": 926
+        },
+        {
+          "text": "People are asking, 'Did we witness the \"Trinity moment\" for AI?' after a government shut down an AI model it didn't like, implying a major shift in the 'AI race'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48523080",
+          "engagement": 44
+        },
+        {
+          "text": "A 'vibe coder' shared they're making $1K USD per hour with AI, creating marketing websites in under 2 hours, highlighting the demand for fast, AI-powered solutions.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48506850",
+          "engagement": 25
+        },
+        {
+          "text": "Builders are asking 'Which cheap Chinese LLM are you using now?' with options like DeepSeek V4 Pro, Mimo V2.5 Pro, and the newly released GLM 5.2, indicating a clear interest in these new, lower-cost alternatives.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48504034",
+          "engagement": 16
+        }
+      ],
+      "opportunity": "With major AI players facing government crackdowns, builders are looking for alternatives, and new, powerful Chinese models like GLM 5.2 are suddenly getting a lot more attention for their low cost and performance. The move is to create simple, opinionated templates or a \"swap-out\" API (a way for different software to talk to each other) that lets builders easily integrate these emerging, cheaper LLMs into common workflows like generating marketing copy or basic app components, giving them a fast lane to ship without the big-tech baggage.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 102
+    }
+  ]
+}
