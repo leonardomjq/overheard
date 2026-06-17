@@ -1,0 +1,90 @@
+{
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17T12:18:38.307Z",
+  "cards": [
+    {
+      "id": "2026-06-17-your-next-ai-assistant-lives-on-your-laptop-not-the-cloud",
+      "date": "2026-06-17",
+      "title": "Your Next AI Assistant Lives On Your Laptop, Not The Cloud",
+      "category": "ai-tools",
+      "thesis": "Forget massive cloud-based AI; builders are flocking to local AI models because they're finally powerful enough to run directly on your computer. This means faster, more private, and cheaper tools that tackle super specific, everyday problems, letting you bypass generic AI for highly tailored solutions.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "The conversation around running AI models directly on your computer is gaining huge traction, indicating these local setups are now genuinely effective and a viable option.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48555993",
+          "engagement": 1921
+        },
+        {
+          "text": "A founder, originally a veterinarian, built an AI tool for diagnosing lawn problems after struggling with generic solutions and endless fees, showing how specific, real-world problems can be solved with AI.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48556530",
+          "engagement": 135
+        },
+        {
+          "text": "Someone created 'VoiceDraw,' an AI tool that automatically draws system design diagrams as you talk out loud, highlighting the demand for AI to automate specific, frustrating productivity tasks.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48550327",
+          "engagement": 63
+        },
+        {
+          "text": "A developer built a native Claude Code integration for Visual Studio because official plugins existed for VS Code and JetBrains but not for Visual Studio, demonstrating a clear gap and demand for specific AI tooling integrations.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48550569",
+          "engagement": 26
+        },
+        {
+          "text": "A new CLI tool, machine0, makes it easy to create and manage persistent virtual machines (VMs are like a computer running inside your computer) with static IPs and optional GPUs, showing a trend towards more local control and powerful on-device capabilities for builders.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48543245",
+          "engagement": 126
+        }
+      ],
+      "opportunity": "People are ditching generic AI assistants for hyper-specific tools that solve one annoying problem directly on their machine. You know those tiny, repetitive tasks that bug you daily but aren't big enough for a full SaaS? That's your goldmine — build a simple, local AI agent for one of those, like automatically reformatting specific reports or generating personalized email replies based on context, and ship it as a tiny, single-purpose app. The first person to nail a few of these 'micro-AI agents' for common frustrations will own a huge slice of the market because local models are finally good enough to make it work, right now.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-06-17-your-next-dev-tool-is-local-the-rise-of-self-hosted-ai-coder",
+      "date": "2026-06-17",
+      "title": "Your Next Dev Tool is Local: The Rise of Self-Hosted AI Coders",
+      "category": "ai-tools",
+      "thesis": "Builders are increasingly moving away from cloud-based AI coding assistants like Claude and GPT, opting instead for models they can run directly on their own machines (local models). This isn't just for experiments; people are actively trying to use these self-hosted AIs for daily coding because they offer more control, predictable costs, and privacy, avoiding issues like censorship or sudden pricing changes.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "People are asking if anyone has fully switched from cloud AI like Claude/GPT to local models for daily coding, not just experiments, and want to know setups and performance.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48559188",
+          "engagement": 1804
+        },
+        {
+          "text": "Even governments are looking into sovereign (meaning, locally controlled and specific to their needs) language models, hinting at a broader trend for specialized, self-hosted AI.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48542100",
+          "engagement": 463
+        },
+        {
+          "text": "Anthropic paused a planned change to how credits work for their Claude Agent SDK, showing that pricing and usage models for cloud AI are still in flux and can cause uncertainty for builders.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48546618",
+          "engagement": 42
+        },
+        {
+          "text": "Builders using AI coding agents are looking for better ways to organize their projects, specifically asking about 'agentic directory structure' because current practices don't track prompts well or manage the generated code effectively.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48554309",
+          "engagement": 8
+        }
+      ],
+      "opportunity": "Everyone's trying to run AI coding agents locally, but the real friction isn't just getting the models working—it's the messy workflow of managing prompts and the code agents generate. Imagine an open-source tool that acts as your personal AI coding assistant manager, letting you easily swap between different local models, automatically tracking all your prompts, and intelligently organizing the code snippets they produce into a coherent project structure. Ship a simple VS Code extension that integrates with existing local AI frameworks (like Ollama or LM Studio) and offers features for prompt history, project scaffolding, and maybe even version control for agent outputs. You'd own the growing market of developers who want to use local AI without the organizational chaos.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 29
+    }
+  ]
+}
