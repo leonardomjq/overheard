@@ -1,0 +1,98 @@
+{
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T13:37:08.952Z",
+  "cards": [
+    {
+      "id": "2026-06-22-stop-ai-hallucinations-the-killer-app-for-turning-messy-docs",
+      "date": "2026-06-22",
+      "title": "Stop AI Hallucinations: The Killer App for Turning Messy Docs into AI-Ready Content & Agent Control",
+      "category": "ai-tools",
+      "thesis": "Builders are struggling to prepare their existing documents (like Word files and PDFs) for use with AI agents, often needing to convert them into cleaner formats like Markdown. At the same time, new tools are emerging to give 'Cursor-like control' over AI-generated code, highlighting a broader need for better human oversight and refinement of AI output. There's a clear opportunity to bridge this gap by providing solutions that clean up input for AI and give focused control over its content generation.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "People are asking 'How should I convert Microsoft Word documents to Markdown?' because their current process involves multiple steps and complex PDFs, showing a clear struggle to get clean data for modern workflows.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48625823",
+          "engagement": 11
+        },
+        {
+          "text": "Norrin offers 'Git/diff control in Claude Code,' giving 'Cursor-like control over your claude code agents making your code cleaner,' and can 'reduce your PR review time by more than half,' indicating a strong demand for tools that help humans manage and refine AI-generated work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48612456",
+          "engagement": 5
+        },
+        {
+          "text": "Recall, a 'Local project memory for Claude Code,' was a 'Show HN' with 192 engagements, further proving that builders want better ways for AI agents to understand and remember project context.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48622123",
+          "engagement": 192
+        },
+        {
+          "text": "The AgentSpace project on GitHub, with 146 engagements, describes itself as 'Human + Agents. One Team. One Workspace,' emphasizing the growing need for integrated environments where people and AI work together effectively.",
+          "source": "github",
+          "url": "https://github.com/HKUDS/AgentSpace",
+          "engagement": 146
+        },
+        {
+          "text": "StartupWiki, a 'Free Alternative to Crunchbase' that generated 294 engagements on Hacker News, shows that users are frustrated with cluttered, paywalled services and are eager for cleaner, more accessible tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48623750",
+          "engagement": 294
+        }
+      ],
+      "opportunity": "Everyone's trying to get their old documents (like Word files and PDFs) ready for AI agents, but converting them into perfectly structured Markdown is a messy, manual headache. While tools like Norrin give 'Cursor-like control' over AI *code*, the real gap is a simple service that not only cleans up your messy docs for AI input but also provides a dedicated workspace to review and refine the AI's *content* output, ensuring it aligns perfectly with your original source material. The first person to ship a drag-and-drop tool for this, with a focus on seamless human-AI collaboration on content, owns the frustrated-creator market.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 18
+    },
+    {
+      "id": "2026-06-22-your-ai-dev-is-getting-banned-the-hidden-cost-of-agentic-cod",
+      "date": "2026-06-22",
+      "title": "Your AI Dev Is Getting Banned: The Hidden Cost of Agentic Coding",
+      "category": "ai-tools",
+      "thesis": "Builders are rapidly adopting AI coding tools like Claude Code and Codex, but they're hitting serious walls: these tools are unpredictable (non-deterministic output) and unreliable, leading to frustrating errors (like '529 Overloaded' rate limits) and even getting accounts banned on platforms like GitHub for looking like 'bad drive-by contributors.' This creates a huge need for tools that make AI agents reliable and manageable in real-world development workflows.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "GitHub decided to disable all Github Actions (continuous integration tools) access for our open source organization because some unmanaged contributors (likely AI agents) were flagged as 'bad drive-by contributors.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48622518",
+          "engagement": 11
+        },
+        {
+          "text": "I've been on a high-tier plan for Claude Code, but for the past week, I've been getting '529 errors' (meaning the service is overloaded or hitting limits) constantly, even though my usage hasn't changed. Did they change their limits?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48622280",
+          "engagement": 14
+        },
+        {
+          "text": "How do you make Claude Code, which is a powerful but unpredictable AI, generate consistent and repeatable results every single time?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48613022",
+          "engagement": 17
+        },
+        {
+          "text": "We are living in highly subsidized, interesting times, where LLMs have become daily drivers for modern programming, but the industry is currently hitting a wall.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48612758",
+          "engagement": 11
+        },
+        {
+          "text": "Developers are asking if they should give AI coding agents their own GitHub accounts.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48624574",
+          "engagement": 10
+        }
+      ],
+      "opportunity": "Right now, AI coding tools like Claude Code are hitting rate limits (\"529 Overloaded\") and getting accounts banned on GitHub because they look like spammy \"drive-by contributors.\" But if you build a simple proxy service that gives AI agents a proper, managed identity for GitHub and automatically handles rate limits and retries, you'd solve a huge headache for anyone trying to ship code with agents. You could get a basic version live this weekend by wrapping the GitHub API and adding some intelligent retry logic.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 20
+    }
+  ]
+}
