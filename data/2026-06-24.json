@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-24",
+  "generated_at": "2026-06-24T10:52:20.130Z",
+  "cards": [
+    {
+      "id": "2026-06-24-your-phone-s-next-ai-upgrade-privacy-first-features-are-blow",
+      "date": "2026-06-24",
+      "title": "Your Phone's Next AI Upgrade: Privacy-First Features Are Blowing Up",
+      "category": "apps",
+      "thesis": "There's a significant buzz around FUTO Swipe, a new swipe typing model that uses 'open models' running directly on your device. This means the AI for your keyboard works right on your phone without sending your private typing data to big company servers, tapping into a growing demand for advanced, privacy-focused AI on everyday devices.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "FUTO Swipe – A new swipe typing model.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48648619",
+          "engagement": 740
+        },
+        {
+          "text": "FUTO Swipe uses 'open models for on-device swipe typing,' meaning the AI runs directly on your phone and its code is transparent, allowing for greater privacy and customization.",
+          "source": "producthunt",
+          "url": "https://www.producthunt.com/products/futo-swipe",
+          "engagement": 0
+        },
+        {
+          "text": "The high engagement on Hacker News (740 points) shows strong interest from the builder community in new, privacy-centric input methods.",
+          "source": "hackernews",
+          "engagement": 740
+        }
+      ],
+      "opportunity": "The massive buzz around FUTO Swipe for private, on-device AI typing shows a huge demand for smart features that don't send your data to the cloud. Instead of just keyboards, think about other daily mobile pain points – like drafting quick replies in *any* app or summarizing long notifications – and build an AI helper that runs entirely on your device, leveraging the same open-source momentum to own the frustrated-developer-and-privacy-conscious-user market.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
