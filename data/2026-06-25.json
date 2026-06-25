@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T10:43:59.215Z",
+  "cards": [
+    {
+      "id": "2026-06-25-stop-fixing-ai-code-the-next-wave-of-dev-tools-will-let-you-",
+      "date": "2026-06-25",
+      "title": "Stop Fixing AI Code: The Next Wave of Dev Tools Will Let *You* Train the AI",
+      "category": "ai-tools",
+      "thesis": "While major tech companies are pouring resources into advanced AI chips and infrastructure (the hardware and software that make AI run), many everyday developers are hitting a wall. They're finding that AI-generated code is often wrong or biased, leading to more frustration and manual fixing than actual productivity gains. This creates a huge demand for AI tools that offer more control and customization, letting developers guide the AI rather than just accepting its generic output.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Many developers feel the code isn't the primary source of truth anymore; it's just 'ask Claude' (referring to an AI assistant).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48663324",
+          "engagement": 131
+        },
+        {
+          "text": "One developer noted: 'any time I've used [AI], the output has always been off. And when the output is off I have to go and read through everything... which at that point I might as well write it myself.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48660267",
+          "engagement": 35
+        },
+        {
+          "text": "Someone asked: 'Why don't LLM harnesses enable/expose custom middleware hooks?' (meaning, why can't developers easily insert their own code to modify how AI models process information or generate output).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48659798",
+          "engagement": 14
+        },
+        {
+          "text": "A builder expressed frustration with their current job, feeling they've 'outsourced our thinking, our design, our documentation, our sanity to [AI] and I just can't do it anymore.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48668199",
+          "engagement": 30
+        },
+        {
+          "text": "There's high interest in new, all-in-one developer toolkits like Nub (a Bun-like tool for Node.js), showing developers are actively seeking better, more efficient ways to build.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48662310",
+          "engagement": 310
+        }
+      ],
+      "opportunity": "People are fed up with AI-generated code that's 'off' or biased, making them spend more time fixing it than if they wrote it from scratch. There's a huge opening for a tool that lets developers easily 'train' an AI assistant on their *own codebase's style and patterns* – like a custom style guide for AI – so it always generates code that fits perfectly, rather than generic, error-prone suggestions. You could build a Replit plugin that takes a project, analyzes its coding style, and then filters or refines AI suggestions to match.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 126
+    }
+  ]
+}
