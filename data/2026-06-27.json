@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-27",
+  "generated_at": "2026-06-27T10:11:07.689Z",
+  "cards": [
+    {
+      "id": "2026-06-27-ai-access-is-getting-wild-how-to-profit-from-the-new-rules-o",
+      "date": "2026-06-27",
+      "title": "AI Access is Getting Wild: How to Profit From the New Rules of the Game",
+      "category": "ai-tools",
+      "thesis": "With powerful new AI models like GPT-5.6 and Anthropic's Mythos AI emerging, governments are starting to control who gets to use them, creating a tiered access system. This shift, combined with providers like OpenAI adding ads to paid plans, means builders need smart tools to navigate model access, optimize costs, and ensure they're using the right AI for the job without breaking the bank or hitting a regulatory wall.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The U.S. government will decide who gets to use GPT-5.6, indicating future restrictions on powerful AI models.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48690101",
+          "engagement": 2121
+        },
+        {
+          "text": "OpenAI is previewing GPT-5.6 Sol, a next-generation model, showing the rapid advancement in AI capabilities.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48689028",
+          "engagement": 1640
+        },
+        {
+          "text": "The U.S. government has allowed Anthropic to release its Mythos AI only to ‘trusted’ US organizations, confirming a trend of restricted access.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48692995",
+          "engagement": 944
+        },
+        {
+          "text": "A 'smart model router' was built that plugs into coding agents (like Claude, Codex, Cursor) to intelligently send requests to the best model, showing a need for AI orchestration.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48693391",
+          "engagement": 266
+        },
+        {
+          "text": "An OpenAI paid user reported seeing ads for companies like Financial Times and Amazon Prime on their chat, leading them to cancel their subscription, highlighting user dissatisfaction with AI service monetization.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48688700",
+          "engagement": 178
+        }
+      ],
+      "opportunity": "The top-tier AI models are getting crazy powerful, but also more regulated and potentially pricier, with governments even controlling who gets to use them. While some folks are building model routers to pick the 'best' AI, the real untapped market is a smart gateway that auto-switches models based on cost, access, or specific task needs, especially for teams using tools like Cursor or Replit. You could build a simple API wrapper (a simple way for different software to talk to each other) that detects the complexity of a coding task and routes it to a cheaper open-source model or a premium, restricted one only when absolutely necessary, saving big bucks and headaches for builders navigating these new access rules.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
