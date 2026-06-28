@@ -1,0 +1,105 @@
+{
+  "date": "2026-06-28",
+  "generated_at": "2026-06-28T10:29:43.041Z",
+  "cards": [
+    {
+      "id": "2026-06-28-your-ai-agent-needs-a-butler-the-unseen-gold-rush-in-develop",
+      "date": "2026-06-28",
+      "title": "Your AI Agent Needs a Butler: The Unseen Gold Rush in Developer Tools",
+      "category": "ai-tools",
+      "thesis": "Builders are increasingly relying on AI agents like Cursor and Claude Code to write software, but these agents come with their own set of frustrations and limitations. From needing to keep your laptop awake just for an agent to run, to getting 'good enough' rather than 'great' code output, there's a clear demand for tools and 'recipes' that make these agents more efficient and effective for specific coding tasks.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "We built a model router that plugs into coding agents (like Claude Code, Codex, Cursor) and intelligently sends requests to the best model to serve them. At Weave, we write most of our code with AI.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48696585",
+          "engagement": 313
+        },
+        {
+          "text": "A month ago there was a wave of posts and tweets about engineers walking around cafes and parks with their MacBooks propped half-open, as fully closing the lid forces sleep that stops their AI agents. Adrafinil helps keep a lid-closed Mac awake only while agents work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48688700",
+          "engagement": 179
+        },
+        {
+          "text": "This is super useful for very large code repositories that need to be copied for AI coding sessions, but where the AI might only need a small part of the files to get its work done.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48703412",
+          "engagement": 12
+        },
+        {
+          "text": "I want to teach good Matplotlib taste to agents and humans. This repo contains agent instructions and design ideas (specifically for Claude Code).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48701512",
+          "engagement": 7
+        },
+        {
+          "text": "DSpark: A new method called speculative decoding makes large language models (LLMs) — the AI brains behind agents — provide answers much faster.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48693912",
+          "engagement": 1085
+        }
+      ],
+      "opportunity": "Many builders are already using AI agents like Cursor to ship code faster, but these agents often produce 'good enough' rather than 'great' output, especially for nuanced tasks like designing UI components or writing specific types of tests. You could create and sell hyper-focused 'agent skill packs' – essentially, finely tuned prompt templates and instruction sets that teach existing agents how to generate *perfectly* formatted, high-quality code or documentation for a specific, common developer need. People are already trying to teach agents 'good taste' (like for graphs), so productize that by focusing on one specific, high-value output and selling the 'how-to' for agents to get it right every time.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-06-28-your-website-is-lonely-bring-back-the-buzz-with-live-presenc",
+      "date": "2026-06-28",
+      "title": "Your Website is Lonely: Bring Back the Buzz with Live Presence",
+      "category": "creator-tools",
+      "thesis": "People are craving more interactive and social experiences on the web, moving beyond static pages to create spaces where visitors can genuinely connect. New, lightweight tools are making it easier than ever to add real-time (live, instant) features that transform a regular website into a dynamic, communal hub.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "There's a strong desire to 'Turn your site into a place people can bump into each other,' with a project called TownSquare, described as 'a tiny presence layer for websites,' getting massive attention.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48699928",
+          "engagement": 335
+        },
+        {
+          "text": "Another post highlighted the sudden deletion of an open-source DOCX editor, showing how relying on external, unmaintained tools can leave builders vulnerable.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48703412",
+          "engagement": 141
+        }
+      ],
+      "opportunity": "Everyone's talking about adding 'presence' to websites, letting visitors 'bump into each other' like with TownSquare, but the real money isn't in generic dots on a map. It's in making those interactions *useful* for specific niches. Imagine a plug-in for online course platforms that shows who's currently in the same lesson, letting students instantly form study groups or ask questions to peers. You could build a lightweight MVP this weekend that integrates with common LMS (Learning Management System, like Teachable or Thinkific) platforms via their embed options, giving creators a premium feature that boosts engagement and reduces churn.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 35
+    },
+    {
+      "id": "2026-06-28-yc-s25-companies-are-already-hiring-what-this-means-for-buil",
+      "date": "2026-06-28",
+      "title": "YC S25 Companies Are Already Hiring: What This Means for Builders",
+      "category": "trends",
+      "thesis": "A few companies from Y Combinator's Summer 2025 batch (YC S25) are already posting job openings for Software Engineers. This is an early signal that these startups are gearing up to build their initial products and teams, even before their official 'batch' is fully underway, indicating they're in the critical phase of establishing their foundational tech stacks and processes.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Nox Metals, a YC S25 company, is hiring Software Engineers.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48697504",
+          "engagement": 0
+        },
+        {
+          "text": "Liva AI, also part of YC S25, is hiring.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48688961",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Everyone's watching for the next big thing from YC, but the real play is watching what *they* need right now. These S25 companies are just starting to hire their first engineers, and that means they're setting up their entire dev workflow from scratch. If you've got a killer internal tool, a dev setup script, or even a specialized onboarding flow that makes their first hires productive instantly, you could land a foundational customer before anyone else even knows what these startups do.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
