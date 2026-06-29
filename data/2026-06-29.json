@@ -1,0 +1,146 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T12:37:19.858Z",
+  "cards": [
+    {
+      "id": "2026-06-29-ai-s-taking-our-coding-joy-build-tools-that-make-devs-smarte",
+      "date": "2026-06-29",
+      "title": "AI's Taking Our Coding Joy? Build Tools That Make Devs Smarter, Not Just Faster",
+      "category": "ai-tools",
+      "thesis": "Developers are feeling the tension: AI makes them efficient, but some worry it's robbing the joy of coding and making them lose skills. There's a growing need for tools that don't just automate, but actually help developers learn, practice, and feel more in control, especially as basic dev tools like GitHub search start to frustrate them.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "GitHub's new 'search bar' sucks. It's a very frustrating exercise of retyping queries that originally were just a quick edit. I'm at the point where I need to create all of my queries in a text document beforehand.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48706560",
+          "engagement": 10
+        },
+        {
+          "text": "Ask HN: Are there any developers prefer writing code manually? I review AI-composed code, but it doesn't necessarily mean I know what every piece of code is doing there. Do you guys have the same issue?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48707763",
+          "engagement": 9
+        },
+        {
+          "text": "I am building a product for improving developer efficiency and have a working prototype. How do I get feedback from the right users who are in need of such a tool?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48708859",
+          "engagement": 17
+        },
+        {
+          "text": "Fast feedback loops is the way. The 'futsal effect' shows how constrained, small-sided games with immediate feedback can develop superior skills. This applies to building stuff.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48700586",
+          "engagement": 5
+        },
+        {
+          "text": "Ask HN: AI robbed my joy of reading books? I use AI everyday and I'm used to getting answers immediately. Now, when reading a novel, I feel a strong urge to skip ahead and know the ending right away. I'm concerned AI has robbed my joy.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48697930",
+          "engagement": 6
+        }
+      ],
+      "opportunity": "Everyone's talking about how AI takes away the joy of coding and makes them feel like they're losing skills, even while they want 'fast feedback loops' to learn. You could build a small tool, maybe a browser extension or a Replit plugin, that takes AI-generated code suggestions and turns them into interactive 'futsal' challenges – asking you to explain parts, refactor them, or even rewrite them from scratch, giving instant feedback. Ship it this weekend and target developers who use AI but want to stay sharp.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 117
+    },
+    {
+      "id": "2026-06-29-old-school-new-gold-simple-apps-still-crushing-it-on-hacker-",
+      "date": "2026-06-29",
+      "title": "Old School, New Gold: Simple Apps Still Crushing It on Hacker News",
+      "category": "side-projects",
+      "thesis": "A straightforward word game called 'Zanagrams' recently hit 393 points of engagement on Hacker News. This shows that even in an era of complex AI, well-executed, classic app ideas (like simple games) can still capture significant attention and user interest from the tech community.",
+      "signal_strength": 6,
+      "evidence": [
+        {
+          "text": "A 'Show HN' for a project named 'Zanagrams' received 393 points of engagement on Hacker News.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48708182",
+          "engagement": 393
+        },
+        {
+          "text": "The project 'Zanagrams' was featured on Hacker News, attracting 393 points of engagement from the community.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48708182",
+          "engagement": 393
+        }
+      ],
+      "opportunity": "Everyone's chasing complex AI apps, but the success of 'Zanagrams' proves there's still a massive appetite for super simple, well-polished games or utility apps that just *work* and feel good. Find a niche where a classic game or a single-purpose tool could get a modern, minimal refresh, then ship it fast — you could own a tiny, loyal audience while everyone else is still debugging their LLM agents.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    },
+    {
+      "id": "2026-06-29-stop-getting-stiffed-the-untapped-market-for-contractor-blac",
+      "date": "2026-06-29",
+      "title": "Stop Getting Stiffed: The Untapped Market for Contractor Blacklists",
+      "category": "marketplaces",
+      "thesis": "Freelancers and contractors are consistently struggling with clients who don't pay or fulfill contracts, and there's no reliable public record to vet these 'bad employers.' This creates a massive trust deficit in the gig economy, leaving workers vulnerable.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "I worked with a few employers on contracts, and there were situations where they haven't paid fees for a while. Is there a list or site that lists all the employers and if they have a record of them not fulfilling their contracts?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48707536",
+          "engagement": 116
+        },
+        {
+          "text": "Even experienced developers using AI coding agents find it challenging to maintain the generated software, lacking the 'in-depth knowledge and intuition' they'd normally build from working directly with the code.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48711408",
+          "engagement": 15
+        }
+      ],
+      "opportunity": "Everyone's talking about how hard it is to find good talent, but nobody's solving the reverse: how hard it is for talent to find *good clients* who actually pay. There's a massive, frustrated market of contractors and freelancers getting burned, and a simple Glassdoor-style review site focused purely on client payment history and contract adherence could own that trust layer. You could launch an MVP this weekend by allowing anonymous reviews and becoming the go-to resource before anyone signs a new contract.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    },
+    {
+      "id": "2026-06-29-ai-s-next-frontier-teaching-code-not-just-writing-it-for-asp",
+      "date": "2026-06-29",
+      "title": "AI's Next Frontier: Teaching Code, Not Just Writing It, for Aspiring Builders",
+      "category": "ai-tools",
+      "thesis": "AI is dominating conversations, from advanced applications like running local models to wild ideas about replacing governments. Yet, people are still grappling with fundamental challenges, like building simple websites when they're just starting to learn code. There's a clear opening for AI tools that don't just automate tasks, but actively teach and guide new builders through the process, making complex coding concepts understandable.",
+      "signal_strength": 6,
+      "evidence": [
+        {
+          "text": "People are curious about the current hot topics in San Francisco, asking about keywords, companies, and ideas that are frequently discussed.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48707307",
+          "engagement": 80
+        },
+        {
+          "text": "Many are asking if WordPress is still the best option for beginners who are just learning the basics of coding and want to build websites while they learn.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48709796",
+          "engagement": 54
+        },
+        {
+          "text": "Developers are actively discussing how to run AI models on their own computers, asking about the best models and hardware to use.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48698057",
+          "engagement": 20
+        },
+        {
+          "text": "There's even discussion about using advanced AI models to replace complex human institutions, suggesting a strong belief in AI's capabilities.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48705194",
+          "engagement": 14
+        }
+      ],
+      "opportunity": "Everyone's asking if old tools like WordPress are still the best for beginners learning to code, and simultaneously getting excited about running AI on their own machines. The real opening isn't just another AI tool that builds websites for you, but one that *teaches* you the code it generates. Imagine an AI plugin for Replit or Cursor that, after creating a feature, offers a one-click explanation of *why* it chose certain code, turning AI into a personal coding tutor for aspiring founders and vibe coders.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 4
+    }
+  ]
+}
