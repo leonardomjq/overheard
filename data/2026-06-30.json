@@ -1,0 +1,156 @@
+{
+  "date": "2026-06-30",
+  "generated_at": "2026-06-30T10:59:37.251Z",
+  "cards": [
+    {
+      "id": "2026-06-30-your-screen-your-ai-the-exploding-demand-for-private-local-a",
+      "date": "2026-06-30",
+      "title": "Your Screen, Your AI: The Exploding Demand for Private, Local AI Agents",
+      "category": "ai-tools",
+      "thesis": "Powerful AI models can now run directly on your computer, making it possible to have AI agents that see and understand your screen without sending any data to the cloud. This 'on-device' AI is super appealing for privacy, but builders are struggling to manage these agents, give them proper context (the information they need to understand), and prevent them from making mistakes or running endlessly.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Qwen 3.6 27B is the sweet spot for local development, showing that powerful AI models are now practical for on-device use.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48721903",
+          "engagement": 1573
+        },
+        {
+          "text": "Screenmind is a privacy-first alternative to Microsoft Recall, running a vision model on every screenshot on-device so 'your data never leaves your machine.' It lets you track your timeline, search screenshots, and chat with your screen history.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48706347",
+          "engagement": 21
+        },
+        {
+          "text": "An Ask HN post sought open-source tools for capturing the screen and its accessibility tree to summarize work done by a developer, specifically 'keeping all the data private and local.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48717352",
+          "engagement": 9
+        },
+        {
+          "text": "Off Grid allows users to 'Run AI chat, image gen, vision, and voice offline on your Mac' by downloading models that 'all runs on your machine,' emphasizing the growing capability and desire for local AI.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48710827",
+          "engagement": 13
+        },
+        {
+          "text": "Marmot, a 'context layer for agents and humans,' addresses the problem that 'an agent only knows what you hand it. It doesn’t ask, it guesses,' highlighting the need for better information management for AI agents.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48710778",
+          "engagement": 77
+        }
+      ],
+      "opportunity": "Everyone's trying to build their own local AI agent to privately track and automate tasks based on screen activity, but the real pain point is managing these agents, defining their rules, and preventing them from going rogue or getting stuck. Ship a super simple visual builder (think v0 for local agents) where anyone can define what their on-device AI should watch for, set clear 'if this, then that' rules, and add 'kill switches' for privacy or resource limits. You'd be giving non-technical users a powerful, private assistant without them needing to code or worry about runaway local processing.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 19
+    },
+    {
+      "id": "2026-06-30-your-ai-agents-need-a-manager-and-you-can-build-it",
+      "date": "2026-06-30",
+      "title": "Your AI Agents Need a Manager (And You Can Build It)",
+      "category": "ai-tools",
+      "thesis": "As more builders deploy AI agents (think smart, autonomous bots that handle tasks), they're quickly realizing how hard it is to keep track of what each one is doing. It's like managing a team of invisible workers without any shared project board. There's a growing need for simple, visual tools that let you see, assign, and manage tasks across all your AI agents, making their workflows clear and controllable.",
+      "signal_strength": 6,
+      "evidence": [
+        {
+          "text": "Someone explicitly stated they built an open-source Kanban board because they were 'losing track of what tasks are outstanding, done etc among my 5 Telegram bots / Hermes agents.' This tool is designed as 'agent first' for AI agents to communicate and track tasks.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48706389",
+          "engagement": 4
+        },
+        {
+          "text": "A developer asked for help extracting 'characters, aliases, relationships, locations, timeline facts' from long text for a writing app, highlighting the complex challenge of managing and relating digital entities.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48720186",
+          "engagement": 3
+        },
+        {
+          "text": "The discussion around 'DRM-Free Books' generated 161 engagements, showing a significant interest in digital content ownership and the systems used to manage digital assets without restrictive controls.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48723854",
+          "engagement": 161
+        }
+      ],
+      "opportunity": "Your AI agents are flying blind, and builders are already complaining about 'losing track' of what their multiple bots are doing. The clear gap is a super simple, visual dashboard where your agents can post updates, grab new tasks, and even talk to each other – think of it as a smart project manager for your bots. You could ship a basic version this weekend: a web app with a few customizable lanes (like 'To Do,' 'Doing,' 'Done') and a simple API (a way for different software to share information) for agents to update their status.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    },
+    {
+      "id": "2026-06-30-escape-the-ai-noise-builders-are-craving-tools-to-filter-the",
+      "date": "2026-06-30",
+      "title": "Escape the AI Noise: Builders are Craving Tools to Filter the Hype and Bad AI",
+      "category": "ai-tools",
+      "thesis": "People are hitting peak AI fatigue, feeling overwhelmed by constant AI news and frustrated by inconsistent AI quality. They're realizing that AI, while powerful, can 'dumb them down' or even spread misinformation, leading to a strong desire for tools that help them curate, control, and filter their digital experience away from AI overload.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Many people are saying we desperately need tech news sources that filter out AI, because sites like Techmeme are 'completely overrun with AI stories.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48713041",
+          "engagement": 220
+        },
+        {
+          "text": "One user asked, 'AI robbed my joy of reading books?' because they're so used to instant AI answers that they struggle to concentrate on novels and feel a strong urge to skip to the end.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48721577",
+          "engagement": 15
+        },
+        {
+          "text": "Someone shared how an older relative got bad advice about a retirement house from Google, which turned out to be 'A.I. generated text, not real.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48725972",
+          "engagement": 13
+        },
+        {
+          "text": "Builders are openly asking, 'How do you handle QA at a startup with no QA team?' especially in AI startups, highlighting confusion around quality and speed.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48707909",
+          "engagement": 15
+        },
+        {
+          "text": "When asking about the best AI voice narration, a user reported that Elevenlabs 'felt flat and characters were inconsistent,' leading them to spend $75 on human voice actors for 'subpar work.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48720627",
+          "engagement": 4
+        }
+      ],
+      "opportunity": "Everyone's drowning in AI noise and inconsistent quality, whether it's 'flat' AI voices or search results that feel like hallucinations. Instead of building another AI, create a personal 'AI detox' tool – a browser extension or app that lets users set rules to filter out AI-generated content (like summaries, social media posts, or even news articles flagged as AI-heavy) and prioritize human-made alternatives or deeper, unfiltered sources. You could ship a basic version that just flags AI-generated text on popular sites this weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 17
+    },
+    {
+      "id": "2026-06-30-beyond-wordpress-the-hidden-niche-for-beginner-builders-who-",
+      "date": "2026-06-30",
+      "title": "Beyond WordPress: The Hidden Niche for Beginner Builders Who Code (A Little)",
+      "category": "apps",
+      "thesis": "While everyone's curious about the latest Silicon Valley buzz, a quieter but powerful signal shows builders are fed up with old tools like WordPress for simple websites. There’s a clear demand for modern platforms that empower beginners who know 'basics of coding and are learning as they build' to ship fast without the overwhelming complexity.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "People are asking 'What is everyone in SF talking about?' (83 engagement), showing a strong desire to understand current trends and the tech 'zeitgeist'—implying openness to new ways of building.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48707307",
+          "engagement": 83
+        },
+        {
+          "text": "A significant discussion asks 'Is WordPress the best way to create new websites for beginner' (55 engagement), specifically for those who 'just knows basics of coding and are learning as they build.' This highlights a clear need for better, simpler alternatives for this specific group.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48709796",
+          "engagement": 55
+        }
+      ],
+      "opportunity": "Everyone's asking if WordPress is still the go-to for beginners who know 'basics of coding and are learning as they build,' showing a clear gap for a modern, simpler alternative. There's a huge wave of builders who want to move beyond pure no-code but aren't ready for full-stack dev. You could build a 'training wheels' platform that lets people visually assemble sites and then easily drop into a light code editor (like Replit or v0) to customize components, abstracting away all the hosting and deployment complexity. Ship a dead-simple visual builder that auto-generates clean, editable code components, and provides a one-click deploy — targeting the 'learn as you go' crowd.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
