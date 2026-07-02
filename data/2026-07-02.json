@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T10:42:42.326Z",
+  "cards": [
+    {
+      "id": "2026-07-02-stop-feeding-your-code-to-the-ai-the-untapped-market-for-dev",
+      "date": "2026-07-02",
+      "title": "Stop Feeding Your Code to the AI: The Untapped Market for Developer Privacy Tools",
+      "category": "ai-tools",
+      "thesis": "AI coding tools like Cursor and the Claude app are rapidly changing how developers work, pushing them away from traditional code editors for certain tasks. However, this shift is creating serious privacy concerns and a high demand for secure ways to run AI agents, as builders worry about their intellectual property being stored or misused by these powerful new tools.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "Someone complained that installing the Cursor iOS app 'irreversibly changes your privacy settings,' noting that the 'Do not store my code' option was hidden as 'Legacy' and a new mode was 'significantly more wishy-washy' about data storage.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48747304",
+          "engagement": 279
+        },
+        {
+          "text": "A developer asked for a 'secure harness/wrapper for running coding agents in a secure sandbox,' mentioning it's hard to find such projects on GitHub amidst all the generated code.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48747976",
+          "engagement": 35
+        },
+        {
+          "text": "A developer stated they are 'opening VSCode less and less every day,' preferring the Claude app for reviewing code differences over their traditional code editor (VSCode, an Integrated Development Environment where developers write code).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48750989",
+          "engagement": 25
+        },
+        {
+          "text": "A new AI tool, Fable 5, was praised as 'insanely good' for autonomously processing a screen recording, deciding what content to keep, and adding graphics and voice narrative without explicit instructions, showing the advanced capabilities of modern AI agents.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48747975",
+          "engagement": 14
+        }
+      ],
+      "opportunity": "Everyone's jumping into AI coding tools like Cursor and Claude, but they're getting burned by privacy settings that store their code and are actively asking for secure ways to run AI agents. Nobody's built a simple desktop app that acts as a secure 'proxy' (an intermediary that handles requests) for these tools, letting you route your code through a local sandbox (a secure, isolated environment) before it ever touches a cloud AI. First to ship this 'trust layer' owns the peace-of-mind market for AI builders, and you could prototype the core in a weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-07-02-yc-s25-companies-are-quietly-staffing-up-what-early-hiring-t",
+      "date": "2026-07-02",
+      "title": "YC S25 Companies Are Quietly Staffing Up: What Early Hiring Tells You About Future Trends",
+      "category": "trends",
+      "thesis": "Very early-stage companies (like those in Y Combinator's S25 batch) are just starting to hire, specifically for roles like 'Developer Advocate'. This isn't a huge trend yet, but it's a peek behind the curtain at what problems YC-backed founders are trying to solve and who they're trying to reach. It’s too early to see public engagement, but these are the first whispers of where the next wave of innovation might be.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "A new YC S25 company, 'Proliferate', is actively hiring.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48753045",
+          "engagement": 0
+        },
+        {
+          "text": "Another YC S25 company, 'Manufact', is looking to hire a Developer Advocate in San Francisco. (A 'Developer Advocate' is someone who helps developers understand and use a product, often by creating content and building community.)",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48746331",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "While these YC S25 companies aren't getting public buzz yet, their early hiring — especially for roles like Developer Advocate — hints at what YC thinks is next for dev tools. Start tracking these specific companies and their job descriptions closely to spot emerging problems in the developer ecosystem before they become mainstream, giving you a head start on building solutions or content for the next big thing.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
