@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T10:38:11.651Z",
+  "cards": [
+    {
+      "id": "2026-07-03-your-ai-coding-assistant-is-making-a-mess-here-s-how-to-fix-",
+      "date": "2026-07-03",
+      "title": "Your AI Coding Assistant is Making a Mess (Here's How to Fix It)",
+      "category": "ai-tools",
+      "thesis": "Developers are increasingly relying on AI for coding, but these tools are causing major headaches by generating repetitive, bloated, and contextually unaware code. This isn't just annoying; it's breaking their workflow and making projects harder to manage. There's a massive demand for tools that help clean up the mess AI makes and guide it to be more efficient.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "AI coding is a nightmare... obsessed with reinventing the wheel. You'll often find it writing three duplicate functions for the exact same feature in a single file... terrified of blowing up the context window, so it only reads a fraction of a large file and completely misses the existing functionality.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48768992",
+          "engagement": 68
+        },
+        {
+          "text": "Why are files so bloated in the first place? Because AI prefers adding new code to refactoring existing code.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48747976",
+          "engagement": 68
+        },
+        {
+          "text": "I'm a bit annoyed by the feeling that we're kind of stuck when it comes to using LLMs for programming. I use Claude Code and Codex, but I haven't been able to enter flow state like I can when I hand write code. AI should be a bicycle for the mind, but right now it feels like a bicycle that just brakes abruptly every couple minutes.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48760048",
+          "engagement": 85
+        },
+        {
+          "text": "I'm opening VSCode less and less every day... I now view the diffs in the Claude app instead of VSCode, and only switch to VSCode for a...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48747975",
+          "engagement": 37
+        },
+        {
+          "text": "The 'Who is hiring?' and 'Who wants to be hired?' threads show massive engagement (520 and 547 comments respectively), indicating a huge, active developer audience looking for work and tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48765450",
+          "engagement": 520
+        }
+      ],
+      "opportunity": "AI coding assistants are constantly reinventing the wheel and bloating codebases because they struggle with context (understanding the existing code). The gap is a simple 'AI code cleaner' — a tool that intercepts AI-generated suggestions, highlights duplicates or inefficient patterns, and offers one-click refactoring (restructuring code to make it cleaner and more efficient) before it even hits the editor. You could build a basic version this weekend by hooking into popular AI assistant APIs and using a simple diffing algorithm to spot redundancies.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 84
+    },
+    {
+      "id": "2026-07-03-yc-s-next-dev-tool-wave-your-first-move",
+      "date": "2026-07-03",
+      "title": "YC's Next Dev Tool Wave? Your First Move.",
+      "category": "developer-tools",
+      "thesis": "Two brand new YC companies, Proliferate and Manufact (both from S25), are quietly starting to build their teams. Manufact's specific hire for a Developer Advocate (someone who helps other developers understand and use a company's product) is a strong signal that they're creating a product specifically for builders, and they're serious about community and adoption right from the start.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Proliferate (YC S25) is hiring for various roles.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48753045",
+          "engagement": 0
+        },
+        {
+          "text": "Manufact (YC S25) is actively looking for a Developer Advocate in San Francisco, indicating a focus on developer-facing products and community building.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48746331",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "New YC S25 companies like Manufact are already hiring Developer Advocates, which means they're about to drop new tools for builders, and nobody's paying attention yet. Being the first independent builder to create a simple starter kit, 'how-to' guide, or demo project for their upcoming product gets you on their radar immediately. You could become a go-to expert or even a launch partner, way before everyone else tries to jump in.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
