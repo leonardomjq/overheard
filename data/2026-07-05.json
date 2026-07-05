@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T10:15:59.261Z",
+  "cards": [
+    {
+      "id": "2026-07-05-ai-s-overprotective-streak-is-killing-dev-productivity-here-",
+      "date": "2026-07-05",
+      "title": "AI's Overprotective Streak is Killing Dev Productivity – Here's How to Fix It",
+      "category": "ai-tools",
+      "thesis": "AI models, like Claude's Fable 5, are becoming so focused on 'safety' that they're accidentally blocking legitimate coding and scientific requests, making them frustrating or even useless for builders. This over-censorship creates a huge pain point for developers who need AI to help them with routine tasks without being constantly flagged for imaginary dangers.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "I finally decided to try out Fable 5... immediately, the interface bumped me from Fable 5 to Opus 4.8 with a warning: '...The safeguards are intentionally broad right now and may flag safe and routine coding, cybersecurity, or b[ioinformatics]'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48787042",
+          "engagement": 18
+        },
+        {
+          "text": "Claude Fable is useless for bioinformaticians: It’s infuriating any simple request related to common bioinformatics work and computational biology is flagged. Like we are we are trying to weaponize viruses or create anthrax!",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48788887",
+          "engagement": 12
+        },
+        {
+          "text": "Useful AI systems need more than just calling a model. They need orchestration: what to remember, when to act, when to ask permission, and leave an audit trail.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48786354",
+          "engagement": 5
+        },
+        {
+          "text": "I can build anything, but only the void sees it: In the past month I built 10+ different ideas. Some games, some SaaS, some free tools. But I get no one using it, other than friends and family.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48789829",
+          "engagement": 29
+        }
+      ],
+      "opportunity": "AI models are getting so locked down for safety they're blocking normal coding and science tasks, creating immediate frustration. Build a smart proxy between your app and the AI's public interface (API — a a way for different software to talk to each other) that rephrases or filters prompts to bypass common safety flags for legitimate dev work. Ship this as a Replit template or Vercel function, letting developers use AI without being constantly blocked by overly cautious guardrails.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-07-05-old-pc-games-new-screens-the-retro-gold-rush-on-iphone-mac",
+      "date": "2026-07-05",
+      "title": "Old PC Games, New Screens: The Retro Gold Rush on iPhone & Mac",
+      "category": "apps",
+      "thesis": "A beloved classic PC game, Command & Conquer Generals, has been successfully ported to run natively on modern Apple devices like iPhones, iPads, and Macs. This isn't just a one-off; it shows a massive demand for playing old, nostalgic games on new hardware, especially when they're updated with things like touch controls for mobile.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "People are super excited that Command & Conquer Generals can now be played natively on macOS, iPhone, and iPad.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48788283",
+          "engagement": 811
+        },
+        {
+          "text": "The project uses the actual game engine from Command & Conquer Generals: Zero Hour, with special rendering tech (DXVK/MoltenVK) to make it work on Apple's graphics systems, and custom touch controls for mobile devices.",
+          "source": "github",
+          "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad",
+          "engagement": 491
+        },
+        {
+          "text": "Crucially, the project does not include the actual game files, meaning users need to provide their own.",
+          "source": "github",
+          "engagement": 491
+        }
+      ],
+      "opportunity": "Everyone's hyped about playing old PC games on their iPhone, but the biggest headache is always finding the actual game files and getting them to work with these community ports. You could build a super simple web tool or even a lightweight desktop app that guides people through finding legal game assets for popular ports (think C&C, Warcraft 3, etc.) and then helps them verify and package them correctly for the app, making you the go-to for unlocking retro fun.",
+      "sources": [
+        "hackernews",
+        "github"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
