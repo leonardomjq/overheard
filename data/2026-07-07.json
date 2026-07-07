@@ -1,0 +1,166 @@
+{
+  "date": "2026-07-07",
+  "generated_at": "2026-07-07T11:09:18.025Z",
+  "cards": [
+    {
+      "id": "2026-07-07-ai-that-sees-creates-with-you-the-next-wave-of-collaborative",
+      "date": "2026-07-07",
+      "title": "AI That Sees & Creates With You: The Next Wave of Collaborative Tools",
+      "category": "creator-tools",
+      "thesis": "AI is rapidly evolving from just text-based chatbots to sophisticated tools that can 'see' what you're doing, understand visual context, and help you create. People are building AI that interacts with physical devices (like a reMarkable tablet), helps generate 3D scenes, or even acts as a co-pilot for learning and design, often by 'seeing' your screen or existing content.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Fable turned reMarkable into Tom Riddle's diary from Harry Potter, showing how AI can bring interactive personality to existing devices.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48811591",
+          "engagement": 790
+        },
+        {
+          "text": "A project called 'storyai-3d-director-desk' is a browser-based demo for using AI to direct 3D scenes, indicating a strong interest in AI for visual creation.",
+          "source": "github",
+          "url": "https://github.com/jiguang132/storyai-3d-director-desk",
+          "engagement": 115
+        },
+        {
+          "text": "'rabbithole' is an infinite canvas where you can select text, ask questions, and AI-generated answers branch out as documents, acting as an 'MCP server for Claude Code, Codex, and any agent' for learning.",
+          "source": "github",
+          "url": "https://github.com/shlokkhemani/rabbithole",
+          "engagement": 70
+        },
+        {
+          "text": "A new tool, Peek-CLI, lets AI models like Claude Code 'see' the browser, enabling agents to understand and interact with web interfaces.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48795930",
+          "engagement": 11
+        },
+        {
+          "text": "There's a new 'unmetered LLM API' offering unlimited usage for $6/month, suggesting a demand for cheaper, high-volume AI processing for 'boring, repetitive' tasks.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48802818",
+          "engagement": 18
+        }
+      ],
+      "opportunity": "Everyone's trying to make AI 'agents' that automate tasks, but the real opportunity is in AI that *collaborates* with you on creative projects by *seeing* your work. Imagine a tool that integrates into your browser or design app (like Figma), using its 'eyes' (like Peek-CLI) to understand your current project and then leverage those new, cheaper LLMs to instantly generate visual variations, alternative layouts, or even interactive elements directly into your canvas. The first person to ship a 'creative co-pilot' that truly feels like it's *in* your app, not just talking *to* it, will own the market for AI-powered collaborative creation.",
+      "sources": [
+        "hackernews",
+        "github"
+      ],
+      "signal_count": 55
+    },
+    {
+      "id": "2026-07-07-your-browser-just-became-a-superpower-for-extracting-niche-w",
+      "date": "2026-07-07",
+      "title": "Your Browser Just Became a Superpower for Extracting Niche Web Data for AI",
+      "category": "ai-tools",
+      "thesis": "The web is overflowing with valuable, unstructured information, but getting it into a clean, usable format for AI agents is often expensive or complex. New tools are making it possible to run powerful AI models and data cleaning processes directly in your browser (using WebAssembly, which lets code run super fast in web browsers), or access structured data from previously inaccessible sources for way cheaper, opening up a goldmine for anyone building AI-powered apps.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Ternlight is a 7 MB AI model for understanding text that runs entirely in your browser (using WASM).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48811644",
+          "engagement": 304
+        },
+        {
+          "text": "Pulpie offers models for 'cleaning the web,' stripping out ads and boilerplate from HTML to return just the main content, claiming to be 20x cheaper than competitors like Dripper for high-quality extraction.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48793542",
+          "engagement": 116
+        },
+        {
+          "text": "A tool for searching WeChat public account articles by keyword returns structured JSON without needing an API key, showing demand for accessing specific web content programmatically.",
+          "source": "github",
+          "url": "https://github.com/zjp1997720/wechat-article-search",
+          "engagement": 174
+        },
+        {
+          "text": "KiCad, a professional circuit board design tool, is now working directly in the browser, showing that even complex applications can run client-side.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48806575",
+          "engagement": 139
+        },
+        {
+          "text": "InstantVideos.org uses AI (like Claude) to create short documentaries in about 30 seconds, demonstrating quick, AI-driven content generation from source material.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48797656",
+          "engagement": 53
+        }
+      ],
+      "opportunity": "Everyone's building AI agents, but they're starving for fresh, structured data from the messy web. The real play is to create a browser extension that acts as a 'structured data button' for specific, high-value, hard-to-API web sources (think niche product review sites, industry forums, or specific content platforms like WeChat). Leverage in-browser AI models (like Ternlight) for cleaning and structuring content, making it cheap and lightning-fast to feed clean JSON directly to any AI agent. The first person to deliver a reliable, no-code 'data magic wand' for a specific niche will own that micro-market.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 14
+    },
+    {
+      "id": "2026-07-07-ai-is-eating-your-ip-and-your-wallet-here-s-how-to-fight-bac",
+      "date": "2026-07-07",
+      "title": "AI is Eating Your IP (and Your Wallet) – Here's How to Fight Back",
+      "category": "ai-tools",
+      "thesis": "Builders are increasingly dependent on powerful AI models like Claude and ChatGPT, but they're deeply concerned about their intellectual property (IP) being used by these large companies. On top of this, AI providers often have confusing, opaque pricing models that leave users frustrated and feeling ripped off, even when they're 'hooked' on the product.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "I am very paranoid about sharing potential AI research with e.g. Claude or ChatGPT. I believe that any company will do whatever it takes to win over competition. AI companies have access to the unique ideas of millions of AI researchers and startups who are in direct competition with them.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48814952",
+          "engagement": 26
+        },
+        {
+          "text": "Claude has the worst pricing – but people want it: Vague limits, confusing weekly/monthly usage stats, and a $200/month subscription that doesn't include core features, forcing you to use 'usage credits'. I'm frustrated but also hooked.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48807269",
+          "engagement": 28
+        },
+        {
+          "text": "Why about a third of new submissions to Hacker News become unavailable in mere minutes? It seems unlikely many people are downvoting them so quickly, and for most I can't see why. I know some websites only publish low-quality AI-generated content ('AI slop') which are probably being filtered.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48798385",
+          "engagement": 41
+        },
+        {
+          "text": "Why submit your AI-written article? Who do you think wants to read it? Why do some of you wait to disclose that it's AI-written until the footer?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48798760",
+          "engagement": 14
+        }
+      ],
+      "opportunity": "People are worried about their unique ideas when using AI models like Claude or ChatGPT, and they're also getting ripped off by vague pricing structures. Nobody wants their IP sucked up by a competitor's AI, or to pay for 'usage credits' they don't understand. Building a simple desktop app or browser extension that acts as your personal AI 'privacy shield' and cost tracker would be huge. It could let you scrub sensitive terms from your prompts before they hit the big AI models, or just give you clear, real-time feedback on how much you're actually spending and what data is being sent. You could ship a basic version in a weekend with some prompt templating and API usage monitoring.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 39
+    },
+    {
+      "id": "2026-07-07-your-next-side-project-ai-agents-that-actually-use-your-comp",
+      "date": "2026-07-07",
+      "title": "Your Next Side Project: AI Agents That Actually USE Your Computer (And How to Make Them Easy for Everyone)",
+      "category": "ai-tools",
+      "thesis": "AI agents are leveling up, moving beyond just talking to actually 'use' your computer and automate tasks in specific apps, often running locally for speed and privacy. Developers are building 'runtimes' (the environment where these AI programs execute) that let these agents 'self-organize' and get things done, but making this power accessible to non-technical users is the next big unlock.",
+      "signal_strength": 4,
+      "evidence": [
+        {
+          "text": "A new tool called 'UseChat' lets AI agents run directly on your computer to automate tasks within WeChat (a popular messaging app), emphasizing 'local-first' operation for privacy and speed.",
+          "source": "github",
+          "url": "https://github.com/CosmosShadow/usechat",
+          "engagement": 33
+        },
+        {
+          "text": "Another project, 'Mozaik,' is a 'runtime' built with TypeScript for 'self-organizing AI agents,' meaning these agents can figure out how to work together and tackle problems on their own.",
+          "source": "producthunt",
+          "url": "https://www.producthunt.com/products/mozaik-4",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "Everyone's building these super smart AI agents that can actually use your computer to get stuff done, like automate tasks in specific apps, and they're even running locally for speed and privacy. But managing them feels like you need to be a dev. There's a massive opening for anyone who can ship a dead-simple, drag-and-drop interface for non-technical users to quickly set up and supervise these local, computer-using AI agents for common business apps beyond just messaging, like automating lead generation in a CRM or data entry in a spreadsheet. Get something basic out there this weekend that lets someone 'teach' an agent a simple workflow by just showing it, and you'll own the market for practical, local AI automation for the rest of us.",
+      "sources": [
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
