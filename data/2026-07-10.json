@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-10",
+  "generated_at": "2026-07-10T10:56:57.672Z",
+  "cards": [
+    {
+      "id": "2026-07-10-ai-is-making-financial-advice-a-side-hustle-goldmine-for-bui",
+      "date": "2026-07-10",
+      "title": "AI is making financial advice a side hustle goldmine for builders",
+      "category": "ai-tools",
+      "thesis": "People are building AI tools that help small businesses and everyday folks figure out their money stuff, like calculating financial values or getting investment advice. This means complex financial tasks, which used to need expensive experts, are becoming simpler and more automated, making them accessible to way more people.",
+      "signal_strength": 6,
+      "evidence": [
+        {
+          "text": "A project on GitHub provides an AI solution for small and medium-sized businesses to calculate their financial values.",
+          "source": "github",
+          "url": "https://github.com/imchine/FinTech-Solution",
+          "engagement": 75
+        },
+        {
+          "text": "Another GitHub project offers an AI-powered financial advisor to help manage personal investment portfolios.",
+          "source": "github",
+          "url": "https://github.com/KORAYTEACHER/fintech-advisor",
+          "engagement": 75
+        }
+      ],
+      "opportunity": "Everyone's building general AI financial tools, but the real gap for small businesses is often hyper-specific, recurring questions that traditional advisors charge a fortune for. Instead of a broad financial advisor, build a micro-tool that answers *just one* common, painful question—like an AI that optimizes a local restaurant's daily specials pricing for maximum profit, or helps a freelancer quickly calculate their quarterly estimated taxes. You could ship this as a simple web app or even a Telegram bot this weekend.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
