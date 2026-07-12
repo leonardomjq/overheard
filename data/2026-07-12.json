@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-12",
+  "generated_at": "2026-07-12T09:52:04.054Z",
+  "cards": [
+    {
+      "id": "2026-07-12-your-ai-agents-are-overpaying-for-web-data-here-s-how-to-fix",
+      "date": "2026-07-12",
+      "title": "Your AI Agents Are Overpaying for Web Data. Here's How to Fix It.",
+      "category": "ai-tools",
+      "thesis": "Builders are realizing that feeding raw web pages to AI agents is incredibly expensive, with a single Wikipedia page costing 68,000 tokens (units of text AI models process). While some tools can summarize easy content, complex, interactive websites are still a huge problem, forcing developers to either pay too much or get blocked. There's a clear need for smarter ways to get relevant, cost-effective information from the web to AI.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "One Wikipedia page costs an AI agent 68,240 tokens of raw HTML; Nike's homepage is 353,000 tokens. While some tools summarize Wikipedia to about 950 tokens, they struggle with JavaScript-rendered and anti-bot pages.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48875377",
+          "engagement": 22
+        },
+        {
+          "text": "People are asking if expensive 'frontier models' like Opus or GPT are truly necessary for most work, suggesting that open-weight models that are a few months behind are often 'good enough'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48874046",
+          "engagement": 53
+        },
+        {
+          "text": "The 'Coder' tool allows users to delegate coding tasks to AI agents (like Codex or Claude engines) to keep context clean and spread the workload, hinting at efforts to manage AI costs and efficiency.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48860494",
+          "engagement": 4
+        },
+        {
+          "text": "Developers are using Large Language Models (LLMs) to map out features and understand new codebases, indicating a desire for AI to help with information extraction and comprehension tasks.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48863171",
+          "engagement": 5
+        }
+      ],
+      "opportunity": "Your AI agents are getting stuck on complex, JavaScript-heavy websites and blowing through tokens on raw HTML, costing a fortune. Ship a 'smart webfetch' API that can reliably render any webpage, bypass anti-bot measures, and then extract and pre-summarize *only* the truly relevant text for an AI agent. This immediately saves builders huge amounts on API costs and unlocks new capabilities, and you could build an MVP this weekend using a headless browser and a good summarization model.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
