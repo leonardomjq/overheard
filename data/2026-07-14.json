@@ -1,0 +1,52 @@
+{
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T10:00:24.932Z",
+  "cards": [
+    {
+      "id": "2026-07-14-tired-of-ai-noise-people-are-paying-for-human-curated-privat",
+      "date": "2026-07-14",
+      "title": "Tired of AI Noise? People Are Paying for Human-Curated, Private Digital Spaces",
+      "category": "ai-tools",
+      "thesis": "People are getting seriously fed up with the flood of AI-generated content online and are actively seeking ways to filter it out and find authentic, human-created experiences. At the same time, they're worried about privacy when using AI tools, creating a strong demand for solutions that give them control over their AI exposure and data.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "There's massive interest in adding a flag for AI-generated articles on Hacker News, not to de-rank them, but to allow users who 'don't like reading AI-generated text, to skip it.' This post alone got 1487 engagements.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48886741",
+          "engagement": 1487
+        },
+        {
+          "text": "People are asking 'How do you use LLMs for private discussions?' and noting that trying to keep conversations with AI private (using Tor, random accounts, untraceable payments) 'seems like a lot of effort,' highlighting a friction point.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48884984",
+          "engagement": 25
+        },
+        {
+          "text": "A user asked if AI has 'changed the quality of HN posts,' admitting they 'thought AI-generated content would making online discussion worse,' showing a clear concern about quality degradation.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48896372",
+          "engagement": 15
+        },
+        {
+          "text": "There's a noticeable trend of people sharing and appreciating 'personal websites,' indicating a desire for unique, human-centric online spaces over generic content.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48885422",
+          "engagement": 19
+        },
+        {
+          "text": "Builders are actively asking 'Anyone building something in the AI space?' and 'What are you working on?' (1246 engagement), showing a strong appetite to create solutions within the AI ecosystem.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48899965",
+          "engagement": 1246
+        }
+      ],
+      "opportunity": "Right now, everyone's either building AI or complaining about AI-generated content fatigue, but few are building tools that give users *personal control* over their AI experience. You could build a browser extension or a lightweight desktop app that lets users set their own 'AI boundaries' – imagine a 'Do Not Disturb' for AI, where you can hide AI-generated content on specific sites, or automatically anonymize your LLM chats to protect privacy. This isn't just about detection; it's about empowering users to curate their own digital world and protect their data, and you could ship a basic, customizable MVP this weekend using open-source AI content flags and a simple proxy for LLM calls.",
+      "sources": [
+        "hackernews",
+        "github"
+      ],
+      "signal_count": 24
+    }
+  ]
+}
