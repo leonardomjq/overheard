@@ -1,0 +1,79 @@
+{
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T10:04:32.701Z",
+  "cards": [
+    {
+      "id": "2026-07-15-ai-s-hidden-trap-why-builders-are-getting-banned-how-to-esca",
+      "date": "2026-07-15",
+      "title": "AI's Hidden Trap: Why Builders Are Getting Banned & How to Escape the Lock-in",
+      "category": "ai-tools",
+      "thesis": "AI models are getting powerful enough to run locally on devices (like phones) instead of always relying on huge cloud servers. However, many builders are still getting locked into single cloud AI providers, which creates huge risks from unexpected account bans to sudden API (Application Programming Interface – a set of rules allowing different software to talk to each other) changes, making it hard for founders to build resilient products.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Bonsai 27B: A 27B-Class model that runs on a phone.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48910545",
+          "engagement": 809
+        },
+        {
+          "text": "Someone's business was using thirteen Claude Code 20x subscriptions and Anthropic rejected their ban appeal, leaving them with no access.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48902652",
+          "engagement": 22
+        },
+        {
+          "text": "OpenAI's Codex app, a popular coding AI, was replaced by ChatGPT, forcing users to adapt to a new platform.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48905560",
+          "engagement": 9
+        },
+        {
+          "text": "People are asking what makes someone good at using AI coding tools like Claude Code, indicating a need for better understanding and optimization of these models.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48901343",
+          "engagement": 12
+        }
+      ],
+      "opportunity": "Everyone's getting locked into one AI model or provider, then facing bans or sudden changes. But with powerful models like Bonsai now running on a phone, there's a huge opening for a simple tool that lets you instantly swap between cloud AI (like Claude or ChatGPT) and local models. Ship a 'universal AI client' that lets builders run their AI tasks through *any* model they choose, giving them resilience against bans and more control over costs and privacy.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-07-15-your-ai-agent-is-making-users-rage-quit-build-the-fix-not-ju",
+      "date": "2026-07-15",
+      "title": "Your AI Agent is Making Users Rage-Quit: Build the Fix, Not Just the Dashboard",
+      "category": "ai-tools",
+      "thesis": "AI agents are popping up everywhere, but users often get super frustrated, doing things like 'rageprompting' (cursing at the agent) or repeating themselves endlessly. There's a massive need for tools that don't just tell you agents are failing, but actively help them understand and fix these problems in real-time, making the AI smarter and less annoying for everyone.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Agnost AI, a new YC startup, is launching 'product analytics for teams building chat and voice agents,' specifically to find 'behavioral failures like users rageprompting (cursing at the agent), repeatedly rephrasing the same request, correcting the agent, asking for missing features.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48908950",
+          "engagement": 117
+        },
+        {
+          "text": "A GitHub project called 'Grok register web' shows people are already building automation around new AI platforms like Grok, specifically for 'batch Outlook alias registration' and 'SSO collection,' indicating a broader trend of building tools to interact with these systems.",
+          "source": "github",
+          "url": "https://github.com/HSJ-BanFan/grok-register-web",
+          "engagement": 76
+        },
+        {
+          "text": "A builder asked 'how to promote my SaaS to get first 100 customers without budget,' highlighting the constant challenge for new founders to find a clear path to market, especially in emerging spaces like AI tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48896372",
+          "engagement": 23
+        }
+      ],
+      "opportunity": "Everyone's launching AI agents, but they're blind to *why* users bail. Agnost AI is tackling general feedback, but the real edge is a micro-tool that specifically flags 'rageprompting' or 'repeated rephrasing' in real-time and even suggests *instant fixes* for the agent's prompts or knowledge base. You could build a simple webhook for agents that flags these patterns and sends an alert with a suggested action (e.g., 'User asked for X three times, add X to FAQ').",
+      "sources": [
+        "hackernews",
+        "github"
+      ],
+      "signal_count": 10
+    }
+  ]
+}
