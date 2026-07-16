@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T10:10:16.857Z",
+  "cards": [
+    {
+      "id": "2026-07-16-agent-overload-the-money-in-making-ai-work-when-apis-don-t",
+      "date": "2026-07-16",
+      "title": "Agent Overload: The Money in Making AI Work When APIs Don't",
+      "category": "automation",
+      "thesis": "AI agents are expanding their reach beyond clean APIs (ways for software programs to talk to each other directly), aiming to automate tasks within any software, including legacy systems. However, a growing sentiment points to declining software quality and an 'age of slop' (low-quality, often AI-generated content or products), creating a critical need for tools that ensure the reliability and trustworthiness of these agents in real-world, often messy, environments.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Coasty, a YC S26 company, is building 'computer-use agents' that can complete tasks inside old desktop software and web applications even when they don't have a direct API.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48926590",
+          "engagement": 49
+        },
+        {
+          "text": "People are asking if software is 'buggier across the board,' with many feeling like they're 'hitting the strangest bugs' on their devices recently.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48927095",
+          "engagement": 210
+        },
+        {
+          "text": "Developers are struggling with marketing in an 'age of slop,' noting that after AI models made it easy to create apps and services, the market feels 'heavily saturated' with potentially low-quality products.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48922706",
+          "engagement": 20
+        },
+        {
+          "text": "There's an ongoing discussion about whether it still makes sense to write code purely by hand, indicating a shift towards more automated, potentially AI-assisted, development methods.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48920698",
+          "engagement": 63
+        }
+      ],
+      "opportunity": "Everyone's hyped about AI agents that can actually *use* your old software and web apps, even without a proper API (a way for programs to talk to each other directly), like Coasty is doing. But with all the buzz about software getting buggier and AI generating 'slop,' these agents are gonna break constantly in the real world. You could own the 'agent reliability' market by creating a super simple 'control panel' that watches these agents, alerts you when they screw up interacting with a messy UI, and lets you quickly correct or retrain them, making agent automation actually *trustworthy* for businesses.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
