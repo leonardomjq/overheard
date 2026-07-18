@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-18",
+  "generated_at": "2026-07-18T09:27:37.232Z",
+  "cards": [
+    {
+      "id": "2026-07-18-cloud-bills-gone-wild-why-everyone-s-panicking-over-140-bill",
+      "date": "2026-07-18",
+      "title": "Cloud Bills Gone Wild: Why Everyone's Panicking Over $140 Billion AWS Alerts",
+      "category": "saas",
+      "thesis": "Developers are getting hit with wildly inaccurate and terrifying estimated bills from major cloud providers like AWS, some projecting billions of dollars when actual usage is minimal. This isn't just a minor bug; it's creating massive anxiety and a deep lack of trust in billing systems, forcing builders to waste time verifying basic costs instead of shipping products.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "One user reported an estimated AWS bill for $1.7 BILLION this month, despite their normal usage being less than $5, describing it as 'obvs have created an urgent AWS support ticket.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48945241",
+          "engagement": 1878
+        },
+        {
+          "text": "Another builder received an AWS Budgets alert forecasting a staggering $3,005,575,870.47, stating they 'haven't even used AWS actively in the last year.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48949551",
+          "engagement": 204
+        },
+        {
+          "text": "A third user on Hacker News posted about getting an AWS billing alert projecting their monthly cost at $140 BILLION, when their 'usual monthly S3 bill is only $2–3,' asking 'Has anyone else received a strange billing estimate today?'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48947825",
+          "engagement": 89
+        },
+        {
+          "text": "Concerns also surfaced around AI service billing, with users asking 'Did Fable disappear from your Claude usage and requires credits now?' and noting 'Fable 5 dropped from subscriptions before the promised July 19 date,' indicating broader issues with understanding and managing service costs.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48950774",
+          "engagement": 174
+        }
+      ],
+      "opportunity": "Everyone's panicking over AWS showing multi-billion dollar bills for tiny usage—it's a massive trust breakdown. People don't need *another* complex dashboard; they need a simple, independent 'second opinion' system that pulls their actual service usage (like S3 storage or compute time) and gives them a clear, real-time sanity check on what they *should* be paying, flagging only genuine anomalies. Ship a dead-simple service that connects via an API key (a secure way for one program to talk to another program) and sends SMS alerts when your spend actually deviates, not when AWS makes a silly mistake.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 141
+    },
+    {
+      "id": "2026-07-18-new-yc-startups-are-skipping-aws-for-custom-cloud-here-s-you",
+      "date": "2026-07-18",
+      "title": "New YC Startups Are Skipping AWS for Custom Cloud – Here's Your Play",
+      "category": "saas",
+      "thesis": "New YC-backed companies are hiring engineers to build their own core cloud infrastructure (the foundational tech that powers apps), instead of fully relying on big providers like AWS or Google Cloud. This suggests a growing need for specialized, custom setups that off-the-shelf solutions aren't addressing for early-stage products.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Manufact (YC S25) is looking for a Senior infrastructure engineer to build out its own 'MCP cloud' (their specific cloud infrastructure).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48947100",
+          "engagement": 0
+        },
+        {
+          "text": "Adaptional (YC S25) is also hiring, indicating a general ramp-up in new YC companies building out their teams.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48937125",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "New YC companies are building out specialized cloud infrastructure instead of just defaulting to AWS, which means off-the-shelf solutions aren't cutting it for everyone. If you create a super-simple tool—like a 'Replit for private clouds' or a 'v0 for infra setup'—that helps early-stage teams quickly spin up or visualize their custom backend, you'll own a crucial pain point for founders drowning in infrastructure plumbing.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
