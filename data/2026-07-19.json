@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-19",
+  "generated_at": "2026-07-19T09:53:15.333Z",
+  "cards": [
+    {
+      "id": "2026-07-19-your-ai-model-just-disappeared-builders-are-done-with-flaky-",
+      "date": "2026-07-19",
+      "title": "Your AI Model Just Disappeared? Builders Are DONE With Flaky LLMs.",
+      "category": "ai-tools",
+      "thesis": "Builders are hitting a wall with major AI models like Claude and Fable: they're slow, unreliable, suddenly require credits, or outright disappear. This frustration, combined with the general noise in the AI space, means there's a huge demand for tools that make AI model usage predictable and stable, especially when shipping products to real users who might not have blazing-fast internet.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Users are reporting Fable 5 (an AI model) disappeared from their Claude usage and now requires credits, with one user noting, 'Usage credits are required for this model.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48956879",
+          "engagement": 177
+        },
+        {
+          "text": "One builder complained, 'Claude is antogonistic and frankly an absolute nightmare to use. SLOW is an understatement... I get faster output from a 16GB mac mini using deepseek 8B model....and not much worse output.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48950477",
+          "engagement": 9
+        },
+        {
+          "text": "A user traveling on slow internet noted, 'It's shocking to me how many apps are completely unusable on slow internet.' They specifically called out, 'Props to OpenAI, Codex still works on slow internet. Claude won't.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48945606",
+          "engagement": 8
+        },
+        {
+          "text": "A builder trying to promote their project in the current AI landscape expressed frustration, asking, 'How do you guys handle such frustration and keeping your mental health?' because of the 'so much AI noises' and lack of user feedback.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48950625",
+          "engagement": 16
+        }
+      ],
+      "opportunity": "Everyone's complaining that big AI models like Claude are slow, expensive, and unpredictable, sometimes even disappearing or failing on bad internet. There's a massive gap for a lightweight 'AI reliability layer' — basically a smart API (a set of rules and tools for different software to talk to each other) that sits between a builder's app and the actual AI model. This layer could dynamically route requests to the fastest, cheapest, or most reliable model available *at that exact moment*, or even cache common responses, ensuring a builder's app always gets a decent answer without them having to deal with constant AI model headaches. You could ship a simple API that guarantees a fallback or cached response, letting builders ship robust AI features without the constant fear of their chosen model going down or costing a fortune overnight.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-07-19-don-t-get-hit-with-a-3-billion-cloud-bill-the-ai-cost-crisis",
+      "date": "2026-07-19",
+      "title": "Don't Get Hit With a $3 Billion Cloud Bill: The AI Cost Crisis is Brewing",
+      "category": "saas",
+      "thesis": "Builders are increasingly worried about runaway cloud costs, especially as they integrate more AI into their products. Even major cloud providers are giving out wildly inaccurate billing forecasts (like $3 billion for an inactive account), leaving founders exposed to massive, unexpected expenses and unable to trust the system. This creates a huge need for reliable, easy-to-understand cost management tools that can predict and explain spending before it becomes a problem.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "An AWS user reported receiving an alert forecasting a $3,005,575,870.47 bill, despite not actively using AWS for a year, and AWS support's AI chatbot was unhelpful.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48949551",
+          "engagement": 204
+        },
+        {
+          "text": "A user decided to disconnect their LG smart home appliances due to privacy concerns and difficulty deleting their account, highlighting a general distrust of how companies handle user data and account management.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48945681",
+          "engagement": 87
+        },
+        {
+          "text": "The 15th anniversary of Recurse Center, a coding retreat, reminds us that founders often pivot from initial ideas ('OkCupid for jobs') due to market fit or cost issues, emphasizing the need for flexibility and smart resource management.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48958273",
+          "engagement": 902
+        },
+        {
+          "text": "People are actively discussing what to do if AI replaces their job, showing that AI is top-of-mind and influencing career and financial planning for many.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48961844",
+          "engagement": 30
+        }
+      ],
+      "opportunity": "Everyone building with AI is terrified of surprise cloud bills, especially when AWS itself is forecasting $3 billion for inactive accounts and their own support is failing. A simple plug-in that taps into your cloud spending, gives you human-readable forecasts that *make sense*, and flags anything insane *before* it becomes a problem would be a game-changer for solo founders and small teams. You could build a first version this weekend by hooking into AWS's cost explorer APIs (Application Programming Interfaces – a set of rules and tools for building software applications that communicate with each other) and building a few simple sanity checks and plain-English alerts.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 5
+    }
+  ]
+}
