@@ -1,0 +1,121 @@
+{
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T10:27:02.520Z",
+  "cards": [
+    {
+      "id": "2026-07-22-your-ai-agent-just-caused-a-security-breach-do-you-know-how",
+      "date": "2026-07-22",
+      "title": "Your AI Agent Just Caused a Security Breach – Do You Know How?",
+      "category": "ai-tools",
+      "thesis": "Builders are integrating AI agents deeper into their workflows for everything from coding to chat, but recent security incidents and a general lack of transparency mean there's a huge trust problem. People are getting worried about what these AI agents are actually doing, especially when they're making decisions or interacting with sensitive systems.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "OpenAI and Hugging Face had to deal with a security incident during model evaluation, which was widely discussed with nearly 2000 engagements. This shows a major concern about AI security.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48997548",
+          "engagement": 1998
+        },
+        {
+          "text": "Jack Dorsey just launched Buzz, which combines team chat, AI agents, and Git hosting, showing that AI agents are becoming a core part of developer collaboration tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48993414",
+          "engagement": 595
+        },
+        {
+          "text": "One frontend engineer shared that they've 'stopped fighting AI over-reliance' and now use AI for almost all their coding, only tweaking styling manually. This highlights how deeply builders are integrating AI into their daily work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48999291",
+          "engagement": 8
+        },
+        {
+          "text": "People are asking on Hacker News if those running 'LLM bots' (automated programs using large language models) to post comments could at least report their results, pointing to a need for transparency and accountability for AI agent actions.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48993816",
+          "engagement": 9
+        },
+        {
+          "text": "There are reports of delays getting CVE IDs (security vulnerability identifiers) assigned on GitHub, with speculation that it's due to a 'flood of reports coming from researchers using LLM's,' suggesting AI agents are impacting security processes.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48995213",
+          "engagement": 4
+        }
+      ],
+      "opportunity": "Builders are leaning hard on AI agents for coding and other tasks, but the recent OpenAI/Hugging Face security scare and frustration with unchecked LLM bots show a massive trust gap. Nobody's built a simple 'flight recorder' for AI agents within dev environments that logs every command, API call (an API is how different software talks to each other), and code change. The first person to ship a Replit or Cursor plugin that gives a clear, human-readable audit trail of agent actions could corner the market on AI agent accountability, and you could probably prototype it this weekend.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    },
+    {
+      "id": "2026-07-22-your-ai-code-assistant-is-only-as-smart-as-your-team-s-outda",
+      "date": "2026-07-22",
+      "title": "Your AI Code Assistant Is Only As Smart As Your Team's Outdated Docs",
+      "category": "ai-tools",
+      "thesis": "Teams are struggling to keep track of what's true and up-to-date within their own projects, especially as AI tools like Claude and Codex speed up coding. This creates a huge problem where even advanced AI assistants can't give good advice because the internal knowledge (like documentation and shared context) they rely on is constantly out of date, leading to incorrect or irrelevant suggestions from the AI.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "People are losing track of context and what's out of date, citing 'code coming in faster and faster' as a reason for this problem, making it hard to find a single source of truth.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49002166",
+          "engagement": 41
+        },
+        {
+          "text": "Many are asking if they're the only ones dealing with this struggle to manage organizational knowledge, highlighting a widespread and unaddressed pain point.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48996526",
+          "engagement": 41
+        },
+        {
+          "text": "Builders are actively discussing and comparing AI code assistants like Claude and Codex, showing high adoption and reliance on these tools for coding.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48989357",
+          "engagement": 41
+        }
+      ],
+      "opportunity": "Everyone's complaining that AI code assistants (like Claude) sometimes give outdated advice because they're trained on old data or can't access fresh context. The real pain isn't the AI, it's that human teams can't keep their internal docs updated fast enough for the AI to learn from. The move here is to create a tool that uses AI to *automatically detect* when code changes make documentation obsolete and *suggests* updates, turning the knowledge crisis into an AI-powered advantage for teams that ship fast.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 6
+    },
+    {
+      "id": "2026-07-22-old-reddit-is-dead-unless-you-log-in-here-s-your-move",
+      "date": "2026-07-22",
+      "title": "Old Reddit Is Dead (Unless You Log In): Here's Your Move",
+      "category": "apps",
+      "thesis": "Reddit recently started requiring users to log in to access its 'old' website design, old.reddit.com. This is a big deal because many experienced users prefer this simpler interface and used to browse it without an account, especially when clicking through from search results. Now, they're hitting a login wall, and they're not happy about it.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "Old Reddit Now Requires Login",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48983857",
+          "engagement": 74
+        },
+        {
+          "text": "accessing old.reddit.com now requires accounts: I got a modal dialog demanding account creation.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=48985198",
+          "engagement": 22
+        },
+        {
+          "text": "the 'ugly' UI is clearly better (than the new Reddit design).",
+          "source": "hackernews",
+          "engagement": 22
+        },
+        {
+          "text": "I was not aware of this and I hadn't seen it mentioned anywhere. FYI.",
+          "source": "hackernews",
+          "engagement": 22
+        }
+      ],
+      "opportunity": "Everyone's hitting the login wall when trying to check old Reddit threads from search results, especially since `old.reddit.com` is now locked down. You could ship a browser extension this weekend that intercepts Reddit links from Google or DuckDuckGo and renders them in a super clean, minimal reader mode, completely bypassing Reddit's new login gate and giving users the distraction-free experience they actually want.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
