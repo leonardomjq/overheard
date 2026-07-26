@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T10:02:54.992Z",
+  "cards": [
+    {
+      "id": "2026-07-26-stop-ai-hallucinations-why-fresh-data-for-ai-tools-is-the-ne",
+      "date": "2026-07-26",
+      "title": "Stop AI Hallucinations: Why Fresh Data for AI Tools is the Next Big Opportunity",
+      "category": "ai-tools",
+      "thesis": "AI models are incredibly powerful, but their reliability often breaks down when they're fed outdated or irrelevant information, especially for rapidly changing technical data like APIs or developer documentation. Builders are actively seeking ways to ensure AI understands the *current* context (the specific information it needs to process) to prevent errors and make AI tools truly useful and trustworthy.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "There's huge interest in 'the new rules of context engineering for Claude 5 generation models,' showing how critical it is to properly feed AI models information for them to perform well.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49051361",
+          "engagement": 547
+        },
+        {
+          "text": "A builder asked, 'How would you harden AI changes to a 1M-line legacy SaaS before review?' highlighting the major challenge of making AI reliable and safe when integrating it into complex, existing software.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49048571",
+          "engagement": 19
+        },
+        {
+          "text": "People are asking about how to 'compress the context in Claude Code' without losing important details, which means they're actively trying to optimize how AI processes information while keeping it accurate.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49045970",
+          "engagement": 9
+        },
+        {
+          "text": "Someone asked if there's a 'magical AI' solution to restore a 101-year-old postcard, showing a general desire for AI that just 'works' for specific, complex tasks without requiring extensive human oversight.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49054859",
+          "engagement": 8
+        }
+      ],
+      "opportunity": "Everyone's complaining that AI coding assistants (like Cursor or Replit) hallucinate old APIs or give outdated advice because their training data isn't fresh. But nobody's built a simple plug-in or service that just auto-updates the documentation these AIs read for specific frameworks or libraries. The first person to ship a tool that keeps AI context *hyper-current* for, say, React or specific cloud APIs, owns the frustrated-developer market; you could start by scraping official docs, tracking updates, and feeding clean, current data to a vector database your AI tools could query.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 14
+    },
+    {
+      "id": "2026-07-26-drowning-in-digital-bloat-the-rise-of-just-works-apps-is-you",
+      "date": "2026-07-26",
+      "title": "Drowning in Digital Bloat? The Rise of 'Just Works' Apps is Your Next Goldmine",
+      "category": "apps",
+      "thesis": "People are fed up with modern websites and apps that overcomplicate simple tasks with excessive design, animations, or frustrating AI-first interactions. There's a clear demand, and high engagement, for minimalist, single-purpose tools that strip away the fluff and just deliver core functionality quickly and reliably.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "The UK MET office recently redesigned their site, adding a lot of additional whitespace, scrolling, and animations. This significantly reduced its usability for me, and left me wanting an ‘at a glance’ weather site. I made Brolly, a minimalist, plain text weather forecasting site.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49049693",
+          "engagement": 260
+        },
+        {
+          "text": "I got tired of Googling basic course info, so I made a free directory of every US course... Google filters for golf course results are terrible so I built a better way to browse courses.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49039868",
+          "engagement": 198
+        },
+        {
+          "text": "Paddle, the merchant of record, used to have quite excellent support... Now they have added a layer of AI automation whereby any support e-mail receives an automated AI reply to which you have to reply to escalate to a human.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49054010",
+          "engagement": 12
+        },
+        {
+          "text": "I was considering buying an e-ink device for reading textbooks. Then I remembered that a physical book can’t piss me off. It just works.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49053708",
+          "engagement": 13
+        }
+      ],
+      "opportunity": "Everyone's complaining about how bloated and AI-gated simple online tasks have become. You could pick any common frustration – like finding quick info that's buried under ads and animations, or getting a straight answer from customer support – and build a super-focused, single-feature web app that just *works* without the noise. Ship something this weekend that scrapes public data or uses a simple API (a way for different software to talk to each other) to deliver one thing, fast and clean, for a specific niche.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 30
+    }
+  ]
+}
