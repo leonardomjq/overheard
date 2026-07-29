@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T10:40:42.751Z",
+  "cards": [
+    {
+      "id": "2026-07-29-the-internet-is-broken-ai-isn-t-helping-restore-trust-ship-s",
+      "date": "2026-07-29",
+      "title": "The Internet is Broken, AI Isn't Helping: Restore Trust & Ship Securely",
+      "category": "apps",
+      "thesis": "The internet is becoming incredibly frustrating and insecure to navigate, with constant CAPTCHAs, broken logins, and intrusive ads making basic tasks a headache. Even powerful AI tools, while promising, are proving unreliable for teams and raising new concerns about security and trust, leaving many builders feeling burned out and questioning the value of new tech.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Users are reporting that the internet is 'no longer accessible' due to an overwhelming number of impossible CAPTCHAs, broken two-factor authentication (2FA) codes, and websites demanding phone numbers just to create an account.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49090607",
+          "engagement": 69
+        },
+        {
+          "text": "One team shared that their paid Claude AI subscription has been 'unavailable for more than one week' with 'no support' from Anthropic, highlighting significant reliability issues with critical AI services.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49078318",
+          "engagement": 65
+        },
+        {
+          "text": "A user encountered a 'virus captcha' on a news website that looked like a traditional Google captcha but prompted for 'Manual Verification,' raising alarms about malicious web interactions.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49080775",
+          "engagement": 88
+        },
+        {
+          "text": "Many people are expressing a loss of interest in technology, especially with the arrival of AI, stating they 'don't care about any of it at all' and feel like they're 'wasting my days away' due to the industry's direction and issues.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49084404",
+          "engagement": 25
+        },
+        {
+          "text": "Builders are asking 'how to deal with security implications of running/installing projects' found online, noting it's 'so easy to inject back doors and malware into software projects now a days,' even when using tools like Docker (which isolates software but isn't foolproof).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49073924",
+          "engagement": 23
+        }
+      ],
+      "opportunity": "Everyone's complaining that the internet is a minefield of CAPTCHAs, broken logins, and even malicious captchas, while simultaneously worrying about the security of new projects, especially AI-generated code. You could build a 'secure browsing and execution environment' – think a browser extension or a simple desktop app – that acts as a shield, automatically handling login annoyances and stripping ads, but crucially, also scans and sandboxes *any* code or instructions an AI like Claude generates before it runs on your machine. The builder who ships a tool that lets people safely interact with the web and AI, restoring trust and control, wins the peace-of-mind market.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
