@@ -1,0 +1,153 @@
+{
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T10:41:55.691Z",
+  "cards": [
+    {
+      "id": "2026-07-31-your-ai-agent-needs-a-brain-and-a-dashboard-to-control-it",
+      "date": "2026-07-31",
+      "title": "Your AI Agent Needs a Brain (and a Dashboard to Control It)",
+      "category": "ai-tools",
+      "thesis": "People are actively customizing AI models to behave in specific ways (like removing unwanted 'censorship' or biases), but the tools to manage and interact with these custom AI agents are still super clunky. There's a massive need for intuitive, visual interfaces that let you easily define and control how your AI agents think and act, moving beyond just typing prompts.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Show HN: What should the GUI for AI agents look like?: We’re Akilan and Miguel, the creators of MarbleOS. The inspiration for Marble comes from the GUI work at Xerox PARC... Before GUIs, interacting with a computer was limited to strange terminal commands... The GUI made those capabilities visible.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49113599",
+          "engagement": 99
+        },
+        {
+          "text": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it: We recently used DeepSeek V4 Flash as a teacher for finance tasks with GPT-OSS-120B. Distillation works well on this problem. At a constrained 8k token budget, our self-distilled 120B scores 83.61% on FinanceReasoning, above Kimi K3 (81.93%) and Inkling (65.13%). We released the 20B open weights. With V4 as the teacher though, we realized it would be timely to measure if the censorship characteristic of it transferred",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49119425",
+          "engagement": 192
+        },
+        {
+          "text": "Ask/Tell HN: use the flag button instead of complaining about AI slop articles: There is an article sitting at 60+ points now at the homepage which is clearly written by an AI and most comments saying something along the lines \"this article is clearly AI slop\". In this particular case, the article seems to be real AI slop: it creates a nonsensical benchmark to compare two tools and uses that to plug the company's product.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49119274",
+          "engagement": 19
+        }
+      ],
+      "opportunity": "Everyone's messing with AI models to get them to behave exactly how they want (like removing censorship from DeepSeek), but it's all command lines and code. Imagine a drag-and-drop 'personality panel' for your custom AI agent where you can visually set guardrails, define tone, or toggle specific 'filters' — the first person to ship a no-code visual builder for AI agent behavior, especially for custom-trained models, will own this niche. It's time to make AI agent control as easy as a settings menu.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 61
+    },
+    {
+      "id": "2026-07-31-stop-yelling-at-ai-the-secret-to-making-models-actually-unde",
+      "date": "2026-07-31",
+      "title": "Stop Yelling at AI: The Secret to Making Models Actually Understand You (And What to Build)",
+      "category": "ai-tools",
+      "thesis": "Builders are increasingly frustrated with AI tools giving inconsistent or 'hallucinatory' (making things up) answers, but a hidden trend is emerging: AI models, like humans, have specific 'dialects' or preferred ways of being prompted. Tools are popping up that automatically 'translate' your regular prompts into these native dialects, making AI far more effective and reliable, especially when running locally.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "There's a tool that can 'rewrite your prompt into the native dialect of the model you're actually running (Claude Code / Codex) — by each vendor's OFFICIAL rules — and see which rule drove each edit. It's self-updating and has zero dependencies.' This got 33 engagements.",
+          "source": "github",
+          "url": "https://github.com/romanson-xo8/Palworld-Optimizer-2026",
+          "engagement": 33
+        },
+        {
+          "text": "A project called mere.run lets you run 'local text, image, video, music and 3D from one CLI, no Python' because the author believes 'we should use the stuff we already own (like our Mac laptops, decent machines gathering dust, our gaming PC).' This highlights the push for local-first AI processing, not just cloud.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49111237",
+          "engagement": 18
+        },
+        {
+          "text": "People are really into optimizing their local experiences, like 'Boost Palworld 2026 performance with PalBoost. Optimize Windows, monitor FPS, reduce lag, improve frame stability and enhance your gaming experience.' This shows a strong demand for tools that improve local machine performance and interaction.",
+          "source": "github",
+          "url": "https://github.com/edvardgrishin27/nativeprompt",
+          "engagement": 116
+        },
+        {
+          "text": "Another tool provides a '/export-md slash command for Claude Code — save any session as clean, readable markdown.' This shows a need for better ways to manage and document interactions with specific AI models.",
+          "source": "github",
+          "url": "https://github.com/wangyao1052/Yi3D",
+          "engagement": 24
+        }
+      ],
+      "opportunity": "Everyone's complaining about AI tools like Cursor or Replit 'hallucinating' or giving irrelevant code, but the real secret is that models have specific 'native dialects' they prefer. The gap is in tools that automatically translate a user's prompt into the *exact*, self-updating dialect for specific models (Claude Code, Llama, etc.). Ship a browser extension or a local CLI that acts as a 'universal translator' for prompts, making AI coding helpers instantly more accurate and reliable, especially as more people run models locally on their own machines.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 34
+    },
+    {
+      "id": "2026-07-31-your-ai-agents-are-overheating-your-mac-the-unseen-opportuni",
+      "date": "2026-07-31",
+      "title": "Your AI Agents Are Overheating Your Mac: The Unseen Opportunity in Local Dev Tools",
+      "category": "ai-tools",
+      "thesis": "Developers are using AI coding agents like Claude Code so intensely that they're building custom tools just to manage their local workflow. They're struggling with basic stuff like switching accounts, preventing conflicts when running multiple agents, and keeping their laptops from melting down. This creates a huge opening for simple, smart tools that make local AI agent development smoother.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Someone built a tool called `claude-account` because having to log out and log in every time they switched between work and personal Claude Code accounts was annoying. They made a simple command-line tool to fix it.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49111305",
+          "engagement": 74
+        },
+        {
+          "text": "One builder reported pushing up to 90 commits a day using 4-5 parallel AI agents on a MacBook Air, leading to crashes and restarts. They created a 'local merge queue' to make agents run and test changes one at a time, avoiding both crashes and expensive cloud testing fees.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49111019",
+          "engagement": 63
+        },
+        {
+          "text": "Another developer built 'Supapool' because running multiple coding agents locally with shared databases caused conflicts and overheated their MacBook. Supapool quickly spins up a fresh, isolated copy of Supabase (a backend service for databases, authentication, etc.) for each agent, preventing conflicts and resource drain.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49104747",
+          "engagement": 37
+        },
+        {
+          "text": "The 'Black-cat' project, a 'Claude Code RedTeam Skill', shows people are extending agents with complex capabilities, suggesting a need for better management of these advanced agent workflows.",
+          "source": "github",
+          "url": "https://github.com/0rangec3t/Black-cat",
+          "engagement": 128
+        },
+        {
+          "text": "There's even a project called 'Ski' that enables voice coding for Claude Code and similar agents, running entirely on your device, showing a demand for diverse and local interaction methods.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49096767",
+          "engagement": 21
+        }
+      ],
+      "opportunity": "Everyone's building tiny, custom scripts to fix their own AI agent workflow headaches – like managing multiple accounts or keeping their laptop from melting when running parallel agents. The move is to create an 'agent-specific activity monitor' that not only tracks what each AI agent is doing but also lets you pause, resume, or allocate resources (like CPU or memory) to them. You could build a simple Mac/Windows menu bar app that surfaces these controls and even suggests when to spin up a 'Supapool'-like isolated environment, making you the go-to for anyone trying to ship with AI agents this year.",
+      "sources": [
+        "hackernews",
+        "github"
+      ],
+      "signal_count": 30
+    },
+    {
+      "id": "2026-07-31-early-yc-whispers-who-s-hiring-and-what-it-means-for-builder",
+      "date": "2026-07-31",
+      "title": "Early YC Whispers: Who's Hiring and What It Means for Builders",
+      "category": "trends",
+      "thesis": "The first public signals from Y Combinator's current batch (P25) show companies like Mbodi AI (focused on robotics and AI) and PgDog (likely a database-related tool) are already staffing up. While there's no public buzz around them yet, these early hiring moves indicate where fresh funding and talent are flowing in the startup ecosystem right now.",
+      "signal_strength": 1,
+      "evidence": [
+        {
+          "text": "Mbodi AI, part of the latest Y Combinator batch (P25), is actively hiring Robotics and Research Engineers.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49108840",
+          "engagement": 0
+        },
+        {
+          "text": "PgDog, also from the Y Combinator P25 batch, is currently hiring.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49100056",
+          "engagement": 0
+        }
+      ],
+      "opportunity": "These are some of the first public hiring announcements from the new YC batch (P25), meaning companies like Mbodi AI (robotics/AI) and PgDog are in hyper-build mode right after getting funded. They're trying to staff up ASAP, but big, clunky HR software is overkill for their tiny, fast-moving teams. An ultra-simple, maybe even AI-powered, tool that lets early founders quickly draft job descriptions, post to a few key sites, or manage their first dozens of applicants without any setup fuss would be a lifesaver right now.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
