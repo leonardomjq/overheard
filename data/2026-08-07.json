@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T09:00:25.485Z",
+  "cards": [
+    {
+      "id": "2026-08-07-tired-of-chasing-ai-models-route-your-way-to-lower-costs-and",
+      "date": "2026-08-07",
+      "title": "Tired of Chasing AI Models? Route Your Way to Lower Costs and Faster Apps",
+      "category": "ai-tools",
+      "thesis": "Big tech is heavily investing in making AI models run super fast (this is called inference, where the AI actually generates its output). At the same time, the market for these AI models is constantly changing, with new ones appearing and existing ones (like DeepSeek) adjusting their prices. This creates a headache for builders who want to use the best, most cost-effective AI in their apps without constantly rewriting their code.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "AMD acquired Taalas to make AI models run much faster directly on specialized computer chips, showing a huge investment in improving AI performance.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49201970",
+          "engagement": 1123
+        },
+        {
+          "text": "There's a lot of discussion around 'vLLM,' a system designed for high-throughput LLM inference, which means making large language models process requests quickly and efficiently.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49198302",
+          "engagement": 108
+        },
+        {
+          "text": "DeepSeek announced it's raising its API prices, with a user noting that 'newer models will likely have already drawn users away' by the time the hike kicks in, highlighting constant model churn and price sensitivity.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49204352",
+          "engagement": 42
+        },
+        {
+          "text": "An experienced HN reader observed that 'most of the stuff on the 1st 2 pages is AI this, AI that, LLM this, LLM that,' confirming the pervasive focus on AI in the builder community.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49184355",
+          "engagement": 103
+        },
+        {
+          "text": "Developers are asking for advice on 'How Did You Get Your First Paying Customers?' for their SaaS projects, indicating a need for tools that simplify development and improve their chances of shipping and monetizing.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49198464",
+          "engagement": 22
+        }
+      ],
+      "opportunity": "Everyone's trying to get the best deal and performance from AI models, but API prices (like DeepSeek's hike) and new models change constantly. Instead of developers manually swapping out OpenAI for Anthropic every few weeks, you could build a smart proxy that automatically routes their AI requests to the cheapest or fastest available model. It's a goldmine for indie hackers and micro-SaaS builders who want to ship fast without worrying about tomorrow's API changes.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 125
+    }
+  ]
+}
