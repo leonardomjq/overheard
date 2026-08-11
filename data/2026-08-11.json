@@ -1,0 +1,72 @@
+{
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T08:58:31.912Z",
+  "cards": [
+    {
+      "id": "2026-08-11-forget-cloud-ai-the-new-gold-rush-is-tiny-local-agents",
+      "date": "2026-08-11",
+      "title": "Forget Cloud AI: The New Gold Rush is Tiny, Local Agents",
+      "category": "ai-tools",
+      "thesis": "Forget expensive, cloud-based AI. A new wave of extremely small, 'agentic' AI models (meaning they can make decisions and use tools, not just generate text) is emerging that can run directly on your devices, offline. These tiny models, like the 14MB Needle2 for phones, enable private, always-on AI capabilities without sending your data to the cloud, hinting at a future where personalized AI lives entirely on your phone, wearables, or smart home devices.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49241679",
+          "engagement": 1713
+        },
+        {
+          "text": "Henry from Cactus here! We previously released Cactus Needle, a 14MB agentic LLM for tool call, device use, and structured extraction for phones, wearables, smart homes, small robots and microcontrollers. We got really great feedback here, and have now incorporated the suggestions to release Needle 2.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49246804",
+          "engagement": 432
+        },
+        {
+          "text": "Show HN: Ante, a coding agent in a single binary that runs offline.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49245936",
+          "engagement": 208
+        },
+        {
+          "text": "What's the best programming language for coding agents?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49245437",
+          "engagement": 279
+        }
+      ],
+      "opportunity": "Everyone's talking about how small and powerful these new local AI models are getting (like Needle2 running on phones), but it's still super technical to actually *do* anything useful with them beyond the demo. Imagine a simple drag-and-drop builder for connecting these tiny, offline AI agents to your local files, apps, or smart home devices, letting you create custom, private automations without needing to code. The first person to make 'local AI agent workflows' accessible to anyone with a few clicks will own a massive, privacy-hungry market right now.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 121
+    },
+    {
+      "id": "2026-08-11-beyond-the-cube-making-mind-boggling-combinations-tangible-f",
+      "date": "2026-08-11",
+      "title": "Beyond the Cube: Making Mind-Boggling Combinations Tangible for Niche Audiences",
+      "category": "side-projects",
+      "thesis": "A project showing how to 'scroll through all 432 quintillion Rubik's Cube states' got significant buzz because it makes an impossibly huge number feel real and explorable. This isn't just about puzzles; it highlights a deep human fascination with visualizing the sheer scale of possibilities in a system.",
+      "signal_strength": 5,
+      "evidence": [
+        {
+          "text": "A 'Show HN' project gained 240 engagement for letting users visually scroll through all 432,520,032,744,898,560,000 possible states of a Rubik's Cube.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49251179",
+          "engagement": 240
+        },
+        {
+          "text": "The project's appeal comes from its ability to represent an incomprehensibly large number of permutations (different arrangements) in an interactive, understandable way.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49251179",
+          "engagement": 240
+        }
+      ],
+      "opportunity": "Everyone loves seeing a massive, abstract number suddenly made interactive. Take that 'scroll through all X states' idea and apply it to a niche where people obsess over combinations – think character customization in games, fashion outfit generators, or even architectural design permutations. You could whip up a simple web tool using something like v0 or Replit that lets users visually explore every possible combination of a few inputs, making a massive, abstract number feel tangible and fun for a specific community, and then sell access or templates to them.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
