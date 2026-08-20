@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T08:39:56.714Z",
+  "cards": [
+    {
+      "id": "2026-08-20-ai-agents-are-breaking-enterprise-systems-and-your-budget",
+      "date": "2026-08-20",
+      "title": "AI Agents Are Breaking Enterprise Systems (and Your Budget)",
+      "category": "saas",
+      "thesis": "The explosion of AI agents is creating a massive infrastructure bottleneck, pushing major SaaS providers like ServiceNow to tell customers to self-host because their systems can't handle the sheer volume of agent API calls (the way different software programs talk to each other). This signals an urgent, unmet need for new tools that manage AI agent traffic and compute costs efficiently, without requiring deep technical knowledge.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "OpenRouter is joining Stripe: Previously: Stripe will reportedly acquire OpenRouter for $7B+",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49364559",
+          "engagement": 1252
+        },
+        {
+          "text": "Launch HN: OneCLI (YC S26) – OSS sandboxed agent harness for teams, giving every employee a secured, sandboxed personal agent.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49363710",
+          "engagement": 97
+        },
+        {
+          "text": "ServiceNow are pushing customers off SaaS – are other industries doing similar?: The main driver is an inability to service the necessary compute to deal with the avalanche of agents hitting their APIs.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49346906",
+          "engagement": 14
+        },
+        {
+          "text": "Ask HN: What are independent software contractors doing now?: The amount of opportunities I've found doing independent contracting... has went from easily being able to find one or two leads a week to none at all... It seems with AI people are just not willing to hire devs for their pet projects anymore?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49346932",
+          "engagement": 20
+        },
+        {
+          "text": "Ask HN: Has anyone shipped a self-modifying application with LLMs?: ...an application just have a prompt box that builds an extension",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49357853",
+          "engagement": 16
+        }
+      ],
+      "opportunity": "Everyone's building AI agents to automate everything, but big companies like ServiceNow are buckling under the pressure, actually telling customers to *self-host* because their APIs can't handle the 'avalanche of agents' hitting them. This means there's a huge gap in tools that let you deploy agents without constantly blowing up your budget or breaking other services. Build a 'traffic cop' for AI agents that sits between your agents and the APIs they call, intelligently batching requests, caching common responses, or detecting runaway agents before they rack up huge bills.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 132
+    }
+  ]
+}
