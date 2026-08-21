@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T08:41:53.037Z",
+  "cards": [
+    {
+      "id": "2026-08-21-your-ai-coding-agent-is-exhausting-fix-it-for-vibe-coders",
+      "date": "2026-08-21",
+      "title": "Your AI Coding Agent is Exhausting. Fix It for Vibe Coders.",
+      "category": "ai-tools",
+      "thesis": "Builders are hitting a wall with current AI coding agents: they're powerful, but constantly typing out detailed prompts for every change is 'tedious' and 'exhausting.' This friction is creating a huge demand for new ways to direct AI—less text, more intuitive methods—to build or extend features directly within existing products. The next wave of AI tools will let users express their intent visually or declaratively, turning AI into a true co-builder rather than a verbose chatbot.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The creator of Huzzah, an experimental AI coding editor, shared: 'I began to feel utterly exhausted by them [coding agents]. They're great, but I'm finding it more and more tedious to write full sentences for every change I want.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49374269",
+          "engagement": 458
+        },
+        {
+          "text": "Vendo (YC S26) launched with the pitch: 'Let users build features on top of your product.' They explain, 'A user describes the dashboard, workflow, or small app they need, and Vendo builds it on top of the product’s existing data, API (a way for different software to talk to each other), and interface.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49368886",
+          "engagement": 53
+        },
+        {
+          "text": "An Ask HN post questioned: 'Has anyone shipped a self-modifying application with LLMs? I can't help but think why wouldn't for example an application just have a prompt box that builds an extension.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49378768",
+          "engagement": 23
+        },
+        {
+          "text": "Another Ask HN post pondered: 'Is AI the New Spreadsheet? Personally, and anecdotally, my spreadsheet use has dropped immensely since starting to use these tools [like cowork or codex type apps].'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49381896",
+          "engagement": 11
+        }
+      ],
+      "opportunity": "Vibe coders are getting sick of typing out full sentences to their AI agents, even though they love the results. Nobody's really nailed the 'show, don't tell' interface for AI coding yet. You could build a tool that lets users sketch out UI ideas or define data flows visually, and then an AI agent (plugged into something like OpenRouter for flexibility, which is getting buzz) translates that intent into a working feature or extension for their existing products, bypassing the prompt-heavy back-and-forth. The market is screaming for a faster way to go from 'idea' to 'shipped' without becoming a prompt engineer.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 123
+    }
+  ]
+}
