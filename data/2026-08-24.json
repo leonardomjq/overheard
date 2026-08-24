@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T08:50:21.645Z",
+  "cards": [
+    {
+      "id": "2026-08-24-ai-can-t-3d-print-your-robot-vacuum-ramp-and-that-s-your-opp",
+      "date": "2026-08-24",
+      "title": "AI Can't 3D Print Your Robot Vacuum Ramp, And That's Your Opportunity",
+      "category": "ai-tools",
+      "thesis": "While AI excels at generating elaborate characters and artistic images, it's currently failing hard when it comes to practical, functional 3D designs for physical objects. People are actively trying to use AI to create simple but precise items for their 3D printers, only to find the outputs are unusable and can't be adjusted, highlighting a huge unmet need for AI tools that deliver editable, functional 3D models from natural language descriptions.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Why can AI generate Super Mario but not a wedge ramp for my robot vacuum? I tried the 'describe it and get a model' AIs — the output is unusable, you can't adjust it.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49402189",
+          "engagement": 16
+        },
+        {
+          "text": "I bought a Bambu P2S but can't model. I'm puzzled: AI can produce an elaborate figurine, a cartoon character, even a convincing Super Mario — yet it can't reliably make a simple wedge ramp so my robot vacuum can climb a step.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49402769",
+          "engagement": 16
+        },
+        {
+          "text": "Continue, a popular AI coding agent, has joined Cursor, indicating strong demand and consolidation in AI-powered developer tools.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49405520",
+          "engagement": 6
+        },
+        {
+          "text": "GPU capacity is surprisingly hard to find right now, even in Spot pools, making it difficult for people to run or train AI models.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49406588",
+          "engagement": 5
+        }
+      ],
+      "opportunity": "Everyone's complaining that AI can sculpt a perfect Super Mario, but can't design a simple, editable wedge ramp for their robot vacuum. Builders are buying 3D printers like the Bambu P2S and getting stuck because current AI tools spit out 'unusable' models that you 'can't adjust.' The immediate play is to create a tool that generates *parametric* 3D models (meaning they can be easily changed by adjusting specific measurements or features) from text descriptions, focusing on simple, everyday functional objects that users can then fine-tune themselves. You could start with a niche like household utility items or specific product accessories, making it dead simple to export an editable file.",
+      "sources": [
+        "hackernews",
+        "producthunt"
+      ],
+      "signal_count": 68
+    },
+    {
+      "id": "2026-08-24-your-local-ai-is-smarter-than-you-think-how-to-unlock-its-hi",
+      "date": "2026-08-24",
+      "title": "Your Local AI Is Smarter Than You Think: How to Unlock Its Hidden Genius",
+      "category": "ai-tools",
+      "thesis": "While powerful AI models running on your own computer (local LLMs) offer amazing privacy and cost benefits, many builders get frustrated because these models often produce messy or unpolished results, making them feel 'dumber' than they actually are. The real breakthrough isn't in building new local models, but in creating tools that automatically clean up and refine the raw output, transforming a 'good enough' local AI into something truly useful and professional-grade.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "Many people are asking 'Why your local LLM feels dumber than it is' (588 engagement) highlighting a widespread frustration that their AI models running on their own machines don't perform as well as expected, even though the underlying technology is capable.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49402232",
+          "engagement": 588
+        },
+        {
+          "text": "The core problem isn't always the AI model itself, but how its output is presented or refined. It often needs 'cleanup' or further processing to be truly useful.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49405912",
+          "engagement": 588
+        },
+        {
+          "text": "A builder showed off 'Dictata – Local Whisper dictation with LLM cleanup' (4 engagement) which uses a local AI (LLM) specifically to clean up the text from local speech-to-text (Whisper), proving that local AI cleanup is a viable and desired use case.",
+          "source": "hackernews",
+          "engagement": 4
+        }
+      ],
+      "opportunity": "Everyone's downloading powerful local AI models (like those you run with Ollama or LM Studio) because they want privacy and speed, but they often get frustrated because the raw output feels unpolished or just 'off.' The real opportunity isn't building *another* local model, it's building a simple, plug-and-play 'polishing layer' that automatically takes the raw text from any local LLM and refines it for specific tasks—think auto-correcting grammar, rephrasing for professional tone, or formatting blog posts. Ship a tiny app or even a browser extension that hooks into popular local AI UIs and makes every local AI feel like a genius by default.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
