@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T08:45:09.545Z",
+  "cards": [
+    {
+      "id": "2026-08-26-ai-s-dumb-blind-spots-are-your-next-side-project-goldmine",
+      "date": "2026-08-26",
+      "title": "AI's 'Dumb' Blind Spots Are Your Next Side Project Goldmine",
+      "category": "ai-tools",
+      "thesis": "Everyone's hyped on big AI models, but builders are hitting frustrating walls with 'simple' tasks these powerful tools still mess up. There's a clear opportunity to make money by building tiny, specialized AI fixes for these obvious pain points, especially since people are actively asking what these 'dumb' AI failures are.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "What is one simple thing LLMs are insanely bad at? I am looking for ideas on what to train a specialized model for!",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49438052",
+          "engagement": 93
+        },
+        {
+          "text": "Coding is a solved problem. Most normal software building is now a closed-loop problem. Codex and similar agents can already take a clear task, write the code, test it, see what failed, fix it, and iterate. But for a decent engineer, it's not.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49433292",
+          "engagement": 54
+        },
+        {
+          "text": "Is AI slowing you down? ...if I don't describe exactly how it needs to be built (low level specs), or if I don't know how the current codebase needs to be updated to support it...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49437283",
+          "engagement": 24
+        },
+        {
+          "text": "Those making $500/month or more on side projects in 2026, what are you doing these days?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49434378",
+          "engagement": 157
+        }
+      ],
+      "opportunity": "Instead of trying to build a general AI, pick one *insanely simple thing* that current large language models (LLMs) repeatedly mess up — people are literally asking for these ideas right now. You can build a hyper-focused micro-agent or an API wrapper (a small program that adds a specific function to an existing service) that perfectly solves just that one 'dumb' problem, and then charge a small fee for the reliable fix. The 'Ask HN' thread is a public wishlist for exactly what to build, so go grab an idea and ship it.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 128
+    },
+    {
+      "id": "2026-08-26-your-next-project-local-ai-agents-that-actually-talk-to-each",
+      "date": "2026-08-26",
+      "title": "Your Next Project: Local AI Agents That Actually Talk To Each Other",
+      "category": "ai-tools",
+      "thesis": "Forget the cloud: powerful AI is now running on tiny, cheap devices like Raspberry Pis, making personalized, private automation possible. But just like complex data tools (like graph databases, which store interconnected information) are painful to manage locally, coordinating these individual local AI brains is the next big hurdle.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Developers are finding it 'painful to work with locally' when using advanced data systems like graph databases, highlighting a general frustration with setting up complex tech on personal machines.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49437049",
+          "engagement": 191
+        },
+        {
+          "text": "It's now possible to 'run a 35B Qwen model' (a large AI model, similar to a powerful chatbot) on a small, affordable computer like a Raspberry Pi, with 'very impressive intelligence and stability.'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49435675",
+          "engagement": 173
+        },
+        {
+          "text": "Someone built a car AI by feeding it the full car manual and connecting it to car data, then 'hooked it up with my other agents in our discussion room!' showing AIs collaborating locally.",
+          "source": "hackernews",
+          "engagement": 173
+        }
+      ],
+      "opportunity": "Everyone's messing with local AI on their Raspberry Pis or old laptops, making smart home widgets or personal assistants. But it's a mess trying to get them to talk to each other or act on specific data. Someone needs to build a super simple, local-first dashboard where you can upload a PDF (like a car manual), assign it to an AI agent, and then visually drag-and-drop connections between that agent and another local AI, or even a local sensor, so they can collaborate without ever touching the cloud.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 2
+    }
+  ]
+}
