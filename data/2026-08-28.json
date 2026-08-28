@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T19:57:31.660Z",
+  "cards": [
+    {
+      "id": "2026-08-28-the-ai-burnout-trap-devs-are-drowning-and-you-can-throw-them",
+      "date": "2026-08-28",
+      "title": "The AI Burnout Trap: Devs Are Drowning, And You Can Throw Them A Lifeline",
+      "category": "ai-tools",
+      "thesis": "Developers are under immense pressure to use AI tools like Claude Code and \"GPT-5.3\" to meet insane deadlines, which is leading to burnout and a feeling of losing their craft. They're struggling to balance AI-driven productivity with maintaining their identity as builders, creating a huge need for tools that empower them, not just automate them.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "\"Tell HN: Man, AI is killing my brain: I was among the last to resist, but then I was given a subtle hint that if I won't 'improve my productivity and be on par with my colleagues' my work will be at risk. So I started to use Claude Code about a year ago.\"",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49479878",
+          "engagement": 80
+        },
+        {
+          "text": "\"Ask HN: AI writes better code than me. How to keep my identity?: Nowadays, almost everyone codes with AI, right? I am a freelancer, and the entire market is now setting deadlines based on AI-assisted coding speeds... I completely transitioned to AI-driven coding at the beginning of this year (starting around GPT-5.3).\"",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49473522",
+          "engagement": 17
+        },
+        {
+          "text": "\"GLM-5.3 is now open-weight\" – this means a powerful AI model is freely available for anyone to use and build with, without needing expensive licenses or proprietary access.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49477854",
+          "engagement": 545
+        },
+        {
+          "text": "\"Ask HN: Hugging Face is out. Who is hosting open models?\" – people are actively looking for alternative, potentially self-hosted or more decentralized ways to run AI models.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49466512",
+          "engagement": 35
+        }
+      ],
+      "opportunity": "Developers are feeling crushed by the pressure to ship faster with AI, making them feel like they're losing their touch. Instead of another AI code generator, build a tool that helps developers *reclaim their craft* by turning AI into a smart mentor. Imagine an AI agent that, instead of just writing code, helps you *understand why* it suggests certain changes, offers alternative approaches, or even gamifies the process of learning from AI to improve your own skills. You could use an open-weight model like GLM-5.3 to power a \"code review buddy\" that focuses on teaching and empowering the human developer.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 15
+    }
+  ]
+}
