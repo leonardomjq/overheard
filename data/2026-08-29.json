@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T13:40:37.152Z",
+  "cards": [
+    {
+      "id": "2026-08-29-ai-can-t-steal-your-vibe-how-to-monetize-human-design-taste-",
+      "date": "2026-08-29",
+      "title": "AI Can't Steal Your Vibe: How to Monetize Human Design Taste in a Code-Gen World",
+      "category": "ai-tools",
+      "thesis": "AI is making code generation incredibly fast, but developers are feeling their creative identity threatened and struggle with 'vibe design' (the subjective, aesthetic part of building). There's a growing need for tools that help builders inject their unique human taste and design intuition into AI-generated code, giving them a competitive edge beyond just raw output.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "I was among the last to resist, but then I was given a subtle hint that if I won't 'improve my productivity and be on par with my colleagues' my work will be at risk. So I started to use Claude Code... But I saw that my colleagues were shipping more...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49479878",
+          "engagement": 82
+        },
+        {
+          "text": "If you don't use AI, you simply cannot meet the deadlines. Because of this, I completely transitioned to AI-driven coding... It's not that AI coding isn't fun. It is. But in the beginning, there were still many things that felt like my own work.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49477854",
+          "engagement": 32
+        },
+        {
+          "text": "Design is an underdetermined problem - that's why we describe it using 'taste'. LLMs (large language models, the tech behind most AI tools) are not great at undetermined problems. So how do you constraint the space and what's your feedback flywheel?",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49466512",
+          "engagement": 15
+        },
+        {
+          "text": "GLM-5.3 is now open-weight.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49468252",
+          "engagement": 976
+        },
+        {
+          "text": "On October 7, 2026, edit predictions (AI suggesting code changes) will no longer be included with Zed’s free Personal plan. They will remain available on the Pro, Student, and Business plans. Edit predictions require ongoing inference infrastructure (the computing power needed to run the AI)...",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49465640",
+          "engagement": 10
+        }
+      ],
+      "opportunity": "Engineers are feeling the pressure to ship faster with AI but are losing their creative identity, especially since AI struggles with 'vibe design' (the subjective aesthetic that makes things cool). The real gap isn't *more* code generation, it's *taste injection*: a tool that lets engineers upload AI-generated UI components and then apply specific 'vibe' prompts (like 'retro-futuristic' or 'cozy minimalism') to get refined code back. You could build a proof-of-concept this weekend, owning the market for developers who want to keep their unique style by empowering them to be designers again.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 135
+    }
+  ]
+}
