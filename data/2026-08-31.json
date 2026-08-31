@@ -1,0 +1,177 @@
+{
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31T15:56:40.237Z",
+  "cards": [
+    {
+      "id": "2026-08-31-stop-building-agents-start-building-their-superpowers",
+      "date": "2026-08-31",
+      "title": "Stop Building Agents. Start Building Their Superpowers.",
+      "category": "ai-tools",
+      "thesis": "Forget trying to build the next big general AI agent. The real action is in creating hyper-specific tools and 'skill packs' that plug into existing agent platforms. Builders are showing massive demand for ways to give agents specialized knowledge, better feedback loops, and stronger collaboration capabilities for niche tasks.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "The 'scientific-agent-skills' project (50 engagements) is explicitly designed to 'Turn any AI agent into an AI Scientist,' providing 165 ready-to-use skills and covering 100+ scientific databases, compatible with popular tools like Cursor and Claude Code.",
+          "source": "github",
+          "url": "https://github.com/sharptoolbox/ontology-driven-dev",
+          "engagement": 50
+        },
+        {
+          "text": "A new 'Free, Fast Screenshot App for macOS' (14 engagements) was created because the developer found 'sending feedback to my AI agents' with comments and annotations on screen led to 'much better edits'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49507822",
+          "engagement": 14
+        },
+        {
+          "text": "The 'ontology-driven-dev' project (75 engagements) outlines a method for developing business systems using AI agents, supporting tools like WorkBuddy, Claude Code, and Codex, indicating a need for agents to handle structured development tasks.",
+          "source": "github",
+          "url": "https://github.com/AMAP-ML/LoopArena",
+          "engagement": 75
+        },
+        {
+          "text": "Murmell (10 engagements) is an 'infinite canvas where coding agents run together in the cloud instead of on your laptop', described as 'like Google Docs, except the other editors are you, your teammates, and a set of agents all working in the same canvas.' This points to a demand for collaborative workspaces for agents and humans.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49499167",
+          "engagement": 10
+        },
+        {
+          "text": "Cogram Studio (6 engagements) is a 'CAD and BIM workspace for AI agents to create three-dimensional models and dimensioned drawings,' showing agents being applied to highly specialized design and engineering tasks.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49507806",
+          "engagement": 6
+        }
+      ],
+      "opportunity": "Everyone's trying to build the next big AI agent, but the real gold rush is equipping *existing* agents (like those on Cursor or Claude) with super-specific skills and better human feedback loops for niche domains. Think about making a plug-in that lets a design agent on v0 understand visual annotations like 'move this button here' directly, or a 'legal research' skill pack for Claude that gives it access to specific case databases and formatting rules. The first person to ship a few of these hyper-specialized agent 'superpowers' for a frustrated niche owns that market, and you could likely prototype one in a weekend by hooking into existing APIs (Application Programming Interfaces – a way for software to talk to other software) and a targeted dataset.",
+      "sources": [
+        "hackernews",
+        "github"
+      ],
+      "signal_count": 58
+    },
+    {
+      "id": "2026-08-31-ai-addiction-hidden-costs-are-crushing-builders-time-for-a-s",
+      "date": "2026-08-31",
+      "title": "AI Addiction & Hidden Costs Are Crushing Builders – Time for a Smart 'Budget Cop'",
+      "category": "ai-tools",
+      "thesis": "Builders are getting seriously hooked on AI tools like Claude Code, but this reliance is leading to major headaches: surprise bills from confusing usage limits and a lack of control over what their AI agents (automated programs) are actually doing. While everyone's loving the power, the hidden costs and feeling of 'addiction' are creating a huge demand for tools that bring transparency and control back to AI usage.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "People are actively trying to customize or bypass default AI behavior, like 'Breaking Claude Code Opus 5 Auto Mode'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49506819",
+          "engagement": 346
+        },
+        {
+          "text": "Builders are so reliant on AI that they feel 'addicted' to tools like Claude Code and are asking how to break that dependency to do 'acceptable day's work' manually.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49491745",
+          "engagement": 41
+        },
+        {
+          "text": "Users are confused and misled by AI service pricing, with one person noting 'Claude 20x usage is only for the 5 hour window, not for the weekly limit,' calling it 'very misleading' and mentioning a 'lawsuit about it'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49510066",
+          "engagement": 7
+        },
+        {
+          "text": "There's a growing debate about whether AI's benefits truly outweigh the 'token burning budgets' (the cost of using AI models), with some asking, 'What would happen if your company stopped using all AI tomorrow?'",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49509882",
+          "engagement": 22
+        },
+        {
+          "text": "Even advanced users struggle with controlling AI 'agents' (automated AI programs) and getting them to 'stop at certain points,' highlighting a common problem with 'multisession engineering'.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49501729",
+          "engagement": 7
+        }
+      ],
+      "opportunity": "Everyone's complaining about surprise bills and feeling 'addicted' to AI tools like Claude, letting agents run wild and burn through tokens. What's missing is a dead-simple 'AI budget cop' that you can set up in five minutes. It hooks into your AI agents (like those using Claude or OpenAI's APIs, which are just ways for different software to talk to each other) and automatically pauses them if they're about to hit a predefined cost or usage limit, giving you a chance to review or take over manually. The first person to ship a free tier for one agent with a clear, visual 'stoplight' for spending will own this space, and you could build a basic version this weekend with a few API integrations.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 57
+    },
+    {
+      "id": "2026-08-31-your-ai-needs-a-brain-and-it-lives-on-telegram",
+      "date": "2026-08-31",
+      "title": "Your AI Needs a Brain, and It Lives on Telegram",
+      "category": "ai-tools",
+      "thesis": "While everyone's buzzing about AI agents, a major bottleneck is getting them to truly understand and act on specific company information. At the same time, utility bots on platforms like Telegram are exploding in popularity, especially with new payment integrations (like Telegram Stars), showing a clear path for monetizing direct-to-user AI experiences.",
+      "signal_strength": 9,
+      "evidence": [
+        {
+          "text": "There's high interest in how to build core AI models, like a 'diffusion language model' (a type of AI that generates text or images).",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49503956",
+          "engagement": 177
+        },
+        {
+          "text": "A new GitHub project is gaining traction for a 'Telegram Stars and Premium API' (a way for different software to talk to each other), allowing for GRAM/USDT payments directly within Telegram bots.",
+          "source": "github",
+          "url": "https://github.com/slightbasebo/fragment-api-dev",
+          "engagement": 148
+        },
+        {
+          "text": "A YC-backed startup, Almanac, launched their 'AI that knows your company,' highlighting the 'annoying and difficult journey' of setting up an AI agent (an automated program) to understand every context about a company.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49510632",
+          "engagement": 10
+        },
+        {
+          "text": "Another popular GitHub project is a 'tempmail-telegram-bot' for generating temporary email addresses on demand, showing strong demand for practical utility bots on Telegram.",
+          "source": "github",
+          "url": "https://github.com/bytare/MultiChain-Drainer-Tool",
+          "engagement": 23
+        },
+        {
+          "text": "Discussions on future job interviews mention the 'AI agentic era,' indicating that AI agents will fundamentally change how businesses operate and interact.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49511007",
+          "engagement": 26
+        }
+      ],
+      "opportunity": "Everyone's complaining that AI agents struggle to truly 'know' specific company context, even as Telegram bots are blowing up for utility and payments like Telegram Stars. The move is to build a super-simple service where any small business can upload their internal docs or FAQs, and instantly get a Telegram bot that's an expert on *just that data*, ready to answer customer questions or even handle basic transactions. You could get a prototype running this weekend by connecting a vector database (a smart way to store information so AI can quickly find relevant pieces) to the Telegram Bot API.",
+      "sources": [
+        "hackernews",
+        "github",
+        "producthunt"
+      ],
+      "signal_count": 12
+    },
+    {
+      "id": "2026-08-31-discord-s-secret-lifeline-the-underground-fixes-keeping-mill",
+      "date": "2026-08-31",
+      "title": "Discord's Secret Lifeline: The Underground Fixes Keeping Millions Online",
+      "category": "apps",
+      "thesis": "Users in Russia are facing government restrictions that block popular apps like Discord, making it hard to connect. To get around this, communities are building and sharing custom versions of open-source tools (programs that help bypass internet censorship) to keep Discord working. This isn't just a temporary workaround; it's an ongoing effort to maintain access.",
+      "signal_strength": 7,
+      "evidence": [
+        {
+          "text": "A modified build based on Zapret and GoodbyeDPI is designed to bypass RKÑ restrictions and enable stable Discord use in Russia. (HydromancerRoute/DiscordFix)",
+          "source": "github",
+          "url": "https://github.com/HydromancerRoute/DiscordFix",
+          "engagement": 50
+        },
+        {
+          "text": "This custom build, using Zapret and GoodbyeDPI, was created to bypass RKÑ restrictions and ensure stable Discord operation in Russia. (armsjoninrescue/DiscordFix)",
+          "source": "github",
+          "url": "https://github.com/armsjoninrescue/DiscordFix",
+          "engagement": 27
+        },
+        {
+          "text": "Another modified build, based on Zapret and GoodbyeDPI, is intended for bypassing RKÑ restrictions and stable Discord use in Russia. (stalkertaleseparate/zapret-discord-youtube)",
+          "source": "github",
+          "url": "https://github.com/stalkertaleseparate/zapret-discord-youtube",
+          "engagement": 27
+        }
+      ],
+      "opportunity": "People are actively forking and maintaining 'DiscordFix' because government blocks are a persistent problem, not a one-off event. The real opportunity isn't just another custom build, but a dead-simple desktop app that wraps Zapret and GoodbyeDPI, automatically updates to bypass new restrictions, and makes using Discord feel truly stable again. Think a 'set it and forget it' tool for a frustrated market, and you could probably ship a basic version this weekend.",
+      "sources": [
+        "github"
+      ],
+      "signal_count": 3
+    }
+  ]
+}
