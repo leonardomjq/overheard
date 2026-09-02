@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-02",
+  "generated_at": "2026-09-02T12:36:58.827Z",
+  "cards": [
+    {
+      "id": "2026-09-02-your-ai-is-dumbing-down-build-the-code-cop-it-needs",
+      "date": "2026-09-02",
+      "title": "Your AI Is Dumbing Down: Build the 'Code Cop' It Needs",
+      "category": "ai-tools",
+      "thesis": "AI coding assistants like Claude are becoming incredibly powerful but also increasingly frustrating, with users reporting a decline in quality for complex tasks and a tendency to ignore project rules. This creates a clear need for tools that validate and enforce consistency on AI-generated code and documentation, helping developers trust and effectively use these AI models.",
+      "signal_strength": 8,
+      "evidence": [
+        {
+          "text": "Users are finding that Claude Opus is becoming less effective on complex tasks, often ignoring project rules (like CLAUDE.md files), making unprompted edits to unrelated files, and breaking working code. It also fails to update documentation when code changes and makes edits based on blind guesses.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49525378",
+          "engagement": 31
+        },
+        {
+          "text": "Claude Code is automatically adding a session link to every commit, which users are opted into by default. This link is only accessible to the user, making its inclusion in commits unnecessary and frustrating.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49525153",
+          "engagement": 12
+        },
+        {
+          "text": "Anthropic just launched new models, Claude Fable 5.1 and Claude Mythos 5.1, showing continued high interest in their AI capabilities and widespread adoption.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49528895",
+          "engagement": 2532
+        },
+        {
+          "text": "Users are finding Claude's pricing and usage limits to be misleading, with confusion over how much '20x usage' actually provides, leading to a lawsuit.",
+          "source": "hackernews",
+          "url": "https://news.ycombinator.com/item?id=49528057",
+          "engagement": 18
+        }
+      ],
+      "opportunity": "People are seriously fed up with advanced AI models like Claude Opus ignoring project rules and breaking code, especially with new models like Fable 5.1 dropping. You could build a small 'AI code guardian' that hooks into their development environment (like Replit or Cursor) and acts as a strict editor, automatically validating Claude's code against specific project guidelines (like a `CLAUDE.md` file) and ensuring documentation stays updated, or even correcting unwanted additions like session links in commits. First one to make AI coding reliable wins the developer trust.",
+      "sources": [
+        "hackernews"
+      ],
+      "signal_count": 117
+    }
+  ]
+}
